@@ -56,17 +56,17 @@ export default function QuestionDisplay({
         <div className="action-buttons">
           {!isAnswerRevealed ? (
             <button 
-              className="btn-show-answer" 
+              className="btn-primary btn-show-answer" 
               onClick={() => setIsAnswerRevealed(true)}
             >
               Visa svar
             </button>
           ) : (
             <>
-              <button className="btn-correct" onClick={onCorrect}>
+              <button className="btn-primary btn-correct" onClick={onCorrect}>
                 ✓ Rätt
               </button>
-              <button className="btn-incorrect" onClick={onIncorrect}>
+              <button className="btn-primary btn-incorrect" onClick={onIncorrect}>
                 ✗ Fel
               </button>
             </>
