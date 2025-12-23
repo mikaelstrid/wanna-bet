@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { loadPlayerNames, savePlayerNames } from '../utils/storage';
 import './PlayerRegistration.css';
 
 interface PlayerRegistrationProps {
@@ -8,6 +9,7 @@ interface PlayerRegistrationProps {
 export default function PlayerRegistration({ onStartGame }: PlayerRegistrationProps) {
   const [playerNames, setPlayerNames] = useState(['', '', '', '']);
   const [errors, setErrors] = useState<string[]>([]);
+  const [savedNames] = useState<string[]>(() => loadPlayerNames());
 
   const handleNameChange = (index: number, value: string) => {
     const newNames = [...playerNames];
@@ -45,6 +47,7 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
       return;
     }
     
+    savePlayerNames(filledNames);
     onStartGame(filledNames);
   };
 
@@ -65,7 +68,14 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
                 onChange={(e) => handleNameChange(index, e.target.value)}
                 onBlur={() => handleNameBlur(index)}
                 maxLength={20}
+                list={`player-suggestions-${index}`}
+                autoComplete="off"
               />
+              <datalist id={`player-suggestions-${index}`}>
+                {savedNames.map((savedName) => (
+                  <option key={savedName} value={savedName} />
+                ))}
+              </datalist>
             </div>
           ))}
           
