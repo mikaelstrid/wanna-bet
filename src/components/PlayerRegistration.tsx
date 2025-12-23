@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { loadPlayerNames, savePlayerNames } from '../utils/storage';
 import './PlayerRegistration.css';
 
@@ -51,6 +51,20 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
     onStartGame(filledNames);
   };
 
+  // Memoize filtered suggestions for each input field
+  // Exclude names that are already filled in other input fields (case-insensitive)
+  const filteredSuggestionsPerField = useMemo(() => {
+    return playerNames.map((_, currentIndex) => {
+      const filledNames = playerNames
+        .map((name, idx) => (idx !== currentIndex ? name.trim().toLowerCase() : ''))
+        .filter(name => name !== '');
+      
+      return savedNames.filter(
+        savedName => !filledNames.includes(savedName.toLowerCase())
+      );
+    });
+  }, [playerNames, savedNames]);
+
   return (
     <div className="player-registration">
       <div className="registration-content">
@@ -58,26 +72,29 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
         <p className="instruction">Fyll i namnen på 2-4 spelare.</p>
         
         <form onSubmit={handleSubmit}>
-          {playerNames.map((name, index) => (
-            <div key={index} className="input-group">
-              <label htmlFor={`player-${index}`}>Spelare {index + 1}</label>
-              <input
-                id={`player-${index}`}
-                type="text"
-                value={name}
-                onChange={(e) => handleNameChange(index, e.target.value)}
-                onBlur={() => handleNameBlur(index)}
-                maxLength={20}
-                list={`player-suggestions-${index}`}
-                autoComplete="off"
-              />
-              <datalist id={`player-suggestions-${index}`}>
-                {savedNames.map((savedName) => (
-                  <option key={savedName} value={savedName} />
-                ))}
-              </datalist>
-            </div>
-          ))}
+          {playerNames.map((name, index) => {
+            const filteredSuggestions = filteredSuggestionsPerField[index];
+            return (
+              <div key={index} className="input-group">
+                <label htmlFor={`player-${index}`}>Spelare {index + 1}</label>
+                <input
+                  id={`player-${index}`}
+                  type="text"
+                  value={name}
+                  onChange={(e) => handleNameChange(index, e.target.value)}
+                  onBlur={() => handleNameBlur(index)}
+                  maxLength={20}
+                  list={`player-suggestions-${index}`}
+                  autoComplete="off"
+                />
+                <datalist id={`player-suggestions-${index}`}>
+                  {filteredSuggestions.map((savedName) => (
+                    <option key={savedName} value={savedName} />
+                  ))}
+                </datalist>
+              </div>
+            );
+          })}
           
           {errors.length > 0 && (
             <div className="error-messages">
