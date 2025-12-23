@@ -53,11 +53,12 @@ export const generateRoundQuestions = (
   };
   
   for (let i = 0; i < numPlayers; i++) {
-    const availableCategories = getAvailableCategories();
+    let availableCategories = getAvailableCategories();
     
-    // If we run out of questions, reset used questions
+    // If we run out of questions, reset used questions and recalculate
     if (availableCategories.length === 0) {
       usedQuestions.clear();
+      availableCategories = getAvailableCategories();
     }
     
     // Randomly select a category
