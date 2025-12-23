@@ -20,7 +20,6 @@ export default function VictoryScreen({ winner, allPlayers, onRestart }: Victory
         <p className="victory-message">har vunnit spelet!</p>
         
         <div className="final-scores">
-          <h3>Slutresultat</h3>
           <div className="scores-list">
             {sortedPlayers.map((player, index) => (
               <div 

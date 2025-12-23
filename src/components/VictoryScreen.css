@@ -44,12 +44,6 @@
   margin-bottom: var(--spacing-xl);
 }
 
-.final-scores h3 {
-  font-size: var(--font-size-2xl);
-  color: var(--color-text-primary);
-  margin-bottom: var(--spacing-md);
-}
-
 .scores-list {
   display: flex;
   flex-direction: column;
