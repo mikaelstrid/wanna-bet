@@ -9,7 +9,7 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
     <div className="welcome-screen">
       <h1 className="game-title">Wanna bet?</h1>
       <p className="welcome-text">
-        Ett turordningsbaserat frågesportspel för fyra spelare
+        Utmana dina vänner, först till 3 guldmynt vinner!
       </p>
       <button className="btn-primary" onClick={onStart}>
         Spela!

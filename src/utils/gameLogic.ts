@@ -11,21 +11,17 @@ export const shuffleArray = <T,>(array: T[]): T[] => {
 };
 
 // Generate round questions with randomized order
-export const generateRoundQuestions = (questions: Question[], startIndex: number): RoundQuestion[] => {
+export const generateRoundQuestions = (questions: Question[], startIndex: number, numPlayers: number): RoundQuestion[] => {
   const roundQuestions: RoundQuestion[] = [];
-  const answererIndices = shuffleArray([0, 1, 2, 3]);
+  const playerIndices = Array.from({ length: numPlayers }, (_, i) => i);
+  const answererIndices = shuffleArray(playerIndices);
   const askerIndices = [...answererIndices]; // Start with same order
   
   // Rotate askers by 1 position to ensure no one asks themselves
   // This guarantees each player asks exactly once and never asks themselves
-  const rotatedAskers = [
-    askerIndices[1],
-    askerIndices[2],
-    askerIndices[3],
-    askerIndices[0]
-  ];
+  const rotatedAskers = [...askerIndices.slice(1), askerIndices[0]];
   
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < numPlayers; i++) {
     const questionIndex = (startIndex + i) % questions.length;
     
     roundQuestions.push({

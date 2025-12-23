@@ -20,14 +20,17 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
     
     const newErrors: string[] = [];
     
-    // Validate all names are filled
-    if (playerNames.some(name => name.trim() === '')) {
-      newErrors.push('Alla spelarnamn måste fyllas i');
+    // Filter out empty names
+    const filledNames = playerNames.map(name => name.trim()).filter(name => name !== '');
+    
+    // Validate minimum 2 players
+    if (filledNames.length < 2) {
+      newErrors.push('Minst 2 spelare måste fyllas i');
     }
     
-    // Validate unique names
-    const uniqueNames = new Set(playerNames.map(name => name.trim().toLowerCase()));
-    if (uniqueNames.size !== 4) {
+    // Validate unique names among filled names
+    const uniqueNames = new Set(filledNames.map(name => name.toLowerCase()));
+    if (uniqueNames.size !== filledNames.length) {
       newErrors.push('Alla spelarnamn måste vara unika');
     }
     
@@ -36,13 +39,13 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
       return;
     }
     
-    onStartGame(playerNames.map(name => name.trim()));
+    onStartGame(filledNames);
   };
 
   return (
     <div className="player-registration">
       <h2>Spelare</h2>
-      <p className="instruction">Fyll i namnen på de fyra spelarna</p>
+      <p className="instruction">Fyll i namnen på 2-4 spelare (lämna tomma fält för färre spelare)</p>
       
       <form onSubmit={handleSubmit}>
         {playerNames.map((name, index) => (

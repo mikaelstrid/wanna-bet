@@ -41,12 +41,6 @@
   }
 }
 
-.coin-bounce {
-  position: absolute;
-  font-size: 6rem;
-  animation: coinBounce 0.8s ease-out;
-}
-
 @keyframes coinBounce {
   0% {
     transform: translateY(0) scale(0);

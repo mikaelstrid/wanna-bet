@@ -21,7 +21,6 @@ export default function QuestionDisplay({
       {showCorrectAnimation && (
         <div className="correct-animation">
           <div className="celebration">🎉</div>
-          <div className="coin-bounce">🪙</div>
         </div>
       )}
       

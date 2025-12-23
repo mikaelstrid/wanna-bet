@@ -10,7 +10,7 @@ import QuestionDisplay from './components/QuestionDisplay';
 import VictoryScreen from './components/VictoryScreen';
 import questionsData from '../data/questions.json';
 
-const WINNING_COINS = 10;
+const WINNING_COINS = 3;
 
 function App() {
   const [gameState, setGameState] = useState<GameState>(() => {
@@ -41,7 +41,7 @@ function App() {
   const handleStartGame = (playerNames: string[]) => {
     const players: Player[] = playerNames.map(name => ({ name, coins: 0 }));
     const shuffled = shuffleArray(questionsData as Question[]);
-    const roundQuestions = generateRoundQuestions(shuffled, 0);
+    const roundQuestions = generateRoundQuestions(shuffled, 0, players.length);
     
     setGameState({
       ...gameState,
@@ -92,13 +92,15 @@ function App() {
 
   const moveToNextQuestion = (updatedPlayers: Player[]) => {
     const nextQuestionInRound = gameState.currentQuestionInRound + 1;
+    const numPlayers = gameState.players.length;
     
-    if (nextQuestionInRound >= 4) {
+    if (nextQuestionInRound >= numPlayers) {
       // Start new round
-      const nextQuestionIndex = gameState.questionIndex + 4;
+      const nextQuestionIndex = gameState.questionIndex + numPlayers;
       const newRoundQuestions = generateRoundQuestions(
         gameState.shuffledQuestions,
-        nextQuestionIndex
+        nextQuestionIndex,
+        numPlayers
       );
       
       setGameState({
