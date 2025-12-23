@@ -8,7 +8,30 @@ import PlayerRegistration from './components/PlayerRegistration';
 import GameBoard from './components/GameBoard';
 import QuestionDisplay from './components/QuestionDisplay';
 import VictoryScreen from './components/VictoryScreen';
-import questionsData from '../data/questions.json';
+import geographyQuestions from '../data/geography.json';
+import historyQuestions from '../data/history-and-society.json';
+import popcultureQuestions from '../data/popculture.json';
+import natureScienceQuestions from '../data/nature-science.json';
+import technologyQuestions from '../data/technology-and-innovation.json';
+import triviaQuestions from '../data/trivia.json';
+import sportsQuestions from '../data/sports-and-leisure.json';
+import foodQuestions from '../data/food-drinks-culture.json';
+import natureQuestions from '../data/nature.json';
+import logicQuestions from '../data/logic-and-puzzles.json';
+
+// Combine all questions from different categories
+const questionsData = [
+  ...geographyQuestions,
+  ...historyQuestions,
+  ...popcultureQuestions,
+  ...natureScienceQuestions,
+  ...technologyQuestions,
+  ...triviaQuestions,
+  ...sportsQuestions,
+  ...foodQuestions,
+  ...natureQuestions,
+  ...logicQuestions,
+] as Question[];
 
 const WINNING_COINS = 3;
 
@@ -40,7 +63,7 @@ function App() {
 
   const handleStartGame = (playerNames: string[]) => {
     const players: Player[] = playerNames.map(name => ({ name, coins: 0 }));
-    const shuffled = shuffleArray(questionsData as Question[]);
+    const shuffled = shuffleArray(questionsData);
     const roundQuestions = generateRoundQuestions(shuffled, 0, players.length);
     
     setGameState({

@@ -1,4 +1,5 @@
 import type { Question } from '../types';
+import { categoryMetadata } from '../categoryMetadata';
 import './QuestionDisplay.css';
 
 interface QuestionDisplayProps {
@@ -16,12 +17,22 @@ export default function QuestionDisplay({
   onCorrect, 
   onIncorrect 
 }: QuestionDisplayProps) {
+  const categoryInfo = categoryMetadata[question.category];
+  
   return (
     <div className="question-display">
       <div className="question-display-content">
         <div className="question-card">
           <div className="round-info">
             <h2>Runda {currentRound}</h2>
+          </div>
+
+          <div className="category-info">
+            <span className="category-emoji">{categoryInfo.emoji}</span>
+            <div className="category-text">
+              <h3 className="category-name">{categoryInfo.name}</h3>
+              <p className="category-description">{categoryInfo.description}</p>
+            </div>
           </div>
 
           <div className="answerer-info">

@@ -79,6 +79,40 @@
   margin-bottom: var(--spacing-xl);
 }
 
+.category-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-bg-light);
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-lg);
+  border: 2px solid var(--color-primary-light);
+}
+
+.category-emoji {
+  font-size: var(--font-size-xxxl);
+  flex-shrink: 0;
+}
+
+.category-text {
+  flex-grow: 1;
+}
+
+.category-name {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.category-description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
 .answerer-info {
   display: flex;
   align-items: center;

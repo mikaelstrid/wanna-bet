@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Vilket djur är världens största landlevande däggdjur?",
+    "answer": "Elefanten",
+    "category": "nature"
+  },
+  {
+    "question": "Hur många hjärtan har en bläckfisk?",
+    "answer": "3 (tre)",
+    "category": "nature"
+  },
+  {
+    "question": "Vilket är världens snabbaste landdjur?",
+    "answer": "Geparden",
+    "category": "nature"
+  },
+  {
+    "question": "Vad kallas Sveriges nationalfågel?",
+    "answer": "Koltrasten",
+    "category": "nature"
+  },
+  {
+    "question": "Hur länge kan en snigel sova?",
+    "answer": "Upp till 3 år",
+    "category": "nature"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Vilket är det kemiska tecknet för guld?",
+    "answer": "Au",
+    "category": "nature-science"
+  },
+  {
+    "question": "Vilken planet är närmast solen?",
+    "answer": "Merkurius",
+    "category": "nature-science"
+  },
+  {
+    "question": "Hur många ben har en vuxen människa?",
+    "answer": "206",
+    "category": "nature-science"
+  },
+  {
+    "question": "Vad kallas det när vatten övergår från flytande till gasform?",
+    "answer": "Avdunstning (eller förångning)",
+    "category": "nature-science"
+  },
+  {
+    "question": "Vilket är det största organet i människokroppen?",
+    "answer": "Huden",
+    "category": "nature-science"
+  }
+]

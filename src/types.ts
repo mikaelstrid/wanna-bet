@@ -1,4 +1,20 @@
-export type QuestionCategory = 'geography';
+export type QuestionCategory = 
+  | 'geography'
+  | 'history-and-society'
+  | 'popculture'
+  | 'nature-science'
+  | 'technology-and-innovation'
+  | 'trivia'
+  | 'sports-and-leisure'
+  | 'food-drinks-culture'
+  | 'nature'
+  | 'logic-and-puzzles';
+
+export interface CategoryInfo {
+  name: string;
+  emoji: string;
+  description: string;
+}
 
 export interface Question {
   question: string;

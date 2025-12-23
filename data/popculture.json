@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Vem spelade huvudrollen som Jack i filmen Titanic?",
+    "answer": "Leonardo DiCaprio",
+    "category": "popculture"
+  },
+  {
+    "question": "Vilken svensk artist hade en stor hit med låten 'Dancing Queen'?",
+    "answer": "ABBA",
+    "category": "popculture"
+  },
+  {
+    "question": "Vad heter den mest spelade låten på Spotify genom tiderna?",
+    "answer": "Blinding Lights (av The Weeknd)",
+    "category": "popculture"
+  },
+  {
+    "question": "Vem vann Eurovision Song Contest för Sverige 2015?",
+    "answer": "Måns Zelmerlöw",
+    "category": "popculture"
+  },
+  {
+    "question": "Vad heter den svenska tv-serien om en polis i Ystad?",
+    "answer": "Wallander",
+    "category": "popculture"
+  }
+]
