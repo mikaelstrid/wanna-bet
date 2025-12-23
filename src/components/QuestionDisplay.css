@@ -6,6 +6,19 @@
   max-width: 600px;
   margin: 0 auto;
   position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-display-content {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
 }
 
 .correct-animation {
@@ -62,12 +75,8 @@
 }
 
 .question-card {
-  background: white;
-  border: 2px solid #ddd;
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
   flex-grow: 1;
+  margin-bottom: 2rem;
 }
 
 .answerer-info {
@@ -76,8 +85,9 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem;
-  background: #ecf0f1;
-  border-radius: 8px;
+  background: #fff3cd;
+  border: 2px solid #f39c12;
+  border-radius: 12px;
   margin-bottom: 1.5rem;
 }
 
@@ -89,7 +99,7 @@
 .answerer-name {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #3498db;
+  color: #f39c12;
 }
 
 .question-section,

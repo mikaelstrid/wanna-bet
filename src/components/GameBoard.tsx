@@ -18,37 +18,39 @@ export default function GameBoard({
 }: GameBoardProps) {
   return (
     <div className="game-board">
-      <div className="round-info">
-        <h2>Runda {currentRound}</h2>
-      </div>
-      
-      <div className="players-grid">
-        {players.map((player, index) => (
-          <div key={index} className="player-card">
-            <div className="player-name">{player.name}</div>
-            <div className="coins">
-              <span className="coin-icon">🪙</span>
-              <span className="coin-count">{player.coins}</span>
-            </div>
-          </div>
-        ))}
-      </div>
-      
-      <div className="turn-info">
-        <div className="turn-card">
-          <div className="turn-label">Svarar:</div>
-          <div className="turn-player answerer">{answererName}</div>
+      <div className="game-board-content">
+        <div className="round-info">
+          <h2>Runda {currentRound}</h2>
         </div>
         
-        <div className="turn-card">
-          <div className="turn-label">Frågar:</div>
-          <div className="turn-player asker">{askerName}</div>
+        <div className="players-grid">
+          {players.map((player, index) => (
+            <div key={index} className="player-card">
+              <div className="player-name">{player.name}</div>
+              <div className="coins">
+                <span className="coin-icon">🪙</span>
+                <span className="coin-count">{player.coins}</span>
+              </div>
+            </div>
+          ))}
         </div>
+        
+        <div className="turn-info">
+          <div className="turn-card">
+            <div className="turn-label">Svarar:</div>
+            <div className="turn-player answerer">{answererName}</div>
+          </div>
+          
+          <div className="turn-card">
+            <div className="turn-label">Frågar:</div>
+            <div className="turn-player asker">{askerName}</div>
+          </div>
+        </div>
+        
+        <button className="btn-primary btn-show-question" onClick={onShowQuestion}>
+          Visa fråga
+        </button>
       </div>
-      
-      <button className="btn-primary btn-show-question" onClick={onShowQuestion}>
-        Visa fråga
-      </button>
     </div>
   );
 }

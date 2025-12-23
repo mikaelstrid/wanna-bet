@@ -44,36 +44,38 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
 
   return (
     <div className="player-registration">
-      <h2>Spelare</h2>
-      <p className="instruction">Fyll i namnen på 2-4 spelare (lämna tomma fält för färre spelare)</p>
-      
-      <form onSubmit={handleSubmit}>
-        {playerNames.map((name, index) => (
-          <div key={index} className="input-group">
-            <label htmlFor={`player-${index}`}>Spelare {index + 1}</label>
-            <input
-              id={`player-${index}`}
-              type="text"
-              value={name}
-              onChange={(e) => handleNameChange(index, e.target.value)}
-              placeholder={`Namn på spelare ${index + 1}`}
-              maxLength={20}
-            />
-          </div>
-        ))}
+      <div className="registration-content">
+        <h2>Spelare</h2>
+        <p className="instruction">Fyll i namnen på 2-4 spelare (lämna tomma fält för färre spelare)</p>
         
-        {errors.length > 0 && (
-          <div className="error-messages">
-            {errors.map((error, index) => (
-              <p key={index} className="error">{error}</p>
-            ))}
-          </div>
-        )}
-        
-        <button type="submit" className="btn-primary">
-          Starta spel
-        </button>
-      </form>
+        <form onSubmit={handleSubmit}>
+          {playerNames.map((name, index) => (
+            <div key={index} className="input-group">
+              <label htmlFor={`player-${index}`}>Spelare {index + 1}</label>
+              <input
+                id={`player-${index}`}
+                type="text"
+                value={name}
+                onChange={(e) => handleNameChange(index, e.target.value)}
+                placeholder={`Namn på spelare ${index + 1}`}
+                maxLength={20}
+              />
+            </div>
+          ))}
+          
+          {errors.length > 0 && (
+            <div className="error-messages">
+              {errors.map((error, index) => (
+                <p key={index} className="error">{error}</p>
+              ))}
+            </div>
+          )}
+          
+          <button type="submit" className="btn-primary">
+            Starta spel
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

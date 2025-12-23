@@ -5,6 +5,16 @@
   min-height: 100vh;
   max-width: 600px;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-board-content {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .round-info {
@@ -26,8 +36,8 @@
 }
 
 .player-card {
-  background: white;
-  border: 2px solid #ddd;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
   border-radius: 12px;
   padding: 1rem;
   text-align: center;
@@ -65,7 +75,8 @@
 }
 
 .turn-card {
-  background: #ecf0f1;
+  background: #fff3cd;
+  border: 2px solid #f39c12;
   border-radius: 12px;
   padding: 1rem;
   text-align: center;
@@ -83,11 +94,11 @@
 }
 
 .turn-player.answerer {
-  color: #3498db;
+  color: #f39c12;
 }
 
 .turn-player.asker {
-  color: #9b59b6;
+  color: #f39c12;
 }
 
 .btn-show-question {
