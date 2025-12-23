@@ -213,3 +213,25 @@
 .btn-incorrect:active {
   transform: scale(0.95);
 }
+
+.btn-show-answer {
+  grid-column: 1 / -1;
+  padding: var(--spacing-lg);
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-show-answer:hover {
+  background: var(--color-primary-dark);
+  transform: scale(1.05);
+}
+
+.btn-show-answer:active {
+  transform: scale(0.95);
+}

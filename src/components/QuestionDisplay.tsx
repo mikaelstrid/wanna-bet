@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { Question } from '../types';
 import { categoryMetadata } from '../categoryMetadata';
 import './QuestionDisplay.css';
@@ -17,6 +18,7 @@ export default function QuestionDisplay({
   onCorrect, 
   onIncorrect 
 }: QuestionDisplayProps) {
+  const [isAnswerRevealed, setIsAnswerRevealed] = useState(false);
   const categoryInfo = categoryMetadata[question.category];
   
   return (
@@ -43,19 +45,32 @@ export default function QuestionDisplay({
             <p className="question-text">{question.question}</p>
           </div>
           
-          <div className="answer-section">
-            <h3 className="answer-label">Svar:</h3>
-            <p className="answer-text">{question.answer}</p>
-          </div>
+          {isAnswerRevealed && (
+            <div className="answer-section">
+              <h3 className="answer-label">Svar:</h3>
+              <p className="answer-text">{question.answer}</p>
+            </div>
+          )}
         </div>
         
         <div className="action-buttons">
-          <button className="btn-correct" onClick={onCorrect}>
-            ✓ Rätt
-          </button>
-          <button className="btn-incorrect" onClick={onIncorrect}>
-            ✗ Fel
-          </button>
+          {!isAnswerRevealed ? (
+            <button 
+              className="btn-show-answer" 
+              onClick={() => setIsAnswerRevealed(true)}
+            >
+              Visa svar
+            </button>
+          ) : (
+            <>
+              <button className="btn-correct" onClick={onCorrect}>
+                ✓ Rätt
+              </button>
+              <button className="btn-incorrect" onClick={onIncorrect}>
+                ✗ Fel
+              </button>
+            </>
+          )}
         </div>
       </div>
     </div>
