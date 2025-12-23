@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import type { GameState, Question, Player, RoundQuestion } from './types';
+import type { GameState, Question, Player } from './types';
 import { saveGameState, loadGameState, clearGameState } from './utils/storage';
 import { generateRoundQuestions, shuffleArray } from './utils/gameLogic';
 import WelcomeScreen from './components/WelcomeScreen';

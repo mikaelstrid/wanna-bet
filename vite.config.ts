@@ -5,7 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/wanna-bet/',
   plugins: [react()],
-  test: {
-    globals: true,
-  },
 })
