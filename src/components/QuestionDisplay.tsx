@@ -31,12 +31,10 @@ export default function QuestionDisplay({
             <span className="category-emoji">{categoryInfo.emoji}</span>
             <div className="category-text">
               <h3 className="category-name">{categoryInfo.name}</h3>
-              <p className="category-description">{categoryInfo.description}</p>
             </div>
           </div>
 
           <div className="answerer-info">
-            <span className="answerer-label">Svarar:</span>
             <span className="answerer-name">{answererName}</span>
           </div>
           

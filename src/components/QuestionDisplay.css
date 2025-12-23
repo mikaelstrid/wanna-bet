@@ -91,19 +91,23 @@
 }
 
 .category-emoji {
-  font-size: var(--font-size-xxxl);
+  font-size: 2rem;
   flex-shrink: 0;
+  line-height: 1;
 }
 
 .category-text {
   flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 .category-name {
   font-size: var(--font-size-lg);
   font-weight: bold;
   color: var(--color-primary);
-  margin: 0 0 var(--spacing-xs) 0;
+  margin: 0;
+  line-height: 1;
 }
 
 .category-description {
