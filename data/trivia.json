@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Hur många bokstäver finns det i det svenska alfabetet?",
+    "answer": "29",
+    "category": "trivia"
+  },
+  {
+    "question": "Vad heter världens längsta ord i svenska språket?",
+    "answer": "Nordöstersjökustartilleriflygspaningssimulatoranläggningsmaterielunderhållsuppföljningssystemdiskussionsinläggsförberedelsearbeten",
+    "category": "trivia"
+  },
+  {
+    "question": "Vilket år grundades Google?",
+    "answer": "1998",
+    "category": "trivia"
+  },
+  {
+    "question": "Hur många timmar är ett dygn?",
+    "answer": "24",
+    "category": "trivia"
+  },
+  {
+    "question": "Vad kallas frukten som växer på ekträd?",
+    "answer": "Ekollon",
+    "category": "trivia"
+  }
+]

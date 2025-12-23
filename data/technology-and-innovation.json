@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Vem grundade företaget Apple tillsammans med Steve Jobs?",
+    "answer": "Steve Wozniak",
+    "category": "technology-and-innovation"
+  },
+  {
+    "question": "Vad står AI för inom teknikområdet?",
+    "answer": "Artificiell Intelligens (Artificial Intelligence)",
+    "category": "technology-and-innovation"
+  },
+  {
+    "question": "Vilket år lanserades första iPhone?",
+    "answer": "2007",
+    "category": "technology-and-innovation"
+  },
+  {
+    "question": "Vad heter programmeringsspråket som används för att skapa webbsidor?",
+    "answer": "HTML (HyperText Markup Language)",
+    "category": "technology-and-innovation"
+  },
+  {
+    "question": "Vem uppfann glödlampan?",
+    "answer": "Thomas Edison",
+    "category": "technology-and-innovation"
+  }
+]
