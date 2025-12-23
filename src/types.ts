@@ -41,7 +41,6 @@ export interface GameState {
   currentRound: number;
   currentQuestionInRound: number;
   roundQuestions: RoundQuestion[];
-  shuffledQuestions: Question[];
-  questionIndex: number;
+  usedQuestions: string[]; // Array of question texts that have been used
   lastScoredPlayerId: number | null;
 }
