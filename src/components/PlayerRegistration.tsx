@@ -46,7 +46,7 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
     <div className="player-registration">
       <div className="registration-content">
         <h2>Spelare</h2>
-        <p className="instruction">Fyll i namnen på 2-4 spelare (lämna tomma fält för färre spelare)</p>
+        <p className="instruction">Fyll i namnen på 2-4 spelare.</p>
         
         <form onSubmit={handleSubmit}>
           {playerNames.map((name, index) => (
@@ -57,7 +57,6 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
                 type="text"
                 value={name}
                 onChange={(e) => handleNameChange(index, e.target.value)}
-                placeholder={`Namn på spelare ${index + 1}`}
                 maxLength={20}
               />
             </div>
@@ -72,7 +71,7 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
           )}
           
           <button type="submit" className="btn-primary">
-            Starta spel
+            Starta spelet
           </button>
         </form>
       </div>
