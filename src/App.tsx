@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import './App.css';
 import type { GameState, Question, Player } from './types';
 import { saveGameState, loadGameState, clearGameState } from './utils/storage';
-import { generateRoundQuestions, shuffleArray } from './utils/gameLogic';
+import { generateRoundQuestions, groupQuestionsByCategory } from './utils/gameLogic';
 import WelcomeScreen from './components/WelcomeScreen';
 import PlayerRegistration from './components/PlayerRegistration';
 import GameBoard from './components/GameBoard';
@@ -44,11 +44,13 @@ function App() {
       currentRound: 0,
       currentQuestionInRound: 0,
       roundQuestions: [],
-      shuffledQuestions: [],
-      questionIndex: 0,
+      usedQuestions: [],
       lastScoredPlayerId: null,
     };
   });
+
+  // Group questions by category (memoized)
+  const questionsByCategory = useMemo(() => groupQuestionsByCategory(questionsData), []);
 
   // Save to localStorage whenever game state changes
   useEffect(() => {
@@ -63,8 +65,8 @@ function App() {
 
   const handleStartGame = (playerNames: string[]) => {
     const players: Player[] = playerNames.map(name => ({ name, coins: 0 }));
-    const shuffled = shuffleArray(questionsData);
-    const roundQuestions = generateRoundQuestions(shuffled, 0, players.length);
+    const usedQuestions = new Set<string>();
+    const roundQuestions = generateRoundQuestions(questionsByCategory, usedQuestions, players.length);
     
     setGameState({
       ...gameState,
@@ -73,8 +75,7 @@ function App() {
       currentRound: 1,
       currentQuestionInRound: 0,
       roundQuestions,
-      shuffledQuestions: shuffled,
-      questionIndex: 0,
+      usedQuestions: Array.from(usedQuestions),
       lastScoredPlayerId: null,
     });
   };
@@ -113,10 +114,10 @@ function App() {
     
     if (nextQuestionInRound >= numPlayers) {
       // Start new round
-      const nextQuestionIndex = gameState.questionIndex + numPlayers;
+      const usedQuestions = new Set<string>(gameState.usedQuestions);
       const newRoundQuestions = generateRoundQuestions(
-        gameState.shuffledQuestions,
-        nextQuestionIndex,
+        questionsByCategory,
+        usedQuestions,
         numPlayers
       );
       
@@ -127,7 +128,7 @@ function App() {
         currentRound: gameState.currentRound + 1,
         currentQuestionInRound: 0,
         roundQuestions: newRoundQuestions,
-        questionIndex: nextQuestionIndex,
+        usedQuestions: Array.from(usedQuestions),
         lastScoredPlayerId: scoredPlayerId,
       });
     } else {
@@ -150,8 +151,7 @@ function App() {
       currentRound: 0,
       currentQuestionInRound: 0,
       roundQuestions: [],
-      shuffledQuestions: [],
-      questionIndex: 0,
+      usedQuestions: [],
       lastScoredPlayerId: null,
     });
   };
