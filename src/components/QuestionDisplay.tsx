@@ -2,13 +2,15 @@ import type { Question } from '../types';
 import './QuestionDisplay.css';
 
 interface QuestionDisplayProps {
+  currentRound: number;
   question: Question;
   answererName: string;
   onCorrect: () => void;
   onIncorrect: () => void;
 }
 
-export default function QuestionDisplay({ 
+export default function QuestionDisplay({
+  currentRound, 
   question, 
   answererName, 
   onCorrect, 
@@ -18,6 +20,10 @@ export default function QuestionDisplay({
     <div className="question-display">
       <div className="question-display-content">
         <div className="question-card">
+          <div className="round-info">
+            <h2>Runda {currentRound}</h2>
+          </div>
+
           <div className="answerer-info">
             <span className="answerer-label">Svarar:</span>
             <span className="answerer-name">{answererName}</span>

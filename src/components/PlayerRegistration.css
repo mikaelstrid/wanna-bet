@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--spacing-xl);
+  padding: var(--spacing-md);
   max-width: 500px;
   margin: 0 auto;
   min-height: 100vh;
@@ -12,7 +12,7 @@
 .registration-content {
   background: var(--color-bg-white);
   border-radius: var(--border-radius-lg);
-  padding: var(--spacing-2xl) var(--spacing-xl);
+  padding: var(--spacing-xl) var(--spacing-md);
   width: 100%;
   box-shadow: var(--shadow-md);
 }

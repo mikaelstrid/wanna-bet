@@ -4,14 +4,14 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: var(--spacing-xl);
+  padding: var(--spacing-md);
   text-align: center;
 }
 
 .welcome-content {
   background: var(--color-bg-white);
   border-radius: var(--border-radius-lg);
-  padding: var(--spacing-2xl) var(--spacing-xl);
+  padding: var(--spacing-xl) var(--spacing-md);
   max-width: 500px;
   width: 100%;
   box-shadow: var(--shadow-md);

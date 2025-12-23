@@ -160,6 +160,7 @@ function App() {
     const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
     return (
       <QuestionDisplay
+        currentRound={gameState.currentRound}
         question={currentQuestion.question}
         answererName={gameState.players[currentQuestion.answererId].name}
         onCorrect={() => handleAnswerResult(true)}
