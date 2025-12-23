@@ -1,0 +1,23 @@
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.game-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #555;
+  max-width: 500px;
+}

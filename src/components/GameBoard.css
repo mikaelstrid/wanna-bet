@@ -1,0 +1,95 @@
+.game-board {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  min-height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.round-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.round-info h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.player-card {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.player-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.coins {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.coin-icon {
+  font-size: 2rem;
+}
+
+.coin-count {
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.turn-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.turn-card {
+  background: #ecf0f1;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.turn-label {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.turn-player {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.turn-player.answerer {
+  color: #3498db;
+}
+
+.turn-player.asker {
+  color: #9b59b6;
+}
+
+.btn-show-question {
+  margin-top: auto;
+}
