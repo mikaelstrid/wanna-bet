@@ -15,6 +15,12 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
     setPlayerNames(newNames);
   };
 
+  const handleNameBlur = (index: number) => {
+    const newNames = [...playerNames];
+    newNames[index] = newNames[index].trim();
+    setPlayerNames(newNames);
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -57,6 +63,7 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
                 type="text"
                 value={name}
                 onChange={(e) => handleNameChange(index, e.target.value)}
+                onBlur={() => handleNameBlur(index)}
                 maxLength={20}
               />
             </div>
