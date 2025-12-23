@@ -91,6 +91,7 @@
 .player-name {
   text-align: left;
   color: var(--color-text-primary);
+  margin: 0;
 }
 
 .player-coins {
@@ -103,6 +104,7 @@
 
 .coin-icon {
   font-size: var(--font-size-xl);
+  line-height: 1;
 }
 
 .btn-restart {
