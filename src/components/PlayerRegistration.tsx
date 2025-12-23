@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { loadPlayerNames, savePlayerNames } from '../utils/storage';
 import './PlayerRegistration.css';
 
@@ -51,17 +51,19 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
     onStartGame(filledNames);
   };
 
-  // Get filtered suggestions for a specific input field
+  // Memoize filtered suggestions for each input field
   // Exclude names that are already filled in other input fields (case-insensitive)
-  const getFilteredSuggestions = (currentIndex: number): string[] => {
-    const filledNames = playerNames
-      .map((name, idx) => (idx !== currentIndex ? name.trim().toLowerCase() : ''))
-      .filter(name => name !== '');
-    
-    return savedNames.filter(
-      savedName => !filledNames.includes(savedName.toLowerCase())
-    );
-  };
+  const filteredSuggestionsPerField = useMemo(() => {
+    return playerNames.map((_, currentIndex) => {
+      const filledNames = playerNames
+        .map((name, idx) => (idx !== currentIndex ? name.trim().toLowerCase() : ''))
+        .filter(name => name !== '');
+      
+      return savedNames.filter(
+        savedName => !filledNames.includes(savedName.toLowerCase())
+      );
+    });
+  }, [playerNames, savedNames]);
 
   return (
     <div className="player-registration">
@@ -71,7 +73,7 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
         
         <form onSubmit={handleSubmit}>
           {playerNames.map((name, index) => {
-            const filteredSuggestions = getFilteredSuggestions(index);
+            const filteredSuggestions = filteredSuggestionsPerField[index];
             return (
               <div key={index} className="input-group">
                 <label htmlFor={`player-${index}`}>Spelare {index + 1}</label>
