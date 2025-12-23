@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: var(--spacing-xl);
   max-width: 500px;
   margin: 0 auto;
   min-height: 100vh;
@@ -10,23 +10,23 @@
 }
 
 .registration-content {
-  background: white;
-  border-radius: 20px;
-  padding: 3rem 2rem;
+  background: var(--color-bg-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-2xl) var(--spacing-xl);
   width: 100%;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-md);
 }
 
 .player-registration h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #2c3e50;
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-primary);
   text-align: center;
 }
 
 .instruction {
-  color: #555;
-  margin-bottom: 2rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
   text-align: center;
 }
 
@@ -35,37 +35,37 @@
 }
 
 .input-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-lg);
   width: 100%;
 }
 
 .input-group label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-sm);
   font-weight: 500;
-  color: #2c3e50;
+  color: var(--color-text-primary);
 }
 
 .input-group input {
   width: 100%;
   padding: 0.75rem;
-  font-size: 1rem;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  transition: border-color 0.3s;
+  font-size: var(--font-size-base);
+  border: 2px solid var(--color-border-light);
+  border-radius: var(--border-radius-sm);
+  transition: border-color var(--transition-fast);
 }
 
 .input-group input:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: var(--color-primary);
 }
 
 .error-messages {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-md);
 }
 
 .error {
-  color: #e74c3c;
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
+  color: var(--color-error);
+  margin: var(--spacing-sm) 0;
+  font-size: var(--font-size-sm);
 }

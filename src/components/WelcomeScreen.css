@@ -4,29 +4,29 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 2rem;
+  padding: var(--spacing-xl);
   text-align: center;
 }
 
 .welcome-content {
-  background: white;
-  border-radius: 20px;
-  padding: 3rem 2rem;
+  background: var(--color-bg-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-2xl) var(--spacing-xl);
   max-width: 500px;
   width: 100%;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-md);
 }
 
 .game-title {
-  font-size: 3rem;
+  font-size: var(--font-size-5xl);
   font-weight: bold;
-  margin-bottom: 1rem;
-  color: #2c3e50;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
 }
 
 .welcome-text {
-  font-size: 1.2rem;
-  margin-bottom: 3rem;
-  color: #555;
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-2xl);
+  color: var(--color-text-secondary);
   max-width: 500px;
 }

@@ -3,22 +3,22 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: var(--spacing-xl);
+  background: var(--gradient-purple);
 }
 
 .victory-content {
-  background: white;
-  border-radius: 20px;
-  padding: 3rem 2rem;
+  background: var(--color-bg-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-2xl) var(--spacing-xl);
   text-align: center;
   max-width: 500px;
   width: 100%;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-md);
 }
 
 .trophy {
-  font-size: 6rem;
+  font-size: var(--font-size-huge);
   animation: trophyBounce 1s ease-in-out infinite;
 }
 
@@ -32,80 +32,80 @@
 }
 
 .victory-title {
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin: 1rem 0 0.5rem;
+  font-size: var(--font-size-4xl);
+  color: var(--color-text-primary);
+  margin: var(--spacing-md) 0 var(--spacing-sm);
 }
 
 .winner-name {
-  font-size: 2rem;
-  color: #f39c12;
-  margin: 0.5rem 0;
+  font-size: var(--font-size-3xl);
+  color: var(--color-accent);
+  margin: var(--spacing-sm) 0;
   font-weight: bold;
 }
 
 .victory-message {
-  font-size: 1.3rem;
-  color: #555;
-  margin-bottom: 2rem;
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
 }
 
 .final-scores {
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-xl);
 }
 
 .final-scores h3 {
-  font-size: 1.5rem;
-  color: #2c3e50;
-  margin-bottom: 1rem;
+  font-size: var(--font-size-2xl);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-md);
 }
 
 .scores-list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--spacing-sm);
 }
 
 .score-item {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 1rem;
-  padding: 0.75rem 1rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-  font-size: 1.1rem;
+  gap: var(--spacing-md);
+  padding: 0.75rem var(--spacing-md);
+  background: var(--color-bg-light);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-md);
 }
 
 .score-item.winner-score {
-  background: #fff3cd;
-  border: 2px solid #f39c12;
+  background: var(--color-bg-highlight);
+  border: 2px solid var(--color-accent);
   font-weight: bold;
 }
 
 .player-position {
-  color: #7f8c8d;
+  color: var(--color-text-muted);
   font-weight: bold;
 }
 
 .player-name {
   text-align: left;
-  color: #2c3e50;
+  color: var(--color-text-primary);
 }
 
 .player-coins {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
-  color: #f39c12;
+  gap: var(--spacing-xs);
+  color: var(--color-accent);
   font-weight: bold;
 }
 
 .coin-icon {
-  font-size: 1.3rem;
+  font-size: var(--font-size-xl);
 }
 
 .btn-restart {
   width: 100%;
-  margin-top: 1rem;
+  margin-top: var(--spacing-md);
 }

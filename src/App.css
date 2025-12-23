@@ -7,29 +7,29 @@
 #root {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-purple);
   background-attachment: fixed;
 }
 
 .btn-primary {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: var(--font-size-lg);
   font-weight: bold;
   color: white;
-  background: #3498db;
+  background: var(--color-primary);
   border: none;
-  border-radius: 12px;
+  border-radius: var(--border-radius-md);
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all var(--transition-fast);
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-primary:hover {
-  background: #2980b9;
+  background: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(52, 152, 219, 0.4);
+  box-shadow: var(--shadow-sm-hover);
 }
 
 .btn-primary:active {
@@ -38,8 +38,8 @@
 
 @media (max-width: 768px) {
   .btn-primary {
-    padding: 1.2rem 2rem;
-    font-size: 1.3rem;
+    padding: 1.2rem var(--spacing-xl);
+    font-size: var(--font-size-xl);
   }
 }
 
