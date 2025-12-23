@@ -37,12 +37,12 @@ export default function GameBoard({
         
         <div className="turn-info">
           <div className="turn-card">
-            <div className="turn-label">Svarar:</div>
+            <div className="turn-label answerer-label">Nästa spelare</div>
             <div className="turn-player answerer">{answererName}</div>
           </div>
           
           <div className="turn-card">
-            <div className="turn-label">Frågar:</div>
+            <div className="turn-label">Frågeställare</div>
             <div className="turn-player asker">{askerName}</div>
           </div>
         </div>
