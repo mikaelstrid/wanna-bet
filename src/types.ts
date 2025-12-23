@@ -27,5 +27,5 @@ export interface GameState {
   roundQuestions: RoundQuestion[];
   shuffledQuestions: Question[];
   questionIndex: number;
-  showCorrectAnimation: boolean;
+  lastScoredPlayerId: number | null;
 }

@@ -6,6 +6,7 @@ interface GameBoardProps {
   currentRound: number;
   answererName: string;
   askerName: string;
+  lastScoredPlayerId: number | null;
   onShowQuestion: () => void;
 }
 
@@ -14,6 +15,7 @@ export default function GameBoard({
   currentRound, 
   answererName, 
   askerName, 
+  lastScoredPlayerId,
   onShowQuestion 
 }: GameBoardProps) {
   return (
@@ -28,8 +30,8 @@ export default function GameBoard({
             <div key={index} className="player-card">
               <div className="player-name">{player.name}</div>
               <div className="coins">
-                <span className="coin-icon">🪙</span>
-                <span className="coin-count">{player.coins}</span>
+                <span className={`coin-icon ${lastScoredPlayerId === index ? 'coin-spin' : ''}`}>🪙</span>
+                <span className={`coin-count ${lastScoredPlayerId === index ? 'count-up' : ''}`}>{player.coins}</span>
               </div>
             </div>
           ))}

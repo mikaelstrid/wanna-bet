@@ -23,7 +23,7 @@ function App() {
       roundQuestions: [],
       shuffledQuestions: [],
       questionIndex: 0,
-      showCorrectAnimation: false,
+      lastScoredPlayerId: null,
     };
   });
 
@@ -52,45 +52,39 @@ function App() {
       roundQuestions,
       shuffledQuestions: shuffled,
       questionIndex: 0,
+      lastScoredPlayerId: null,
     });
   };
 
   const handleShowQuestion = () => {
-    setGameState({ ...gameState, screen: 'question' });
+    setGameState({ ...gameState, screen: 'question', lastScoredPlayerId: null });
   };
 
   const handleAnswerResult = (isCorrect: boolean) => {
     if (isCorrect) {
-      // Show animation
-      setGameState({ ...gameState, showCorrectAnimation: true });
+      const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
+      const newPlayers = [...gameState.players];
+      newPlayers[currentQuestion.answererId].coins += 1;
       
-      // Wait for animation, then update score
-      setTimeout(() => {
-        const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
-        const newPlayers = [...gameState.players];
-        newPlayers[currentQuestion.answererId].coins += 1;
-        
-        // Check for winner
-        const winner = newPlayers.find(p => p.coins >= WINNING_COINS);
-        if (winner) {
-          setGameState({
-            ...gameState,
-            players: newPlayers,
-            screen: 'victory',
-            showCorrectAnimation: false,
-          });
-          return;
-        }
-        
-        moveToNextQuestion(newPlayers);
-      }, 1000);
+      // Check for winner
+      const winner = newPlayers.find(p => p.coins >= WINNING_COINS);
+      if (winner) {
+        setGameState({
+          ...gameState,
+          players: newPlayers,
+          screen: 'victory',
+          lastScoredPlayerId: null,
+        });
+        return;
+      }
+      
+      moveToNextQuestion(newPlayers, currentQuestion.answererId);
     } else {
-      // No animation for incorrect
-      moveToNextQuestion(gameState.players);
+      moveToNextQuestion(gameState.players, null);
     }
   };
 
-  const moveToNextQuestion = (updatedPlayers: Player[]) => {
+  const moveToNextQuestion = (updatedPlayers: Player[], scoredPlayerId: number | null) => {
     const nextQuestionInRound = gameState.currentQuestionInRound + 1;
     const numPlayers = gameState.players.length;
     
@@ -111,7 +105,7 @@ function App() {
         currentQuestionInRound: 0,
         roundQuestions: newRoundQuestions,
         questionIndex: nextQuestionIndex,
-        showCorrectAnimation: false,
+        lastScoredPlayerId: scoredPlayerId,
       });
     } else {
       // Next question in same round
@@ -120,7 +114,7 @@ function App() {
         players: updatedPlayers,
         screen: 'game',
         currentQuestionInRound: nextQuestionInRound,
-        showCorrectAnimation: false,
+        lastScoredPlayerId: scoredPlayerId,
       });
     }
   };
@@ -135,7 +129,7 @@ function App() {
       roundQuestions: [],
       shuffledQuestions: [],
       questionIndex: 0,
-      showCorrectAnimation: false,
+      lastScoredPlayerId: null,
     });
   };
 
@@ -156,6 +150,7 @@ function App() {
         currentRound={gameState.currentRound}
         answererName={gameState.players[currentQuestion.answererId].name}
         askerName={gameState.players[currentQuestion.askerId].name}
+        lastScoredPlayerId={gameState.lastScoredPlayerId}
         onShowQuestion={handleShowQuestion}
       />
     );
@@ -167,7 +162,6 @@ function App() {
       <QuestionDisplay
         question={currentQuestion.question}
         answererName={gameState.players[currentQuestion.answererId].name}
-        showCorrectAnimation={gameState.showCorrectAnimation}
         onCorrect={() => handleAnswerResult(true)}
         onIncorrect={() => handleAnswerResult(false)}
       />

@@ -4,7 +4,6 @@ import './QuestionDisplay.css';
 interface QuestionDisplayProps {
   question: Question;
   answererName: string;
-  showCorrectAnimation: boolean;
   onCorrect: () => void;
   onIncorrect: () => void;
 }
@@ -12,18 +11,11 @@ interface QuestionDisplayProps {
 export default function QuestionDisplay({ 
   question, 
   answererName, 
-  showCorrectAnimation,
   onCorrect, 
   onIncorrect 
 }: QuestionDisplayProps) {
   return (
     <div className="question-display">
-      {showCorrectAnimation && (
-        <div className="correct-animation">
-          <div className="celebration">🎉</div>
-        </div>
-      )}
-      
       <div className="question-display-content">
         <div className="question-card">
           <div className="answerer-info">
