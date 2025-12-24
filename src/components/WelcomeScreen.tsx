@@ -23,7 +23,7 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
           </div>
           <div className="badge">
             <span className="badge-icon">🏅</span>
-            <span className="badge-text">Första till 3 vinner</span>
+            <span className="badge-text">Först till 3 vinner</span>
           </div>
         </div>
         

@@ -5,9 +5,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: var(--color-text-light);
-  background: var(--gradient-purple);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,11 +20,12 @@
 }
 
 body {
+  color: var(--color-text-light);
+  background: var(--gradient-purple);
+  background-attachment: fixed;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: var(--gradient-purple);
-  background-attachment: fixed;
 }
 
 button {

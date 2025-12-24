@@ -6,7 +6,6 @@
   min-height: 100vh;
   padding: var(--spacing-md);
   text-align: center;
-  background: var(--gradient-purple);
   position: relative;
   overflow: hidden;
 }

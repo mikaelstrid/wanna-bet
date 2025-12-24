@@ -7,8 +7,6 @@
 #root {
   width: 100%;
   min-height: 100vh;
-  background: var(--gradient-purple);
-  background-attachment: fixed;
 }
 
 .btn-primary {
