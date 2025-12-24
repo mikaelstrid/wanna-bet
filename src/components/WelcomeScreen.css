@@ -5,8 +5,8 @@
   justify-content: center;
   min-height: 100vh;
   /* Add safe area padding for iOS - use max to combine with default spacing */
-  padding-left: var(--spacing-md);
-  padding-right: var(--spacing-md);
+  padding-left: max(var(--spacing-md), env(safe-area-inset-left));
+  padding-right: max(var(--spacing-md), env(safe-area-inset-right));
   padding-top: max(var(--spacing-md), env(safe-area-inset-top));
   padding-bottom: max(var(--spacing-md), env(safe-area-inset-bottom));
   text-align: center;
