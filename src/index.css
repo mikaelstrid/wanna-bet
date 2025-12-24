@@ -1,8 +1,8 @@
 @import './styles/variables.css';
 
-html {
+/* html {
   background: var(--gradient-purple);
-}
+} */
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -30,6 +30,10 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  padding-top: max(var(--spacing-md), env(safe-area-inset-top));
+  padding-bottom: max(var(--spacing-md), env(safe-area-inset-bottom));
+  padding-left: max(var(--spacing-md), env(safe-area-inset-left));
+  padding-right: max(var(--spacing-md), env(safe-area-inset-right));
 }
 
 button {
