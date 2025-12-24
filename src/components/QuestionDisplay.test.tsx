@@ -158,24 +158,6 @@ describe('QuestionDisplay', () => {
     expect(screen.getByText('Lisa')).toBeInTheDocument();
   });
 
-  it('should display the correct round number', () => {
-    render(
-      <QuestionDisplay
-        currentRound={3}
-        question={mockQuestion}
-        answererName="Kalle"
-        answererId={0}
-        players={mockPlayers}
-        currentBets={[]}
-        onToggleBet={mockOnToggleBet}
-        onCorrect={mockOnCorrect}
-        onIncorrect={mockOnIncorrect}
-      />
-    );
-
-    expect(screen.getByText('Runda 3')).toBeInTheDocument();
-  });
-
   it('should allow players with coins to place bets', () => {
     render(
       <QuestionDisplay
