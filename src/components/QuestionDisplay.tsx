@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Question } from '../types';
+import type { Question, Player } from '../types';
 import { categoryMetadata } from '../categoryMetadata';
 import './QuestionDisplay.css';
 
@@ -7,6 +7,10 @@ interface QuestionDisplayProps {
   currentRound: number;
   question: Question;
   answererName: string;
+  answererId: number;
+  players: Player[];
+  currentBets: number[];
+  onToggleBet: (playerId: number) => void;
   onCorrect: () => void;
   onIncorrect: () => void;
 }
@@ -14,12 +18,26 @@ interface QuestionDisplayProps {
 export default function QuestionDisplay({
   currentRound, 
   question, 
-  answererName, 
+  answererName,
+  answererId,
+  players,
+  currentBets,
+  onToggleBet,
   onCorrect, 
   onIncorrect 
 }: QuestionDisplayProps) {
   const [isAnswerRevealed, setIsAnswerRevealed] = useState(false);
+  const [showBettingPhase, setShowBettingPhase] = useState(true);
   const categoryInfo = categoryMetadata[question.category];
+  
+  // Get players who can bet (not the answerer)
+  const eligibleBettors = players
+    .map((player, index) => ({ ...player, id: index }))
+    .filter(player => player.id !== answererId);
+  
+  const handleContinueToBetting = () => {
+    setShowBettingPhase(false);
+  };
   
   return (
     <div className="question-display">
@@ -45,7 +63,30 @@ export default function QuestionDisplay({
             <p className="question-text">{question.question}</p>
           </div>
           
-          {isAnswerRevealed && (
+          {showBettingPhase && (
+            <div className="betting-section">
+              <h3 className="betting-header">Satsa ett 🪙 på att {answererName} inte klarar frågan</h3>
+              <div className="betting-players">
+                {eligibleBettors.map(player => (
+                  <div key={player.id} className="betting-player-card">
+                    <div className="betting-player-info">
+                      <span className="betting-player-name">{player.name}</span>
+                      <span className="betting-player-coins">🪙 {player.coins}</span>
+                    </div>
+                    <button
+                      className={`btn-bet ${currentBets.includes(player.id) ? 'bet-active' : ''}`}
+                      onClick={() => onToggleBet(player.id)}
+                      disabled={player.coins === 0}
+                    >
+                      {currentBets.includes(player.id) ? '✓ Satsat' : 'Satsa'}
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          
+          {!showBettingPhase && isAnswerRevealed && (
             <div className="answer-section">
               <h3 className="answer-label">Svar:</h3>
               <p className="answer-text">{question.answer}</p>
@@ -54,7 +95,14 @@ export default function QuestionDisplay({
         </div>
         
         <div className="action-buttons">
-          {!isAnswerRevealed ? (
+          {showBettingPhase ? (
+            <button 
+              className="btn-primary btn-continue" 
+              onClick={handleContinueToBetting}
+            >
+              Fortsätt
+            </button>
+          ) : !isAnswerRevealed ? (
             <button 
               className="btn-primary btn-show-answer" 
               onClick={() => setIsAnswerRevealed(true)}

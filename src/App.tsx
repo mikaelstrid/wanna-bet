@@ -46,6 +46,7 @@ function App() {
       roundQuestions: [],
       usedQuestions: [],
       lastScoredPlayerId: null,
+      currentBets: [],
     };
   });
 
@@ -77,18 +78,42 @@ function App() {
       roundQuestions,
       usedQuestions: Array.from(usedQuestions),
       lastScoredPlayerId: null,
+      currentBets: [],
     });
   };
 
   const handleShowQuestion = () => {
-    setGameState({ ...gameState, screen: 'question', lastScoredPlayerId: null });
+    setGameState({ ...gameState, screen: 'question', lastScoredPlayerId: null, currentBets: [] });
+  };
+
+  const handleToggleBet = (playerId: number) => {
+    const currentBets = [...gameState.currentBets];
+    const betIndex = currentBets.indexOf(playerId);
+    
+    if (betIndex >= 0) {
+      // Remove bet
+      currentBets.splice(betIndex, 1);
+    } else {
+      // Add bet
+      currentBets.push(playerId);
+    }
+    
+    setGameState({ ...gameState, currentBets });
   };
 
   const handleAnswerResult = (isCorrect: boolean) => {
+    const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
+    const newPlayers = [...gameState.players];
+    
     if (isCorrect) {
-      const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
-      const newPlayers = [...gameState.players];
-      newPlayers[currentQuestion.answererId].coins += 1;
+      // Answerer gets 1 coin plus all bet coins
+      const betCoins = gameState.currentBets.length;
+      newPlayers[currentQuestion.answererId].coins += 1 + betCoins;
+      
+      // Betting players lose their bet coins
+      gameState.currentBets.forEach(playerId => {
+        newPlayers[playerId].coins -= 1;
+      });
       
       // Check for winner
       const winner = newPlayers.find(p => p.coins >= WINNING_COINS);
@@ -98,13 +123,32 @@ function App() {
           players: newPlayers,
           screen: 'victory',
           lastScoredPlayerId: null,
+          currentBets: [],
         });
         return;
       }
       
       moveToNextQuestion(newPlayers, currentQuestion.answererId);
     } else {
-      moveToNextQuestion(gameState.players, null);
+      // Betting players get their coin back plus 1 extra
+      gameState.currentBets.forEach(playerId => {
+        newPlayers[playerId].coins += 1;
+      });
+      
+      // Check if any betting player won
+      const winner = newPlayers.find(p => p.coins >= WINNING_COINS);
+      if (winner) {
+        setGameState({
+          ...gameState,
+          players: newPlayers,
+          screen: 'victory',
+          lastScoredPlayerId: null,
+          currentBets: [],
+        });
+        return;
+      }
+      
+      moveToNextQuestion(newPlayers, null);
     }
   };
 
@@ -130,6 +174,7 @@ function App() {
         roundQuestions: newRoundQuestions,
         usedQuestions: Array.from(usedQuestions),
         lastScoredPlayerId: scoredPlayerId,
+        currentBets: [],
       });
     } else {
       // Next question in same round
@@ -139,6 +184,7 @@ function App() {
         screen: 'game',
         currentQuestionInRound: nextQuestionInRound,
         lastScoredPlayerId: scoredPlayerId,
+        currentBets: [],
       });
     }
   };
@@ -153,6 +199,7 @@ function App() {
       roundQuestions: [],
       usedQuestions: [],
       lastScoredPlayerId: null,
+      currentBets: [],
     });
   };
 
@@ -186,6 +233,10 @@ function App() {
         currentRound={gameState.currentRound}
         question={currentQuestion.question}
         answererName={gameState.players[currentQuestion.answererId].name}
+        answererId={currentQuestion.answererId}
+        players={gameState.players}
+        currentBets={gameState.currentBets}
+        onToggleBet={handleToggleBet}
         onCorrect={() => handleAnswerResult(true)}
         onIncorrect={() => handleAnswerResult(false)}
       />
