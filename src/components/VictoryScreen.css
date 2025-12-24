@@ -3,8 +3,9 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: var(--spacing-md);
-  /* Add safe area padding for iOS */
+  /* Add safe area padding for iOS - use max to combine with default spacing */
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
   padding-top: max(var(--spacing-md), env(safe-area-inset-top));
   padding-bottom: max(var(--spacing-md), env(safe-area-inset-bottom));
   background: var(--gradient-purple);
