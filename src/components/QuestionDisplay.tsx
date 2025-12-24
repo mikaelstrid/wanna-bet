@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { Question, Player } from '../types';
 import { categoryMetadata } from '../categoryMetadata';
 import './QuestionDisplay.css';
@@ -30,12 +30,18 @@ export default function QuestionDisplay({
   const [showBettingPhase, setShowBettingPhase] = useState(true);
   const categoryInfo = categoryMetadata[question.category];
   
+  // Reset state when question changes
+  useEffect(() => {
+    setIsAnswerRevealed(false);
+    setShowBettingPhase(true);
+  }, [question.question]);
+  
   // Get players who can bet (not the answerer)
   const eligibleBettors = players
     .map((player, index) => ({ ...player, id: index }))
     .filter(player => player.id !== answererId);
   
-  const handleContinueToBetting = () => {
+  const handleContinueToAnswer = () => {
     setShowBettingPhase(false);
   };
   
@@ -98,7 +104,7 @@ export default function QuestionDisplay({
           {showBettingPhase ? (
             <button 
               className="btn-primary btn-continue" 
-              onClick={handleContinueToBetting}
+              onClick={handleContinueToAnswer}
             >
               Fortsätt
             </button>

@@ -94,8 +94,10 @@ function App() {
       // Remove bet
       currentBets.splice(betIndex, 1);
     } else {
-      // Add bet
-      currentBets.push(playerId);
+      // Add bet - validate player has at least 1 coin
+      if (gameState.players[playerId].coins >= 1) {
+        currentBets.push(playerId);
+      }
     }
     
     setGameState({ ...gameState, currentBets });
@@ -132,7 +134,7 @@ function App() {
     } else {
       // Betting players get their coin back plus 1 extra
       gameState.currentBets.forEach(playerId => {
-        newPlayers[playerId].coins += 1;
+        newPlayers[playerId].coins += 2;
       });
       
       // Check if any betting player won
