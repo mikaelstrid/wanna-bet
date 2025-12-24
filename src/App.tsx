@@ -232,6 +232,7 @@ function App() {
     const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
     return (
       <QuestionDisplay
+        key={currentQuestion.question.question}
         currentRound={gameState.currentRound}
         question={currentQuestion.question}
         answererName={gameState.players[currentQuestion.answererId].name}

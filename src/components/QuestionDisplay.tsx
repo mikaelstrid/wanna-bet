@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import type { Question, Player } from '../types';
 import { categoryMetadata } from '../categoryMetadata';
 import './QuestionDisplay.css';
@@ -29,12 +29,6 @@ export default function QuestionDisplay({
   const [isAnswerRevealed, setIsAnswerRevealed] = useState(false);
   const [showBettingPhase, setShowBettingPhase] = useState(true);
   const categoryInfo = categoryMetadata[question.category];
-  
-  // Reset state when question changes
-  useEffect(() => {
-    setIsAnswerRevealed(false);
-    setShowBettingPhase(true);
-  }, [question.question]);
   
   // Get players who can bet (not the answerer)
   const eligibleBettors = players
