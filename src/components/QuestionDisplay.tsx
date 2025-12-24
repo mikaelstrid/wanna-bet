@@ -4,7 +4,6 @@ import { categoryMetadata } from '../categoryMetadata';
 import './QuestionDisplay.css';
 
 interface QuestionDisplayProps {
-  currentRound: number;
   question: Question;
   answererName: string;
   answererId: number;

@@ -238,7 +238,6 @@ function App() {
     return (
       <QuestionDisplay
         key={`${gameState.currentRound}-${gameState.currentQuestionInRound}`}
-        currentRound={gameState.currentRound}
         question={currentQuestion.question}
         answererName={gameState.players[currentQuestion.answererId].name}
         answererId={currentQuestion.answererId}

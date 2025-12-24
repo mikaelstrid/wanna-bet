@@ -27,7 +27,6 @@ describe('QuestionDisplay', () => {
   it('should initially show betting phase', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
@@ -59,7 +58,6 @@ describe('QuestionDisplay', () => {
   it('should show the answer when "Visa svar" button is clicked', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
@@ -89,7 +87,6 @@ describe('QuestionDisplay', () => {
   it('should call onCorrect when "Rätt" button is clicked', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
@@ -116,7 +113,6 @@ describe('QuestionDisplay', () => {
   it('should call onIncorrect when "Fel" button is clicked', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
@@ -143,7 +139,6 @@ describe('QuestionDisplay', () => {
   it('should display the correct answerer name', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Lisa"
         answererId={1}
@@ -161,7 +156,6 @@ describe('QuestionDisplay', () => {
   it('should allow players with coins to place bets', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
@@ -191,7 +185,6 @@ describe('QuestionDisplay', () => {
   it('should show active state for players who have bet', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
