@@ -45,7 +45,8 @@ function App() {
       currentQuestionInRound: 0,
       roundQuestions: [],
       usedQuestions: [],
-      lastScoredPlayerId: null,
+      lastScoredPlayerIds: [],
+      currentBets: [],
     };
   });
 
@@ -76,19 +77,50 @@ function App() {
       currentQuestionInRound: 0,
       roundQuestions,
       usedQuestions: Array.from(usedQuestions),
-      lastScoredPlayerId: null,
+      lastScoredPlayerIds: [],
+      currentBets: [],
     });
   };
 
   const handleShowQuestion = () => {
-    setGameState({ ...gameState, screen: 'question', lastScoredPlayerId: null });
+    setGameState({ ...gameState, screen: 'question', lastScoredPlayerIds: [], currentBets: [] });
+  };
+
+  const handleToggleBet = (playerId: number) => {
+    setGameState(prevState => {
+      const isAlreadyBetting = prevState.currentBets.includes(playerId);
+
+      if (isAlreadyBetting) {
+        // Remove bet immutably
+        const updatedBets = prevState.currentBets.filter(id => id !== playerId);
+        return { ...prevState, currentBets: updatedBets };
+      }
+
+      const player = prevState.players[playerId];
+      if (!player || player.coins < 1) {
+        // Player does not exist or has insufficient coins; no state change
+        return prevState;
+      }
+
+      // Add bet immutably
+      const updatedBets = [...prevState.currentBets, playerId];
+      return { ...prevState, currentBets: updatedBets };
+    });
   };
 
   const handleAnswerResult = (isCorrect: boolean) => {
+    const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
+    const newPlayers = [...gameState.players];
+    
     if (isCorrect) {
-      const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
-      const newPlayers = [...gameState.players];
-      newPlayers[currentQuestion.answererId].coins += 1;
+      // Answerer gets 1 coin plus all bet coins
+      const betCoins = gameState.currentBets.length;
+      newPlayers[currentQuestion.answererId].coins += 1 + betCoins;
+      
+      // Betting players lose their bet coins
+      gameState.currentBets.forEach(playerId => {
+        newPlayers[playerId].coins -= 1;
+      });
       
       // Check for winner
       const winner = newPlayers.find(p => p.coins >= WINNING_COINS);
@@ -97,18 +129,37 @@ function App() {
           ...gameState,
           players: newPlayers,
           screen: 'victory',
-          lastScoredPlayerId: null,
+          lastScoredPlayerIds: [],
+          currentBets: [],
         });
         return;
       }
       
-      moveToNextQuestion(newPlayers, currentQuestion.answererId);
+      moveToNextQuestion(newPlayers, [currentQuestion.answererId]);
     } else {
-      moveToNextQuestion(gameState.players, null);
+      // Betting players win 1 coin
+      gameState.currentBets.forEach(playerId => {
+        newPlayers[playerId].coins += 1;
+      });
+      
+      // Check if any betting player won
+      const winner = newPlayers.find(p => p.coins >= WINNING_COINS);
+      if (winner) {
+        setGameState({
+          ...gameState,
+          players: newPlayers,
+          screen: 'victory',
+          lastScoredPlayerIds: [],
+          currentBets: [],
+        });
+        return;
+      }
+      
+      moveToNextQuestion(newPlayers, gameState.currentBets);
     }
   };
 
-  const moveToNextQuestion = (updatedPlayers: Player[], scoredPlayerId: number | null) => {
+  const moveToNextQuestion = (updatedPlayers: Player[], scoredPlayerIds: number[]) => {
     const nextQuestionInRound = gameState.currentQuestionInRound + 1;
     const numPlayers = gameState.players.length;
     
@@ -129,7 +180,8 @@ function App() {
         currentQuestionInRound: 0,
         roundQuestions: newRoundQuestions,
         usedQuestions: Array.from(usedQuestions),
-        lastScoredPlayerId: scoredPlayerId,
+        lastScoredPlayerIds: scoredPlayerIds,
+        currentBets: [],
       });
     } else {
       // Next question in same round
@@ -138,7 +190,8 @@ function App() {
         players: updatedPlayers,
         screen: 'game',
         currentQuestionInRound: nextQuestionInRound,
-        lastScoredPlayerId: scoredPlayerId,
+        lastScoredPlayerIds: scoredPlayerIds,
+        currentBets: [],
       });
     }
   };
@@ -152,7 +205,8 @@ function App() {
       currentQuestionInRound: 0,
       roundQuestions: [],
       usedQuestions: [],
-      lastScoredPlayerId: null,
+      lastScoredPlayerIds: [],
+      currentBets: [],
     });
   };
 
@@ -173,7 +227,7 @@ function App() {
         currentRound={gameState.currentRound}
         answererName={gameState.players[currentQuestion.answererId].name}
         askerName={gameState.players[currentQuestion.askerId].name}
-        lastScoredPlayerId={gameState.lastScoredPlayerId}
+        lastScoredPlayerIds={gameState.lastScoredPlayerIds}
         onShowQuestion={handleShowQuestion}
       />
     );
@@ -183,9 +237,14 @@ function App() {
     const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
     return (
       <QuestionDisplay
+        key={`${gameState.currentRound}-${gameState.currentQuestionInRound}`}
         currentRound={gameState.currentRound}
         question={currentQuestion.question}
         answererName={gameState.players[currentQuestion.answererId].name}
+        answererId={currentQuestion.answererId}
+        players={gameState.players}
+        currentBets={gameState.currentBets}
+        onToggleBet={handleToggleBet}
         onCorrect={() => handleAnswerResult(true)}
         onIncorrect={() => handleAnswerResult(false)}
       />

@@ -42,5 +42,6 @@ export interface GameState {
   currentQuestionInRound: number;
   roundQuestions: RoundQuestion[];
   usedQuestions: string[]; // Array of question texts that have been used
-  lastScoredPlayerId: number | null;
+  lastScoredPlayerIds: number[]; // Array of player IDs who scored in the last turn
+  currentBets: number[]; // Array of player IDs who have bet on current question
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Question } from '../types';
+import type { Question, Player } from '../types';
 import { categoryMetadata } from '../categoryMetadata';
 import './QuestionDisplay.css';
 
@@ -7,6 +7,10 @@ interface QuestionDisplayProps {
   currentRound: number;
   question: Question;
   answererName: string;
+  answererId: number;
+  players: Player[];
+  currentBets: number[];
+  onToggleBet: (playerId: number) => void;
   onCorrect: () => void;
   onIncorrect: () => void;
 }
@@ -14,12 +18,21 @@ interface QuestionDisplayProps {
 export default function QuestionDisplay({
   currentRound, 
   question, 
-  answererName, 
+  answererName,
+  answererId,
+  players,
+  currentBets,
+  onToggleBet,
   onCorrect, 
   onIncorrect 
 }: QuestionDisplayProps) {
   const [isAnswerRevealed, setIsAnswerRevealed] = useState(false);
   const categoryInfo = categoryMetadata[question.category];
+  
+  // Get players who can bet (not the answerer)
+  const eligibleBettors = players
+    .map((player, index) => ({ ...player, id: index }))
+    .filter(player => player.id !== answererId);
   
   return (
     <div className="question-display">
@@ -44,6 +57,34 @@ export default function QuestionDisplay({
             <h3 className="question-label">Fråga:</h3>
             <p className="question-text">{question.question}</p>
           </div>
+          
+          {!isAnswerRevealed && (
+            <div className="betting-section" aria-live="polite" aria-atomic="true">
+              <h3 className="betting-header">Satsa ett 🪙 på att {answererName} inte klarar frågan</h3>
+              <div className="betting-players">
+                {eligibleBettors.map(player => (
+                  <div key={player.id} className="betting-player-card">
+                    <div className="betting-player-info">
+                      <span className="betting-player-name">{player.name}</span>
+                      <span className="betting-player-coins">🪙 {player.coins}</span>
+                    </div>
+                    <button
+                      className={`btn-bet ${currentBets.includes(player.id) ? 'bet-active' : ''}`}
+                      onClick={() => onToggleBet(player.id)}
+                      disabled={player.coins === 0}
+                      aria-label={
+                        currentBets.includes(player.id)
+                          ? `Du har satsat ett mynt. Klicka för att ångra satsningen.`
+                          : `Satsa ett mynt på att ${answererName} inte klarar frågan.`
+                      }
+                    >
+                      {currentBets.includes(player.id) ? '✓ Satsat' : 'Satsa'}
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
           
           {isAnswerRevealed && (
             <div className="answer-section">
