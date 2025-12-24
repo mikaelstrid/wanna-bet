@@ -27,17 +27,12 @@ export default function QuestionDisplay({
   onIncorrect 
 }: QuestionDisplayProps) {
   const [isAnswerRevealed, setIsAnswerRevealed] = useState(false);
-  const [showBettingPhase, setShowBettingPhase] = useState(true);
   const categoryInfo = categoryMetadata[question.category];
   
   // Get players who can bet (not the answerer)
   const eligibleBettors = players
     .map((player, index) => ({ ...player, id: index }))
     .filter(player => player.id !== answererId);
-  
-  const handleContinueToAnswer = () => {
-    setShowBettingPhase(false);
-  };
   
   return (
     <div className="question-display">
@@ -63,7 +58,7 @@ export default function QuestionDisplay({
             <p className="question-text">{question.question}</p>
           </div>
           
-          {showBettingPhase && (
+          {!isAnswerRevealed && (
             <div className="betting-section">
               <h3 className="betting-header">Satsa ett 🪙 på att {answererName} inte klarar frågan</h3>
               <div className="betting-players">
@@ -86,7 +81,7 @@ export default function QuestionDisplay({
             </div>
           )}
           
-          {!showBettingPhase && isAnswerRevealed && (
+          {isAnswerRevealed && (
             <div className="answer-section">
               <h3 className="answer-label">Svar:</h3>
               <p className="answer-text">{question.answer}</p>
@@ -95,14 +90,7 @@ export default function QuestionDisplay({
         </div>
         
         <div className="action-buttons">
-          {showBettingPhase ? (
-            <button 
-              className="btn-primary btn-continue" 
-              onClick={handleContinueToAnswer}
-            >
-              Fortsätt
-            </button>
-          ) : !isAnswerRevealed ? (
+          {!isAnswerRevealed ? (
             <button 
               className="btn-primary btn-show-answer" 
               onClick={() => setIsAnswerRevealed(true)}

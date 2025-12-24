@@ -52,11 +52,11 @@ describe('QuestionDisplay', () => {
     // Answer should not be visible
     expect(screen.queryByText('Stockholm')).not.toBeInTheDocument();
     
-    // "Fortsätt" button should be visible
-    expect(screen.getByRole('button', { name: /Fortsätt/i })).toBeInTheDocument();
+    // "Visa svar" button should be visible
+    expect(screen.getByRole('button', { name: /Visa svar/i })).toBeInTheDocument();
   });
 
-  it('should show the answer when "Visa svar" button is clicked after betting phase', () => {
+  it('should show the answer when "Visa svar" button is clicked', () => {
     render(
       <QuestionDisplay
         currentRound={1}
@@ -71,16 +71,15 @@ describe('QuestionDisplay', () => {
       />
     );
 
-    // Click "Fortsätt" to exit betting phase
-    const continueButton = screen.getByRole('button', { name: /Fortsätt/i });
-    fireEvent.click(continueButton);
-
     // Click "Visa svar" button
     const showAnswerButton = screen.getByRole('button', { name: /Visa svar/i });
     fireEvent.click(showAnswerButton);
 
     // Answer should now be visible
     expect(screen.getByText('Stockholm')).toBeInTheDocument();
+    
+    // Betting section should not be visible
+    expect(screen.queryByText(/Satsa ett 🪙 på att Kalle inte klarar frågan/i)).not.toBeInTheDocument();
     
     // Correct/Incorrect buttons should be visible
     expect(screen.getByRole('button', { name: /Rätt/i })).toBeInTheDocument();
@@ -101,10 +100,6 @@ describe('QuestionDisplay', () => {
         onIncorrect={mockOnIncorrect}
       />
     );
-
-    // Skip betting phase
-    const continueButton = screen.getByRole('button', { name: /Fortsätt/i });
-    fireEvent.click(continueButton);
 
     // Reveal the answer
     const showAnswerButton = screen.getByRole('button', { name: /Visa svar/i });
@@ -132,10 +127,6 @@ describe('QuestionDisplay', () => {
         onIncorrect={mockOnIncorrect}
       />
     );
-
-    // Skip betting phase
-    const continueButton = screen.getByRole('button', { name: /Fortsätt/i });
-    fireEvent.click(continueButton);
 
     // Reveal the answer
     const showAnswerButton = screen.getByRole('button', { name: /Visa svar/i });
