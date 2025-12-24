@@ -4,7 +4,6 @@ import { categoryMetadata } from '../categoryMetadata';
 import './QuestionDisplay.css';
 
 interface QuestionDisplayProps {
-  currentRound: number;
   question: Question;
   answererName: string;
   answererId: number;
@@ -16,7 +15,6 @@ interface QuestionDisplayProps {
 }
 
 export default function QuestionDisplay({
-  currentRound, 
   question, 
   answererName,
   answererId,
@@ -38,8 +36,8 @@ export default function QuestionDisplay({
     <div className="question-display">
       <div className="question-display-content">
         <div className="question-card">
-          <div className="round-info">
-            <h2>Runda {currentRound}</h2>
+          <div className="answerer-info">
+            <span className="answerer-name">{answererName}</span>
           </div>
 
           <div className="category-info">
@@ -47,10 +45,6 @@ export default function QuestionDisplay({
             <div className="category-text">
               <h3 className="category-name">{categoryInfo.name}</h3>
             </div>
-          </div>
-
-          <div className="answerer-info">
-            <span className="answerer-name">{answererName}</span>
           </div>
           
           <div className="question-section">

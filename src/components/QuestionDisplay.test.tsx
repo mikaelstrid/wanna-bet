@@ -27,7 +27,6 @@ describe('QuestionDisplay', () => {
   it('should initially show betting phase', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
@@ -59,7 +58,6 @@ describe('QuestionDisplay', () => {
   it('should show the answer when "Visa svar" button is clicked', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
@@ -89,7 +87,6 @@ describe('QuestionDisplay', () => {
   it('should call onCorrect when "Rätt" button is clicked', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
@@ -116,7 +113,6 @@ describe('QuestionDisplay', () => {
   it('should call onIncorrect when "Fel" button is clicked', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
@@ -143,7 +139,6 @@ describe('QuestionDisplay', () => {
   it('should display the correct answerer name', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Lisa"
         answererId={1}
@@ -158,28 +153,9 @@ describe('QuestionDisplay', () => {
     expect(screen.getByText('Lisa')).toBeInTheDocument();
   });
 
-  it('should display the correct round number', () => {
-    render(
-      <QuestionDisplay
-        currentRound={3}
-        question={mockQuestion}
-        answererName="Kalle"
-        answererId={0}
-        players={mockPlayers}
-        currentBets={[]}
-        onToggleBet={mockOnToggleBet}
-        onCorrect={mockOnCorrect}
-        onIncorrect={mockOnIncorrect}
-      />
-    );
-
-    expect(screen.getByText('Runda 3')).toBeInTheDocument();
-  });
-
   it('should allow players with coins to place bets', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
@@ -209,7 +185,6 @@ describe('QuestionDisplay', () => {
   it('should show active state for players who have bet', () => {
     render(
       <QuestionDisplay
-        currentRound={1}
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
