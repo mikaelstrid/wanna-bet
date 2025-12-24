@@ -20,9 +20,8 @@
 
 html {
   /* Ensure background extends into safe areas on iOS */
-  height: 100%;
   min-height: 100vh;
-  /* Support for iOS safe area insets - fill available includes safe areas */
+  /* Support for iOS safe area insets */
   min-height: -webkit-fill-available;
 }
 
@@ -32,9 +31,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
   min-width: 320px;
-  height: 100%;
   min-height: 100vh;
   /* Support for iOS safe area insets */
   min-height: -webkit-fill-available;

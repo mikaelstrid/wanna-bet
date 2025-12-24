@@ -1,11 +1,7 @@
 .question-display {
   display: flex;
   flex-direction: column;
-  /* Add safe area padding for iOS - use max to combine with default spacing */
-  padding-left: max(var(--spacing-md), env(safe-area-inset-left));
-  padding-right: max(var(--spacing-md), env(safe-area-inset-right));
-  padding-top: max(var(--spacing-md), env(safe-area-inset-top));
-  padding-bottom: max(var(--spacing-md), env(safe-area-inset-bottom));
+  padding: var(--spacing-md);
   min-height: 100vh;
   max-width: 600px;
   margin: 0 auto;
