@@ -7,8 +7,6 @@
 #root {
   width: 100%;
   min-height: 100vh;
-  /* Support for iOS safe area insets */
-  min-height: -webkit-fill-available;
   background: var(--gradient-purple);
   background-attachment: fixed;
 }

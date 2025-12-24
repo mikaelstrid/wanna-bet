@@ -18,13 +18,6 @@
   touch-action: manipulation;
 }
 
-html {
-  /* Ensure background extends into safe areas on iOS */
-  min-height: 100vh;
-  /* Support for iOS safe area insets */
-  min-height: -webkit-fill-available;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -33,8 +26,6 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  /* Support for iOS safe area insets */
-  min-height: -webkit-fill-available;
   background: var(--gradient-purple);
   background-attachment: fixed;
 }
