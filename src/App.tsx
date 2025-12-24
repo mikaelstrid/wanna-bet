@@ -93,14 +93,12 @@ function App() {
     if (betIndex >= 0) {
       // Remove bet
       currentBets.splice(betIndex, 1);
-    } else {
+      setGameState({ ...gameState, currentBets });
+    } else if (gameState.players[playerId].coins >= 1) {
       // Add bet - validate player has at least 1 coin
-      if (gameState.players[playerId].coins >= 1) {
-        currentBets.push(playerId);
-      }
+      currentBets.push(playerId);
+      setGameState({ ...gameState, currentBets });
     }
-    
-    setGameState({ ...gameState, currentBets });
   };
 
   const handleAnswerResult = (isCorrect: boolean) => {
@@ -232,7 +230,7 @@ function App() {
     const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
     return (
       <QuestionDisplay
-        key={currentQuestion.question.question}
+        key={`${gameState.currentRound}-${gameState.currentQuestionInRound}`}
         currentRound={gameState.currentRound}
         question={currentQuestion.question}
         answererName={gameState.players[currentQuestion.answererId].name}
