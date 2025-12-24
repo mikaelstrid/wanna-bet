@@ -59,7 +59,7 @@ export default function QuestionDisplay({
           </div>
           
           {!isAnswerRevealed && (
-            <div className="betting-section">
+            <div className="betting-section" aria-live="polite" aria-atomic="true">
               <h3 className="betting-header">Satsa ett 🪙 på att {answererName} inte klarar frågan</h3>
               <div className="betting-players">
                 {eligibleBettors.map(player => (
@@ -72,6 +72,11 @@ export default function QuestionDisplay({
                       className={`btn-bet ${currentBets.includes(player.id) ? 'bet-active' : ''}`}
                       onClick={() => onToggleBet(player.id)}
                       disabled={player.coins === 0}
+                      aria-label={
+                        currentBets.includes(player.id)
+                          ? `Du har satsat ett mynt. Klicka för att ångra satsningen.`
+                          : `Satsa ett mynt på att ${answererName} inte klarar frågan.`
+                      }
                     >
                       {currentBets.includes(player.id) ? '✓ Satsat' : 'Satsa'}
                     </button>

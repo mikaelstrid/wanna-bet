@@ -87,18 +87,25 @@ function App() {
   };
 
   const handleToggleBet = (playerId: number) => {
-    const currentBets = [...gameState.currentBets];
-    const betIndex = currentBets.indexOf(playerId);
-    
-    if (betIndex >= 0) {
-      // Remove bet
-      currentBets.splice(betIndex, 1);
-      setGameState({ ...gameState, currentBets });
-    } else if (gameState.players[playerId].coins >= 1) {
-      // Add bet - validate player has at least 1 coin
-      currentBets.push(playerId);
-      setGameState({ ...gameState, currentBets });
-    }
+    setGameState(prevState => {
+      const isAlreadyBetting = prevState.currentBets.includes(playerId);
+
+      if (isAlreadyBetting) {
+        // Remove bet immutably
+        const updatedBets = prevState.currentBets.filter(id => id !== playerId);
+        return { ...prevState, currentBets: updatedBets };
+      }
+
+      const player = prevState.players[playerId];
+      if (!player || player.coins < 1) {
+        // Player does not exist or has insufficient coins; no state change
+        return prevState;
+      }
+
+      // Add bet immutably
+      const updatedBets = [...prevState.currentBets, playerId];
+      return { ...prevState, currentBets: updatedBets };
+    });
   };
 
   const handleAnswerResult = (isCorrect: boolean) => {
