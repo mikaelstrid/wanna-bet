@@ -137,9 +137,9 @@ function App() {
       
       moveToNextQuestion(newPlayers, currentQuestion.answererId);
     } else {
-      // Betting players get their coin back plus 1 extra
+      // Betting players get 1 coin (they never paid the bet upfront)
       gameState.currentBets.forEach(playerId => {
-        newPlayers[playerId].coins += 2;
+        newPlayers[playerId].coins += 1;
       });
       
       // Check if any betting player won
