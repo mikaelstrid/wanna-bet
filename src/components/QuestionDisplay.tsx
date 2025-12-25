@@ -58,7 +58,6 @@ export default function QuestionDisplay({
               <div className="betting-players">
                 {eligibleBettors.map(player => {
                   const playerBet = currentBets.find(bet => bet.playerId === player.id);
-                  const hasBet = !!playerBet;
                   const betType = playerBet?.type;
                   
                   return (

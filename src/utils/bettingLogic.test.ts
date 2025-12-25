@@ -143,7 +143,6 @@ describe('Betting Logic - Coin Distribution', () => {
       const currentBets: Bet[] = [
         { playerId: 1, type: 'cannot' }
       ];
-      const answererId = 0;
 
       const newPlayers = [...players];
       const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
@@ -172,7 +171,6 @@ describe('Betting Logic - Coin Distribution', () => {
         { playerId: 1, type: 'can' },
         { playerId: 2, type: 'cannot' }
       ];
-      const answererId = 0;
 
       const newPlayers = [...players];
       const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
@@ -201,7 +199,6 @@ describe('Betting Logic - Coin Distribution', () => {
         { playerId: 1, type: 'cannot' },
         { playerId: 2, type: 'cannot' }
       ];
-      const answererId = 0;
 
       const newPlayers = [...players];
       const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
@@ -230,7 +227,6 @@ describe('Betting Logic - Coin Distribution', () => {
         { playerId: 1, type: 'can' },
         { playerId: 2, type: 'can' }
       ];
-      const answererId = 0;
 
       const newPlayers = [...players];
       const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
@@ -286,7 +282,6 @@ describe('Betting Logic - Coin Distribution', () => {
         { name: 'Johan', coins: 1 }
       ];
       const currentBets: Bet[] = [];
-      const answererId = 0;
 
       const newPlayers = [...players];
       const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
