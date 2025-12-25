@@ -1,4 +1,4 @@
-import type { GameState } from '../types';
+import type { GameState, PlayerData } from '../types';
 
 const STORAGE_KEY = 'wanna-bet-game-state';
 const PLAYER_NAMES_KEY = 'wanna-bet-player-names';
@@ -33,26 +33,40 @@ export const clearGameState = (): void => {
   }
 };
 
-export const savePlayerNames = (names: string[]): void => {
+export const savePlayerNames = (players: PlayerData[]): void => {
   try {
-    const existingNames = loadPlayerNames();
-    const newNames = names.filter(name => name.trim() !== '');
-    const allNames = [...new Set([...existingNames, ...newNames])];
-    const serialized = JSON.stringify(allNames);
+    const existingPlayers = loadPlayerNames();
+    const newPlayers = players.filter(player => player.name.trim() !== '');
+    
+    // Merge players, updating age if name already exists
+    const playerMap = new Map<string, number>();
+    existingPlayers.forEach(player => {
+      playerMap.set(player.name, player.age);
+    });
+    newPlayers.forEach(player => {
+      playerMap.set(player.name, player.age);
+    });
+    
+    const allPlayers: PlayerData[] = Array.from(playerMap.entries()).map(([name, age]) => ({
+      name,
+      age
+    }));
+    
+    const serialized = JSON.stringify(allPlayers);
     localStorage.setItem(PLAYER_NAMES_KEY, serialized);
   } catch (error) {
     console.error('Failed to save player names:', error);
   }
 };
 
-export const loadPlayerNames = (): string[] => {
+export const loadPlayerNames = (): PlayerData[] => {
   try {
     const serialized = localStorage.getItem(PLAYER_NAMES_KEY);
     if (serialized === null) {
       return [];
     }
-    const names = JSON.parse(serialized) as string[];
-    return names.sort((a, b) => a.localeCompare(b, 'sv'));
+    const players = JSON.parse(serialized) as PlayerData[];
+    return players.sort((a, b) => a.name.localeCompare(b.name, 'sv'));
   } catch (error) {
     console.error('Failed to load player names:', error);
     return [];

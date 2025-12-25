@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { savePlayerNames, loadPlayerNames } from './storage';
+import type { PlayerData } from '../types';
 
 describe('Player Names Storage', () => {
   beforeEach(() => {
@@ -8,40 +9,69 @@ describe('Player Names Storage', () => {
   });
 
   describe('savePlayerNames', () => {
-    it('should save player names to localStorage', () => {
-      const names = ['Alice', 'Bob', 'Charlie'];
-      savePlayerNames(names);
+    it('should save player data to localStorage', () => {
+      const players: PlayerData[] = [
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 },
+        { name: 'Charlie', age: 35 }
+      ];
+      savePlayerNames(players);
       
       const stored = localStorage.getItem('wanna-bet-player-names');
       expect(stored).not.toBeNull();
-      const parsed = JSON.parse(stored!);
-      expect(parsed).toEqual(expect.arrayContaining(names));
+      const parsed = JSON.parse(stored!) as PlayerData[];
+      expect(parsed).toEqual(expect.arrayContaining(players));
     });
 
-    it('should merge new names with existing names', () => {
-      savePlayerNames(['Alice', 'Bob']);
-      savePlayerNames(['Charlie', 'David']);
+    it('should merge new players with existing players', () => {
+      savePlayerNames([
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 }
+      ]);
+      savePlayerNames([
+        { name: 'Charlie', age: 35 },
+        { name: 'David', age: 40 }
+      ]);
       
       const loaded = loadPlayerNames();
-      expect(loaded).toEqual(expect.arrayContaining(['Alice', 'Bob', 'Charlie', 'David']));
       expect(loaded.length).toBe(4);
+      expect(loaded).toEqual(expect.arrayContaining([
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 },
+        { name: 'Charlie', age: 35 },
+        { name: 'David', age: 40 }
+      ]));
     });
 
-    it('should not duplicate names', () => {
-      savePlayerNames(['Alice', 'Bob']);
-      savePlayerNames(['Bob', 'Charlie']);
+    it('should update age for existing player names', () => {
+      savePlayerNames([
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 }
+      ]);
+      savePlayerNames([
+        { name: 'Bob', age: 35 },
+        { name: 'Charlie', age: 40 }
+      ]);
       
       const loaded = loadPlayerNames();
-      expect(loaded.filter(name => name === 'Bob').length).toBe(1);
-      expect(loaded).toEqual(expect.arrayContaining(['Alice', 'Bob', 'Charlie']));
+      const bob = loaded.find(p => p.name === 'Bob');
+      expect(bob).toEqual({ name: 'Bob', age: 35 });
       expect(loaded.length).toBe(3);
     });
 
     it('should filter out empty names', () => {
-      savePlayerNames(['Alice', '', '  ', 'Bob']);
+      savePlayerNames([
+        { name: 'Alice', age: 25 },
+        { name: '', age: 30 },
+        { name: '  ', age: 35 },
+        { name: 'Bob', age: 40 }
+      ]);
       
       const loaded = loadPlayerNames();
-      expect(loaded).toEqual(expect.arrayContaining(['Alice', 'Bob']));
+      expect(loaded).toEqual(expect.arrayContaining([
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 40 }
+      ]));
       expect(loaded.length).toBe(2);
     });
 
@@ -51,7 +81,7 @@ describe('Player Names Storage', () => {
         throw new Error('Storage error');
       });
       
-      expect(() => savePlayerNames(['Alice'])).not.toThrow();
+      expect(() => savePlayerNames([{ name: 'Alice', age: 25 }])).not.toThrow();
       expect(consoleErrorSpy).toHaveBeenCalled();
       
       setItemSpy.mockRestore();
@@ -60,36 +90,55 @@ describe('Player Names Storage', () => {
   });
 
   describe('loadPlayerNames', () => {
-    it('should load player names from localStorage', () => {
-      savePlayerNames(['Alice', 'Bob', 'Charlie']);
+    it('should load player data from localStorage', () => {
+      savePlayerNames([
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 },
+        { name: 'Charlie', age: 35 }
+      ]);
       const loaded = loadPlayerNames();
       
-      expect(loaded).toEqual(expect.arrayContaining(['Alice', 'Bob', 'Charlie']));
+      expect(loaded).toEqual(expect.arrayContaining([
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 },
+        { name: 'Charlie', age: 35 }
+      ]));
       expect(loaded.length).toBe(3);
     });
 
-    it('should return names in alphabetical order', () => {
-      savePlayerNames(['Zelda', 'Alice', 'Bob', 'Charlie']);
+    it('should return players in alphabetical order by name', () => {
+      savePlayerNames([
+        { name: 'Zelda', age: 20 },
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 },
+        { name: 'Charlie', age: 35 }
+      ]);
       const loaded = loadPlayerNames();
       
-      expect(loaded).toEqual(['Alice', 'Bob', 'Charlie', 'Zelda']);
+      expect(loaded.map(p => p.name)).toEqual(['Alice', 'Bob', 'Charlie', 'Zelda']);
     });
 
-    it('should return empty array when no names are stored', () => {
+    it('should return empty array when no players are stored', () => {
       const loaded = loadPlayerNames();
       expect(loaded).toEqual([]);
     });
 
     it('should handle Swedish alphabetical order correctly', () => {
-      savePlayerNames(['Åsa', 'Alice', 'Örjan', 'Bertil', 'Ärlig']);
+      savePlayerNames([
+        { name: 'Åsa', age: 20 },
+        { name: 'Alice', age: 25 },
+        { name: 'Örjan', age: 30 },
+        { name: 'Bertil', age: 35 },
+        { name: 'Ärlig', age: 40 }
+      ]);
       const loaded = loadPlayerNames();
       
       // In Swedish locale, Å, Ä, Ö come after Z
-      expect(loaded[0]).toBe('Alice');
-      expect(loaded[1]).toBe('Bertil');
-      expect(loaded[loaded.length - 3]).toBe('Åsa');
-      expect(loaded[loaded.length - 2]).toBe('Ärlig');
-      expect(loaded[loaded.length - 1]).toBe('Örjan');
+      expect(loaded[0].name).toBe('Alice');
+      expect(loaded[1].name).toBe('Bertil');
+      expect(loaded[loaded.length - 3].name).toBe('Åsa');
+      expect(loaded[loaded.length - 2].name).toBe('Ärlig');
+      expect(loaded[loaded.length - 1].name).toBe('Örjan');
     });
 
     it('should handle errors gracefully', () => {

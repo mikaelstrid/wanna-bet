@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import PlayerRegistration from './PlayerRegistration';
+import type { PlayerData } from '../types';
 import * as storage from '../utils/storage';
 
 describe('PlayerRegistration', () => {
@@ -65,14 +66,23 @@ describe('PlayerRegistration', () => {
       fireEvent.click(submitButton);
       
       await waitFor(() => {
-        expect(mockOnStartGame).toHaveBeenCalledWith(['Kalle', 'Lisa']);
+        expect(mockOnStartGame).toHaveBeenCalledWith([
+          { name: 'Kalle', age: 20 },
+          { name: 'Lisa', age: 20 }
+        ]);
       });
     });
   });
 
   describe('player name suggestions filtering', () => {
     it('should exclude already-filled player names from suggestions (case-insensitive)', () => {
-      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(['Alice', 'Bob', 'Charlie', 'David']);
+      const savedPlayers: PlayerData[] = [
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 },
+        { name: 'Charlie', age: 35 },
+        { name: 'David', age: 40 }
+      ];
+      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(savedPlayers);
       
       render(<PlayerRegistration onStartGame={mockOnStartGame} />);
       
@@ -93,7 +103,13 @@ describe('PlayerRegistration', () => {
     });
 
     it('should exclude multiple already-filled names from suggestions', () => {
-      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(['Alice', 'Bob', 'Charlie', 'David']);
+      const savedPlayers: PlayerData[] = [
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 },
+        { name: 'Charlie', age: 35 },
+        { name: 'David', age: 40 }
+      ];
+      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(savedPlayers);
       
       render(<PlayerRegistration onStartGame={mockOnStartGame} />);
       
@@ -116,7 +132,12 @@ describe('PlayerRegistration', () => {
     });
 
     it('should still show a name in its own input field suggestions', () => {
-      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(['Alice', 'Bob', 'Charlie']);
+      const savedPlayers: PlayerData[] = [
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 },
+        { name: 'Charlie', age: 35 }
+      ];
+      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(savedPlayers);
       
       render(<PlayerRegistration onStartGame={mockOnStartGame} />);
       
@@ -136,7 +157,12 @@ describe('PlayerRegistration', () => {
     });
 
     it('should update suggestions dynamically when player names change', () => {
-      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(['Alice', 'Bob', 'Charlie']);
+      const savedPlayers: PlayerData[] = [
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 },
+        { name: 'Charlie', age: 35 }
+      ];
+      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(savedPlayers);
       
       render(<PlayerRegistration onStartGame={mockOnStartGame} />);
       
@@ -162,7 +188,12 @@ describe('PlayerRegistration', () => {
     });
 
     it('should handle empty player names correctly in suggestions', () => {
-      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(['Alice', 'Bob', 'Charlie']);
+      const savedPlayers: PlayerData[] = [
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 },
+        { name: 'Charlie', age: 35 }
+      ];
+      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(savedPlayers);
       
       render(<PlayerRegistration onStartGame={mockOnStartGame} />);
       
@@ -182,7 +213,12 @@ describe('PlayerRegistration', () => {
     });
 
     it('should handle names with different cases in filtering', () => {
-      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(['KALLE', 'lisa', 'PeTtEr']);
+      const savedPlayers: PlayerData[] = [
+        { name: 'KALLE', age: 25 },
+        { name: 'lisa', age: 30 },
+        { name: 'PeTtEr', age: 35 }
+      ];
+      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(savedPlayers);
       
       render(<PlayerRegistration onStartGame={mockOnStartGame} />);
       
@@ -216,6 +252,103 @@ describe('PlayerRegistration', () => {
         expect(screen.getByText('Minst 2 spelare måste fyllas i')).toBeInTheDocument();
       });
       expect(mockOnStartGame).not.toHaveBeenCalled();
+    });
+  });
+
+  describe('age selection', () => {
+    it('should have default age of 20 for all players', () => {
+      render(<PlayerRegistration onStartGame={mockOnStartGame} />);
+      
+      const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
+      const ageSelect2 = screen.getByLabelText('Ålder för spelare 2') as HTMLSelectElement;
+      
+      expect(ageSelect1.value).toBe('20');
+      expect(ageSelect2.value).toBe('20');
+    });
+
+    it('should disable age select when name is empty', () => {
+      render(<PlayerRegistration onStartGame={mockOnStartGame} />);
+      
+      const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
+      
+      expect(ageSelect1.disabled).toBe(true);
+    });
+
+    it('should enable age select when name is entered', () => {
+      render(<PlayerRegistration onStartGame={mockOnStartGame} />);
+      
+      const input1 = screen.getByLabelText('Spelare 1');
+      const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
+      
+      expect(ageSelect1.disabled).toBe(true);
+      
+      fireEvent.change(input1, { target: { value: 'Kalle' } });
+      
+      expect(ageSelect1.disabled).toBe(false);
+    });
+
+    it('should allow changing age', () => {
+      render(<PlayerRegistration onStartGame={mockOnStartGame} />);
+      
+      const input1 = screen.getByLabelText('Spelare 1');
+      const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
+      
+      fireEvent.change(input1, { target: { value: 'Kalle' } });
+      fireEvent.change(ageSelect1, { target: { value: '35' } });
+      
+      expect(ageSelect1.value).toBe('35');
+    });
+
+    it('should submit with correct ages', async () => {
+      render(<PlayerRegistration onStartGame={mockOnStartGame} />);
+      
+      const input1 = screen.getByLabelText('Spelare 1');
+      const input2 = screen.getByLabelText('Spelare 2');
+      const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
+      const ageSelect2 = screen.getByLabelText('Ålder för spelare 2') as HTMLSelectElement;
+      
+      fireEvent.change(input1, { target: { value: 'Kalle' } });
+      fireEvent.change(ageSelect1, { target: { value: '35' } });
+      fireEvent.change(input2, { target: { value: 'Lisa' } });
+      fireEvent.change(ageSelect2, { target: { value: '42' } });
+      
+      const submitButton = screen.getByRole('button', { name: /Starta spelet/i });
+      fireEvent.click(submitButton);
+      
+      await waitFor(() => {
+        expect(mockOnStartGame).toHaveBeenCalledWith([
+          { name: 'Kalle', age: 35 },
+          { name: 'Lisa', age: 42 }
+        ]);
+      });
+    });
+
+    it('should auto-fill age from saved player data', () => {
+      const savedPlayers: PlayerData[] = [
+        { name: 'Kalle', age: 55 },
+        { name: 'Lisa', age: 47 }
+      ];
+      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(savedPlayers);
+      
+      render(<PlayerRegistration onStartGame={mockOnStartGame} />);
+      
+      const input1 = screen.getByLabelText('Spelare 1');
+      const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
+      
+      fireEvent.change(input1, { target: { value: 'Kalle' } });
+      
+      expect(ageSelect1.value).toBe('55');
+    });
+
+    it('should have ages from 0 to 120', () => {
+      render(<PlayerRegistration onStartGame={mockOnStartGame} />);
+      
+      const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
+      const options = Array.from(ageSelect1.options).map(opt => parseInt(opt.value));
+      
+      expect(options.length).toBe(121);
+      expect(Math.min(...options)).toBe(0);
+      expect(Math.max(...options)).toBe(120);
     });
   });
 });

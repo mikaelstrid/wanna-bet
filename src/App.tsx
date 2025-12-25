@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import './App.css';
-import type { GameState, Question, Player, BetType } from './types';
+import type { GameState, Question, Player, BetType, PlayerData } from './types';
 import { saveGameState, loadGameState, clearGameState } from './utils/storage';
 import { generateRoundQuestions, groupQuestionsByCategory } from './utils/gameLogic';
 import { calculateBettingResult } from './utils/bettingLogic';
@@ -65,8 +65,8 @@ function App() {
     setGameState({ ...gameState, screen: 'registration' });
   };
 
-  const handleStartGame = (playerNames: string[]) => {
-    const players: Player[] = playerNames.map(name => ({ name, coins: 0 }));
+  const handleStartGame = (playerData: PlayerData[]) => {
+    const players: Player[] = playerData.map(({ name, age }) => ({ name, age, coins: 0 }));
     const usedQuestions = new Set<string>();
     const roundQuestions = generateRoundQuestions(questionsByCategory, usedQuestions, players.length);
     

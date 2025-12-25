@@ -11,9 +11,9 @@ describe('QuestionDisplay - Betting Functionality', () => {
   };
 
   const mockPlayers: Player[] = [
-    { name: 'Edvin', coins: 2 },
-    { name: 'Sara', coins: 1 },
-    { name: 'Johan', coins: 1 }
+    { name: 'Edvin', age: 20, coins: 2 },
+    { name: 'Sara', age: 20, coins: 1 },
+    { name: 'Johan', age: 20, coins: 1 }
   ];
 
   const mockOnCorrect = vi.fn();
@@ -217,9 +217,9 @@ describe('QuestionDisplay - Betting Functionality', () => {
   describe('Button Disabled State', () => {
     it('should disable both buttons when player has no coins', () => {
       const playersWithNoCoins: Player[] = [
-        { name: 'Edvin', coins: 2 },
-        { name: 'Sara', coins: 0 },
-        { name: 'Johan', coins: 1 }
+        { name: 'Edvin', age: 20, coins: 2 },
+        { name: 'Sara', age: 20, coins: 0 },
+        { name: 'Johan', age: 20, coins: 1 }
       ];
 
       render(

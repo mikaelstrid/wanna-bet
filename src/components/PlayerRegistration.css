@@ -31,8 +31,14 @@
   color: var(--color-text-primary);
 }
 
-.input-group input {
-  width: 100%;
+.input-row {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.name-input {
+  flex: 1;
   padding: 0.75rem;
   font-size: var(--font-size-base);
   border: 2px solid var(--color-border-light);
@@ -40,7 +46,29 @@
   transition: border-color var(--transition-fast);
 }
 
-.input-group input:focus {
+.name-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.age-select {
+  width: 25%;
+  padding: 0.75rem;
+  font-size: var(--font-size-base);
+  border: 2px solid var(--color-border-light);
+  border-radius: var(--border-radius-sm);
+  transition: border-color var(--transition-fast);
+  background-color: white;
+  cursor: pointer;
+}
+
+.age-select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: var(--color-bg-secondary, #f5f5f5);
+}
+
+.age-select:focus {
   outline: none;
   border-color: var(--color-primary);
 }

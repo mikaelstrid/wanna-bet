@@ -1,28 +1,49 @@
 import { useState, useMemo } from "react";
 import { loadPlayerNames, savePlayerNames } from "../utils/storage";
+import type { PlayerData } from "../types";
 import "./PlayerRegistration.css";
 
 interface PlayerRegistrationProps {
-  onStartGame: (playerNames: string[]) => void;
+  onStartGame: (players: PlayerData[]) => void;
 }
 
 export default function PlayerRegistration({
   onStartGame,
 }: PlayerRegistrationProps) {
-  const [playerNames, setPlayerNames] = useState(["", "", "", ""]);
+  const [players, setPlayers] = useState<PlayerData[]>([
+    { name: "", age: 20 },
+    { name: "", age: 20 },
+    { name: "", age: 20 },
+    { name: "", age: 20 },
+  ]);
   const [errors, setErrors] = useState<string[]>([]);
-  const [savedNames] = useState<string[]>(() => loadPlayerNames());
+  const [savedPlayers] = useState<PlayerData[]>(() => loadPlayerNames());
 
   const handleNameChange = (index: number, value: string) => {
-    const newNames = [...playerNames];
-    newNames[index] = value;
-    setPlayerNames(newNames);
+    const newPlayers = [...players];
+    newPlayers[index] = { ...newPlayers[index], name: value };
+    
+    // Auto-fill age if name matches a saved player
+    const savedPlayer = savedPlayers.find(
+      (p) => p.name.toLowerCase() === value.trim().toLowerCase()
+    );
+    if (savedPlayer) {
+      newPlayers[index].age = savedPlayer.age;
+    }
+    
+    setPlayers(newPlayers);
+  };
+
+  const handleAgeChange = (index: number, value: string) => {
+    const newPlayers = [...players];
+    newPlayers[index] = { ...newPlayers[index], age: parseInt(value, 10) };
+    setPlayers(newPlayers);
   };
 
   const handleNameBlur = (index: number) => {
-    const newNames = [...playerNames];
-    newNames[index] = newNames[index].trim();
-    setPlayerNames(newNames);
+    const newPlayers = [...players];
+    newPlayers[index] = { ...newPlayers[index], name: newPlayers[index].name.trim() };
+    setPlayers(newPlayers);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -31,18 +52,17 @@ export default function PlayerRegistration({
     const newErrors: string[] = [];
 
     // Filter out empty names
-    const filledNames = playerNames
-      .map((name) => name.trim())
-      .filter((name) => name !== "");
+    const filledPlayers = players
+      .filter((player) => player.name.trim() !== "");
 
     // Validate minimum 2 players
-    if (filledNames.length < 2) {
+    if (filledPlayers.length < 2) {
       newErrors.push("Minst 2 spelare måste fyllas i");
     }
 
-    // Validate unique names among filled names
-    const uniqueNames = new Set(filledNames.map((name) => name.toLowerCase()));
-    if (uniqueNames.size !== filledNames.length) {
+    // Validate unique names among filled players
+    const uniqueNames = new Set(filledPlayers.map((player) => player.name.toLowerCase()));
+    if (uniqueNames.size !== filledPlayers.length) {
       newErrors.push("Alla spelarnamn måste vara unika");
     }
 
@@ -51,51 +71,68 @@ export default function PlayerRegistration({
       return;
     }
 
-    savePlayerNames(filledNames);
-    onStartGame(filledNames);
+    savePlayerNames(filledPlayers);
+    onStartGame(filledPlayers);
   };
 
   // Memoize filtered suggestions for each input field
   // Exclude names that are already filled in other input fields (case-insensitive)
   const filteredSuggestionsPerField = useMemo(() => {
-    return playerNames.map((_, currentIndex) => {
-      const filledNames = playerNames
-        .map((name, idx) =>
-          idx !== currentIndex ? name.trim().toLowerCase() : ""
+    return players.map((_, currentIndex) => {
+      const filledNames = players
+        .map((player, idx) =>
+          idx !== currentIndex ? player.name.trim().toLowerCase() : ""
         )
         .filter((name) => name !== "");
 
-      return savedNames.filter(
-        (savedName) => !filledNames.includes(savedName.toLowerCase())
+      return savedPlayers.filter(
+        (savedPlayer) => !filledNames.includes(savedPlayer.name.toLowerCase())
       );
     });
-  }, [playerNames, savedNames]);
+  }, [players, savedPlayers]);
 
   return (
     <div className="player-registration">
       <div className="registration-content">
         <h2>Spelare</h2>
-        <p className="instruction">Fyll i namnen på 2-4 spelare.</p>
+        <p className="instruction">Fyll i namn och ålder på 2-4 spelare.</p>
 
         <form onSubmit={handleSubmit}>
-          {playerNames.map((name, index) => {
+          {players.map((player, index) => {
             const filteredSuggestions = filteredSuggestionsPerField[index];
             return (
               <div key={index} className="input-group">
                 <label htmlFor={`player-${index}`}>Spelare {index + 1}</label>
-                <input
-                  id={`player-${index}`}
-                  type="text"
-                  value={name}
-                  onChange={(e) => handleNameChange(index, e.target.value)}
-                  onBlur={() => handleNameBlur(index)}
-                  maxLength={20}
-                  list={`player-suggestions-${index}`}
-                  autoComplete="off"
-                />
+                <div className="input-row">
+                  <input
+                    id={`player-${index}`}
+                    type="text"
+                    value={player.name}
+                    onChange={(e) => handleNameChange(index, e.target.value)}
+                    onBlur={() => handleNameBlur(index)}
+                    maxLength={20}
+                    list={`player-suggestions-${index}`}
+                    autoComplete="off"
+                    className="name-input"
+                  />
+                  <select
+                    id={`player-age-${index}`}
+                    value={player.age}
+                    onChange={(e) => handleAgeChange(index, e.target.value)}
+                    disabled={player.name.trim() === ""}
+                    className="age-select"
+                    aria-label={`Ålder för spelare ${index + 1}`}
+                  >
+                    {Array.from({ length: 121 }, (_, i) => i).map((age) => (
+                      <option key={age} value={age}>
+                        {age}
+                      </option>
+                    ))}
+                  </select>
+                </div>
                 <datalist id={`player-suggestions-${index}`}>
-                  {filteredSuggestions.map((savedName) => (
-                    <option key={savedName} value={savedName} />
+                  {filteredSuggestions.map((savedPlayer) => (
+                    <option key={savedPlayer.name} value={savedPlayer.name} />
                   ))}
                 </datalist>
               </div>
