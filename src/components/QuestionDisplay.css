@@ -179,7 +179,7 @@
 
 .betting-section {
   margin-top: var(--spacing-lg);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   background: var(--color-bg-light);
   border-radius: var(--border-radius-md);
   border: 2px solid var(--color-primary-light);
