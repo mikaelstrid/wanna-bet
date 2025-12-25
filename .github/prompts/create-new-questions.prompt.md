@@ -33,6 +33,11 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
    - Ska vara kort och koncist
    - Får innehålla förklaringar inom parentes om det finns alternativa svar
    - Exempel: "Stockholm", "3 (tre)", "Indien (eller Kina, båda accepteras)"
+   - **För frågor där svaret är ett årtal**: Ett intervall runt det korrekta året ska accepteras. Intervallets längd beräknas som 10% av antalet år mellan nuvarande år (2025) och det eftersökta året, avrundat uppåt.
+     - Formel: Intervall = ±(ceil(abs(2025 - eftersökt_år) × 0.10) / 2) år
+     - Exempel: Om svaret är 1825: Skillnad = 200 år, 10% = 20 år, Intervall = ±10 år → Godkänt svar: 1815-1835
+     - Exempel: Om svaret är 1989: Skillnad = 36 år, 10% = 3.6 → 4 år, Intervall = ±2 år → Godkänt svar: 1987-1991
+     - Ange svaret som: "1825 (±10 år: 1815-1835)" eller "1989 (±2 år: 1987-1991)"
 
 3. **category** (string): Kategori som frågan tillhör
 
