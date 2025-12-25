@@ -1,4 +1,5 @@
 import './WelcomeScreen.css';
+import { WINNING_COINS } from '../constants';
 
 interface WelcomeScreenProps {
   onStart: () => void;
@@ -23,7 +24,7 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
           </div>
           <div className="badge">
             <span className="badge-icon">🏅</span>
-            <span className="badge-text">Först till 3 vinner</span>
+            <span className="badge-text">Först till {WINNING_COINS} vinner</span>
           </div>
         </div>
         
