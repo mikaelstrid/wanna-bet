@@ -60,12 +60,6 @@
   line-height: 1.6;
 }
 
-.highlight-coin {
-  color: var(--color-accent);
-  font-weight: bold;
-  white-space: nowrap;
-}
-
 .btn-start {
   max-width: 350px;
 }

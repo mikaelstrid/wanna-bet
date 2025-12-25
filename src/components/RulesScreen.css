@@ -44,9 +44,3 @@
   margin-bottom: var(--spacing-xs);
   color: var(--color-text-secondary);
 }
-
-.highlight-coin {
-  color: var(--color-accent);
-  font-weight: bold;
-  white-space: nowrap;
-}

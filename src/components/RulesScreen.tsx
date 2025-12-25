@@ -1,5 +1,5 @@
 import "./RulesScreen.css";
-import { WINNING_COINS } from "../constants";
+import { WINNING_COINS, COINS_FOR_CORRECT_ANSWER } from "../constants";
 
 interface RulesScreenProps {
   onContinue: () => void;
@@ -43,14 +43,14 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
             </h3>
             <div className="rule-text">
               <ul>
-                <li>Du får 🪙🪙 om du svarar rätt på din fråga.</li>
+                <li>Du får <span className="highlight-coin">{COINS_FOR_CORRECT_ANSWER} 🪙</span> om du svarar rätt på din fråga.</li>
                 <li>
                   Du kan satsa på om en annan spelare kan svara rätt på sin
-                  fråga, om du satsar rätt får du 🪙 annars blir du av med 🪙.
+                  fråga, om du satsar rätt får du <span className="highlight-coin">1 🪙</span> annars blir du av med <span className="highlight-coin">1 🪙</span>.
                 </li>
                 <li>
                   Om någon satsar på att du inte kan svara rätt på din fråga och
-                  du svarar rätt, får du deras satsade 🪙.
+                  du svarar rätt, får du deras satsade <span className="highlight-coin">1 🪙</span>.
                 </li>
               </ul>
             </div>
@@ -58,7 +58,7 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
         </div>
 
         <button className="btn-primary" onClick={onContinue}>
-          Ok, jag är med!
+          Till spelarregistrering
         </button>
       </div>
     </div>

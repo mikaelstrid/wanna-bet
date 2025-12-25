@@ -11,19 +11,19 @@ describe('RulesScreen', () => {
 
   it('should display information about how to win the game', () => {
     render(<RulesScreen onContinue={() => {}} />);
-    expect(screen.getByText(/Hur man vinner:/)).toBeInTheDocument();
+    expect(screen.getByText(/Hur man vinner/)).toBeInTheDocument();
     expect(screen.getByText(/vinner spelet/)).toBeInTheDocument();
   });
 
   it('should display information about how to earn gold coins', () => {
     render(<RulesScreen onContinue={() => {}} />);
-    expect(screen.getByText(/Hur man tjänar guldmynt:/)).toBeInTheDocument();
-    expect(screen.getByText(/Svara rätt på din egen fråga/)).toBeInTheDocument();
+    expect(screen.getByText(/Hur man tjänar guldmynt/)).toBeInTheDocument();
+    expect(screen.getByText(/svarar rätt på din fråga/)).toBeInTheDocument();
   });
 
   it('should display information about random question order', () => {
     render(<RulesScreen onContinue={() => {}} />);
-    expect(screen.getByText(/Frågeordning:/)).toBeInTheDocument();
+    expect(screen.getByText(/Frågeordning/)).toBeInTheDocument();
     expect(screen.getByText(/slumpmässigt/)).toBeInTheDocument();
   });
 

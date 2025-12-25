@@ -42,3 +42,9 @@
 .btn-primary:active {
   transform: translateY(0);
 }
+
+.highlight-coin {
+  color: var(--color-accent);
+  font-weight: bold;
+  white-space: nowrap;
+}
