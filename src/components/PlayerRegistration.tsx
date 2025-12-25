@@ -39,7 +39,11 @@ export default function PlayerRegistration({
 
   const handleAgeChange = (index: number, value: string) => {
     const newPlayers = [...players];
-    newPlayers[index] = { ...newPlayers[index], age: parseInt(value, 10) };
+    const age = Number(value);
+    if (Number.isNaN(age)) {
+      return;
+    }
+    newPlayers[index] = { ...newPlayers[index], age };
     setPlayers(newPlayers);
   };
 

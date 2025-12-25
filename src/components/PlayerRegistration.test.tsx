@@ -341,6 +341,31 @@ describe('PlayerRegistration', () => {
       expect(ageSelect1.value).toBe('55');
     });
 
+    it('should auto-fill age with case-insensitive matching', () => {
+      const savedPlayers: PlayerData[] = [
+        { name: 'Kalle', age: 55 },
+        { name: 'Lisa', age: 47 }
+      ];
+      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(savedPlayers);
+      
+      render(<PlayerRegistration onStartGame={mockOnStartGame} />);
+      
+      const input1 = screen.getByLabelText('Spelare 1');
+      const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
+      
+      // Test lowercase matching
+      fireEvent.change(input1, { target: { value: 'kalle' } });
+      expect(ageSelect1.value).toBe('55');
+      
+      // Test uppercase matching
+      fireEvent.change(input1, { target: { value: 'KALLE' } });
+      expect(ageSelect1.value).toBe('55');
+      
+      // Test mixed case matching
+      fireEvent.change(input1, { target: { value: 'KaLLe' } });
+      expect(ageSelect1.value).toBe('55');
+    });
+
     it('should have ages from 0 to 120', () => {
       render(<PlayerRegistration onStartGame={mockOnStartGame} />);
       

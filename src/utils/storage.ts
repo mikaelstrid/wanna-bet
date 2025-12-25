@@ -39,6 +39,8 @@ export const savePlayerNames = (players: PlayerData[]): void => {
     const newPlayers = players.filter(player => player.name.trim() !== '');
     
     // Merge players, updating age if name already exists
+    // Note: If a player name appears multiple times in newPlayers, 
+    // only the last occurrence's age will be saved
     const allPlayers = [...existingPlayers, ...newPlayers].reduce((acc, player) => {
       acc.set(player.name, player.age);
       return acc;
