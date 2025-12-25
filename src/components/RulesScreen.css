@@ -1,0 +1,61 @@
+/* .rules-screen {} */
+
+.rules-content {
+  text-align: left;
+}
+
+.rules-screen h2 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.rules-list {
+  margin-bottom: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.rule-item {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+}
+
+.rule-icon {
+  font-size: var(--font-size-2xl);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.rule-text {
+  flex: 1;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.rule-text strong {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-md);
+}
+
+.rule-text ul {
+  margin-top: var(--spacing-sm);
+  padding-left: var(--spacing-lg);
+  list-style-type: disc;
+}
+
+.rule-text li {
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-secondary);
+}
+
+.highlight-coin {
+  color: var(--color-accent);
+  font-weight: bold;
+  white-space: nowrap;
+}
