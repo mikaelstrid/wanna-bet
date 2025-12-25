@@ -43,14 +43,28 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
             </h3>
             <div className="rule-text">
               <ul>
-                <li>Du får <span className="highlight-coin">{COINS_FOR_CORRECT_ANSWER} 🪙</span> om du svarar rätt på din fråga.</li>
+                <li>
+                  Du får{" "}
+                  <span className="highlight-coin">
+                    {Array.from(
+                      { length: COINS_FOR_CORRECT_ANSWER },
+                      (_, i) => (
+                        <span key={i}>🪙</span>
+                      )
+                    )}
+                  </span>{" "}
+                  om du svarar rätt på din fråga.
+                </li>
                 <li>
                   Du kan satsa på om en annan spelare kan svara rätt på sin
-                  fråga, om du satsar rätt får du <span className="highlight-coin">1 🪙</span> annars blir du av med <span className="highlight-coin">1 🪙</span>.
+                  fråga, om du satsar rätt får du{" "}
+                  <span className="highlight-coin">🪙</span> annars blir du av
+                  med <span className="highlight-coin">🪙</span>.
                 </li>
                 <li>
                   Om någon satsar på att du inte kan svara rätt på din fråga och
-                  du svarar rätt, får du deras satsade <span className="highlight-coin">1 🪙</span>.
+                  du svarar rätt, får du deras satsade{" "}
+                  <span className="highlight-coin">🪙</span>.
                 </li>
               </ul>
             </div>
@@ -58,7 +72,7 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
         </div>
 
         <button className="btn-primary" onClick={onContinue}>
-          Till spelarregistrering
+          Ok, jag är med!
         </button>
       </div>
     </div>
