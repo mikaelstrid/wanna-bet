@@ -75,6 +75,27 @@ describe('Player Names Storage', () => {
       expect(loaded.length).toBe(2);
     });
 
+    it('should treat names case-insensitively to prevent duplicates', () => {
+      savePlayerNames([
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 }
+      ]);
+      savePlayerNames([
+        { name: 'alice', age: 35 },
+        { name: 'BOB', age: 40 }
+      ]);
+      
+      const loaded = loadPlayerNames();
+      expect(loaded.length).toBe(2);
+      
+      // Should preserve the first casing seen but update ages
+      const alice = loaded.find(p => p.name.toLowerCase() === 'alice');
+      const bob = loaded.find(p => p.name.toLowerCase() === 'bob');
+      
+      expect(alice).toEqual({ name: 'Alice', age: 35 });
+      expect(bob).toEqual({ name: 'Bob', age: 40 });
+    });
+
     it('should handle errors gracefully', () => {
       const consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
       const setItemSpy = vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {

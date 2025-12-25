@@ -38,18 +38,28 @@ export const savePlayerNames = (players: PlayerData[]): void => {
     const existingPlayers = loadPlayerNames();
     const newPlayers = players.filter(player => player.name.trim() !== '');
     
-    // Merge players, updating age if name already exists
+    // Merge players by normalized name (case-insensitive), updating age if name already exists
     // Note: If a player name appears multiple times in newPlayers, 
     // only the last occurrence's age will be saved
-    const allPlayers = [...existingPlayers, ...newPlayers].reduce((acc, player) => {
-      acc.set(player.name, player.age);
-      return acc;
-    }, new Map<string, number>());
-    
-    const playerList: PlayerData[] = Array.from(allPlayers.entries()).map(([name, age]) => ({
-      name,
-      age
-    }));
+    const allPlayers = [...existingPlayers, ...newPlayers].reduce(
+      (acc, player) => {
+        const normalizedName = player.name.trim().toLowerCase();
+        const existing = acc.get(normalizedName);
+
+        if (!existing) {
+          // First time we see this normalized name: use this player's casing
+          acc.set(normalizedName, { ...player });
+        } else {
+          // Update age but preserve existing name casing
+          acc.set(normalizedName, { ...existing, age: player.age });
+        }
+
+        return acc;
+      },
+      new Map<string, PlayerData>()
+    );
+
+    const playerList: PlayerData[] = Array.from(allPlayers.values());
     
     const serialized = JSON.stringify(playerList);
     localStorage.setItem(PLAYER_NAMES_KEY, serialized);
