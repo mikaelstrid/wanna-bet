@@ -26,9 +26,9 @@ export default function PlayerRegistration({
     const newPlayers = [...players];
     newPlayers[index] = { ...newPlayers[index], name: value };
     
-    // Auto-fill age only when exact match with saved player (datalist selection)
+    // Auto-fill age only when exact match with saved player (case-insensitive)
     const savedPlayer = savedPlayers.find(
-      (p) => p.name === value
+      (p) => p.name.toLowerCase() === value.toLowerCase()
     );
     if (savedPlayer) {
       newPlayers[index].age = savedPlayer.age;
