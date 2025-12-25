@@ -129,7 +129,7 @@ function App() {
       
       // Players who bet 'cannot' lose their coins
       cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
+        newPlayers[bet.playerId].coins = Math.max(0, newPlayers[bet.playerId].coins - 1);
       });
       
       // Players who bet 'can' win 1 coin
@@ -164,7 +164,7 @@ function App() {
       
       // Players who bet 'can' lose their coins
       canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
+        newPlayers[bet.playerId].coins = Math.max(0, newPlayers[bet.playerId].coins - 1);
       });
       
       // Check if any betting player won
