@@ -8,7 +8,7 @@ interface PlayerRegistrationProps {
 }
 
 // Generate age options once outside the component
-const AGE_OPTIONS = Array.from({ length: 121 }, (_, i) => i);
+const AGE_OPTIONS = Array.from({ length: 116 }, (_, i) => i + 5);
 
 export default function PlayerRegistration({
   onStartGame,
@@ -25,7 +25,7 @@ export default function PlayerRegistration({
   const handleNameChange = (index: number, value: string) => {
     const newPlayers = [...players];
     newPlayers[index] = { ...newPlayers[index], name: value };
-    
+
     // Auto-fill age only when exact match with saved player (case-insensitive)
     const savedPlayer = savedPlayers.find(
       (p) => p.name.toLowerCase() === value.toLowerCase()
@@ -33,7 +33,7 @@ export default function PlayerRegistration({
     if (savedPlayer) {
       newPlayers[index].age = savedPlayer.age;
     }
-    
+
     setPlayers(newPlayers);
   };
 
@@ -51,12 +51,12 @@ export default function PlayerRegistration({
     const newPlayers = [...players];
     const trimmedName = newPlayers[index].name.trim();
     newPlayers[index] = { ...newPlayers[index], name: trimmedName };
-    
+
     // If name becomes empty after trimming, reset age to default
-    if (trimmedName === '') {
+    if (trimmedName === "") {
       newPlayers[index].age = 20;
     }
-    
+
     setPlayers(newPlayers);
   };
 
@@ -66,8 +66,7 @@ export default function PlayerRegistration({
     const newErrors: string[] = [];
 
     // Filter out empty names
-    const filledPlayers = players
-      .filter((player) => player.name.trim() !== "");
+    const filledPlayers = players.filter((player) => player.name.trim() !== "");
 
     // Validate minimum 2 players
     if (filledPlayers.length < 2) {
@@ -75,7 +74,9 @@ export default function PlayerRegistration({
     }
 
     // Validate unique names among filled players
-    const uniqueNames = new Set(filledPlayers.map((player) => player.name.toLowerCase()));
+    const uniqueNames = new Set(
+      filledPlayers.map((player) => player.name.toLowerCase())
+    );
     if (uniqueNames.size !== filledPlayers.length) {
       newErrors.push("Alla spelarnamn måste vara unika");
     }
