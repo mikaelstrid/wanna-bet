@@ -1,25 +1,6 @@
-.question-display {
-  /* display: flex;
-  flex-direction: column;
-  padding: var(--spacing-md);
-  min-height: 100vh;
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-  align-items: center;
-  justify-content: center; */
-}
+/* .question-display {} */
 
-.question-display-content {
-  /* background: var(--color-bg-white);
-  border-radius: var(--border-radius-lg);
-  padding: var(--spacing-xl) var(--spacing-md);
-  width: 100%;
-  box-shadow: var(--shadow-md);
-  display: flex;
-  flex-direction: column;
-  min-height: 500px; */
-}
+/* .question-display-content {} */
 
 .correct-animation {
   position: fixed;

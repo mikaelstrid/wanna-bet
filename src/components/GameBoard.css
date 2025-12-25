@@ -1,21 +1,6 @@
-.game-board {
-  /* display: flex;
-  flex-direction: column;
-  padding: var(--spacing-md);  
-  min-height: 100vh;
-  max-width: 600px;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center; */
-}
+/* .game-board {} */
 
-.game-board-content {
-  /* background: var(--color-bg-white);
-  border-radius: var(--border-radius-lg);
-  padding: var(--spacing-xl) var(--spacing-md);
-  width: 100%;
-  box-shadow: var(--shadow-md); */
-}
+/* .game-board-content {} */
 
 .round-info {
   text-align: center;

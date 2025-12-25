@@ -1,18 +1,6 @@
-.victory-screen {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: var(--spacing-md); */
-}
+/* .victory-screen {} */
 
 .victory-content {
-  /* background: var(--color-bg-white);
-  border-radius: var(--border-radius-lg);
-  padding: var(--spacing-xl) var(--spacing-md);
-  max-width: 500px;
-  width: 100%;
-  box-shadow: var(--shadow-md); */
   text-align: center;
 }
 
