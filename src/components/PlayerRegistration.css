@@ -1,20 +1,19 @@
 .player-registration {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: var(--spacing-md);
-  max-width: 500px;
-  margin: 0 auto;
-  min-height: 100vh;
-  justify-content: center;
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center; */
+  /* padding: var(--spacing-md); */
+  /* max-width: 500px;
+  margin: 0 auto; */
+  /* justify-content: center; */
 }
 
 .registration-content {
-  background: var(--color-bg-white);
+  /* background: var(--color-bg-white);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-xl) var(--spacing-md);
   width: 100%;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-md); */
 }
 
 .player-registration h2 {

@@ -5,8 +5,12 @@
 }
 
 #root {
+  background: var(--color-bg-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-xl) var(--spacing-md);
+  max-width: 550px;
   width: 100%;
-  min-height: 100vh;
 }
 
 .btn-primary {

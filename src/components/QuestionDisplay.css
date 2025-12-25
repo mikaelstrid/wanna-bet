@@ -1,5 +1,5 @@
 .question-display {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   padding: var(--spacing-md);
   min-height: 100vh;
@@ -7,18 +7,18 @@
   margin: 0 auto;
   position: relative;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .question-display-content {
-  background: var(--color-bg-white);
+  /* background: var(--color-bg-white);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-xl) var(--spacing-md);
   width: 100%;
   box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;
-  min-height: 500px;
+  min-height: 500px; */
 }
 
 .correct-animation {
