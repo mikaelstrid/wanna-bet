@@ -219,5 +219,29 @@ describe('Betting Logic - Coin Distribution', () => {
 
       expect(result.updatedPlayers[1].coins).toBe(0); // Sara: should stay at 0, not go negative
     });
+
+    it('should not mutate the original players array', () => {
+      const players: Player[] = [
+        { name: 'Edvin', coins: 2 },
+        { name: 'Sara', coins: 1 },
+        { name: 'Johan', coins: 1 }
+      ];
+      const currentBets: Bet[] = [
+        { playerId: 1, type: 'can' },
+        { playerId: 2, type: 'cannot' }
+      ];
+      const answererId = 0;
+
+      // Store original coin values
+      const originalCoins = players.map(p => p.coins);
+
+      // Call the function
+      calculateBettingResult(players, currentBets, answererId, true);
+
+      // Verify original array is unchanged
+      expect(players[0].coins).toBe(originalCoins[0]); // Edvin unchanged
+      expect(players[1].coins).toBe(originalCoins[1]); // Sara unchanged
+      expect(players[2].coins).toBe(originalCoins[2]); // Johan unchanged
+    });
   });
 });

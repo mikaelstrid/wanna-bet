@@ -20,7 +20,7 @@ export const calculateBettingResult = (
   answererId: number,
   isCorrect: boolean
 ): BettingResult => {
-  const newPlayers = [...players];
+  const newPlayers = players.map(player => ({ ...player }));
   const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
   const canBets = currentBets.filter(bet => bet.type === 'can');
   
