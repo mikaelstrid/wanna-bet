@@ -2,26 +2,31 @@
   {
     "question": "Vad heter den svenska traditionella maträtten som äts på fettisdagen?",
     "answer": "Semla",
-    "category": "food-drinks-culture"
+    "category": "food-drinks-culture",
+    "level": "child"
   },
   {
     "question": "Vilket land är pizza från?",
     "answer": "Italien",
-    "category": "food-drinks-culture"
+    "category": "food-drinks-culture",
+    "level": "child"
   },
   {
     "question": "Vad kallas den japanska drycken gjord på ris?",
     "answer": "Sake",
-    "category": "food-drinks-culture"
+    "category": "food-drinks-culture",
+    "level": "old-teen"
   },
   {
     "question": "Vilket krydda kommer från saffranskrokus?",
     "answer": "Saffran",
-    "category": "food-drinks-culture"
+    "category": "food-drinks-culture",
+    "level": "tween"
   },
   {
     "question": "Vad heter den franska rätten med snäckor?",
     "answer": "Escargot",
-    "category": "food-drinks-culture"
+    "category": "food-drinks-culture",
+    "level": "adult"
   }
 ]

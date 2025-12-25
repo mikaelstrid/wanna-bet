@@ -2,26 +2,31 @@
   {
     "question": "Vilket är det kemiska tecknet för guld?",
     "answer": "Au",
-    "category": "nature-science"
+    "category": "nature-science",
+    "level": "tween"
   },
   {
     "question": "Vilken planet är närmast solen?",
     "answer": "Merkurius",
-    "category": "nature-science"
+    "category": "nature-science",
+    "level": "child"
   },
   {
     "question": "Hur många ben har en vuxen människa?",
     "answer": "206",
-    "category": "nature-science"
+    "category": "nature-science",
+    "level": "tween"
   },
   {
     "question": "Vad kallas det när vatten övergår från flytande till gasform?",
     "answer": "Avdunstning (eller förångning)",
-    "category": "nature-science"
+    "category": "nature-science",
+    "level": "young-teen"
   },
   {
     "question": "Vilket är det största organet i människokroppen?",
     "answer": "Huden",
-    "category": "nature-science"
+    "category": "nature-science",
+    "level": "tween"
   }
 ]

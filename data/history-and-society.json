@@ -2,26 +2,41 @@
   {
     "question": "Vilket år föll Berlinmuren?",
     "answer": "1989",
-    "category": "history-and-society"
+    "category": "history-and-society",
+    "level": "young-teen",
+    "start_year": 1989,
+    "end_year": 1989
   },
   {
     "question": "Vem var Sveriges första kvinnliga statsminister?",
     "answer": "Magdalena Andersson",
-    "category": "history-and-society"
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 2021,
+    "end_year": 2022
   },
   {
     "question": "Vilket år slutade andra världskriget?",
     "answer": "1945",
-    "category": "history-and-society"
+    "category": "history-and-society",
+    "level": "tween",
+    "start_year": 1945,
+    "end_year": 1945
   },
   {
     "question": "Vem var Sveriges kung innan Carl XVI Gustaf?",
     "answer": "Gustaf VI Adolf",
-    "category": "history-and-society"
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1950,
+    "end_year": 1973
   },
   {
     "question": "Vilket år infördes allmän rösträtt för kvinnor i Sverige?",
     "answer": "1921",
-    "category": "history-and-society"
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 1921,
+    "end_year": 1921
   }
 ]

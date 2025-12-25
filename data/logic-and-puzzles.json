@@ -2,26 +2,31 @@
   {
     "question": "Om du har 3 äpplen och tar bort 2, hur många har du då?",
     "answer": "2 (de du tog)",
-    "category": "logic-and-puzzles"
+    "category": "logic-and-puzzles",
+    "level": "child"
   },
   {
     "question": "Vad är nästa tal i serien: 2, 4, 8, 16, 32, ...?",
     "answer": "64",
-    "category": "logic-and-puzzles"
+    "category": "logic-and-puzzles",
+    "level": "tween"
   },
   {
     "question": "Hur många månader har 28 dagar?",
     "answer": "12 (alla månader har minst 28 dagar)",
-    "category": "logic-and-puzzles"
+    "category": "logic-and-puzzles",
+    "level": "tween"
   },
   {
     "question": "Om en elektrisk tåg kör norrut, åt vilket håll går röken?",
     "answer": "Det går ingen rök, det är ett elektriskt tåg",
-    "category": "logic-and-puzzles"
+    "category": "logic-and-puzzles",
+    "level": "child"
   },
   {
     "question": "Vad är hälften av 2 plus 2?",
     "answer": "3 (hälften av 2 = 1, plus 2 = 3)",
-    "category": "logic-and-puzzles"
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
   }
 ]

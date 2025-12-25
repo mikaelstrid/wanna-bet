@@ -16,10 +16,15 @@ export interface CategoryInfo {
   description: string;
 }
 
+export type QuestionLevel = 'child' | 'tween' | 'young-teen' | 'old-teen' | 'adult';
+
 export interface Question {
   question: string;
   answer: string;
   category: QuestionCategory;
+  level: QuestionLevel;
+  start_year?: number;
+  end_year?: number;
 }
 
 export interface Player {
