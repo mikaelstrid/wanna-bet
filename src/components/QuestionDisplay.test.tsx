@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import QuestionDisplay from './QuestionDisplay';
-import type { Question, Player } from '../types';
+import type { Question, Player, Bet } from '../types';
 
 describe('QuestionDisplay', () => {
   const mockQuestion: Question = {
@@ -41,8 +41,8 @@ describe('QuestionDisplay', () => {
     // Question should be visible
     expect(screen.getByText('Vad är huvudstaden i Sverige?')).toBeInTheDocument();
     
-    // Betting section should be visible
-    expect(screen.getByText(/Satsa ett 🪙 på att Kalle inte klarar frågan/i)).toBeInTheDocument();
+    // Betting section should be visible with new header
+    expect(screen.getByText(/Satsa ett 🪙 på Kalle/i)).toBeInTheDocument();
     
     // Non-answering players should be shown
     expect(screen.getByText('Lisa')).toBeInTheDocument();
@@ -77,7 +77,7 @@ describe('QuestionDisplay', () => {
     expect(screen.getByText('Stockholm')).toBeInTheDocument();
     
     // Betting section should not be visible
-    expect(screen.queryByText(/Satsa ett 🪙 på att Kalle inte klarar frågan/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Satsa ett 🪙 på Kalle/i)).not.toBeInTheDocument();
     
     // Correct/Incorrect buttons should be visible
     expect(screen.getByRole('button', { name: /Rätt/i })).toBeInTheDocument();
@@ -167,38 +167,73 @@ describe('QuestionDisplay', () => {
       />
     );
 
-    // Get all bet buttons
-    const betButtons = screen.getAllByRole('button', { name: /Satsa/i });
+    // Get all bet buttons - there should be 4 (2 per non-answering player)
+    const allButtons = screen.getAllByRole('button');
+    // Filter to get only the betting buttons (exclude "Visa svar")
+    const bettingButtons = allButtons.filter(btn => 
+      btn.classList.contains('btn-bet')
+    );
     
-    // Lisa's button (has 1 coin) should be enabled
-    expect(betButtons[0]).not.toBeDisabled();
+    // Should have 4 betting buttons total (2 per player: Lisa and Anna)
+    expect(bettingButtons).toHaveLength(4);
     
-    // Anna's button (has 0 coins) should be disabled
-    expect(betButtons[1]).toBeDisabled();
+    // First 2 buttons are for Lisa (has 1 coin) - should be enabled
+    expect(bettingButtons[0]).not.toBeDisabled();
+    expect(bettingButtons[1]).not.toBeDisabled();
     
-    // Click Lisa's bet button
-    fireEvent.click(betButtons[0]);
+    // Last 2 buttons are for Anna (has 0 coins) - should be disabled
+    expect(bettingButtons[2]).toBeDisabled();
+    expect(bettingButtons[3]).toBeDisabled();
     
-    expect(mockOnToggleBet).toHaveBeenCalledWith(1);
+    // Click Lisa's "Kan" button (first button)
+    fireEvent.click(bettingButtons[0]);
+    
+    expect(mockOnToggleBet).toHaveBeenCalledWith(1, 'can');
   });
 
-  it('should show active state for players who have bet', () => {
+  it('should show active state for players who have bet "can"', () => {
+    const currentBets: Bet[] = [{ playerId: 1, type: 'can' }];
+    
     render(
       <QuestionDisplay
         question={mockQuestion}
         answererName="Kalle"
         answererId={0}
         players={mockPlayers}
-        currentBets={[1]}
+        currentBets={currentBets}
         onToggleBet={mockOnToggleBet}
         onCorrect={mockOnCorrect}
         onIncorrect={mockOnIncorrect}
       />
     );
 
-    // Check that Lisa's bet button shows active state
-    const activeBetButton = screen.getByRole('button', { name: /Satsat/i });
-    expect(activeBetButton).toBeInTheDocument();
-    expect(activeBetButton).toHaveClass('bet-active');
+    // Check that Lisa's "Kan" button shows active state
+    const activeButton = screen.getByRole('button', { name: /Du har satsat ett mynt på att Kalle kan frågan/i });
+    expect(activeButton).toBeInTheDocument();
+    expect(activeButton).toHaveClass('bet-active');
+    expect(activeButton).toHaveTextContent('✓ Kan');
+  });
+
+  it('should show active state for players who have bet "cannot"', () => {
+    const currentBets: Bet[] = [{ playerId: 1, type: 'cannot' }];
+    
+    render(
+      <QuestionDisplay
+        question={mockQuestion}
+        answererName="Kalle"
+        answererId={0}
+        players={mockPlayers}
+        currentBets={currentBets}
+        onToggleBet={mockOnToggleBet}
+        onCorrect={mockOnCorrect}
+        onIncorrect={mockOnIncorrect}
+      />
+    );
+
+    // Check that Lisa's "Kan ej" button shows active state
+    const activeButton = screen.getByRole('button', { name: /Du har satsat ett mynt på att Kalle inte kan frågan/i });
+    expect(activeButton).toBeInTheDocument();
+    expect(activeButton).toHaveClass('bet-active');
+    expect(activeButton).toHaveTextContent('✓ Kan ej');
   });
 });

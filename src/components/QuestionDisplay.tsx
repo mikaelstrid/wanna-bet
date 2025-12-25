@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Question, Player } from '../types';
+import type { Question, Player, Bet, BetType } from '../types';
 import { categoryMetadata } from '../categoryMetadata';
 import './QuestionDisplay.css';
 
@@ -8,8 +8,8 @@ interface QuestionDisplayProps {
   answererName: string;
   answererId: number;
   players: Player[];
-  currentBets: number[];
-  onToggleBet: (playerId: number) => void;
+  currentBets: Bet[];
+  onToggleBet: (playerId: number, betType: BetType) => void;
   onCorrect: () => void;
   onIncorrect: () => void;
 }
@@ -54,28 +54,47 @@ export default function QuestionDisplay({
           
           {!isAnswerRevealed && (
             <div className="betting-section" aria-live="polite" aria-atomic="true">
-              <h3 className="betting-header">Satsa ett 🪙 på att {answererName} inte klarar frågan</h3>
+              <h3 className="betting-header">Satsa ett 🪙 på {answererName}</h3>
               <div className="betting-players">
-                {eligibleBettors.map(player => (
-                  <div key={player.id} className="betting-player-card">
-                    <div className="betting-player-info">
-                      <span className="betting-player-name">{player.name}</span>
-                      <span className="betting-player-coins">🪙 {player.coins}</span>
+                {eligibleBettors.map(player => {
+                  const playerBet = currentBets.find(bet => bet.playerId === player.id);
+                  const betType = playerBet?.type;
+                  
+                  return (
+                    <div key={player.id} className="betting-player-card">
+                      <div className="betting-player-info">
+                        <span className="betting-player-name">{player.name}</span>
+                        <span className="betting-player-coins">🪙 {player.coins}</span>
+                      </div>
+                      <div className="betting-buttons">
+                        <button
+                          className={`btn-bet btn-bet-can ${betType === 'can' ? 'bet-active' : ''}`}
+                          onClick={() => onToggleBet(player.id, 'can')}
+                          disabled={player.coins === 0}
+                          aria-label={
+                            betType === 'can'
+                              ? `Du har satsat ett mynt på att ${answererName} kan frågan. Klicka för att ångra satsningen.`
+                              : `Satsa ett mynt på att ${answererName} kan frågan.`
+                          }
+                        >
+                          {betType === 'can' ? '✓ Kan' : 'Kan'}
+                        </button>
+                        <button
+                          className={`btn-bet btn-bet-cannot ${betType === 'cannot' ? 'bet-active' : ''}`}
+                          onClick={() => onToggleBet(player.id, 'cannot')}
+                          disabled={player.coins === 0}
+                          aria-label={
+                            betType === 'cannot'
+                              ? `Du har satsat ett mynt på att ${answererName} inte kan frågan. Klicka för att ångra satsningen.`
+                              : `Satsa ett mynt på att ${answererName} inte kan frågan.`
+                          }
+                        >
+                          {betType === 'cannot' ? '✓ Kan ej' : 'Kan ej'}
+                        </button>
+                      </div>
                     </div>
-                    <button
-                      className={`btn-bet ${currentBets.includes(player.id) ? 'bet-active' : ''}`}
-                      onClick={() => onToggleBet(player.id)}
-                      disabled={player.coins === 0}
-                      aria-label={
-                        currentBets.includes(player.id)
-                          ? `Du har satsat ett mynt. Klicka för att ångra satsningen.`
-                          : `Satsa ett mynt på att ${answererName} inte klarar frågan.`
-                      }
-                    >
-                      {currentBets.includes(player.id) ? '✓ Satsat' : 'Satsa'}
-                    </button>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           )}

@@ -179,7 +179,7 @@
 
 .betting-section {
   margin-top: var(--spacing-lg);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   background: var(--color-bg-light);
   border-radius: var(--border-radius-md);
   border: 2px solid var(--color-primary-light);
@@ -206,6 +206,12 @@
   background: var(--color-bg-white);
   border-radius: var(--border-radius-sm);
   border: 2px solid var(--color-border);
+  gap: var(--spacing-md);
+}
+
+.betting-buttons {
+  display: flex;
+  gap: var(--spacing-xs);
 }
 
 .betting-player-info {
