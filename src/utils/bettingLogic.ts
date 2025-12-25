@@ -1,4 +1,5 @@
 import type { Player, Bet } from '../types';
+import { COINS_FOR_CORRECT_ANSWER } from '../constants';
 
 export interface BettingResult {
   updatedPlayers: Player[];
@@ -25,8 +26,8 @@ export const calculateBettingResult = (
   const canBets = currentBets.filter(bet => bet.type === 'can');
   
   if (isCorrect) {
-    // Answerer gets 1 coin plus coins from losing bets (those who bet 'cannot')
-    newPlayers[answererId].coins += 1 + cannotBets.length;
+    // Answerer gets COINS_FOR_CORRECT_ANSWER coins plus coins from losing bets (those who bet 'cannot')
+    newPlayers[answererId].coins += COINS_FOR_CORRECT_ANSWER + cannotBets.length;
     
     // Players who bet 'cannot' lose their coins
     cannotBets.forEach(bet => {
