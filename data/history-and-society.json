@@ -1,5 +1,33 @@
 [
   {
+    "question": "Vad heter Sveriges kung?",
+    "answer": "Carl XVI Gustaf",
+    "category": "history-and-society",
+    "level": "child"
+  },
+  {
+    "question": "Vilket land har vi haft krig med förut?",
+    "answer": "Danmark",
+    "category": "history-and-society",
+    "level": "child"
+  },
+  {
+    "question": "Vilket år slutade andra världskriget?",
+    "answer": "1945",
+    "category": "history-and-society",
+    "level": "tween",
+    "start_year": 1945,
+    "end_year": 1945
+  },
+  {
+    "question": "Vem upptäckte Amerika?",
+    "answer": "Christofer Columbus",
+    "category": "history-and-society",
+    "level": "tween",
+    "start_year": 1492,
+    "end_year": 1492
+  },
+  {
     "question": "Vilket år föll Berlinmuren?",
     "answer": "1989",
     "category": "history-and-society",
@@ -11,25 +39,9 @@
     "question": "Vem var Sveriges första kvinnliga statsminister?",
     "answer": "Magdalena Andersson",
     "category": "history-and-society",
-    "level": "old-teen",
+    "level": "young-teen",
     "start_year": 2021,
     "end_year": 2022
-  },
-  {
-    "question": "Vilket år slutade andra världskriget?",
-    "answer": "1945",
-    "category": "history-and-society",
-    "level": "tween",
-    "start_year": 1945,
-    "end_year": 1945
-  },
-  {
-    "question": "Vem var Sveriges kung innan Carl XVI Gustaf?",
-    "answer": "Gustaf VI Adolf",
-    "category": "history-and-society",
-    "level": "adult",
-    "start_year": 1950,
-    "end_year": 1973
   },
   {
     "question": "Vilket år infördes allmän rösträtt för kvinnor i Sverige?",
@@ -38,5 +50,29 @@
     "level": "old-teen",
     "start_year": 1921,
     "end_year": 1921
+  },
+  {
+    "question": "Vem mördades i Sarajevo vilket startade första världskriget?",
+    "answer": "Frans Ferdinand (Ärkehertig)",
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 1914,
+    "end_year": 1914
+  },
+  {
+    "question": "Vilket år undertecknades Magna Carta?",
+    "answer": "1215",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1215,
+    "end_year": 1215
+  },
+  {
+    "question": "Vem var Sveriges kung innan Carl XVI Gustaf?",
+    "answer": "Gustaf VI Adolf",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1950,
+    "end_year": 1973
   }
 ]

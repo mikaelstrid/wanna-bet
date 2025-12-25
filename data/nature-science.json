@@ -1,15 +1,21 @@
 [
   {
-    "question": "Vilket är det kemiska tecknet för guld?",
-    "answer": "Au",
-    "category": "nature-science",
-    "level": "tween"
-  },
-  {
     "question": "Vilken planet är närmast solen?",
     "answer": "Merkurius",
     "category": "nature-science",
     "level": "child"
+  },
+  {
+    "question": "Vad heter det som hjälper oss att andas?",
+    "answer": "Lungorna",
+    "category": "nature-science",
+    "level": "child"
+  },
+  {
+    "question": "Vilket är det kemiska tecknet för guld?",
+    "answer": "Au",
+    "category": "nature-science",
+    "level": "tween"
   },
   {
     "question": "Hur många ben har en vuxen människa?",
@@ -27,6 +33,30 @@
     "question": "Vilket är det största organet i människokroppen?",
     "answer": "Huden",
     "category": "nature-science",
-    "level": "tween"
+    "level": "young-teen"
+  },
+  {
+    "question": "Vad heter det fenomen när ljus böjs när det passerar genom ett medium?",
+    "answer": "Refraktion (eller ljusbrytning)",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "question": "Vilken gas utgör cirka 78% av jordens atmosfär?",
+    "answer": "Kväve",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "question": "Vad kallas den minsta enheten av ett kemiskt grundämne?",
+    "answer": "Atom",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "question": "Vad heter den process där celler delar sig för att skapa könsceller?",
+    "answer": "Meios",
+    "category": "nature-science",
+    "level": "adult"
   }
 ]

@@ -1,25 +1,5 @@
 [
   {
-    "question": "Hur många bokstäver finns det i det svenska alfabetet?",
-    "answer": "29",
-    "category": "trivia",
-    "level": "tween"
-  },
-  {
-    "question": "Vad heter världens längsta ord i svenska språket?",
-    "answer": "Nordöstersjökustartilleriflygspaningssimulatoranläggningsmaterielunderhållsuppföljningssystemdiskussionsinläggsförberedelsearbeten",
-    "category": "trivia",
-    "level": "adult"
-  },
-  {
-    "question": "Vilket år grundades Google?",
-    "answer": "1998",
-    "category": "trivia",
-    "level": "young-teen",
-    "start_year": 1998,
-    "end_year": 1998
-  },
-  {
     "question": "Hur många timmar är ett dygn?",
     "answer": "24",
     "category": "trivia",
@@ -30,5 +10,57 @@
     "answer": "Ekollon",
     "category": "trivia",
     "level": "child"
+  },
+  {
+    "question": "Hur många bokstäver finns det i det svenska alfabetet?",
+    "answer": "29",
+    "category": "trivia",
+    "level": "tween"
+  },
+  {
+    "question": "Hur många dagar har ett normalår?",
+    "answer": "365",
+    "category": "trivia",
+    "level": "tween"
+  },
+  {
+    "question": "Vilket år grundades Google?",
+    "answer": "1998",
+    "category": "trivia",
+    "level": "young-teen",
+    "start_year": 1998,
+    "end_year": 1998
+  },
+  {
+    "question": "Vad heter den största öknen i världen?",
+    "answer": "Sahara",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "question": "Hur många element finns det i det periodiska systemet (ungefär)?",
+    "answer": "118",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "question": "Vad heter den kända klockan i London?",
+    "answer": "Big Ben",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "question": "Vad heter världens längsta ord i svenska språket?",
+    "answer": "Nordöstersjökustartilleriflygspaningssimulatoranläggningsmaterielunderhållsuppföljningssystemdiskussionsinläggsförberedelsearbeten",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "question": "Vilket år myntades termen 'Big Bang' för universums uppkomst?",
+    "answer": "1949",
+    "category": "trivia",
+    "level": "adult",
+    "start_year": 1949,
+    "end_year": 1949
   }
 ]

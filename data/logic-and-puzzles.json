@@ -1,7 +1,13 @@
 [
   {
-    "question": "Om du har 3 äpplen och tar bort 2, hur många har du då?",
-    "answer": "2 (de du tog)",
+    "question": "Hur mycket är 2 + 2?",
+    "answer": "4",
+    "category": "logic-and-puzzles",
+    "level": "child"
+  },
+  {
+    "question": "Om du har 5 kakor och äter 2, hur många har du kvar?",
+    "answer": "3",
     "category": "logic-and-puzzles",
     "level": "child"
   },
@@ -12,21 +18,45 @@
     "level": "tween"
   },
   {
-    "question": "Hur många månader har 28 dagar?",
-    "answer": "12 (alla månader har minst 28 dagar)",
+    "question": "Hur mycket är 10 gånger 10?",
+    "answer": "100",
     "category": "logic-and-puzzles",
     "level": "tween"
-  },
-  {
-    "question": "Om en elektrisk tåg kör norrut, åt vilket håll går röken?",
-    "answer": "Det går ingen rök, det är ett elektriskt tåg",
-    "category": "logic-and-puzzles",
-    "level": "child"
   },
   {
     "question": "Vad är hälften av 2 plus 2?",
     "answer": "3 (hälften av 2 = 1, plus 2 = 3)",
     "category": "logic-and-puzzles",
     "level": "young-teen"
+  },
+  {
+    "question": "Ett tåg lämnar Stockholm klockan 10:00 och kör i 120 km/h. När anländer det till en stad 240 km bort?",
+    "answer": "12:00",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "question": "Vad är nästa tal i Fibonacci-serien: 1, 1, 2, 3, 5, 8, ...?",
+    "answer": "13",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "question": "Om A är större än B, och B är större än C, vem är störst?",
+    "answer": "A",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "question": "Vad är kvadratroten av 144?",
+    "answer": "12",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "question": "Hur många diagonaler har en hexagon (sexhörning)?",
+    "answer": "9",
+    "category": "logic-and-puzzles",
+    "level": "adult"
   }
 ]

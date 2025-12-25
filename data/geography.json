@@ -1,32 +1,62 @@
 [
   {
-    "question": "Vad heter huvudstaden i Sverige?",
-    "answer": "Stockholm",
+    "question": "Vilken färg har himlen?",
+    "answer": "Blå",
     "category": "geography",
     "level": "child"
   },
   {
-    "question": "Vilket är världens längsta flod?",
-    "answer": "Nilen",
+    "question": "Vad heter den stora vattenmassa som omger land?",
+    "answer": "Havet",
+    "category": "geography",
+    "level": "child"
+  },
+  {
+    "question": "Vilket land har Eiffeltornet?",
+    "answer": "Frankrike",
     "category": "geography",
     "level": "tween"
   },
   {
-    "question": "Vad heter världens största ocean?",
-    "answer": "Stilla havet (Stilla oceanen)",
+    "question": "Vad heter huvudstaden i Norge?",
+    "answer": "Oslo",
     "category": "geography",
-    "level": "child"
+    "level": "tween"
+  },
+  {
+    "question": "Vilket hav ligger mellan Sverige och Finland?",
+    "answer": "Östersjön",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "question": "Vad heter den längsta floden i Afrika?",
+    "answer": "Nilen",
+    "category": "geography",
+    "level": "young-teen"
   },
   {
     "question": "Vilket är världens minsta land?",
     "answer": "Vatikanstaten",
     "category": "geography",
-    "level": "tween"
+    "level": "old-teen"
   },
   {
-    "question": "Vilket land har flest invånare i världen?",
-    "answer": "Indien (eller Kina, båda accepteras)",
+    "question": "I vilket land ligger den antika staden Petra?",
+    "answer": "Jordanien",
     "category": "geography",
-    "level": "young-teen"
+    "level": "old-teen"
+  },
+  {
+    "question": "Vilken huvudstad ligger högst över havet?",
+    "answer": "La Paz (Bolivia)",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "question": "Vilket land har flest öar i världen?",
+    "answer": "Sverige",
+    "category": "geography",
+    "level": "adult"
   }
 ]

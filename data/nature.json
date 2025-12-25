@@ -6,16 +6,16 @@
     "level": "child"
   },
   {
-    "question": "Hur många hjärtan har en bläckfisk?",
-    "answer": "3 (tre)",
-    "category": "nature",
-    "level": "tween"
-  },
-  {
     "question": "Vilket är världens snabbaste landdjur?",
     "answer": "Geparden",
     "category": "nature",
     "level": "child"
+  },
+  {
+    "question": "Hur många hjärtan har en bläckfisk?",
+    "answer": "3 (tre)",
+    "category": "nature",
+    "level": "tween"
   },
   {
     "question": "Vad kallas Sveriges nationalfågel?",
@@ -28,5 +28,35 @@
     "answer": "Upp till 3 år",
     "category": "nature",
     "level": "young-teen"
+  },
+  {
+    "question": "Vilket djur har den längsta livslängden?",
+    "answer": "Grönlandsvalen",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "question": "Vad heter det fenomen när vissa djur sover under vintern?",
+    "answer": "Vinterdvala (eller hibernation)",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "question": "Vilket däggdjur lägger ägg?",
+    "answer": "Näbbdjuret (eller myrkott)",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "question": "Hur många arter av pingviner finns det ungefär?",
+    "answer": "18",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "question": "Vad kallas djur som äter både växter och kött?",
+    "answer": "Allätare (eller omnivorer)",
+    "category": "nature",
+    "level": "adult"
   }
 ]

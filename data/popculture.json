@@ -1,11 +1,19 @@
 [
   {
-    "question": "Vem spelade huvudrollen som Jack i filmen Titanic?",
-    "answer": "Leonardo DiCaprio",
+    "question": "Vad heter den lille björnen som älskar honung?",
+    "answer": "Nalle Puh",
     "category": "popculture",
-    "level": "young-teen",
-    "start_year": 1997,
-    "end_year": 1997
+    "level": "child",
+    "start_year": 1926,
+    "end_year": 2024
+  },
+  {
+    "question": "Vilken färg har Musse Pigg?",
+    "answer": "Svart (och röd)",
+    "category": "popculture",
+    "level": "child",
+    "start_year": 1928,
+    "end_year": 2024
   },
   {
     "question": "Vilken svensk artist hade en stor hit med låten 'Dancing Queen'?",
@@ -16,12 +24,20 @@
     "end_year": 1976
   },
   {
-    "question": "Vad heter den mest spelade låten på Spotify genom tiderna?",
-    "answer": "Blinding Lights (av The Weeknd)",
+    "question": "Vad heter pojken som går på Hogwarts?",
+    "answer": "Harry Potter",
     "category": "popculture",
-    "level": "old-teen",
-    "start_year": 2019,
-    "end_year": 2020
+    "level": "tween",
+    "start_year": 1997,
+    "end_year": 2011
+  },
+  {
+    "question": "Vem spelade huvudrollen som Jack i filmen Titanic?",
+    "answer": "Leonardo DiCaprio",
+    "category": "popculture",
+    "level": "young-teen",
+    "start_year": 1997,
+    "end_year": 1997
   },
   {
     "question": "Vem vann Eurovision Song Contest för Sverige 2015?",
@@ -32,11 +48,35 @@
     "end_year": 2015
   },
   {
+    "question": "Vad heter den mest spelade låten på Spotify genom tiderna?",
+    "answer": "Blinding Lights (av The Weeknd)",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 2019,
+    "end_year": 2020
+  },
+  {
+    "question": "Vilken brittisk band släppte albumet 'The Dark Side of the Moon'?",
+    "answer": "Pink Floyd",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 1973,
+    "end_year": 1973
+  },
+  {
     "question": "Vad heter den svenska tv-serien om en polis i Ystad?",
     "answer": "Wallander",
     "category": "popculture",
     "level": "adult",
     "start_year": 2005,
     "end_year": 2013
+  },
+  {
+    "question": "Vem regisserade filmen '2001: A Space Odyssey'?",
+    "answer": "Stanley Kubrick",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1968,
+    "end_year": 1968
   }
 ]

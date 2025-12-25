@@ -12,21 +12,53 @@
     "level": "child"
   },
   {
-    "question": "Vad kallas den japanska drycken gjord på ris?",
-    "answer": "Sake",
-    "category": "food-drinks-culture",
-    "level": "old-teen"
-  },
-  {
     "question": "Vilket krydda kommer från saffranskrokus?",
     "answer": "Saffran",
     "category": "food-drinks-culture",
     "level": "tween"
   },
   {
+    "question": "Vad heter den mexikanska maträtten med majstortilla fylld med kött?",
+    "answer": "Taco",
+    "category": "food-drinks-culture",
+    "level": "tween"
+  },
+  {
+    "question": "Vilket land är sushi från?",
+    "answer": "Japan",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "question": "Vad heter den italienska osten som används på pizza?",
+    "answer": "Mozzarella",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "question": "Vad kallas den japanska drycken gjord på ris?",
+    "answer": "Sake",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "question": "Vilket land är croissanten från?",
+    "answer": "Frankrike",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
     "question": "Vad heter den franska rätten med snäckor?",
     "answer": "Escargot",
     "category": "food-drinks-culture",
     "level": "adult"
+  },
+  {
+    "question": "Vilket år fick Noma i Köpenhamn sin första Michelin-stjärna?",
+    "answer": "2005",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 2005,
+    "end_year": 2005
   }
 ]

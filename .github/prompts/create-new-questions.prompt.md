@@ -1,7 +1,20 @@
 # Skapa Nya Frågor för Wanna Bet
 
 ## Syfte
+
 Detta dokument innehåller instruktioner för att generera nya frågor till spelet "Wanna Bet".
+
+## Arbetsflöde
+
+Innan du börjar generera nya frågor, **fråga alltid användaren**:
+
+- Ska de nya frågorna **läggas till** de befintliga frågorna i filen?
+- Eller ska alla **befintliga frågor tas bort** först innan de nya frågorna läggs till?
+- **Hur många frågor** ska genereras i varje kategori/svårighetsgrad?
+
+Detta är viktigt för att undvika att oavsiktligt skriva över eller duplicera frågor.
+
+**Viktigt**: När du genererar nya frågor, **läs alltid igenom de befintliga frågorna först** för att säkerställa att de nya frågorna är unika och inte duplicerar befintliga frågor. Varje fråga ska vara unik i sin formulering och sitt innehåll.
 
 ## Frågans Struktur
 
@@ -10,16 +23,19 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
 ### Obligatoriska Egenskaper
 
 1. **question** (string): Själva frågan som ställs till spelarna
+
    - Ska vara tydlig och lätt att förstå
    - Ska vara på svenska
    - Ska vara formulerad så att svaret är kort och konkret
 
 2. **answer** (string): Det korrekta svaret på frågan
+
    - Ska vara kort och koncist
    - Får innehålla förklaringar inom parentes om det finns alternativa svar
    - Exempel: "Stockholm", "3 (tre)", "Indien (eller Kina, båda accepteras)"
 
 3. **category** (string): Kategori som frågan tillhör
+
    - Möjliga värden:
      - `geography` - Geografi
      - `history-and-society` - Historia och samhälle
@@ -43,6 +59,7 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
 ### Valfria Egenskaper (endast för tidsbundna frågor)
 
 5. **start_year** (number): Ungefärligt årtal för början på tidsepoken som frågan gäller
+
    - Används endast för frågor som är relaterade till en specifik tidsperiod eller händelse
    - Exempel: För frågan "Vilket år föll Berlinmuren?" skulle start_year vara 1989
 
@@ -56,6 +73,7 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
 ### När ska start_year och end_year användas?
 
 **Använd tidsstämplar för:**
+
 - Historiska händelser (krig, revolutioner, politiska händelser)
 - Kulturella fenomen från specifika perioder (filmer, musik, TV-program)
 - Teknologiska innovationer och uppfinningar
@@ -63,6 +81,7 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
 - Personer som var aktiva under en viss period
 
 **Använd INTE tidsstämplar för:**
+
 - Frågor om djur och natur (generellt tidlösa)
 - Geografiska fakta (länder, huvudstäder, berg, floder - om de inte är nya eller har förändrats)
 - Generell vetenskap och matematik
@@ -72,6 +91,7 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
 ### Exempel på Klassificering
 
 #### Fråga med tidsstämpel:
+
 ```json
 {
   "question": "Vilket år föll Berlinmuren?",
@@ -84,6 +104,7 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
 ```
 
 #### Fråga utan tidsstämpel:
+
 ```json
 {
   "question": "Vilket är världens största landlevande däggdjur?",
@@ -138,6 +159,10 @@ Varje fil ska innehålla en array av frågobjekt:
 5. **Variation**: Variera typen av frågor inom varje kategori
 6. **Tidlöshet**: Undvik frågor som snabbt blir inaktuella (om inte tidsstämplar används)
 7. **Kulturell relevans**: Frågor ska vara relevanta för en svensk publik
+8. **Icke-självavslöjande**: Frågeställningen får inte innehålla svaret eller direkt avslöja svaret. Spelarna ska behöva använda sina kunskaper för att besvara frågan
+9. **Logisk härledbarhet**: Frågor får inte ha tvetydiga svar som baseras på språkliga trick eller ordlekar. Detta är särskilt viktigt för kategorin "logic-and-puzzles" där alla svar måste gå att härleda logiskt utifrån matematiska eller logiska principer.
+   - ❌ Exempel på dålig fråga: "Om du har 3 äpplen och tar bort 2, hur många har du då?" (Svaret "2 de du tog" baseras på en språklig tolkning av "tar bort", inte logik)
+   - ✅ Exempel på bra fråga: "Vad är nästa tal i serien: 2, 4, 8, 16, 32, ...?" (Svaret "64" kan härledas logiskt från mönstret)
 
 ## Exempel på Kompletta Frågor
 
