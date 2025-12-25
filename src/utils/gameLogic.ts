@@ -49,6 +49,8 @@ export const doesTimePeriodOverlapWithLifetime = (
   const playerLifetimeEnd = currentYear;
   
   // Get question time period (use start_year if end_year not specified, and vice versa)
+  // Fallback to 0 for start (ancient past) and currentYear for end (present) if neither is specified
+  // Note: If neither start_year nor end_year is defined, this function would have already returned true above
   const questionStart = question.start_year ?? question.end_year ?? 0;
   const questionEnd = question.end_year ?? question.start_year ?? currentYear;
   
@@ -143,8 +145,13 @@ export const generateRoundQuestions = (
     // Get unused suitable questions
     const unusedQuestions = suitableQuestions.filter(q => !usedQuestions.has(q.question));
     
-    // If no unused questions in this category (shouldn't happen), use any suitable question
+    // If no unused questions in this category, reuse suitable questions
+    // This can happen when all suitable questions have been used but questions were reset
     const questionsToChooseFrom = unusedQuestions.length > 0 ? unusedQuestions : suitableQuestions;
+    
+    if (unusedQuestions.length === 0 && suitableQuestions.length > 0) {
+      console.warn(`All suitable questions in category ${selectedCategory} have been used for player ${answerer.name} (age ${answerer.age}). Reusing questions.`);
+    }
     
     // Randomly select a question from the category
     const randomQuestionIndex = Math.floor(Math.random() * questionsToChooseFrom.length);
