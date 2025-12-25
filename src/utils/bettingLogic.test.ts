@@ -13,9 +13,9 @@ describe('Betting Logic - Coin Distribution', () => {
   describe('When answerer answers correctly', () => {
     it('should award answerer 2 coins plus coins from "cannot" bets when no one bets', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 0 },
-        { name: 'Sara', coins: 1 },
-        { name: 'Johan', coins: 1 }
+        { name: 'Edvin', age: 20, coins: 0 },
+        { name: 'Sara', age: 20, coins: 1 },
+        { name: 'Johan', age: 20, coins: 1 }
       ];
       const currentBets: Bet[] = [];
       const answererId = 0;
@@ -30,9 +30,9 @@ describe('Betting Logic - Coin Distribution', () => {
 
     it('should award answerer coins from "cannot" bets and award "can" bettors', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 0 },
-        { name: 'Sara', coins: 2 },
-        { name: 'Johan', coins: 2 }
+        { name: 'Edvin', age: 20, coins: 0 },
+        { name: 'Sara', age: 20, coins: 2 },
+        { name: 'Johan', age: 20, coins: 2 }
       ];
       const currentBets: Bet[] = [
         { playerId: 1, type: 'can' },
@@ -50,9 +50,9 @@ describe('Betting Logic - Coin Distribution', () => {
 
     it('should handle multiple "can" bets all winning', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 0 },
-        { name: 'Sara', coins: 1 },
-        { name: 'Johan', coins: 1 }
+        { name: 'Edvin', age: 20, coins: 0 },
+        { name: 'Sara', age: 20, coins: 1 },
+        { name: 'Johan', age: 20, coins: 1 }
       ];
       const currentBets: Bet[] = [
         { playerId: 1, type: 'can' },
@@ -70,9 +70,9 @@ describe('Betting Logic - Coin Distribution', () => {
 
     it('should handle multiple "cannot" bets all losing', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 0 },
-        { name: 'Sara', coins: 2 },
-        { name: 'Johan', coins: 2 }
+        { name: 'Edvin', age: 20, coins: 0 },
+        { name: 'Sara', age: 20, coins: 2 },
+        { name: 'Johan', age: 20, coins: 2 }
       ];
       const currentBets: Bet[] = [
         { playerId: 1, type: 'cannot' },
@@ -92,9 +92,9 @@ describe('Betting Logic - Coin Distribution', () => {
   describe('When answerer answers incorrectly', () => {
     it('should not award answerer anything and award "cannot" bettors', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 0 },
-        { name: 'Sara', coins: 1 },
-        { name: 'Johan', coins: 1 }
+        { name: 'Edvin', age: 20, coins: 0 },
+        { name: 'Sara', age: 20, coins: 1 },
+        { name: 'Johan', age: 20, coins: 1 }
       ];
       const currentBets: Bet[] = [
         { playerId: 1, type: 'cannot' }
@@ -111,9 +111,9 @@ describe('Betting Logic - Coin Distribution', () => {
 
     it('should deduct coins from "can" bettors who lose', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 0 },
-        { name: 'Sara', coins: 2 },
-        { name: 'Johan', coins: 2 }
+        { name: 'Edvin', age: 20, coins: 0 },
+        { name: 'Sara', age: 20, coins: 2 },
+        { name: 'Johan', age: 20, coins: 2 }
       ];
       const currentBets: Bet[] = [
         { playerId: 1, type: 'can' },
@@ -131,9 +131,9 @@ describe('Betting Logic - Coin Distribution', () => {
 
     it('should handle multiple "cannot" bets all winning', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 0 },
-        { name: 'Sara', coins: 1 },
-        { name: 'Johan', coins: 1 }
+        { name: 'Edvin', age: 20, coins: 0 },
+        { name: 'Sara', age: 20, coins: 1 },
+        { name: 'Johan', age: 20, coins: 1 }
       ];
       const currentBets: Bet[] = [
         { playerId: 1, type: 'cannot' },
@@ -151,9 +151,9 @@ describe('Betting Logic - Coin Distribution', () => {
 
     it('should handle multiple "can" bets all losing', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 0 },
-        { name: 'Sara', coins: 2 },
-        { name: 'Johan', coins: 2 }
+        { name: 'Edvin', age: 20, coins: 0 },
+        { name: 'Sara', age: 20, coins: 2 },
+        { name: 'Johan', age: 20, coins: 2 }
       ];
       const currentBets: Bet[] = [
         { playerId: 1, type: 'can' },
@@ -173,9 +173,9 @@ describe('Betting Logic - Coin Distribution', () => {
   describe('Edge cases', () => {
     it('should handle when no one places a bet and answerer is correct', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 0 },
-        { name: 'Sara', coins: 1 },
-        { name: 'Johan', coins: 1 }
+        { name: 'Edvin', age: 20, coins: 0 },
+        { name: 'Sara', age: 20, coins: 1 },
+        { name: 'Johan', age: 20, coins: 1 }
       ];
       const currentBets: Bet[] = [];
       const answererId = 0;
@@ -190,9 +190,9 @@ describe('Betting Logic - Coin Distribution', () => {
 
     it('should handle when no one places a bet and answerer is incorrect', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 0 },
-        { name: 'Sara', coins: 1 },
-        { name: 'Johan', coins: 1 }
+        { name: 'Edvin', age: 20, coins: 0 },
+        { name: 'Sara', age: 20, coins: 1 },
+        { name: 'Johan', age: 20, coins: 1 }
       ];
       const currentBets: Bet[] = [];
       const answererId = 0;
@@ -207,8 +207,8 @@ describe('Betting Logic - Coin Distribution', () => {
 
     it('should prevent negative coin values when player loses bet', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 2 },
-        { name: 'Sara', coins: 0 }
+        { name: 'Edvin', age: 20, coins: 2 },
+        { name: 'Sara', age: 20, coins: 0 }
       ];
       const currentBets: Bet[] = [
         { playerId: 1, type: 'can' }
@@ -222,9 +222,9 @@ describe('Betting Logic - Coin Distribution', () => {
 
     it('should not mutate the original players array', () => {
       const players: Player[] = [
-        { name: 'Edvin', coins: 2 },
-        { name: 'Sara', coins: 1 },
-        { name: 'Johan', coins: 1 }
+        { name: 'Edvin', age: 20, coins: 2 },
+        { name: 'Sara', age: 20, coins: 1 },
+        { name: 'Johan', age: 20, coins: 1 }
       ];
       const currentBets: Bet[] = [
         { playerId: 1, type: 'can' },

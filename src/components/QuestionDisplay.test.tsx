@@ -11,9 +11,9 @@ describe('QuestionDisplay', () => {
   };
 
   const mockPlayers: Player[] = [
-    { name: 'Kalle', coins: 2 },
-    { name: 'Lisa', coins: 1 },
-    { name: 'Anna', coins: 0 }
+    { name: 'Kalle', age: 20, coins: 2 },
+    { name: 'Lisa', age: 20, coins: 1 },
+    { name: 'Anna', age: 20, coins: 0 }
   ];
 
   const mockOnCorrect = vi.fn();

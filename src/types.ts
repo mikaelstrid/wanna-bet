@@ -24,7 +24,13 @@ export interface Question {
 
 export interface Player {
   name: string;
+  age: number;
   coins: number;
+}
+
+export interface PlayerData {
+  name: string;
+  age: number;
 }
 
 export interface RoundQuestion {
