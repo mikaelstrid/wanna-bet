@@ -35,6 +35,13 @@ export interface RoundQuestion {
 
 export type GameScreen = 'welcome' | 'registration' | 'game' | 'question' | 'victory';
 
+export type BetType = 'can' | 'cannot';
+
+export interface Bet {
+  playerId: number;
+  type: BetType;
+}
+
 export interface GameState {
   screen: GameScreen;
   players: Player[];
@@ -43,5 +50,5 @@ export interface GameState {
   roundQuestions: RoundQuestion[];
   usedQuestions: string[]; // Array of question texts that have been used
   lastScoredPlayerIds: number[]; // Array of player IDs who scored in the last turn
-  currentBets: number[]; // Array of player IDs who have bet on current question
+  currentBets: Bet[]; // Array of bets on current question
 }

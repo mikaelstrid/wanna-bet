@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import './App.css';
-import type { GameState, Question, Player } from './types';
+import type { GameState, Question, Player, BetType } from './types';
 import { saveGameState, loadGameState, clearGameState } from './utils/storage';
 import { generateRoundQuestions, groupQuestionsByCategory } from './utils/gameLogic';
 import WelcomeScreen from './components/WelcomeScreen';
@@ -86,14 +86,22 @@ function App() {
     setGameState({ ...gameState, screen: 'question', lastScoredPlayerIds: [], currentBets: [] });
   };
 
-  const handleToggleBet = (playerId: number) => {
+  const handleToggleBet = (playerId: number, betType: BetType) => {
     setGameState(prevState => {
-      const isAlreadyBetting = prevState.currentBets.includes(playerId);
+      const existingBet = prevState.currentBets.find(bet => bet.playerId === playerId);
 
-      if (isAlreadyBetting) {
-        // Remove bet immutably
-        const updatedBets = prevState.currentBets.filter(id => id !== playerId);
-        return { ...prevState, currentBets: updatedBets };
+      if (existingBet) {
+        if (existingBet.type === betType) {
+          // Remove bet if clicking the same type
+          const updatedBets = prevState.currentBets.filter(bet => bet.playerId !== playerId);
+          return { ...prevState, currentBets: updatedBets };
+        } else {
+          // Change bet type if clicking different type
+          const updatedBets = prevState.currentBets.map(bet => 
+            bet.playerId === playerId ? { ...bet, type: betType } : bet
+          );
+          return { ...prevState, currentBets: updatedBets };
+        }
       }
 
       const player = prevState.players[playerId];
@@ -102,8 +110,8 @@ function App() {
         return prevState;
       }
 
-      // Add bet immutably
-      const updatedBets = [...prevState.currentBets, playerId];
+      // Add new bet
+      const updatedBets = [...prevState.currentBets, { playerId, type: betType }];
       return { ...prevState, currentBets: updatedBets };
     });
   };
@@ -113,13 +121,20 @@ function App() {
     const newPlayers = [...gameState.players];
     
     if (isCorrect) {
-      // Answerer gets 1 coin plus all bet coins
-      const betCoins = gameState.currentBets.length;
-      newPlayers[currentQuestion.answererId].coins += 1 + betCoins;
+      // Answerer gets 1 coin plus coins from losing bets (those who bet 'cannot')
+      const cannotBets = gameState.currentBets.filter(bet => bet.type === 'cannot');
+      const canBets = gameState.currentBets.filter(bet => bet.type === 'can');
       
-      // Betting players lose their bet coins
-      gameState.currentBets.forEach(playerId => {
-        newPlayers[playerId].coins -= 1;
+      newPlayers[currentQuestion.answererId].coins += 1 + cannotBets.length;
+      
+      // Players who bet 'cannot' lose their coins
+      cannotBets.forEach(bet => {
+        newPlayers[bet.playerId].coins -= 1;
+      });
+      
+      // Players who bet 'can' win 1 coin
+      canBets.forEach(bet => {
+        newPlayers[bet.playerId].coins += 1;
       });
       
       // Check for winner
@@ -135,11 +150,21 @@ function App() {
         return;
       }
       
-      moveToNextQuestion(newPlayers, [currentQuestion.answererId]);
+      // Collect all players who scored
+      const scoredPlayerIds = [currentQuestion.answererId, ...canBets.map(bet => bet.playerId)];
+      moveToNextQuestion(newPlayers, scoredPlayerIds);
     } else {
-      // Betting players win 1 coin
-      gameState.currentBets.forEach(playerId => {
-        newPlayers[playerId].coins += 1;
+      // Players who bet 'cannot' win 1 coin
+      const cannotBets = gameState.currentBets.filter(bet => bet.type === 'cannot');
+      const canBets = gameState.currentBets.filter(bet => bet.type === 'can');
+      
+      cannotBets.forEach(bet => {
+        newPlayers[bet.playerId].coins += 1;
+      });
+      
+      // Players who bet 'can' lose their coins
+      canBets.forEach(bet => {
+        newPlayers[bet.playerId].coins -= 1;
       });
       
       // Check if any betting player won
@@ -155,7 +180,7 @@ function App() {
         return;
       }
       
-      moveToNextQuestion(newPlayers, gameState.currentBets);
+      moveToNextQuestion(newPlayers, cannotBets.map(bet => bet.playerId));
     }
   };
 
