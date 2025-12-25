@@ -2,26 +2,33 @@
   {
     "question": "Hur många bokstäver finns det i det svenska alfabetet?",
     "answer": "29",
-    "category": "trivia"
+    "category": "trivia",
+    "level": "tween"
   },
   {
     "question": "Vad heter världens längsta ord i svenska språket?",
     "answer": "Nordöstersjökustartilleriflygspaningssimulatoranläggningsmaterielunderhållsuppföljningssystemdiskussionsinläggsförberedelsearbeten",
-    "category": "trivia"
+    "category": "trivia",
+    "level": "adult"
   },
   {
     "question": "Vilket år grundades Google?",
     "answer": "1998",
-    "category": "trivia"
+    "category": "trivia",
+    "level": "young-teen",
+    "start_year": 1998,
+    "end_year": 1998
   },
   {
     "question": "Hur många timmar är ett dygn?",
     "answer": "24",
-    "category": "trivia"
+    "category": "trivia",
+    "level": "child"
   },
   {
     "question": "Vad kallas frukten som växer på ekträd?",
     "answer": "Ekollon",
-    "category": "trivia"
+    "category": "trivia",
+    "level": "child"
   }
 ]

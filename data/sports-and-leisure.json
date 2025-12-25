@@ -2,26 +2,37 @@
   {
     "question": "Vilket land vann fotbolls-VM 2018?",
     "answer": "Frankrike",
-    "category": "sports-and-leisure"
+    "category": "sports-and-leisure",
+    "level": "tween",
+    "start_year": 2018,
+    "end_year": 2018
   },
   {
     "question": "Hur många spelare finns det i ett ishockeylag på isen samtidigt?",
     "answer": "6 (inklusive målvakten)",
-    "category": "sports-and-leisure"
+    "category": "sports-and-leisure",
+    "level": "child"
   },
   {
     "question": "Vem är den svenska längdskidåkare som vunnit flest OS-guld?",
     "answer": "Gunde Svan (eller Charlotte Kalla, båda har 3 guld)",
-    "category": "sports-and-leisure"
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1984,
+    "end_year": 2018
   },
   {
     "question": "Vilket år hölls OS i Stockholm?",
     "answer": "1912",
-    "category": "sports-and-leisure"
+    "category": "sports-and-leisure",
+    "level": "young-teen",
+    "start_year": 1912,
+    "end_year": 1912
   },
   {
     "question": "Vad heter världens mest kända tennisturnering på gräs?",
     "answer": "Wimbledon",
-    "category": "sports-and-leisure"
+    "category": "sports-and-leisure",
+    "level": "tween"
   }
 ]

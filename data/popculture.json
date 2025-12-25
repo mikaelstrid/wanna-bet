@@ -2,26 +2,41 @@
   {
     "question": "Vem spelade huvudrollen som Jack i filmen Titanic?",
     "answer": "Leonardo DiCaprio",
-    "category": "popculture"
+    "category": "popculture",
+    "level": "young-teen",
+    "start_year": 1997,
+    "end_year": 1997
   },
   {
     "question": "Vilken svensk artist hade en stor hit med låten 'Dancing Queen'?",
     "answer": "ABBA",
-    "category": "popculture"
+    "category": "popculture",
+    "level": "tween",
+    "start_year": 1976,
+    "end_year": 1976
   },
   {
     "question": "Vad heter den mest spelade låten på Spotify genom tiderna?",
     "answer": "Blinding Lights (av The Weeknd)",
-    "category": "popculture"
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 2019,
+    "end_year": 2020
   },
   {
     "question": "Vem vann Eurovision Song Contest för Sverige 2015?",
     "answer": "Måns Zelmerlöw",
-    "category": "popculture"
+    "category": "popculture",
+    "level": "young-teen",
+    "start_year": 2015,
+    "end_year": 2015
   },
   {
     "question": "Vad heter den svenska tv-serien om en polis i Ystad?",
     "answer": "Wallander",
-    "category": "popculture"
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 2005,
+    "end_year": 2013
   }
 ]
