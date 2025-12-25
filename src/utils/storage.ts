@@ -39,20 +39,17 @@ export const savePlayerNames = (players: PlayerData[]): void => {
     const newPlayers = players.filter(player => player.name.trim() !== '');
     
     // Merge players, updating age if name already exists
-    const playerMap = new Map<string, number>();
-    existingPlayers.forEach(player => {
-      playerMap.set(player.name, player.age);
-    });
-    newPlayers.forEach(player => {
-      playerMap.set(player.name, player.age);
-    });
+    const allPlayers = [...existingPlayers, ...newPlayers].reduce((acc, player) => {
+      acc.set(player.name, player.age);
+      return acc;
+    }, new Map<string, number>());
     
-    const allPlayers: PlayerData[] = Array.from(playerMap.entries()).map(([name, age]) => ({
+    const playerList: PlayerData[] = Array.from(allPlayers.entries()).map(([name, age]) => ({
       name,
       age
     }));
     
-    const serialized = JSON.stringify(allPlayers);
+    const serialized = JSON.stringify(playerList);
     localStorage.setItem(PLAYER_NAMES_KEY, serialized);
   } catch (error) {
     console.error('Failed to save player names:', error);

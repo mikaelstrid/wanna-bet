@@ -7,6 +7,9 @@ interface PlayerRegistrationProps {
   onStartGame: (players: PlayerData[]) => void;
 }
 
+// Generate age options once outside the component
+const AGE_OPTIONS = Array.from({ length: 121 }, (_, i) => i);
+
 export default function PlayerRegistration({
   onStartGame,
 }: PlayerRegistrationProps) {
@@ -123,7 +126,7 @@ export default function PlayerRegistration({
                     className="age-select"
                     aria-label={`Ålder för spelare ${index + 1}`}
                   >
-                    {Array.from({ length: 121 }, (_, i) => i).map((age) => (
+                    {AGE_OPTIONS.map((age) => (
                       <option key={age} value={age}>
                         {age}
                       </option>
