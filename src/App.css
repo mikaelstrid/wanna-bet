@@ -13,6 +13,12 @@
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  #root {
+    padding: var(--spacing-2xl) var(--spacing-xl);
+  }
+}
+
 .btn-primary {
   padding: var(--spacing-md) var(--spacing-xl);
   font-size: var(--font-size-xl);
