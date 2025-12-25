@@ -1,13 +1,15 @@
-import { useState, useMemo } from 'react';
-import { loadPlayerNames, savePlayerNames } from '../utils/storage';
-import './PlayerRegistration.css';
+import { useState, useMemo } from "react";
+import { loadPlayerNames, savePlayerNames } from "../utils/storage";
+import "./PlayerRegistration.css";
 
 interface PlayerRegistrationProps {
   onStartGame: (playerNames: string[]) => void;
 }
 
-export default function PlayerRegistration({ onStartGame }: PlayerRegistrationProps) {
-  const [playerNames, setPlayerNames] = useState(['', '', '', '']);
+export default function PlayerRegistration({
+  onStartGame,
+}: PlayerRegistrationProps) {
+  const [playerNames, setPlayerNames] = useState(["", "", "", ""]);
   const [errors, setErrors] = useState<string[]>([]);
   const [savedNames] = useState<string[]>(() => loadPlayerNames());
 
@@ -25,28 +27,30 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const newErrors: string[] = [];
-    
+
     // Filter out empty names
-    const filledNames = playerNames.map(name => name.trim()).filter(name => name !== '');
-    
+    const filledNames = playerNames
+      .map((name) => name.trim())
+      .filter((name) => name !== "");
+
     // Validate minimum 2 players
     if (filledNames.length < 2) {
-      newErrors.push('Minst 2 spelare måste fyllas i');
+      newErrors.push("Minst 2 spelare måste fyllas i");
     }
-    
+
     // Validate unique names among filled names
-    const uniqueNames = new Set(filledNames.map(name => name.toLowerCase()));
+    const uniqueNames = new Set(filledNames.map((name) => name.toLowerCase()));
     if (uniqueNames.size !== filledNames.length) {
-      newErrors.push('Alla spelarnamn måste vara unika');
+      newErrors.push("Alla spelarnamn måste vara unika");
     }
-    
+
     if (newErrors.length > 0) {
       setErrors(newErrors);
       return;
     }
-    
+
     savePlayerNames(filledNames);
     onStartGame(filledNames);
   };
@@ -56,11 +60,13 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
   const filteredSuggestionsPerField = useMemo(() => {
     return playerNames.map((_, currentIndex) => {
       const filledNames = playerNames
-        .map((name, idx) => (idx !== currentIndex ? name.trim().toLowerCase() : ''))
-        .filter(name => name !== '');
-      
+        .map((name, idx) =>
+          idx !== currentIndex ? name.trim().toLowerCase() : ""
+        )
+        .filter((name) => name !== "");
+
       return savedNames.filter(
-        savedName => !filledNames.includes(savedName.toLowerCase())
+        (savedName) => !filledNames.includes(savedName.toLowerCase())
       );
     });
   }, [playerNames, savedNames]);
@@ -70,7 +76,7 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
       <div className="registration-content">
         <h2>Spelare</h2>
         <p className="instruction">Fyll i namnen på 2-4 spelare.</p>
-        
+
         <form onSubmit={handleSubmit}>
           {playerNames.map((name, index) => {
             const filteredSuggestions = filteredSuggestionsPerField[index];
@@ -95,15 +101,17 @@ export default function PlayerRegistration({ onStartGame }: PlayerRegistrationPr
               </div>
             );
           })}
-          
+
           {errors.length > 0 && (
             <div className="error-messages">
               {errors.map((error, index) => (
-                <p key={index} className="error">{error}</p>
+                <p key={index} className="error">
+                  {error}
+                </p>
               ))}
             </div>
           )}
-          
+
           <button type="submit" className="btn-primary">
             Starta spelet
           </button>
