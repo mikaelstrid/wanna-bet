@@ -1,5 +1,5 @@
-import './RulesScreen.css';
-import { WINNING_COINS } from '../constants';
+import "./RulesScreen.css";
+import { WINNING_COINS } from "../constants";
 
 interface RulesScreenProps {
   onContinue: () => void;
@@ -10,37 +10,55 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
     <div className="rules-screen">
       <div className="rules-content">
         <h2>Regler</h2>
-        
+
         <div className="rules-list">
           <div className="rule-item">
-            <span className="rule-icon">🏆</span>
+            <h3 className="rule-item-header">
+              <span className="rule-icon">🔀</span>
+              Frågeordning
+            </h3>
             <div className="rule-text">
-              <strong>Hur man vinner:</strong> Den första spelaren som når <span className="highlight-coin">{WINNING_COINS} guldmynt 🪙</span> vinner spelet!
+              Frågorna är slumpmässigt utdelade inom varje runda.
             </div>
           </div>
-          
+
           <div className="rule-item">
-            <span className="rule-icon">💰</span>
+            <h3 className="rule-item-header">
+              <span className="rule-icon">🏆</span>
+              Hur man vinner
+            </h3>
             <div className="rule-text">
-              <strong>Hur man tjänar guldmynt:</strong>
+              Den första spelaren som når{" "}
+              <span className="highlight-coin">
+                {WINNING_COINS} guldmynt 🪙
+              </span>{" "}
+              vinner spelet!
+            </div>
+          </div>
+
+          <div className="rule-item">
+            <h3 className="rule-item-header">
+              <span className="rule-icon">💰</span>
+              Hur man tjänar guldmynt
+            </h3>
+            <div className="rule-text">
               <ul>
-                <li>Svara rätt på din egen fråga: +1 mynt</li>
-                <li>Satsa rätt på andra spelares svar: +1 mynt</li>
-                <li>Satsa fel: -1 mynt</li>
+                <li>Du får 🪙🪙 om du svarar rätt på din fråga.</li>
+                <li>
+                  Du kan satsa på om en annan spelare kan svara rätt på sin
+                  fråga, om du satsar rätt får du 🪙 annars blir du av med 🪙.
+                </li>
+                <li>
+                  Om någon satsar på att du inte kan svara rätt på din fråga och
+                  du svarar rätt, får du deras satsade 🪙.
+                </li>
               </ul>
             </div>
           </div>
-          
-          <div className="rule-item">
-            <span className="rule-icon">🔀</span>
-            <div className="rule-text">
-              <strong>Frågeordning:</strong> Frågorna är slumpmässigt utdelade inom varje runda, så alla får olika svårighetsgrad!
-            </div>
-          </div>
         </div>
-        
+
         <button className="btn-primary" onClick={onContinue}>
-          Till spelarregistrering
+          Ok, jag är med!
         </button>
       </div>
     </div>

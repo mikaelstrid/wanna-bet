@@ -18,35 +18,26 @@
   gap: var(--spacing-lg);
 }
 
-.rule-item {
+/* .rule-item {} */
+
+.rule-item-header {
+  align-items: center;
+  color: var(--color-text-secondary);
   display: flex;
-  gap: var(--spacing-md);
-  align-items: flex-start;
 }
 
 .rule-icon {
   font-size: var(--font-size-2xl);
-  flex-shrink: 0;
-  margin-top: 0.2rem;
+  width: 2.5rem;
 }
 
 .rule-text {
-  flex: 1;
-  line-height: 1.6;
   color: var(--color-text-secondary);
-}
-
-.rule-text strong {
-  display: block;
-  margin-bottom: var(--spacing-xs);
-  color: var(--color-text-primary);
-  font-size: var(--font-size-md);
+  padding-left: 2.5rem;
 }
 
 .rule-text ul {
-  margin-top: var(--spacing-sm);
   padding-left: var(--spacing-lg);
-  list-style-type: disc;
 }
 
 .rule-text li {
