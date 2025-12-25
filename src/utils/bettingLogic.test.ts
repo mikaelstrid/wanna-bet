@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import type { Player, Bet } from '../types';
+import { calculateBettingResult } from './bettingLogic';
 
 /**
  * These tests verify the betting logic requirements:
@@ -19,24 +20,12 @@ describe('Betting Logic - Coin Distribution', () => {
       const currentBets: Bet[] = [];
       const answererId = 0;
 
-      // Simulate logic: answerer gets 1 coin
-      const newPlayers = [...players];
-      const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = currentBets.filter(bet => bet.type === 'can');
-      
-      newPlayers[answererId].coins += 1 + cannotBets.length;
-      
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
-      });
-      
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
+      const result = calculateBettingResult(players, currentBets, answererId, true);
 
-      expect(newPlayers[0].coins).toBe(1); // Edvin gets 1 coin
-      expect(newPlayers[1].coins).toBe(1); // Sara unchanged
-      expect(newPlayers[2].coins).toBe(1); // Johan unchanged
+      expect(result.updatedPlayers[0].coins).toBe(1); // Edvin gets 1 coin
+      expect(result.updatedPlayers[1].coins).toBe(1); // Sara unchanged
+      expect(result.updatedPlayers[2].coins).toBe(1); // Johan unchanged
+      expect(result.scoredPlayerIds).toEqual([0]); // Only answerer scored
     });
 
     it('should award answerer coins from "cannot" bets and award "can" bettors', () => {
@@ -51,23 +40,12 @@ describe('Betting Logic - Coin Distribution', () => {
       ];
       const answererId = 0;
 
-      const newPlayers = [...players];
-      const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = currentBets.filter(bet => bet.type === 'can');
-      
-      newPlayers[answererId].coins += 1 + cannotBets.length;
-      
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
-      });
-      
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
+      const result = calculateBettingResult(players, currentBets, answererId, true);
 
-      expect(newPlayers[0].coins).toBe(2); // Edvin: 0 + 1 (correct) + 1 (Johan's losing bet)
-      expect(newPlayers[1].coins).toBe(3); // Sara: 2 + 1 (winning "can" bet)
-      expect(newPlayers[2].coins).toBe(1); // Johan: 2 - 1 (losing "cannot" bet)
+      expect(result.updatedPlayers[0].coins).toBe(2); // Edvin: 0 + 1 (correct) + 1 (Johan's losing bet)
+      expect(result.updatedPlayers[1].coins).toBe(3); // Sara: 2 + 1 (winning "can" bet)
+      expect(result.updatedPlayers[2].coins).toBe(1); // Johan: 2 - 1 (losing "cannot" bet)
+      expect(result.scoredPlayerIds).toEqual([0, 1]); // Answerer and Sara scored
     });
 
     it('should handle multiple "can" bets all winning', () => {
@@ -82,23 +60,12 @@ describe('Betting Logic - Coin Distribution', () => {
       ];
       const answererId = 0;
 
-      const newPlayers = [...players];
-      const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = currentBets.filter(bet => bet.type === 'can');
-      
-      newPlayers[answererId].coins += 1 + cannotBets.length;
-      
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
-      });
-      
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
+      const result = calculateBettingResult(players, currentBets, answererId, true);
 
-      expect(newPlayers[0].coins).toBe(1); // Edvin: 0 + 1 (correct)
-      expect(newPlayers[1].coins).toBe(2); // Sara: 1 + 1 (winning bet)
-      expect(newPlayers[2].coins).toBe(2); // Johan: 1 + 1 (winning bet)
+      expect(result.updatedPlayers[0].coins).toBe(1); // Edvin: 0 + 1 (correct)
+      expect(result.updatedPlayers[1].coins).toBe(2); // Sara: 1 + 1 (winning bet)
+      expect(result.updatedPlayers[2].coins).toBe(2); // Johan: 1 + 1 (winning bet)
+      expect(result.scoredPlayerIds).toEqual([0, 1, 2]); // All scored
     });
 
     it('should handle multiple "cannot" bets all losing', () => {
@@ -113,23 +80,12 @@ describe('Betting Logic - Coin Distribution', () => {
       ];
       const answererId = 0;
 
-      const newPlayers = [...players];
-      const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = currentBets.filter(bet => bet.type === 'can');
-      
-      newPlayers[answererId].coins += 1 + cannotBets.length;
-      
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
-      });
-      
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
+      const result = calculateBettingResult(players, currentBets, answererId, true);
 
-      expect(newPlayers[0].coins).toBe(3); // Edvin: 0 + 1 (correct) + 2 (from losing bets)
-      expect(newPlayers[1].coins).toBe(1); // Sara: 2 - 1 (losing bet)
-      expect(newPlayers[2].coins).toBe(1); // Johan: 2 - 1 (losing bet)
+      expect(result.updatedPlayers[0].coins).toBe(3); // Edvin: 0 + 1 (correct) + 2 (from losing bets)
+      expect(result.updatedPlayers[1].coins).toBe(1); // Sara: 2 - 1 (losing bet)
+      expect(result.updatedPlayers[2].coins).toBe(1); // Johan: 2 - 1 (losing bet)
+      expect(result.scoredPlayerIds).toEqual([0]); // Only answerer scored
     });
   });
 
@@ -143,22 +99,14 @@ describe('Betting Logic - Coin Distribution', () => {
       const currentBets: Bet[] = [
         { playerId: 1, type: 'cannot' }
       ];
+      const answererId = 0;
 
-      const newPlayers = [...players];
-      const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = currentBets.filter(bet => bet.type === 'can');
-      
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
-      
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
-      });
+      const result = calculateBettingResult(players, currentBets, answererId, false);
 
-      expect(newPlayers[0].coins).toBe(0); // Edvin: no change
-      expect(newPlayers[1].coins).toBe(2); // Sara: 1 + 1 (winning "cannot" bet)
-      expect(newPlayers[2].coins).toBe(1); // Johan: unchanged
+      expect(result.updatedPlayers[0].coins).toBe(0); // Edvin: no change
+      expect(result.updatedPlayers[1].coins).toBe(2); // Sara: 1 + 1 (winning "cannot" bet)
+      expect(result.updatedPlayers[2].coins).toBe(1); // Johan: unchanged
+      expect(result.scoredPlayerIds).toEqual([1]); // Only Sara scored
     });
 
     it('should deduct coins from "can" bettors who lose', () => {
@@ -171,22 +119,14 @@ describe('Betting Logic - Coin Distribution', () => {
         { playerId: 1, type: 'can' },
         { playerId: 2, type: 'cannot' }
       ];
+      const answererId = 0;
 
-      const newPlayers = [...players];
-      const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = currentBets.filter(bet => bet.type === 'can');
-      
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
-      
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
-      });
+      const result = calculateBettingResult(players, currentBets, answererId, false);
 
-      expect(newPlayers[0].coins).toBe(0); // Edvin: no change
-      expect(newPlayers[1].coins).toBe(1); // Sara: 2 - 1 (losing "can" bet)
-      expect(newPlayers[2].coins).toBe(3); // Johan: 2 + 1 (winning "cannot" bet)
+      expect(result.updatedPlayers[0].coins).toBe(0); // Edvin: no change
+      expect(result.updatedPlayers[1].coins).toBe(1); // Sara: 2 - 1 (losing "can" bet)
+      expect(result.updatedPlayers[2].coins).toBe(3); // Johan: 2 + 1 (winning "cannot" bet)
+      expect(result.scoredPlayerIds).toEqual([2]); // Only Johan scored
     });
 
     it('should handle multiple "cannot" bets all winning', () => {
@@ -199,22 +139,14 @@ describe('Betting Logic - Coin Distribution', () => {
         { playerId: 1, type: 'cannot' },
         { playerId: 2, type: 'cannot' }
       ];
+      const answererId = 0;
 
-      const newPlayers = [...players];
-      const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = currentBets.filter(bet => bet.type === 'can');
-      
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
-      
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
-      });
+      const result = calculateBettingResult(players, currentBets, answererId, false);
 
-      expect(newPlayers[0].coins).toBe(0); // Edvin: no change
-      expect(newPlayers[1].coins).toBe(2); // Sara: 1 + 1 (winning bet)
-      expect(newPlayers[2].coins).toBe(2); // Johan: 1 + 1 (winning bet)
+      expect(result.updatedPlayers[0].coins).toBe(0); // Edvin: no change
+      expect(result.updatedPlayers[1].coins).toBe(2); // Sara: 1 + 1 (winning bet)
+      expect(result.updatedPlayers[2].coins).toBe(2); // Johan: 1 + 1 (winning bet)
+      expect(result.scoredPlayerIds).toEqual([1, 2]); // Both bettors scored
     });
 
     it('should handle multiple "can" bets all losing', () => {
@@ -227,22 +159,14 @@ describe('Betting Logic - Coin Distribution', () => {
         { playerId: 1, type: 'can' },
         { playerId: 2, type: 'can' }
       ];
+      const answererId = 0;
 
-      const newPlayers = [...players];
-      const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = currentBets.filter(bet => bet.type === 'can');
-      
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
-      
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
-      });
+      const result = calculateBettingResult(players, currentBets, answererId, false);
 
-      expect(newPlayers[0].coins).toBe(0); // Edvin: no change
-      expect(newPlayers[1].coins).toBe(1); // Sara: 2 - 1 (losing bet)
-      expect(newPlayers[2].coins).toBe(1); // Johan: 2 - 1 (losing bet)
+      expect(result.updatedPlayers[0].coins).toBe(0); // Edvin: no change
+      expect(result.updatedPlayers[1].coins).toBe(1); // Sara: 2 - 1 (losing bet)
+      expect(result.updatedPlayers[2].coins).toBe(1); // Johan: 2 - 1 (losing bet)
+      expect(result.scoredPlayerIds).toEqual([]); // No one scored
     });
   });
 
@@ -256,23 +180,12 @@ describe('Betting Logic - Coin Distribution', () => {
       const currentBets: Bet[] = [];
       const answererId = 0;
 
-      const newPlayers = [...players];
-      const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = currentBets.filter(bet => bet.type === 'can');
-      
-      newPlayers[answererId].coins += 1 + cannotBets.length;
-      
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
-      });
-      
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
+      const result = calculateBettingResult(players, currentBets, answererId, true);
 
-      expect(newPlayers[0].coins).toBe(1); // Edvin gets 1 coin
-      expect(newPlayers[1].coins).toBe(1); // Sara unchanged
-      expect(newPlayers[2].coins).toBe(1); // Johan unchanged
+      expect(result.updatedPlayers[0].coins).toBe(1); // Edvin gets 1 coin
+      expect(result.updatedPlayers[1].coins).toBe(1); // Sara unchanged
+      expect(result.updatedPlayers[2].coins).toBe(1); // Johan unchanged
+      expect(result.scoredPlayerIds).toEqual([0]); // Only answerer scored
     });
 
     it('should handle when no one places a bet and answerer is incorrect', () => {
@@ -282,22 +195,29 @@ describe('Betting Logic - Coin Distribution', () => {
         { name: 'Johan', coins: 1 }
       ];
       const currentBets: Bet[] = [];
+      const answererId = 0;
 
-      const newPlayers = [...players];
-      const cannotBets = currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = currentBets.filter(bet => bet.type === 'can');
-      
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
-      
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins -= 1;
-      });
+      const result = calculateBettingResult(players, currentBets, answererId, false);
 
-      expect(newPlayers[0].coins).toBe(0); // Edvin unchanged
-      expect(newPlayers[1].coins).toBe(1); // Sara unchanged
-      expect(newPlayers[2].coins).toBe(1); // Johan unchanged
+      expect(result.updatedPlayers[0].coins).toBe(0); // Edvin unchanged
+      expect(result.updatedPlayers[1].coins).toBe(1); // Sara unchanged
+      expect(result.updatedPlayers[2].coins).toBe(1); // Johan unchanged
+      expect(result.scoredPlayerIds).toEqual([]); // No one scored
+    });
+
+    it('should prevent negative coin values when player loses bet', () => {
+      const players: Player[] = [
+        { name: 'Edvin', coins: 2 },
+        { name: 'Sara', coins: 0 }
+      ];
+      const currentBets: Bet[] = [
+        { playerId: 1, type: 'can' }
+      ];
+      const answererId = 0;
+
+      const result = calculateBettingResult(players, currentBets, answererId, false);
+
+      expect(result.updatedPlayers[1].coins).toBe(0); // Sara: should stay at 0, not go negative
     });
   });
 });
