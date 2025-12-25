@@ -4,6 +4,7 @@ import type { GameState, Question, Player, BetType } from './types';
 import { saveGameState, loadGameState, clearGameState } from './utils/storage';
 import { generateRoundQuestions, groupQuestionsByCategory } from './utils/gameLogic';
 import { calculateBettingResult } from './utils/bettingLogic';
+import { WINNING_COINS } from './constants';
 import WelcomeScreen from './components/WelcomeScreen';
 import PlayerRegistration from './components/PlayerRegistration';
 import GameBoard from './components/GameBoard';
@@ -33,8 +34,6 @@ const questionsData = [
   ...natureQuestions,
   ...logicQuestions,
 ] as Question[];
-
-const WINNING_COINS = 3;
 
 function App() {
   const [gameState, setGameState] = useState<GameState>(() => {
