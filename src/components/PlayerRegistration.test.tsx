@@ -323,7 +323,7 @@ describe('PlayerRegistration', () => {
       });
     });
 
-    it('should auto-fill age from saved player data on blur', () => {
+    it('should auto-fill age when selecting from datalist', () => {
       const savedPlayers: PlayerData[] = [
         { name: 'Kalle', age: 55 },
         { name: 'Lisa', age: 47 }
@@ -335,8 +335,8 @@ describe('PlayerRegistration', () => {
       const input1 = screen.getByLabelText('Spelare 1');
       const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
       
+      // Simulate selecting from datalist (exact match)
       fireEvent.change(input1, { target: { value: 'Kalle' } });
-      fireEvent.blur(input1);
       
       expect(ageSelect1.value).toBe('55');
     });

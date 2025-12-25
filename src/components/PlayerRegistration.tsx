@@ -25,6 +25,15 @@ export default function PlayerRegistration({
   const handleNameChange = (index: number, value: string) => {
     const newPlayers = [...players];
     newPlayers[index] = { ...newPlayers[index], name: value };
+    
+    // Auto-fill age only when exact match with saved player (datalist selection)
+    const savedPlayer = savedPlayers.find(
+      (p) => p.name === value
+    );
+    if (savedPlayer) {
+      newPlayers[index].age = savedPlayer.age;
+    }
+    
     setPlayers(newPlayers);
   };
 
@@ -38,15 +47,6 @@ export default function PlayerRegistration({
     const newPlayers = [...players];
     const trimmedName = newPlayers[index].name.trim();
     newPlayers[index] = { ...newPlayers[index], name: trimmedName };
-    
-    // Auto-fill age if name matches a saved player
-    const savedPlayer = savedPlayers.find(
-      (p) => p.name.toLowerCase() === trimmedName.toLowerCase()
-    );
-    if (savedPlayer) {
-      newPlayers[index].age = savedPlayer.age;
-    }
-    
     setPlayers(newPlayers);
   };
 
