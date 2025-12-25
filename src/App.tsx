@@ -6,6 +6,7 @@ import { generateRoundQuestions, groupQuestionsByCategory } from './utils/gameLo
 import { calculateBettingResult } from './utils/bettingLogic';
 import { WINNING_COINS } from './constants';
 import WelcomeScreen from './components/WelcomeScreen';
+import RulesScreen from './components/RulesScreen';
 import PlayerRegistration from './components/PlayerRegistration';
 import GameBoard from './components/GameBoard';
 import QuestionDisplay from './components/QuestionDisplay';
@@ -61,6 +62,10 @@ function App() {
   }, [gameState]);
 
   const handleStart = () => {
+    setGameState({ ...gameState, screen: 'rules' });
+  };
+
+  const handleContinueToRegistration = () => {
     setGameState({ ...gameState, screen: 'registration' });
   };
 
@@ -197,6 +202,10 @@ function App() {
   // Render appropriate screen
   if (gameState.screen === 'welcome') {
     return <WelcomeScreen onStart={handleStart} />;
+  }
+
+  if (gameState.screen === 'rules') {
+    return <RulesScreen onContinue={handleContinueToRegistration} />;
   }
 
   if (gameState.screen === 'registration') {

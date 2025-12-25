@@ -39,7 +39,7 @@ export interface RoundQuestion {
   askerId: number;
 }
 
-export type GameScreen = 'welcome' | 'registration' | 'game' | 'question' | 'victory';
+export type GameScreen = 'welcome' | 'rules' | 'registration' | 'game' | 'question' | 'victory';
 
 export type BetType = 'can' | 'cannot';
 
