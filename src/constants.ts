@@ -15,4 +15,4 @@ export const COINS_FOR_CORRECT_ANSWER = 2;
 /**
  * Number of gold coins required to win the game.
  */
-export const WINNING_COINS = 3;
+export const WINNING_COINS = 10;
