@@ -3,6 +3,7 @@ import './App.css';
 import type { GameState, Question, Player, BetType } from './types';
 import { saveGameState, loadGameState, clearGameState } from './utils/storage';
 import { generateRoundQuestions, groupQuestionsByCategory } from './utils/gameLogic';
+import { calculateBettingResult } from './utils/bettingLogic';
 import WelcomeScreen from './components/WelcomeScreen';
 import PlayerRegistration from './components/PlayerRegistration';
 import GameBoard from './components/GameBoard';
@@ -118,70 +119,29 @@ function App() {
 
   const handleAnswerResult = (isCorrect: boolean) => {
     const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
-    const newPlayers = [...gameState.players];
     
-    if (isCorrect) {
-      // Answerer gets 1 coin plus coins from losing bets (those who bet 'cannot')
-      const cannotBets = gameState.currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = gameState.currentBets.filter(bet => bet.type === 'can');
-      
-      newPlayers[currentQuestion.answererId].coins += 1 + cannotBets.length;
-      
-      // Players who bet 'cannot' lose their coins
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins = Math.max(0, newPlayers[bet.playerId].coins - 1);
+    // Use the utility function to calculate betting result
+    const { updatedPlayers, scoredPlayerIds } = calculateBettingResult(
+      gameState.players,
+      gameState.currentBets,
+      currentQuestion.answererId,
+      isCorrect
+    );
+    
+    // Check for winner
+    const winner = updatedPlayers.find(p => p.coins >= WINNING_COINS);
+    if (winner) {
+      setGameState({
+        ...gameState,
+        players: updatedPlayers,
+        screen: 'victory',
+        lastScoredPlayerIds: [],
+        currentBets: [],
       });
-      
-      // Players who bet 'can' win 1 coin
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
-      
-      // Check for winner
-      const winner = newPlayers.find(p => p.coins >= WINNING_COINS);
-      if (winner) {
-        setGameState({
-          ...gameState,
-          players: newPlayers,
-          screen: 'victory',
-          lastScoredPlayerIds: [],
-          currentBets: [],
-        });
-        return;
-      }
-      
-      // Collect all players who scored
-      const scoredPlayerIds = [currentQuestion.answererId, ...canBets.map(bet => bet.playerId)];
-      moveToNextQuestion(newPlayers, scoredPlayerIds);
-    } else {
-      // Players who bet 'cannot' win 1 coin
-      const cannotBets = gameState.currentBets.filter(bet => bet.type === 'cannot');
-      const canBets = gameState.currentBets.filter(bet => bet.type === 'can');
-      
-      cannotBets.forEach(bet => {
-        newPlayers[bet.playerId].coins += 1;
-      });
-      
-      // Players who bet 'can' lose their coins
-      canBets.forEach(bet => {
-        newPlayers[bet.playerId].coins = Math.max(0, newPlayers[bet.playerId].coins - 1);
-      });
-      
-      // Check if any betting player won
-      const winner = newPlayers.find(p => p.coins >= WINNING_COINS);
-      if (winner) {
-        setGameState({
-          ...gameState,
-          players: newPlayers,
-          screen: 'victory',
-          lastScoredPlayerIds: [],
-          currentBets: [],
-        });
-        return;
-      }
-      
-      moveToNextQuestion(newPlayers, cannotBets.map(bet => bet.playerId));
+      return;
     }
+    
+    moveToNextQuestion(updatedPlayers, scoredPlayerIds);
   };
 
   const moveToNextQuestion = (updatedPlayers: Player[], scoredPlayerIds: number[]) => {
