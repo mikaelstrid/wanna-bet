@@ -58,7 +58,7 @@
   border: 2px solid var(--color-border-light);
   border-radius: var(--border-radius-sm);
   transition: border-color var(--transition-fast);
-  background-color: white;
+  background-color: var(--color-bg-primary, white);
   cursor: pointer;
 }
 

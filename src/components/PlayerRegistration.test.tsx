@@ -366,6 +366,70 @@ describe('PlayerRegistration', () => {
       expect(ageSelect1.value).toBe('55');
     });
 
+    it('should not auto-fill age for non-matching names', () => {
+      const savedPlayers: PlayerData[] = [
+        { name: 'Kalle', age: 55 },
+        { name: 'Lisa', age: 47 }
+      ];
+      vi.spyOn(storage, 'loadPlayerNames').mockReturnValue(savedPlayers);
+      
+      render(<PlayerRegistration onStartGame={mockOnStartGame} />);
+      
+      const input1 = screen.getByLabelText('Spelare 1');
+      const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
+      
+      // Type a name that doesn't match any saved players
+      fireEvent.change(input1, { target: { value: 'NewPlayer' } });
+      
+      // Age should remain at default value
+      expect(ageSelect1.value).toBe('20');
+      
+      // Type a partial match (should also not auto-fill)
+      fireEvent.change(input1, { target: { value: 'Kal' } });
+      expect(ageSelect1.value).toBe('20');
+    });
+
+    it('should keep age select disabled for whitespace-only names', () => {
+      render(<PlayerRegistration onStartGame={mockOnStartGame} />);
+      
+      const input1 = screen.getByLabelText('Spelare 1');
+      const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
+      
+      // Initially disabled
+      expect(ageSelect1.disabled).toBe(true);
+      
+      // Enter only whitespace
+      fireEvent.change(input1, { target: { value: '   ' } });
+      
+      // Should still be disabled (whitespace-only is treated as empty)
+      expect(ageSelect1.disabled).toBe(true);
+      
+      // Enter a mix of text and whitespace
+      fireEvent.change(input1, { target: { value: '  Test  ' } });
+      
+      // Should be enabled now
+      expect(ageSelect1.disabled).toBe(false);
+    });
+
+    it('should reset age to default when name becomes empty after trimming', () => {
+      render(<PlayerRegistration onStartGame={mockOnStartGame} />);
+      
+      const input1 = screen.getByLabelText('Spelare 1');
+      const ageSelect1 = screen.getByLabelText('Ålder för spelare 1') as HTMLSelectElement;
+      
+      // Enter a name and change age
+      fireEvent.change(input1, { target: { value: 'Kalle' } });
+      fireEvent.change(ageSelect1, { target: { value: '35' } });
+      expect(ageSelect1.value).toBe('35');
+      
+      // Clear the name (enter only spaces)
+      fireEvent.change(input1, { target: { value: '   ' } });
+      fireEvent.blur(input1);
+      
+      // Age should reset to default
+      expect(ageSelect1.value).toBe('20');
+    });
+
     it('should have ages from 0 to 120', () => {
       render(<PlayerRegistration onStartGame={mockOnStartGame} />);
       

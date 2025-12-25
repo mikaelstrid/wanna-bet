@@ -88,12 +88,28 @@ describe('Player Names Storage', () => {
       const loaded = loadPlayerNames();
       expect(loaded.length).toBe(2);
       
-      // Should preserve the first casing seen but update ages
+      // Should use the NEW casing (allows users to update casing)
       const alice = loaded.find(p => p.name.toLowerCase() === 'alice');
       const bob = loaded.find(p => p.name.toLowerCase() === 'bob');
       
-      expect(alice).toEqual({ name: 'Alice', age: 35 });
-      expect(bob).toEqual({ name: 'Bob', age: 40 });
+      expect(alice).toEqual({ name: 'alice', age: 35 });
+      expect(bob).toEqual({ name: 'BOB', age: 40 });
+    });
+
+    it('should trim whitespace from stored names', () => {
+      savePlayerNames([
+        { name: '  Alice  ', age: 25 },
+        { name: 'Bob   ', age: 30 }
+      ]);
+      
+      const loaded = loadPlayerNames();
+      expect(loaded.length).toBe(2);
+      
+      const alice = loaded.find(p => p.name === 'Alice');
+      const bob = loaded.find(p => p.name === 'Bob');
+      
+      expect(alice).toEqual({ name: 'Alice', age: 25 });
+      expect(bob).toEqual({ name: 'Bob', age: 30 });
     });
 
     it('should handle errors gracefully', () => {

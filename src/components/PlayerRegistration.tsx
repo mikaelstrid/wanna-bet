@@ -51,6 +51,12 @@ export default function PlayerRegistration({
     const newPlayers = [...players];
     const trimmedName = newPlayers[index].name.trim();
     newPlayers[index] = { ...newPlayers[index], name: trimmedName };
+    
+    // If name becomes empty after trimming, reset age to default
+    if (trimmedName === '') {
+      newPlayers[index].age = 20;
+    }
+    
     setPlayers(newPlayers);
   };
 

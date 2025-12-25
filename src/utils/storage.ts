@@ -38,21 +38,16 @@ export const savePlayerNames = (players: PlayerData[]): void => {
     const existingPlayers = loadPlayerNames();
     const newPlayers = players.filter(player => player.name.trim() !== '');
     
-    // Merge players by normalized name (case-insensitive), updating age if name already exists
+    // Merge players by normalized name (case-insensitive), updating age and name casing
     // Note: If a player name appears multiple times in newPlayers, 
     // only the last occurrence's age will be saved
     const allPlayers = [...existingPlayers, ...newPlayers].reduce(
       (acc, player) => {
         const normalizedName = player.name.trim().toLowerCase();
-        const existing = acc.get(normalizedName);
+        const trimmedName = player.name.trim();
 
-        if (!existing) {
-          // First time we see this normalized name: use this player's casing
-          acc.set(normalizedName, { ...player });
-        } else {
-          // Update age but preserve existing name casing
-          acc.set(normalizedName, { ...existing, age: player.age });
-        }
+        // Always use the new player's casing and age (allows users to update casing)
+        acc.set(normalizedName, { name: trimmedName, age: player.age });
 
         return acc;
       },
