@@ -7,7 +7,8 @@ describe('QuestionDisplay - Betting Functionality', () => {
   const mockQuestion: Question = {
     question: 'Vad är Pythons skapare?',
     answer: 'Guido van Rossum',
-    category: 'technology-and-innovation'
+    category: 'technology-and-innovation',
+    level: 'adult'
   };
 
   const mockPlayers: Player[] = [
