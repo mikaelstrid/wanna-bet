@@ -36,26 +36,29 @@
     stroke-dasharray="4 4"
   />
 
-  <!-- Uniform cross (classic coin symbol) -->
-  <path
-    d="M58 44
-       L70 44
-       L70 58
-       L84 58
-       L84 70
-       L70 70
-       L70 84
-       L58 84
-       L58 70
-       L44 70
-       L44 58
-       L58 58
-       Z"
-    fill="#c87f0a"
-    stroke="#a0640a"
-    stroke-width="2"
-    stroke-linejoin="miter"
-  />
+  <!-- Crown symbol -->
+  <g id="crown">
+    <!-- Crown body with peaks -->
+    <path
+      d="M 45 75
+         L 45 55
+         L 52 62
+         L 64 48
+         L 76 62
+         L 83 55
+         L 83 75
+         Z"
+      fill="#c87f0a"
+      stroke="#a0640a"
+      stroke-width="2"
+      stroke-linejoin="round"
+    />
+    
+    <!-- Crown jewels -->
+    <circle cx="52" cy="68" r="3" fill="#ffd699" />
+    <circle cx="64" cy="68" r="3" fill="#ffd699" />
+    <circle cx="76" cy="68" r="3" fill="#ffd699" />
+  </g>
 
   <!-- Highlights -->
   <ellipse
