@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { Question, Player, Bet, BetType } from '../types';
 import { categoryMetadata } from '../categoryMetadata';
+import Coin from './Coin';
 import './QuestionDisplay.css';
 
 interface QuestionDisplayProps {
@@ -54,7 +55,9 @@ export default function QuestionDisplay({
           
           {!isAnswerRevealed && (
             <div className="betting-section" aria-live="polite" aria-atomic="true">
-              <h3 className="betting-header">Satsa ett 🪙 på {answererName}</h3>
+              <h3 className="betting-header">
+                Satsa ett <Coin /> på {answererName}
+              </h3>
               <div className="betting-players">
                 {eligibleBettors.map(player => {
                   const playerBet = currentBets.find(bet => bet.playerId === player.id);

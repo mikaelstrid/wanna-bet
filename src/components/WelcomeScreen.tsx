@@ -1,3 +1,4 @@
+import Coin from "./Coin";
 import "./WelcomeScreen.css";
 import { WINNING_COINS } from "../constants";
 
@@ -23,7 +24,8 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
           <div className="badge">
             <span className="badge-icon">🏅</span>
             <span className="badge-text">
-              Först till {WINNING_COINS}🪙 vinner
+              Först till {WINNING_COINS}
+              <Coin /> vinner
             </span>
           </div>
         </div>
@@ -31,7 +33,11 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
         <p className="welcome-text">
           Utmana dina vänner i en spännande frågesport! <br />
           Satsa smart, svara rätt och samla{" "}
-          <span className="highlight-coin">guldmynt🪙</span> för att vinna!
+          <span className="highlight-coin">
+            guldmynt
+            <Coin />
+          </span>{" "}
+          för att vinna!
         </p>
 
         <button className="btn-primary btn-start" onClick={onStart}>
