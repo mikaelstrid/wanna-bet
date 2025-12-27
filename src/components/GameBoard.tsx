@@ -42,7 +42,7 @@ export default function GameBoard({
                         : ""
                   }`}
                 >
-                  <Coin />
+                  <Coin decorative />
                 </span>
                 <span
                   className={`coin-count ${

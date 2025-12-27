@@ -31,7 +31,7 @@ export default function VictoryScreen({ winner, allPlayers, onRestart }: Victory
                 <span className="player-name">{player.name}</span>
                 <span className="player-coins">
                   <span className="coin-icon">
-                    <Coin />
+                    <Coin decorative />
                   </span>
                   {player.coins}
                 </span>
