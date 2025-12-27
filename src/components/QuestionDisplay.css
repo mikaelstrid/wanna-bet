@@ -213,23 +213,24 @@
 .betting-buttons {
   display: flex;
   gap: var(--spacing-xs);
+  flex-shrink: 0;
 }
 
 .betting-player-info {
   display: flex;
   align-items: center;
   gap: var(--spacing-md);
+  flex: 1;
+  min-width: 0;
 }
 
 .betting-player-name {
   font-size: var(--font-size-md);
   font-weight: 600;
   color: var(--color-text-primary);
-}
-
-.betting-player-coins {
-  font-size: var(--font-size-md);
-  color: var(--color-text-muted);
+  word-break: break-word;
+  flex: 1;
+  min-width: 0;
 }
 
 .btn-bet {
@@ -243,6 +244,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   min-width: 80px;
+  white-space: nowrap;
 }
 
 .btn-bet:hover:not(:disabled) {

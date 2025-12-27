@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="128"
+  height="128"
+  viewBox="0 0 128 128"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Background circle (outer rim) -->
+  <circle
+    cx="64"
+    cy="64"
+    r="56"
+    fill="url(#goldGradientOuter)"
+    stroke="#b8860b"
+    stroke-width="4"
+  />
+
+  <!-- Inner circle -->
+  <circle
+    cx="64"
+    cy="64"
+    r="42"
+    fill="url(#goldGradientInner)"
+    stroke="#f7e08a"
+    stroke-width="3"
+  />
+
+  <!-- Decorative inner ring -->
+  <circle
+    cx="64"
+    cy="64"
+    r="32"
+    fill="none"
+    stroke="#fdf5b5"
+    stroke-width="2"
+    stroke-dasharray="4 4"
+  />
+
+  <!-- Uniform cross (classic coin symbol) -->
+  <path
+    d="M58 44
+       L70 44
+       L70 58
+       L84 58
+       L84 70
+       L70 70
+       L70 84
+       L58 84
+       L58 70
+       L44 70
+       L44 58
+       L58 58
+       Z"
+    fill="#8b6508"
+    stroke="#6b4e08"
+    stroke-width="2"
+    stroke-linejoin="miter"
+  />
+
+  <!-- Highlights -->
+  <ellipse
+    cx="50"
+    cy="46"
+    rx="10"
+    ry="5"
+    fill="rgba(255,255,255,0.35)"
+  />
+  <ellipse
+    cx="84"
+    cy="82"
+    rx="8"
+    ry="4"
+    fill="rgba(255,255,255,0.18)"
+  />
+
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="goldGradientOuter" cx="30%" cy="25%" r="80%">
+      <stop offset="0%" stop-color="#fff7c2" />
+      <stop offset="40%" stop-color="#f4d03f" />
+      <stop offset="100%" stop-color="#d4a017" />
+    </radialGradient>
+
+    <radialGradient id="goldGradientInner" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#fffbe0" />
+      <stop offset="50%" stop-color="#f1c40f" />
+      <stop offset="100%" stop-color="#cfa10c" />
+    </radialGradient>
+  </defs>
+</svg>
