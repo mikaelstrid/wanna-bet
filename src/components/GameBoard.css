@@ -36,7 +36,7 @@
   font-size: var(--font-size-md);
   margin-bottom: var(--spacing-sm);
   color: var(--color-text-primary);
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .coins {
@@ -128,7 +128,7 @@
 .turn-player {
   font-size: var(--font-size-md);
   font-weight: bold;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .turn-player.answerer {
