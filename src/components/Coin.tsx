@@ -14,12 +14,14 @@ export default function Coin({
   useInText = false,
   decorative = false,
 }: CoinProps) {
-  const coinClasses = `coin ${useInText ? "coin-in-text" : ""} ${className}`.trim();
+  const coinClasses = `coin ${
+    useInText ? "coin-in-text" : ""
+  } ${className}`.trim();
 
   return (
     <img
       src={goldCoinSvg}
-      alt={decorative ? "" : "gold coin"}
+      alt={decorative ? "" : "guldmynt"}
       className={coinClasses}
       style={{
         width: size,
