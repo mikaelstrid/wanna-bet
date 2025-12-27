@@ -37,8 +37,6 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
 
 3. **question** (string): Själva frågan som ställs till spelarna
 
-3. **question** (string): Själva frågan som ställs till spelarna
-
    - Ska vara tydlig och lätt att förstå
    - Ska vara på svenska
    - Ska vara formulerad så att svaret är kort och konkret
