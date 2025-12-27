@@ -4,6 +4,7 @@ import { COINS_FOR_CORRECT_ANSWER } from '../constants';
 export interface BettingResult {
   updatedPlayers: Player[];
   scoredPlayerIds: number[];
+  lostCoinPlayerIds: number[];
 }
 
 /**
@@ -42,9 +43,13 @@ export const calculateBettingResult = (
     // Collect all players who scored
     const scoredPlayerIds = [answererId, ...canBets.map(bet => bet.playerId)];
     
+    // Collect all players who lost coins
+    const lostCoinPlayerIds = cannotBets.map(bet => bet.playerId);
+    
     return {
       updatedPlayers: newPlayers,
-      scoredPlayerIds
+      scoredPlayerIds,
+      lostCoinPlayerIds
     };
   } else {
     // Players who bet 'cannot' win 1 coin
@@ -60,9 +65,13 @@ export const calculateBettingResult = (
     // Only betting players who were correct scored
     const scoredPlayerIds = cannotBets.map(bet => bet.playerId);
     
+    // Collect all players who lost coins
+    const lostCoinPlayerIds = canBets.map(bet => bet.playerId);
+    
     return {
       updatedPlayers: newPlayers,
-      scoredPlayerIds
+      scoredPlayerIds,
+      lostCoinPlayerIds
     };
   }
 };

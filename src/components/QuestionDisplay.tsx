@@ -64,7 +64,6 @@ export default function QuestionDisplay({
                     <div key={player.id} className="betting-player-card">
                       <div className="betting-player-info">
                         <span className="betting-player-name">{player.name}</span>
-                        <span className="betting-player-coins">🪙 {player.coins}</span>
                       </div>
                       <div className="betting-buttons">
                         <button
