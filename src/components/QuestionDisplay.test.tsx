@@ -5,9 +5,12 @@ import type { Question, Player, Bet } from '../types';
 
 describe('QuestionDisplay', () => {
   const mockQuestion: Question = {
+    id: 1,
+    rev: 1,
     question: 'Vad är huvudstaden i Sverige?',
     answer: 'Stockholm',
-    category: 'geography'
+    category: 'geography',
+    level: 'child'
   };
 
   const mockPlayers: Player[] = [

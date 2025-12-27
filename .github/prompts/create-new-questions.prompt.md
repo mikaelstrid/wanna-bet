@@ -22,13 +22,28 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
 
 ### Obligatoriska Egenskaper
 
-1. **question** (string): Själva frågan som ställs till spelarna
+1. **id** (number): Ett unikt numeriskt löpnummer som identifierar frågan
+
+   - Ska vara unikt för alla frågor oavsett kategori
+   - För nya frågor: Sök igenom alla JSON-filer i `data/`-katalogen efter det högsta befintliga `id`-värdet och fortsätt numreringen därifrån
+   - Exempel: Om högsta befintliga `id` är 100, ska första nya frågan få `id: 101`
+   - **Viktigt**: När en fråga väl har fått ett `id` får det aldrig ändras
+
+2. **rev** (number): Ett numeriskt revisionsnummer för frågan
+
+   - Ska alltid sättas till 1 för nya frågor
+   - Ska räknas upp manuellt (inte av systemet) när frågan uppdateras i framtiden
+   - Är unikt bara för respektive fråga (olika frågor kan ha samma `rev`-nummer)
+
+3. **question** (string): Själva frågan som ställs till spelarna
+
+3. **question** (string): Själva frågan som ställs till spelarna
 
    - Ska vara tydlig och lätt att förstå
    - Ska vara på svenska
    - Ska vara formulerad så att svaret är kort och konkret
 
-2. **answer** (string): Det korrekta svaret på frågan
+4. **answer** (string): Det korrekta svaret på frågan
 
    - Ska vara kort och koncist
    - Får innehålla förklaringar inom parentes om det finns alternativa svar
@@ -39,7 +54,7 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
      - Exempel: Om svaret är 1989: Skillnad = 36 år, 10% = 3.6 → 4 år, Intervall = ±2 år → Godkänt svar: 1987-1991
      - Ange svaret som: "1825 (±10 år: 1815-1835)" eller "1989 (±2 år: 1987-1991)"
 
-3. **category** (string): Kategori som frågan tillhör
+5. **category** (string): Kategori som frågan tillhör
 
    - Möjliga värden:
      - `geography` - Geografi
@@ -53,7 +68,7 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
      - `nature` - Natur
      - `logic-and-puzzles` - Logik och gåtor
 
-4. **level** (string): Svårighetsgrad för frågan
+6. **level** (string): Svårighetsgrad för frågan
    - Möjliga värden:
      - `child` - För barn 5-7 år. Enkla frågor om grundläggande saker som barn i den åldern känner till.
      - `tween` - För barn 8-12 år på lågstadiet och mellanstadiet. Frågor om saker som barn lär sig i skolan och i vardagen.
@@ -63,12 +78,12 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
 
 ### Valfria Egenskaper (endast för tidsbundna frågor)
 
-5. **start_year** (number): Ungefärligt årtal för början på tidsepoken som frågan gäller
+7. **start_year** (number): Ungefärligt årtal för början på tidsepoken som frågan gäller
 
    - Används endast för frågor som är relaterade till en specifik tidsperiod eller händelse
    - Exempel: För frågan "Vilket år föll Berlinmuren?" skulle start_year vara 1989
 
-6. **end_year** (number): Ungefärligt årtal för slutet på tidsepoken som frågan gäller
+8. **end_year** (number): Ungefärligt årtal för slutet på tidsepoken som frågan gäller
    - Används endast för frågor som är relaterade till en specifik tidsperiod eller händelse
    - Om frågan gäller ett specifikt år, ska start_year och end_year vara samma
    - Exempel: För frågan "Vilket år föll Berlinmuren?" skulle end_year vara 1989
@@ -99,6 +114,8 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
 
 ```json
 {
+  "id": 101,
+  "rev": 1,
   "question": "Vilket år föll Berlinmuren?",
   "answer": "1989",
   "category": "history-and-society",
@@ -112,6 +129,8 @@ Varje fråga ska vara ett JSON-objekt med följande egenskaper:
 
 ```json
 {
+  "id": 102,
+  "rev": 1,
   "question": "Vilket är världens största landlevande däggdjur?",
   "answer": "Elefanten",
   "category": "nature",
@@ -139,12 +158,16 @@ Varje fil ska innehålla en array av frågobjekt:
 ```json
 [
   {
+    "id": 1,
+    "rev": 1,
     "question": "...",
     "answer": "...",
     "category": "...",
     "level": "..."
   },
   {
+    "id": 2,
+    "rev": 1,
     "question": "...",
     "answer": "...",
     "category": "...",
@@ -174,12 +197,16 @@ Varje fil ska innehålla en array av frågobjekt:
 ```json
 [
   {
+    "id": 1,
+    "rev": 1,
     "question": "Vad heter huvudstaden i Sverige?",
     "answer": "Stockholm",
     "category": "geography",
     "level": "child"
   },
   {
+    "id": 2,
+    "rev": 1,
     "question": "Vilket år lanserades första iPhone?",
     "answer": "2007",
     "category": "technology-and-innovation",
@@ -188,12 +215,16 @@ Varje fil ska innehålla en array av frågobjekt:
     "end_year": 2007
   },
   {
+    "id": 3,
+    "rev": 1,
     "question": "Hur många hjärtan har en bläckfisk?",
     "answer": "3 (tre)",
     "category": "nature",
     "level": "tween"
   },
   {
+    "id": 4,
+    "rev": 1,
     "question": "Vem vann Eurovision Song Contest för Sverige 2015?",
     "answer": "Måns Zelmerlöw",
     "category": "popculture",

@@ -1,29 +1,39 @@
 [
   {
+    "id": 91,
+    "rev": 1,
     "question": "Hur många timmar är ett dygn?",
     "answer": "24",
     "category": "trivia",
     "level": "child"
   },
   {
+    "id": 92,
+    "rev": 1,
     "question": "Vad kallas frukten som växer på ekträd?",
     "answer": "Ekollon",
     "category": "trivia",
     "level": "child"
   },
   {
+    "id": 93,
+    "rev": 1,
     "question": "Hur många bokstäver finns det i det svenska alfabetet?",
     "answer": "29",
     "category": "trivia",
     "level": "tween"
   },
   {
+    "id": 94,
+    "rev": 1,
     "question": "Hur många dagar har ett normalår?",
     "answer": "365",
     "category": "trivia",
     "level": "tween"
   },
   {
+    "id": 95,
+    "rev": 1,
     "question": "Vilket år grundades Google?",
     "answer": "1998",
     "category": "trivia",
@@ -32,30 +42,40 @@
     "end_year": 1998
   },
   {
+    "id": 96,
+    "rev": 1,
     "question": "Vad heter den största öknen i världen?",
     "answer": "Sahara",
     "category": "trivia",
     "level": "young-teen"
   },
   {
+    "id": 97,
+    "rev": 1,
     "question": "Hur många element finns det i det periodiska systemet (ungefär)?",
     "answer": "118",
     "category": "trivia",
     "level": "old-teen"
   },
   {
+    "id": 98,
+    "rev": 1,
     "question": "Vad heter den kända klockan i London?",
     "answer": "Big Ben",
     "category": "trivia",
     "level": "old-teen"
   },
   {
+    "id": 99,
+    "rev": 1,
     "question": "Vad heter världens längsta ord i svenska språket?",
     "answer": "Nordöstersjökustartilleriflygspaningssimulatoranläggningsmaterielunderhållsuppföljningssystemdiskussionsinläggsförberedelsearbeten",
     "category": "trivia",
     "level": "adult"
   },
   {
+    "id": 100,
+    "rev": 1,
     "question": "Vilket år myntades termen 'Big Bang' för universums uppkomst?",
     "answer": "1949",
     "category": "trivia",

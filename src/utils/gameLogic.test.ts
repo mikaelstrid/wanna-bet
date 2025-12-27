@@ -4,12 +4,12 @@ import type { Question } from '../types';
 
 // Mock questions for testing
 const mockQuestions: Question[] = [
-  { question: 'Question 1', answer: 'Answer 1', category: 'geography' },
-  { question: 'Question 2', answer: 'Answer 2', category: 'trivia' },
-  { question: 'Question 3', answer: 'Answer 3', category: 'geography' },
-  { question: 'Question 4', answer: 'Answer 4', category: 'trivia' },
-  { question: 'Question 5', answer: 'Answer 5', category: 'nature' },
-  { question: 'Question 6', answer: 'Answer 6', category: 'nature' },
+  { id: 1, rev: 1, question: 'Question 1', answer: 'Answer 1', category: 'geography', level: 'child' },
+  { id: 2, rev: 1, question: 'Question 2', answer: 'Answer 2', category: 'trivia', level: 'child' },
+  { id: 3, rev: 1, question: 'Question 3', answer: 'Answer 3', category: 'geography', level: 'tween' },
+  { id: 4, rev: 1, question: 'Question 4', answer: 'Answer 4', category: 'trivia', level: 'tween' },
+  { id: 5, rev: 1, question: 'Question 5', answer: 'Answer 5', category: 'nature', level: 'young-teen' },
+  { id: 6, rev: 1, question: 'Question 6', answer: 'Answer 6', category: 'nature', level: 'young-teen' },
 ];
 
 describe('groupQuestionsByCategory', () => {

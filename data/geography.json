@@ -1,59 +1,79 @@
 [
   {
+    "id": 11,
+    "rev": 1,
     "question": "Vilken färg har himlen?",
     "answer": "Blå",
     "category": "geography",
     "level": "child"
   },
   {
+    "id": 12,
+    "rev": 1,
     "question": "Vad heter den stora vattenmassa som omger land?",
     "answer": "Havet",
     "category": "geography",
     "level": "child"
   },
   {
+    "id": 13,
+    "rev": 1,
     "question": "Vilket land har Eiffeltornet?",
     "answer": "Frankrike",
     "category": "geography",
     "level": "tween"
   },
   {
+    "id": 14,
+    "rev": 1,
     "question": "Vad heter huvudstaden i Norge?",
     "answer": "Oslo",
     "category": "geography",
     "level": "tween"
   },
   {
+    "id": 15,
+    "rev": 1,
     "question": "Vilket hav ligger mellan Sverige och Finland?",
     "answer": "Östersjön",
     "category": "geography",
     "level": "young-teen"
   },
   {
+    "id": 16,
+    "rev": 1,
     "question": "Vad heter den längsta floden i Afrika?",
     "answer": "Nilen",
     "category": "geography",
     "level": "young-teen"
   },
   {
+    "id": 17,
+    "rev": 1,
     "question": "Vilket är världens minsta land?",
     "answer": "Vatikanstaten",
     "category": "geography",
     "level": "old-teen"
   },
   {
+    "id": 18,
+    "rev": 1,
     "question": "I vilket land ligger den antika staden Petra?",
     "answer": "Jordanien",
     "category": "geography",
     "level": "old-teen"
   },
   {
+    "id": 19,
+    "rev": 1,
     "question": "Vilken huvudstad ligger högst över havet?",
     "answer": "La Paz (Bolivia)",
     "category": "geography",
     "level": "adult"
   },
   {
+    "id": 20,
+    "rev": 1,
     "question": "Vilket land har flest öar i världen?",
     "answer": "Sverige",
     "category": "geography",

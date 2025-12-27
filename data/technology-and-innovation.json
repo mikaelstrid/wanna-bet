@@ -1,23 +1,31 @@
 [
   {
+    "id": 81,
+    "rev": 1,
     "question": "Vad använder man för att ringa med utan sladd?",
     "answer": "Mobiltelefon",
     "category": "technology-and-innovation",
     "level": "child"
   },
   {
+    "id": 82,
+    "rev": 1,
     "question": "Vad heter apparaten som man tittar på TV-program på?",
     "answer": "TV (eller Television)",
     "category": "technology-and-innovation",
     "level": "child"
   },
   {
+    "id": 83,
+    "rev": 1,
     "question": "Vad står AI för inom teknikområdet?",
     "answer": "Artificiell Intelligens (Artificial Intelligence)",
     "category": "technology-and-innovation",
     "level": "tween"
   },
   {
+    "id": 84,
+    "rev": 1,
     "question": "Vem uppfann glödlampan?",
     "answer": "Thomas Edison",
     "category": "technology-and-innovation",
@@ -26,6 +34,8 @@
     "end_year": 1879
   },
   {
+    "id": 85,
+    "rev": 1,
     "question": "Vem grundade företaget Apple tillsammans med Steve Jobs?",
     "answer": "Steve Wozniak",
     "category": "technology-and-innovation",
@@ -34,6 +44,8 @@
     "end_year": 1976
   },
   {
+    "id": 86,
+    "rev": 1,
     "question": "Vilket år lanserades första iPhone?",
     "answer": "2007",
     "category": "technology-and-innovation",
@@ -42,12 +54,16 @@
     "end_year": 2007
   },
   {
+    "id": 87,
+    "rev": 1,
     "question": "Vad heter programmeringsspråket som används för att skapa webbsidor?",
     "answer": "HTML (HyperText Markup Language)",
     "category": "technology-and-innovation",
     "level": "old-teen"
   },
   {
+    "id": 88,
+    "rev": 1,
     "question": "Vilket företag utvecklade operativsystemet Android?",
     "answer": "Google",
     "category": "technology-and-innovation",
@@ -56,6 +72,8 @@
     "end_year": 2008
   },
   {
+    "id": 89,
+    "rev": 1,
     "question": "Vad heter den kryptografiska metod som används i Bitcoin?",
     "answer": "Blockchain",
     "category": "technology-and-innovation",
@@ -64,6 +82,8 @@
     "end_year": 2009
   },
   {
+    "id": 90,
+    "rev": 1,
     "question": "Vem uppfann World Wide Web?",
     "answer": "Tim Berners-Lee",
     "category": "technology-and-innovation",

@@ -19,6 +19,8 @@ export interface CategoryInfo {
 export type QuestionLevel = 'child' | 'tween' | 'young-teen' | 'old-teen' | 'adult';
 
 export interface Question {
+  id: number;
+  rev: number;
   question: string;
   answer: string;
   category: QuestionCategory;

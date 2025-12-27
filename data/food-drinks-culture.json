@@ -1,59 +1,79 @@
 [
   {
+    "id": 1,
+    "rev": 1,
     "question": "Vad heter den svenska traditionella maträtten som äts på fettisdagen?",
     "answer": "Semla",
     "category": "food-drinks-culture",
     "level": "child"
   },
   {
+    "id": 2,
+    "rev": 1,
     "question": "Vilket land är pizza från?",
     "answer": "Italien",
     "category": "food-drinks-culture",
     "level": "child"
   },
   {
+    "id": 3,
+    "rev": 1,
     "question": "Vilket krydda kommer från saffranskrokus?",
     "answer": "Saffran",
     "category": "food-drinks-culture",
     "level": "tween"
   },
   {
+    "id": 4,
+    "rev": 1,
     "question": "Vad heter den mexikanska maträtten med majstortilla fylld med kött?",
     "answer": "Taco",
     "category": "food-drinks-culture",
     "level": "tween"
   },
   {
+    "id": 5,
+    "rev": 1,
     "question": "Vilket land är sushi från?",
     "answer": "Japan",
     "category": "food-drinks-culture",
     "level": "young-teen"
   },
   {
+    "id": 6,
+    "rev": 1,
     "question": "Vad heter den italienska osten som används på pizza?",
     "answer": "Mozzarella",
     "category": "food-drinks-culture",
     "level": "young-teen"
   },
   {
+    "id": 7,
+    "rev": 1,
     "question": "Vad kallas den japanska drycken gjord på ris?",
     "answer": "Sake",
     "category": "food-drinks-culture",
     "level": "old-teen"
   },
   {
+    "id": 8,
+    "rev": 1,
     "question": "Vilket land är croissanten från?",
     "answer": "Frankrike",
     "category": "food-drinks-culture",
     "level": "old-teen"
   },
   {
+    "id": 9,
+    "rev": 1,
     "question": "Vad heter den franska rätten med snäckor?",
     "answer": "Escargot",
     "category": "food-drinks-culture",
     "level": "adult"
   },
   {
+    "id": 10,
+    "rev": 1,
     "question": "Vilket år fick Noma i Köpenhamn sin första Michelin-stjärna?",
     "answer": "2005",
     "category": "food-drinks-culture",
