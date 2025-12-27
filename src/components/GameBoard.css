@@ -53,7 +53,7 @@
 }
 
 .coin-icon.coin-shake {
-  animation: coinShake 1s ease-in-out;
+  animation: coinShake 1.2s ease-in-out;
 }
 
 @keyframes coinSpin {
