@@ -159,6 +159,10 @@ Varje fil ska innehålla en array av frågobjekt:
 
 1. **Tydlighet**: Frågan ska vara tydlig och entydig
 2. **Korrekthet**: Svaret ska vara faktamässigt korrekt
+   - **KRITISKT**: Svar måste vara 100% verifierbara och korrekta. Gissa ALDRIG eller dra egna slutsatser. Om du är osäker på ett faktum, generera inte frågan.
+   - Använd endast väletablerade fakta som kan verifieras från tillförlitliga källor
+   - Undvik svar som kan vara tvetydiga eller beroende av tolkning
+   - Vid minsta tvivel om korrekthet, hoppa över frågan
 3. **Svårighet**: Svårighetsgraden ska vara lämplig för målgruppen
 4. **Balans**: Försök att skapa en balans mellan olika svårighetsgrader
 5. **Variation**: Variera typen av frågor inom varje kategori
