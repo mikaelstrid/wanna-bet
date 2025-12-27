@@ -72,7 +72,7 @@ function App() {
   const handleStartGame = (playerData: PlayerData[]) => {
     const players: Player[] = playerData.map(({ name, age }) => ({ name, age, coins: 0 }));
     const usedQuestions = new Set<string>();
-    const roundQuestions = generateRoundQuestions(questionsByCategory, usedQuestions, players.length);
+    const roundQuestions = generateRoundQuestions(questionsByCategory, usedQuestions, players);
     
     setGameState({
       ...gameState,
@@ -158,7 +158,7 @@ function App() {
       const newRoundQuestions = generateRoundQuestions(
         questionsByCategory,
         usedQuestions,
-        numPlayers
+        updatedPlayers
       );
       
       setGameState({

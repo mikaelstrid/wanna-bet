@@ -7,7 +7,8 @@ describe('QuestionDisplay', () => {
   const mockQuestion: Question = {
     question: 'Vad är huvudstaden i Sverige?',
     answer: 'Stockholm',
-    category: 'geography'
+    category: 'geography',
+    level: 'adult'
   };
 
   const mockPlayers: Player[] = [
