@@ -1,17 +1,23 @@
 [
   {
+    "id": 71,
+    "rev": 1,
     "question": "Hur många spelare finns det i ett ishockeylag på isen samtidigt?",
     "answer": "6 (inklusive målvakten)",
     "category": "sports-and-leisure",
     "level": "child"
   },
   {
+    "id": 72,
+    "rev": 1,
     "question": "Vilken sport spelar man med en boll och ett nät på en plan?",
     "answer": "Tennis (eller volleyboll, båda accepteras)",
     "category": "sports-and-leisure",
     "level": "child"
   },
   {
+    "id": 73,
+    "rev": 1,
     "question": "Vilket land vann fotbolls-VM 2018?",
     "answer": "Frankrike",
     "category": "sports-and-leisure",
@@ -20,12 +26,16 @@
     "end_year": 2018
   },
   {
+    "id": 74,
+    "rev": 1,
     "question": "Vad heter världens mest kända tennisturnering på gräs?",
     "answer": "Wimbledon",
     "category": "sports-and-leisure",
     "level": "tween"
   },
   {
+    "id": 75,
+    "rev": 1,
     "question": "Vilket år hölls OS i Stockholm?",
     "answer": "1912",
     "category": "sports-and-leisure",
@@ -34,18 +44,24 @@
     "end_year": 1912
   },
   {
+    "id": 76,
+    "rev": 1,
     "question": "Hur många prickar har en basketboll?",
     "answer": "Inga (den har räfflor men inga prickar)",
     "category": "sports-and-leisure",
     "level": "young-teen"
   },
   {
+    "id": 77,
+    "rev": 1,
     "question": "Vilket land har vunnit flest fotbolls-VM?",
     "answer": "Brasilien",
     "category": "sports-and-leisure",
     "level": "old-teen"
   },
   {
+    "id": 78,
+    "rev": 1,
     "question": "Vad heter den svenska friidrottsstjärnan som vann OS-guld i höjdhopp 1912?",
     "answer": "Georg Åberg",
     "category": "sports-and-leisure",
@@ -54,6 +70,8 @@
     "end_year": 1912
   },
   {
+    "id": 79,
+    "rev": 1,
     "question": "Vem är den svenska längdskidåkare som vunnit flest OS-guld?",
     "answer": "Gunde Svan (eller Charlotte Kalla, båda har 3 guld)",
     "category": "sports-and-leisure",
@@ -62,6 +80,8 @@
     "end_year": 2018
   },
   {
+    "id": 80,
+    "rev": 1,
     "question": "Vilket år vann Ingemar Stenmark sitt första världscupsguld i alpin skidåkning?",
     "answer": "1976",
     "category": "sports-and-leisure",

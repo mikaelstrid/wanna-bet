@@ -1,59 +1,79 @@
 [
   {
+    "id": 51,
+    "rev": 1,
     "question": "Vilket djur är världens största landlevande däggdjur?",
     "answer": "Elefanten",
     "category": "nature",
     "level": "child"
   },
   {
+    "id": 52,
+    "rev": 1,
     "question": "Vilket är världens snabbaste landdjur?",
     "answer": "Geparden",
     "category": "nature",
     "level": "child"
   },
   {
+    "id": 53,
+    "rev": 1,
     "question": "Hur många hjärtan har en bläckfisk?",
     "answer": "3 (tre)",
     "category": "nature",
     "level": "tween"
   },
   {
+    "id": 54,
+    "rev": 1,
     "question": "Vad kallas Sveriges nationalfågel?",
     "answer": "Koltrasten",
     "category": "nature",
     "level": "tween"
   },
   {
+    "id": 55,
+    "rev": 1,
     "question": "Hur länge kan en snigel sova?",
     "answer": "Upp till 3 år",
     "category": "nature",
     "level": "young-teen"
   },
   {
+    "id": 56,
+    "rev": 1,
     "question": "Vilket djur har den längsta livslängden?",
     "answer": "Grönlandsvalen",
     "category": "nature",
     "level": "young-teen"
   },
   {
+    "id": 57,
+    "rev": 1,
     "question": "Vad heter det fenomen när vissa djur sover under vintern?",
     "answer": "Vinterdvala (eller hibernation)",
     "category": "nature",
     "level": "old-teen"
   },
   {
+    "id": 58,
+    "rev": 1,
     "question": "Vilket däggdjur lägger ägg?",
     "answer": "Näbbdjuret (eller myrkott)",
     "category": "nature",
     "level": "old-teen"
   },
   {
+    "id": 59,
+    "rev": 1,
     "question": "Hur många arter av pingviner finns det ungefär?",
     "answer": "18",
     "category": "nature",
     "level": "adult"
   },
   {
+    "id": 60,
+    "rev": 1,
     "question": "Vad kallas djur som äter både växter och kött?",
     "answer": "Allätare (eller omnivorer)",
     "category": "nature",

@@ -5,6 +5,8 @@ import type { Question, Player, Bet } from '../types';
 
 describe('QuestionDisplay - Betting Functionality', () => {
   const mockQuestion: Question = {
+    id: 1,
+    rev: 1,
     question: 'Vad är Pythons skapare?',
     answer: 'Guido van Rossum',
     category: 'technology-and-innovation',

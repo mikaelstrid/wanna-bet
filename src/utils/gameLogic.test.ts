@@ -11,36 +11,48 @@ import type { Question, Player } from "../types";
 // Mock questions for testing
 const mockQuestions: Question[] = [
   {
+    id: 1,
+    rev: 1,
     question: "Question 1",
     answer: "Answer 1",
     category: "geography",
     level: "adult",
   },
   {
+    id: 2,
+    rev: 1,
     question: "Question 2",
     answer: "Answer 2",
     category: "trivia",
     level: "adult",
   },
   {
+    id: 3,
+    rev: 1,
     question: "Question 3",
     answer: "Answer 3",
     category: "geography",
     level: "adult",
   },
   {
+    id: 4,
+    rev: 1,
     question: "Question 4",
     answer: "Answer 4",
     category: "trivia",
     level: "adult",
   },
   {
+    id: 5,
+    rev: 1,
     question: "Question 5",
     answer: "Answer 5",
     category: "nature",
     level: "adult",
   },
   {
+    id: 6,
+    rev: 1,
     question: "Question 6",
     answer: "Answer 6",
     category: "nature",
@@ -116,6 +128,8 @@ describe("getAgeCategoryFromAge", () => {
 describe("doesTimePeriodOverlapWithLifetime", () => {
   it("should accept questions without time period in time-sensitive categories", () => {
     const question: Question = {
+      id: 100,
+      rev: 1,
       question: "Test",
       answer: "Test",
       category: "popculture",
@@ -126,6 +140,8 @@ describe("doesTimePeriodOverlapWithLifetime", () => {
 
   it("should accept questions in non-time-sensitive categories regardless of time period", () => {
     const question: Question = {
+      id: 101,
+      rev: 1,
       question: "Test",
       answer: "Test",
       category: "geography",
@@ -138,6 +154,8 @@ describe("doesTimePeriodOverlapWithLifetime", () => {
 
   it("should accept questions when time period overlaps with player lifetime", () => {
     const question: Question = {
+      id: 102,
+      rev: 1,
       question: "Test",
       answer: "Test",
       category: "popculture",
@@ -151,6 +169,8 @@ describe("doesTimePeriodOverlapWithLifetime", () => {
 
   it("should reject questions when time period is before player lifetime", () => {
     const question: Question = {
+      id: 103,
+      rev: 1,
       question: "Test",
       answer: "Test",
       category: "popculture",
@@ -164,6 +184,8 @@ describe("doesTimePeriodOverlapWithLifetime", () => {
 
   it("should accept questions when time period partially overlaps", () => {
     const question: Question = {
+      id: 104,
+      rev: 1,
       question: "Test",
       answer: "Test",
       category: "sports-and-leisure",
@@ -177,6 +199,8 @@ describe("doesTimePeriodOverlapWithLifetime", () => {
 
   it("should handle questions with only start_year", () => {
     const question: Question = {
+      id: 105,
+      rev: 1,
       question: "Test",
       answer: "Test",
       category: "technology-and-innovation",
@@ -189,6 +213,8 @@ describe("doesTimePeriodOverlapWithLifetime", () => {
 
   it("should handle questions with only end_year", () => {
     const question: Question = {
+      id: 106,
+      rev: 1,
       question: "Test",
       answer: "Test",
       category: "trivia",
@@ -203,9 +229,9 @@ describe("doesTimePeriodOverlapWithLifetime", () => {
 describe("filterQuestionsForPlayer", () => {
   it("should filter questions by age category", () => {
     const questions: Question[] = [
-      { question: "Q1", answer: "A1", category: "geography", level: "child" },
-      { question: "Q2", answer: "A2", category: "geography", level: "adult" },
-      { question: "Q3", answer: "A3", category: "geography", level: "tween" },
+      { id: 200, rev: 1, question: "Q1", answer: "A1", category: "geography", level: "child" },
+      { id: 201, rev: 1, question: "Q2", answer: "A2", category: "geography", level: "adult" },
+      { id: 202, rev: 1, question: "Q3", answer: "A3", category: "geography", level: "tween" },
     ];
     const player: Player = { name: "Test", age: 6, coins: 0 };
 
@@ -217,6 +243,8 @@ describe("filterQuestionsForPlayer", () => {
   it("should filter questions by time period for time-sensitive categories", () => {
     const questions: Question[] = [
       {
+        id: 210,
+        rev: 1,
         question: "Q1",
         answer: "A1",
         category: "popculture",
@@ -225,6 +253,8 @@ describe("filterQuestionsForPlayer", () => {
         end_year: 1990,
       },
       {
+        id: 211,
+        rev: 1,
         question: "Q2",
         answer: "A2",
         category: "popculture",
@@ -243,12 +273,16 @@ describe("filterQuestionsForPlayer", () => {
   it("should include questions without time period in time-sensitive categories", () => {
     const questions: Question[] = [
       {
+        id: 220,
+        rev: 1,
         question: "Q1",
         answer: "A1",
         category: "sports-and-leisure",
         level: "adult",
       },
       {
+        id: 221,
+        rev: 1,
         question: "Q2",
         answer: "A2",
         category: "sports-and-leisure",
@@ -267,6 +301,8 @@ describe("filterQuestionsForPlayer", () => {
   it("should not filter by time period for non-time-sensitive categories", () => {
     const questions: Question[] = [
       {
+        id: 230,
+        rev: 1,
         question: "Q1",
         answer: "A1",
         category: "geography",
@@ -609,12 +645,16 @@ describe("generateRoundQuestions", () => {
   it("should filter questions by player age category", () => {
     const questions: Question[] = [
       {
+        id: 300,
+        rev: 1,
         question: "Child Q",
         answer: "A",
         category: "geography",
         level: "child",
       },
       {
+        id: 301,
+        rev: 1,
         question: "Adult Q",
         answer: "A",
         category: "geography",

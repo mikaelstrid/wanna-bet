@@ -1,59 +1,79 @@
 [
   {
+    "id": 31,
+    "rev": 1,
     "question": "Hur mycket är 2 + 2?",
     "answer": "4",
     "category": "logic-and-puzzles",
     "level": "child"
   },
   {
+    "id": 32,
+    "rev": 1,
     "question": "Om du har 5 kakor och äter 2, hur många har du kvar?",
     "answer": "3",
     "category": "logic-and-puzzles",
     "level": "child"
   },
   {
+    "id": 33,
+    "rev": 1,
     "question": "Vad är nästa tal i serien: 2, 4, 8, 16, 32, ...?",
     "answer": "64",
     "category": "logic-and-puzzles",
     "level": "tween"
   },
   {
+    "id": 34,
+    "rev": 1,
     "question": "Hur mycket är 10 gånger 10?",
     "answer": "100",
     "category": "logic-and-puzzles",
     "level": "tween"
   },
   {
+    "id": 35,
+    "rev": 1,
     "question": "Vad är hälften av 2 plus 2?",
     "answer": "3 (hälften av 2 = 1, plus 2 = 3)",
     "category": "logic-and-puzzles",
     "level": "young-teen"
   },
   {
+    "id": 36,
+    "rev": 1,
     "question": "Ett tåg lämnar Stockholm klockan 10:00 och kör i 120 km/h. När anländer det till en stad 240 km bort?",
     "answer": "12:00",
     "category": "logic-and-puzzles",
     "level": "young-teen"
   },
   {
+    "id": 37,
+    "rev": 1,
     "question": "Vad är nästa tal i Fibonacci-serien: 1, 1, 2, 3, 5, 8, ...?",
     "answer": "13",
     "category": "logic-and-puzzles",
     "level": "old-teen"
   },
   {
+    "id": 38,
+    "rev": 1,
     "question": "Om A är större än B, och B är större än C, vem är störst?",
     "answer": "A",
     "category": "logic-and-puzzles",
     "level": "old-teen"
   },
   {
+    "id": 39,
+    "rev": 1,
     "question": "Vad är kvadratroten av 144?",
     "answer": "12",
     "category": "logic-and-puzzles",
     "level": "adult"
   },
   {
+    "id": 40,
+    "rev": 1,
     "question": "Hur många diagonaler har en hexagon (sexhörning)?",
     "answer": "9",
     "category": "logic-and-puzzles",
