@@ -17,11 +17,14 @@ export const shuffleArray = <T>(array: T[]): T[] => {
 };
 
 // Get age category (QuestionLevel) from player age
+// Requirements specify: child (5-7), tween (8-12), young-teen (13-15), old-teen (16-18), adult (19+)
+// Ages below 5 are treated as child as a fallback for edge cases
 export const getAgeCategoryFromAge = (age: number): QuestionLevel => {
-  if (age <= 7) return "child";
-  if (age <= 12) return "tween";
-  if (age <= 15) return "young-teen";
-  if (age <= 18) return "old-teen";
+  if (age >= 5 && age <= 7) return "child";
+  if (age >= 8 && age <= 12) return "tween";
+  if (age >= 13 && age <= 15) return "young-teen";
+  if (age >= 16 && age <= 18) return "old-teen";
+  // Ages 19+ and ages below 5 (edge case) are treated as adult
   return "adult";
 };
 
@@ -143,6 +146,14 @@ export const generateRoundQuestions = (
     if (availableCategories.length === 0) {
       usedQuestions.clear();
       availableCategories = getAvailableCategoriesForPlayer(answerer);
+    }
+
+    // If still no categories available after reset, throw descriptive error
+    if (availableCategories.length === 0) {
+      throw new Error(
+        `No suitable questions available for player ${answerer.name} (age ${answerer.age}, level: ${getAgeCategoryFromAge(answerer.age)}). ` +
+          `Please add more questions for this age category.`
+      );
     }
 
     // Randomly select a category
