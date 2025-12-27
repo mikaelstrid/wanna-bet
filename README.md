@@ -1,73 +1,67 @@
-# React + TypeScript + Vite
+# Wanna Bet?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎮 **[Play the game here!](https://mikaelstrid.github.io/wanna-bet/)**
 
-Currently, two official plugins are available:
+A competitive trivia betting game where 2-4 players compete to be the first to collect enough gold coins by answering questions and making strategic bets.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About the Game
 
-## React Compiler
+Wanna Bet is a fast-paced trivia game that combines knowledge with betting strategy. Players compete in rounds of questions across multiple categories including geography, history, pop culture, science, technology, sports, food & drinks, and logic puzzles.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### How to Play
 
-## Expanding the ESLint configuration
+1. **Register 2-4 players** with names and ages
+2. **Choose questions** from various categories
+3. **Place your bets** - risk more coins for bigger rewards
+4. **Answer questions** - correct answers win your bet, wrong answers lose it
+5. **First to reach the winning score wins!**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React 19** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Vitest** - Unit testing
+- **Playwright** - End-to-end testing
+- **CSS3** - Styling with custom properties
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Development
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Run tests
+npm test
+
+# Run tests with UI
+npm test:ui
+
+# Build for production
+npm run build
+
+# Preview production build
+npm preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- `src/components/` - React components
+- `src/utils/` - Game logic and utilities
+- `data/` - Question data organized by category
+- `tests/` - Playwright end-to-end tests
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Features
+
+- 🎮 2-4 player support
+- 🎲 Strategic betting system
+- 📚 Multiple question categories
+- 👶 Age-appropriate content filtering
+- 💾 Auto-save game progress
+- 🎨 Responsive design
+- ♿ Accessibility focused
