@@ -19,9 +19,9 @@ export const shuffleArray = <T>(array: T[]): T[] => {
 // Get age category (QuestionLevel) from player age
 export const getAgeCategoryFromAge = (age: number): QuestionLevel => {
   if (age <= 7) return "child";
-  if (age >= 8 && age <= 12) return "tween";
-  if (age >= 13 && age <= 15) return "young-teen";
-  if (age >= 16 && age <= 18) return "old-teen";
+  if (age <= 12) return "tween";
+  if (age <= 15) return "young-teen";
+  if (age <= 18) return "old-teen";
   return "adult";
 };
 
@@ -172,7 +172,8 @@ export const generateRoundQuestions = (
 
     if (unusedQuestions.length === 0 && suitableQuestions.length > 0) {
       console.warn(
-        `All suitable questions in category ${selectedCategory} have been used for player ${answerer.name} (age ${answerer.age}). Reusing questions.`
+        `All suitable questions in category ${selectedCategory} have been used for player ${answerer.name} (age ${answerer.age}). Reusing questions from this pool. ` +
+          `If repeated questions are undesirable, consider adding more questions for this category and age group so the pool does not exhaust as quickly.`
       );
     }
 
