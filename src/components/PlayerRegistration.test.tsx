@@ -470,7 +470,7 @@ describe("PlayerRegistration", () => {
       expect(ageSelect1.value).toBe("20");
     });
 
-    it("should have ages from 0 to 120", () => {
+    it("should have ages from 5 to 120", () => {
       render(<PlayerRegistration onStartGame={mockOnStartGame} />);
 
       const ageSelect1 = screen.getByLabelText(
