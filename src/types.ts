@@ -61,5 +61,6 @@ export interface GameState {
   roundQuestions: RoundQuestion[];
   usedQuestions: string[]; // Array of question texts that have been used
   lastScoredPlayerIds: number[]; // Array of player IDs who scored in the last turn
+  lastLostCoinPlayerIds: number[]; // Array of player IDs who lost coins in the last turn
   currentBets: Bet[]; // Array of bets on current question
 }

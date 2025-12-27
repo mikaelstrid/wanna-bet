@@ -26,6 +26,7 @@ describe('Betting Logic - Coin Distribution', () => {
       expect(result.updatedPlayers[1].coins).toBe(1); // Sara unchanged
       expect(result.updatedPlayers[2].coins).toBe(1); // Johan unchanged
       expect(result.scoredPlayerIds).toEqual([0]); // Only answerer scored
+      expect(result.lostCoinPlayerIds).toEqual([]); // No one lost coins
     });
 
     it('should award answerer coins from "cannot" bets and award "can" bettors', () => {
@@ -46,6 +47,7 @@ describe('Betting Logic - Coin Distribution', () => {
       expect(result.updatedPlayers[1].coins).toBe(3); // Sara: 2 + 1 (winning "can" bet)
       expect(result.updatedPlayers[2].coins).toBe(1); // Johan: 2 - 1 (losing "cannot" bet)
       expect(result.scoredPlayerIds).toEqual([0, 1]); // Answerer and Sara scored
+      expect(result.lostCoinPlayerIds).toEqual([2]); // Johan lost coins
     });
 
     it('should handle multiple "can" bets all winning', () => {
@@ -66,6 +68,7 @@ describe('Betting Logic - Coin Distribution', () => {
       expect(result.updatedPlayers[1].coins).toBe(2); // Sara: 1 + 1 (winning bet)
       expect(result.updatedPlayers[2].coins).toBe(2); // Johan: 1 + 1 (winning bet)
       expect(result.scoredPlayerIds).toEqual([0, 1, 2]); // All scored
+      expect(result.lostCoinPlayerIds).toEqual([]); // No one lost coins
     });
 
     it('should handle multiple "cannot" bets all losing', () => {
@@ -86,6 +89,7 @@ describe('Betting Logic - Coin Distribution', () => {
       expect(result.updatedPlayers[1].coins).toBe(1); // Sara: 2 - 1 (losing bet)
       expect(result.updatedPlayers[2].coins).toBe(1); // Johan: 2 - 1 (losing bet)
       expect(result.scoredPlayerIds).toEqual([0]); // Only answerer scored
+      expect(result.lostCoinPlayerIds).toEqual([1, 2]); // Sara and Johan lost coins
     });
   });
 
@@ -107,6 +111,7 @@ describe('Betting Logic - Coin Distribution', () => {
       expect(result.updatedPlayers[1].coins).toBe(2); // Sara: 1 + 1 (winning "cannot" bet)
       expect(result.updatedPlayers[2].coins).toBe(1); // Johan: unchanged
       expect(result.scoredPlayerIds).toEqual([1]); // Only Sara scored
+      expect(result.lostCoinPlayerIds).toEqual([]); // No one lost coins
     });
 
     it('should deduct coins from "can" bettors who lose', () => {
@@ -127,6 +132,7 @@ describe('Betting Logic - Coin Distribution', () => {
       expect(result.updatedPlayers[1].coins).toBe(1); // Sara: 2 - 1 (losing "can" bet)
       expect(result.updatedPlayers[2].coins).toBe(3); // Johan: 2 + 1 (winning "cannot" bet)
       expect(result.scoredPlayerIds).toEqual([2]); // Only Johan scored
+      expect(result.lostCoinPlayerIds).toEqual([1]); // Sara lost coins
     });
 
     it('should handle multiple "cannot" bets all winning', () => {
@@ -147,6 +153,7 @@ describe('Betting Logic - Coin Distribution', () => {
       expect(result.updatedPlayers[1].coins).toBe(2); // Sara: 1 + 1 (winning bet)
       expect(result.updatedPlayers[2].coins).toBe(2); // Johan: 1 + 1 (winning bet)
       expect(result.scoredPlayerIds).toEqual([1, 2]); // Both bettors scored
+      expect(result.lostCoinPlayerIds).toEqual([]); // No one lost coins
     });
 
     it('should handle multiple "can" bets all losing', () => {
@@ -167,6 +174,7 @@ describe('Betting Logic - Coin Distribution', () => {
       expect(result.updatedPlayers[1].coins).toBe(1); // Sara: 2 - 1 (losing bet)
       expect(result.updatedPlayers[2].coins).toBe(1); // Johan: 2 - 1 (losing bet)
       expect(result.scoredPlayerIds).toEqual([]); // No one scored
+      expect(result.lostCoinPlayerIds).toEqual([1, 2]); // Sara and Johan lost coins
     });
   });
 
@@ -186,6 +194,7 @@ describe('Betting Logic - Coin Distribution', () => {
       expect(result.updatedPlayers[1].coins).toBe(1); // Sara unchanged
       expect(result.updatedPlayers[2].coins).toBe(1); // Johan unchanged
       expect(result.scoredPlayerIds).toEqual([0]); // Only answerer scored
+      expect(result.lostCoinPlayerIds).toEqual([]); // No one lost coins
     });
 
     it('should handle when no one places a bet and answerer is incorrect', () => {
@@ -203,6 +212,7 @@ describe('Betting Logic - Coin Distribution', () => {
       expect(result.updatedPlayers[1].coins).toBe(1); // Sara unchanged
       expect(result.updatedPlayers[2].coins).toBe(1); // Johan unchanged
       expect(result.scoredPlayerIds).toEqual([]); // No one scored
+      expect(result.lostCoinPlayerIds).toEqual([]); // No one lost coins
     });
 
     it('should prevent negative coin values when player loses bet', () => {

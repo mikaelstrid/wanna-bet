@@ -47,6 +47,7 @@ function App() {
       roundQuestions: [],
       usedQuestions: [],
       lastScoredPlayerIds: [],
+      lastLostCoinPlayerIds: [],
       currentBets: [],
     };
   });
@@ -83,12 +84,13 @@ function App() {
       roundQuestions,
       usedQuestions: Array.from(usedQuestions),
       lastScoredPlayerIds: [],
+      lastLostCoinPlayerIds: [],
       currentBets: [],
     });
   };
 
   const handleShowQuestion = () => {
-    setGameState({ ...gameState, screen: 'question', lastScoredPlayerIds: [], currentBets: [] });
+    setGameState({ ...gameState, screen: 'question', lastScoredPlayerIds: [], lastLostCoinPlayerIds: [], currentBets: [] });
   };
 
   const handleToggleBet = (playerId: number, betType: BetType) => {
@@ -125,7 +127,7 @@ function App() {
     const currentQuestion = gameState.roundQuestions[gameState.currentQuestionInRound];
     
     // Use the utility function to calculate betting result
-    const { updatedPlayers, scoredPlayerIds } = calculateBettingResult(
+    const { updatedPlayers, scoredPlayerIds, lostCoinPlayerIds } = calculateBettingResult(
       gameState.players,
       gameState.currentBets,
       currentQuestion.answererId,
@@ -140,15 +142,16 @@ function App() {
         players: updatedPlayers,
         screen: 'victory',
         lastScoredPlayerIds: [],
+        lastLostCoinPlayerIds: [],
         currentBets: [],
       });
       return;
     }
     
-    moveToNextQuestion(updatedPlayers, scoredPlayerIds);
+    moveToNextQuestion(updatedPlayers, scoredPlayerIds, lostCoinPlayerIds);
   };
 
-  const moveToNextQuestion = (updatedPlayers: Player[], scoredPlayerIds: number[]) => {
+  const moveToNextQuestion = (updatedPlayers: Player[], scoredPlayerIds: number[], lostCoinPlayerIds: number[]) => {
     const nextQuestionInRound = gameState.currentQuestionInRound + 1;
     const numPlayers = gameState.players.length;
     
@@ -170,6 +173,7 @@ function App() {
         roundQuestions: newRoundQuestions,
         usedQuestions: Array.from(usedQuestions),
         lastScoredPlayerIds: scoredPlayerIds,
+        lastLostCoinPlayerIds: lostCoinPlayerIds,
         currentBets: [],
       });
     } else {
@@ -180,6 +184,7 @@ function App() {
         screen: 'game',
         currentQuestionInRound: nextQuestionInRound,
         lastScoredPlayerIds: scoredPlayerIds,
+        lastLostCoinPlayerIds: lostCoinPlayerIds,
         currentBets: [],
       });
     }
@@ -195,6 +200,7 @@ function App() {
       roundQuestions: [],
       usedQuestions: [],
       lastScoredPlayerIds: [],
+      lastLostCoinPlayerIds: [],
       currentBets: [],
     });
   };
@@ -221,6 +227,7 @@ function App() {
         answererName={gameState.players[currentQuestion.answererId].name}
         askerName={gameState.players[currentQuestion.askerId].name}
         lastScoredPlayerIds={gameState.lastScoredPlayerIds}
+        lastLostCoinPlayerIds={gameState.lastLostCoinPlayerIds}
         onShowQuestion={handleShowQuestion}
       />
     );
