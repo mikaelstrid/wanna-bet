@@ -1,4 +1,5 @@
 import type { Player } from '../types';
+import Coin from './Coin';
 import './VictoryScreen.css';
 
 interface VictoryScreenProps {
@@ -29,7 +30,9 @@ export default function VictoryScreen({ winner, allPlayers, onRestart }: Victory
                 <span className="player-position">{index + 1}.</span>
                 <span className="player-name">{player.name}</span>
                 <span className="player-coins">
-                  <span className="coin-icon">🪙</span>
+                  <span className="coin-icon">
+                    <Coin decorative />
+                  </span>
                   {player.coins}
                 </span>
               </div>

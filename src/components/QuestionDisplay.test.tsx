@@ -45,7 +45,7 @@ describe('QuestionDisplay', () => {
     expect(screen.getByText('Vad är huvudstaden i Sverige?')).toBeInTheDocument();
     
     // Betting section should be visible with new header
-    expect(screen.getByText(/Satsa ett 🪙 på Kalle/i)).toBeInTheDocument();
+    expect(screen.getByText(/Satsa ett.*på Kalle/i)).toBeInTheDocument();
     
     // Non-answering players should be shown
     expect(screen.getByText('Lisa')).toBeInTheDocument();
@@ -80,7 +80,7 @@ describe('QuestionDisplay', () => {
     expect(screen.getByText('Stockholm')).toBeInTheDocument();
     
     // Betting section should not be visible
-    expect(screen.queryByText(/Satsa ett 🪙 på Kalle/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Satsa ett.*på Kalle/i)).not.toBeInTheDocument();
     
     // Correct/Incorrect buttons should be visible
     expect(screen.getByRole('button', { name: /Rätt/i })).toBeInTheDocument();

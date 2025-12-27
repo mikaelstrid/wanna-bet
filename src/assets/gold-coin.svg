@@ -2,7 +2,7 @@
 <svg
   width="128"
   height="128"
-  viewBox="0 0 128 128"
+  viewBox="4 4 120 120"
   xmlns="http://www.w3.org/2000/svg"
 >
   <!-- Background circle (outer rim) -->
@@ -11,7 +11,7 @@
     cy="64"
     r="56"
     fill="url(#goldGradientOuter)"
-    stroke="#b8860b"
+    stroke="#c87f0a"
     stroke-width="4"
   />
 
@@ -21,7 +21,7 @@
     cy="64"
     r="42"
     fill="url(#goldGradientInner)"
-    stroke="#f7e08a"
+    stroke="#ffd699"
     stroke-width="3"
   />
 
@@ -31,31 +31,34 @@
     cy="64"
     r="32"
     fill="none"
-    stroke="#fdf5b5"
+    stroke="#ffe6b3"
     stroke-width="2"
     stroke-dasharray="4 4"
   />
 
-  <!-- Uniform cross (classic coin symbol) -->
-  <path
-    d="M58 44
-       L70 44
-       L70 58
-       L84 58
-       L84 70
-       L70 70
-       L70 84
-       L58 84
-       L58 70
-       L44 70
-       L44 58
-       L58 58
-       Z"
-    fill="#8b6508"
-    stroke="#6b4e08"
-    stroke-width="2"
-    stroke-linejoin="miter"
-  />
+  <!-- Crown symbol -->
+  <g id="crown">
+    <!-- Crown body with peaks -->
+    <path
+      d="M 45 75
+         L 45 55
+         L 52 62
+         L 64 48
+         L 76 62
+         L 83 55
+         L 83 75
+         Z"
+      fill="#c87f0a"
+      stroke="#a0640a"
+      stroke-width="2"
+      stroke-linejoin="round"
+    />
+    
+    <!-- Crown jewels -->
+    <circle cx="52" cy="68" r="3" fill="#ffd699" />
+    <circle cx="64" cy="68" r="3" fill="#ffd699" />
+    <circle cx="76" cy="68" r="3" fill="#ffd699" />
+  </g>
 
   <!-- Highlights -->
   <ellipse
@@ -76,15 +79,15 @@
   <!-- Gradients -->
   <defs>
     <radialGradient id="goldGradientOuter" cx="30%" cy="25%" r="80%">
-      <stop offset="0%" stop-color="#fff7c2" />
-      <stop offset="40%" stop-color="#f4d03f" />
-      <stop offset="100%" stop-color="#d4a017" />
+      <stop offset="0%" stop-color="#ffe6b3" />
+      <stop offset="40%" stop-color="#f39c12" />
+      <stop offset="100%" stop-color="#d68910" />
     </radialGradient>
 
     <radialGradient id="goldGradientInner" cx="35%" cy="30%" r="80%">
-      <stop offset="0%" stop-color="#fffbe0" />
-      <stop offset="50%" stop-color="#f1c40f" />
-      <stop offset="100%" stop-color="#cfa10c" />
+      <stop offset="0%" stop-color="#ffedcc" />
+      <stop offset="50%" stop-color="#f39c12" />
+      <stop offset="100%" stop-color="#d68910" />
     </radialGradient>
   </defs>
 </svg>

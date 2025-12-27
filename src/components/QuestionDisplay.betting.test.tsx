@@ -55,7 +55,7 @@ describe('QuestionDisplay - Betting Functionality', () => {
       expect(screen.getAllByText('Kan ej')).toHaveLength(2);
     });
 
-    it('should display header "Satsa ett 🪙 på {answererName}"', () => {
+    it('should display header "Satsa ett på {answererName}"', () => {
       render(
         <QuestionDisplay
           question={mockQuestion}
@@ -69,7 +69,7 @@ describe('QuestionDisplay - Betting Functionality', () => {
         />
       );
 
-      expect(screen.getByText(/Satsa ett 🪙 på Edvin/i)).toBeInTheDocument();
+      expect(screen.getByText(/Satsa ett.*på Edvin/i)).toBeInTheDocument();
     });
 
     it('should call onToggleBet with "can" when "Kan" button is clicked', () => {

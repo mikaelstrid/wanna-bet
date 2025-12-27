@@ -1,0 +1,8 @@
+.coin {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.coin-in-text {
+  margin-top: -0.25em;
+}

@@ -1,4 +1,5 @@
 import type { Player } from "../types";
+import Coin from "./Coin";
 import "./GameBoard.css";
 
 interface GameBoardProps {
@@ -41,7 +42,7 @@ export default function GameBoard({
                         : ""
                   }`}
                 >
-                  🪙
+                  <Coin decorative />
                 </span>
                 <span
                   className={`coin-count ${
