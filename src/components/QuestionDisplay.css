@@ -255,11 +255,13 @@
   outline: 2px solid var(--color-accent, var(--color-text-primary));
   outline-offset: 2px;
   border-radius: 9999px;
-  background-color: rgba(0, 0, 0, 0.05);
-  transform: scale(1.05);
+  transform-origin: center;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
+
 .betting-player-coins-btn:hover {
-  transform: scale(1.2);
+  opacity: 0.85;
+  transform: translateY(-1px);
 }
 
 .coin-count-tooltip {

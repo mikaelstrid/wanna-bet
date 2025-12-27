@@ -69,12 +69,19 @@ export default function QuestionDisplay({
                           <button
                             className="betting-player-coins-btn"
                             onClick={() => setShowCoinsForPlayer(showCoinsForPlayer === player.id ? null : player.id)}
-                            aria-label={`${player.name} har ${player.coins} mynt. Klicka för att ${showCoinsForPlayer === player.id ? 'dölja' : 'visa'} antalet.`}
+                            aria-label={`Visa eller dölj antal mynt för ${player.name}`}
+                            aria-expanded={showCoinsForPlayer === player.id}
+                            aria-controls={`coin-count-${player.id}`}
                             title={`${player.name}: ${player.coins} mynt`}
                           >
                             🪙
                             {showCoinsForPlayer === player.id && (
-                              <span className="coin-count-tooltip">{player.coins}</span>
+                              <span
+                                id={`coin-count-${player.id}`}
+                                className="coin-count-tooltip"
+                              >
+                                {player.coins}
+                              </span>
                             )}
                           </button>
                         )}
