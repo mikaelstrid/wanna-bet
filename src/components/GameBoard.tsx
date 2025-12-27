@@ -7,6 +7,7 @@ interface GameBoardProps {
   answererName: string;
   askerName: string;
   lastScoredPlayerIds: number[];
+  lastLostCoinPlayerIds: number[];
   onShowQuestion: () => void;
 }
 
@@ -16,6 +17,7 @@ export default function GameBoard({
   answererName,
   askerName,
   lastScoredPlayerIds,
+  lastLostCoinPlayerIds,
   onShowQuestion,
 }: GameBoardProps) {
   return (
@@ -32,14 +34,22 @@ export default function GameBoard({
               <div className="coins">
                 <span
                   className={`coin-icon ${
-                    lastScoredPlayerIds.includes(index) ? "coin-spin" : ""
+                    lastScoredPlayerIds.includes(index)
+                      ? "coin-spin"
+                      : lastLostCoinPlayerIds.includes(index)
+                        ? "coin-shake"
+                        : ""
                   }`}
                 >
                   🪙
                 </span>
                 <span
                   className={`coin-count ${
-                    lastScoredPlayerIds.includes(index) ? "count-up" : ""
+                    lastScoredPlayerIds.includes(index)
+                      ? "count-up"
+                      : lastLostCoinPlayerIds.includes(index)
+                        ? "count-down"
+                        : ""
                   }`}
                 >
                   {player.coins}
