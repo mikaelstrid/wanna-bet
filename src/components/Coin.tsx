@@ -9,7 +9,7 @@ export default function Coin({ className = "", size = "1em" }: CoinProps) {
   return (
     <img
       src={goldCoinSvg}
-      alt="🪙"
+      alt="gold coin"
       className={className}
       style={{ width: size, height: size, display: "inline-block", verticalAlign: "middle" }}
     />
