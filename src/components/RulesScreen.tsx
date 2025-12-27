@@ -21,7 +21,7 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
             <div className="rule-text">
               Den första spelaren som når{" "}
               <span className="highlight-coin">
-                {WINNING_COINS} guldmynt <Coin />
+                {WINNING_COINS} guldmynt <Coin useInText />
               </span>{" "}
               vinner spelet!
             </div>
@@ -40,7 +40,7 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
                     {Array.from(
                       { length: COINS_FOR_CORRECT_ANSWER },
                       (_, i) => (
-                        <Coin key={i} />
+                        <Coin key={i} useInText />
                       )
                     )}
                   </span>{" "}
@@ -50,11 +50,11 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
                   Du kan satsa på om en annan spelare kan svara rätt på sin
                   fråga, om du satsar rätt får du{" "}
                   <span className="highlight-coin">
-                    <Coin />
+                    <Coin useInText />
                   </span>{" "}
                   annars blir du av med{" "}
                   <span className="highlight-coin">
-                    <Coin />
+                    <Coin useInText />
                   </span>
                   .
                 </li>
@@ -62,7 +62,7 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
                   Om någon satsar på att du inte kan svara rätt på din fråga och
                   du svarar rätt, får du deras satsade{" "}
                   <span className="highlight-coin">
-                    <Coin />
+                    <Coin useInText />
                   </span>
                   .
                 </li>

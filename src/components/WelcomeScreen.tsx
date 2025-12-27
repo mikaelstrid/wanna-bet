@@ -24,8 +24,7 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
           <div className="badge">
             <span className="badge-icon">🏅</span>
             <span className="badge-text">
-              Först till {WINNING_COINS}
-              <Coin /> vinner
+              Först till {WINNING_COINS} <Coin size="1.2rem" useInText /> vinner
             </span>
           </div>
         </div>
@@ -34,8 +33,7 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
           Utmana dina vänner i en spännande frågesport! <br />
           Satsa smart, svara rätt och samla{" "}
           <span className="highlight-coin">
-            guldmynt
-            <Coin />
+            guldmynt <Coin useInText />
           </span>{" "}
           för att vinna!
         </p>
