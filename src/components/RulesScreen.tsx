@@ -14,16 +14,6 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
         <div className="rules-list">
           <div className="rule-item">
             <h3 className="rule-item-header">
-              <span className="rule-icon">🔀</span>
-              Frågeordning
-            </h3>
-            <div className="rule-text">
-              Frågorna är slumpmässigt utdelade inom varje runda.
-            </div>
-          </div>
-
-          <div className="rule-item">
-            <h3 className="rule-item-header">
               <span className="rule-icon">🏆</span>
               Hur man vinner
             </h3>
@@ -67,6 +57,16 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
                   <span className="highlight-coin">🪙</span>.
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <div className="rule-item">
+            <h3 className="rule-item-header">
+              <span className="rule-icon">🔀</span>
+              Frågeordning
+            </h3>
+            <div className="rule-text">
+              Frågorna är slumpmässigt utdelade inom varje runda.
             </div>
           </div>
         </div>
