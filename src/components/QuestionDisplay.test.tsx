@@ -47,9 +47,11 @@ describe('QuestionDisplay', () => {
     // Betting section should be visible with new header
     expect(screen.getByText(/Satsa ett.*på Kalle/i)).toBeInTheDocument();
     
-    // Non-answering players should be shown
+    // Lisa should be shown (has 1 coin)
     expect(screen.getByText('Lisa')).toBeInTheDocument();
-    expect(screen.getByText('Anna')).toBeInTheDocument();
+    
+    // Anna should NOT be shown (has 0 coins)
+    expect(screen.queryByText('Anna')).not.toBeInTheDocument();
     
     // Answer should not be visible
     expect(screen.queryByText('Stockholm')).not.toBeInTheDocument();
@@ -170,23 +172,20 @@ describe('QuestionDisplay', () => {
       />
     );
 
-    // Get all bet buttons - there should be 4 (2 per non-answering player)
+    // Get all bet buttons
     const allButtons = screen.getAllByRole('button');
     // Filter to get only the betting buttons (exclude "Visa svar")
     const bettingButtons = allButtons.filter(btn => 
       btn.classList.contains('btn-bet')
     );
     
-    // Should have 4 betting buttons total (2 per player: Lisa and Anna)
-    expect(bettingButtons).toHaveLength(4);
+    // Should have 2 betting buttons total (only Lisa who has coins)
+    // Anna has 0 coins and should not be displayed
+    expect(bettingButtons).toHaveLength(2);
     
-    // First 2 buttons are for Lisa (has 1 coin) - should be enabled
+    // Both buttons are for Lisa (has 1 coin) - should be enabled
     expect(bettingButtons[0]).not.toBeDisabled();
     expect(bettingButtons[1]).not.toBeDisabled();
-    
-    // Last 2 buttons are for Anna (has 0 coins) - should be disabled
-    expect(bettingButtons[2]).toBeDisabled();
-    expect(bettingButtons[3]).toBeDisabled();
     
     // Click Lisa's "Kan" button (first button)
     fireEvent.click(bettingButtons[0]);

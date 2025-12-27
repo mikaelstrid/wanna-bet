@@ -28,10 +28,10 @@ export default function QuestionDisplay({
   const [isAnswerRevealed, setIsAnswerRevealed] = useState(false);
   const categoryInfo = categoryMetadata[question.category];
 
-  // Get players who can bet (not the answerer)
+  // Get players who can bet (not the answerer and have coins)
   const eligibleBettors = players
     .map((player, index) => ({ ...player, id: index }))
-    .filter((player) => player.id !== answererId);
+    .filter((player) => player.id !== answererId && player.coins > 0);
 
   return (
     <div className="question-display">
@@ -53,7 +53,7 @@ export default function QuestionDisplay({
             <p className="question-text">{question.question}</p>
           </div>
 
-          {!isAnswerRevealed && (
+          {!isAnswerRevealed && eligibleBettors.length > 0 && (
             <div
               className="betting-section"
               aria-live="polite"
