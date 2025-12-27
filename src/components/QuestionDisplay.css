@@ -202,7 +202,7 @@
 .betting-player-card {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: var(--spacing-sm);
   background: var(--color-bg-white);
   border-radius: var(--border-radius-sm);
@@ -283,7 +283,7 @@
 }
 
 .coin-count-tooltip::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 50%;
