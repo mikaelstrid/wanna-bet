@@ -18,7 +18,7 @@ export const shuffleArray = <T>(array: T[]): T[] => {
 
 // Get age category (QuestionLevel) from player age
 // Requirements specify: child (5-7), tween (8-12), young-teen (13-15), old-teen (16-18), adult (19+)
-// Ages below 5 are treated as child as a fallback for edge cases
+// Ages below 5 are treated as adult as a fallback for edge cases
 export const getAgeCategoryFromAge = (age: number): QuestionLevel => {
   if (age >= 5 && age <= 7) return "child";
   if (age >= 8 && age <= 12) return "tween";
