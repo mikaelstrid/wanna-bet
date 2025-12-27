@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { Question, Player, Bet, BetType } from '../types';
 import { categoryMetadata } from '../categoryMetadata';
 import './QuestionDisplay.css';
@@ -27,6 +27,11 @@ export default function QuestionDisplay({
   const [isAnswerRevealed, setIsAnswerRevealed] = useState(false);
   const [showCoinsForPlayer, setShowCoinsForPlayer] = useState<number | null>(null);
   const categoryInfo = categoryMetadata[question.category];
+  
+  // Reset coin tooltip when question changes
+  useEffect(() => {
+    setShowCoinsForPlayer(null);
+  }, [question]);
   
   // Get players who can bet (not the answerer)
   const eligibleBettors = players
