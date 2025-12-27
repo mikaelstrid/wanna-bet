@@ -25,6 +25,7 @@ export default function QuestionDisplay({
   onIncorrect 
 }: QuestionDisplayProps) {
   const [isAnswerRevealed, setIsAnswerRevealed] = useState(false);
+  const [showCoinsForPlayer, setShowCoinsForPlayer] = useState<number | null>(null);
   const categoryInfo = categoryMetadata[question.category];
   
   // Get players who can bet (not the answerer)
@@ -64,7 +65,19 @@ export default function QuestionDisplay({
                     <div key={player.id} className="betting-player-card">
                       <div className="betting-player-info">
                         <span className="betting-player-name">{player.name}</span>
-                        <span className="betting-player-coins">🪙 {player.coins}</span>
+                        {player.coins > 0 && (
+                          <button
+                            className="betting-player-coins-btn"
+                            onClick={() => setShowCoinsForPlayer(showCoinsForPlayer === player.id ? null : player.id)}
+                            aria-label={`${player.name} har ${player.coins} mynt. Klicka för att ${showCoinsForPlayer === player.id ? 'dölja' : 'visa'} antalet.`}
+                            title={`${player.name}: ${player.coins} mynt`}
+                          >
+                            🪙
+                            {showCoinsForPlayer === player.id && (
+                              <span className="coin-count-tooltip">{player.coins}</span>
+                            )}
+                          </button>
+                        )}
                       </div>
                       <div className="betting-buttons">
                         <button
