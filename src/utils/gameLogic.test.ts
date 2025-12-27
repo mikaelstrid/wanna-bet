@@ -79,7 +79,9 @@ describe("groupQuestionsByCategory", () => {
 });
 
 describe("getAgeCategoryFromAge", () => {
-  it('should return "child" for ages 5-7', () => {
+  it('should return "child" for ages below 8', () => {
+    expect(getAgeCategoryFromAge(0)).toBe("child");
+    expect(getAgeCategoryFromAge(4)).toBe("child");
     expect(getAgeCategoryFromAge(5)).toBe("child");
     expect(getAgeCategoryFromAge(6)).toBe("child");
     expect(getAgeCategoryFromAge(7)).toBe("child");
@@ -108,11 +110,6 @@ describe("getAgeCategoryFromAge", () => {
     expect(getAgeCategoryFromAge(25)).toBe("adult");
     expect(getAgeCategoryFromAge(50)).toBe("adult");
     expect(getAgeCategoryFromAge(100)).toBe("adult");
-  });
-
-  it('should return "adult" for ages below 5 as edge case handling', () => {
-    expect(getAgeCategoryFromAge(0)).toBe("adult");
-    expect(getAgeCategoryFromAge(4)).toBe("adult");
   });
 });
 
