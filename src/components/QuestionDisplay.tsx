@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import type { Question, Player, Bet, BetType } from '../types';
 import { categoryMetadata } from '../categoryMetadata';
 import './QuestionDisplay.css';
@@ -25,13 +25,7 @@ export default function QuestionDisplay({
   onIncorrect 
 }: QuestionDisplayProps) {
   const [isAnswerRevealed, setIsAnswerRevealed] = useState(false);
-  const [showCoinsForPlayer, setShowCoinsForPlayer] = useState<number | null>(null);
   const categoryInfo = categoryMetadata[question.category];
-  
-  // Reset coin tooltip when question changes
-  useEffect(() => {
-    setShowCoinsForPlayer(null);
-  }, [question]);
   
   // Get players who can bet (not the answerer)
   const eligibleBettors = players
@@ -70,26 +64,6 @@ export default function QuestionDisplay({
                     <div key={player.id} className="betting-player-card">
                       <div className="betting-player-info">
                         <span className="betting-player-name">{player.name}</span>
-                        {player.coins > 0 && (
-                          <button
-                            className="betting-player-coins-btn"
-                            onClick={() => setShowCoinsForPlayer(showCoinsForPlayer === player.id ? null : player.id)}
-                            aria-label={`Visa eller dölj antal mynt för ${player.name}`}
-                            aria-expanded={showCoinsForPlayer === player.id}
-                            aria-controls={`coin-count-${player.id}`}
-                            title={`${player.name}: ${player.coins} mynt`}
-                          >
-                            🪙
-                            {showCoinsForPlayer === player.id && (
-                              <span
-                                id={`coin-count-${player.id}`}
-                                className="coin-count-tooltip"
-                              >
-                                {player.coins}
-                              </span>
-                            )}
-                          </button>
-                        )}
                       </div>
                       <div className="betting-buttons">
                         <button
