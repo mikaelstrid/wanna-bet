@@ -29,6 +29,19 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
 
           <div className="rule-item">
             <h3 className="rule-item-header">
+              <span className="rule-icon">🔀</span>
+              Frågorna
+            </h3>
+            <div className="rule-text">
+              <ul>
+                <li>Frågorna är anpassade efter varje spelares ålder.</li>
+                <li>Frågorna är slumpmässigt utdelade inom varje runda.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="rule-item">
+            <h3 className="rule-item-header">
               <span className="rule-icon">💰</span>
               Hur man tjänar guldmynt
             </h3>
@@ -67,16 +80,6 @@ export default function RulesScreen({ onContinue }: RulesScreenProps) {
                   .
                 </li>
               </ul>
-            </div>
-          </div>
-
-          <div className="rule-item">
-            <h3 className="rule-item-header">
-              <span className="rule-icon">🔀</span>
-              Frågeordning
-            </h3>
-            <div className="rule-text">
-              Frågorna är slumpmässigt utdelade inom varje runda.
             </div>
           </div>
         </div>
