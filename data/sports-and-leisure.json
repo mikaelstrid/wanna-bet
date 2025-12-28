@@ -1,92 +1,902 @@
 [
   {
-    "id": 71,
+    "id": 631,
     "rev": 1,
-    "question": "Hur många spelare finns det i ett ishockeylag på isen samtidigt?",
-    "answer": "6 (inklusive målvakten)",
+    "question": "Hur många spelare är det i ett fotbollslag på planen?",
+    "answer": "11",
     "category": "sports-and-leisure",
     "level": "child"
   },
   {
-    "id": 72,
+    "id": 632,
     "rev": 1,
-    "question": "Vilken sport spelar man med en boll och ett nät på en plan?",
-    "answer": "Tennis (eller volleyboll, båda accepteras)",
+    "question": "Vilken färg har fotbollen?",
+    "answer": "Vit och svart (eller olika färger)",
     "category": "sports-and-leisure",
     "level": "child"
   },
   {
-    "id": 73,
+    "id": 633,
     "rev": 1,
-    "question": "Vilket land vann fotbolls-VM 2018?",
-    "answer": "Frankrike",
+    "question": "Vad heter sporten där man åker på is med skridskor?",
+    "answer": "Skridskoåkning",
     "category": "sports-and-leisure",
-    "level": "tween",
-    "start_year": 2018,
-    "end_year": 2018
+    "level": "child"
   },
   {
-    "id": 74,
+    "id": 634,
     "rev": 1,
-    "question": "Vad heter världens mest kända tennisturnering på gräs?",
-    "answer": "Wimbledon",
+    "question": "Hur många hjul har en cykel?",
+    "answer": "2",
+    "category": "sports-and-leisure",
+    "level": "child"
+  },
+  {
+    "id": 635,
+    "rev": 1,
+    "question": "Vad heter sporten där man simmar i vatten?",
+    "answer": "Simning",
+    "category": "sports-and-leisure",
+    "level": "child"
+  },
+  {
+    "id": 636,
+    "rev": 1,
+    "question": "Hur många olimpiska ringar finns det?",
+    "answer": "5",
     "category": "sports-and-leisure",
     "level": "tween"
   },
   {
-    "id": 75,
+    "id": 637,
     "rev": 1,
-    "question": "Vilket år hölls OS i Stockholm?",
-    "answer": "1912",
+    "question": "Vad heter sporten där man spelar med en basketboll?",
+    "answer": "Basket",
     "category": "sports-and-leisure",
-    "level": "young-teen",
-    "start_year": 1912,
-    "end_year": 1912
+    "level": "tween"
   },
   {
-    "id": 76,
+    "id": 638,
     "rev": 1,
-    "question": "Hur många prickar har en basketboll?",
-    "answer": "Inga (den har räfflor men inga prickar)",
+    "question": "Hur många perioder är det i en ishockeymatch?",
+    "answer": "3",
+    "category": "sports-and-leisure",
+    "level": "tween"
+  },
+  {
+    "id": 639,
+    "rev": 1,
+    "question": "Vad heter världens största fotbollsturnering?",
+    "answer": "Fotbolls-VM",
+    "category": "sports-and-leisure",
+    "level": "tween"
+  },
+  {
+    "id": 640,
+    "rev": 1,
+    "question": "Hur många rundor är det i en boxningsmatch (prof)?",
+    "answer": "Varierar, ofta 12",
+    "category": "sports-and-leisure",
+    "level": "tween"
+  },
+  {
+    "id": 641,
+    "rev": 1,
+    "question": "Vad heter sporten där man åker på vatten med en surfbräda?",
+    "answer": "Surfing",
+    "category": "sports-and-leisure",
+    "level": "tween"
+  },
+  {
+    "id": 642,
+    "rev": 1,
+    "question": "Hur många spelare är det i ett basketlag på planen?",
+    "answer": "5",
+    "category": "sports-and-leisure",
+    "level": "tween"
+  },
+  {
+    "id": 643,
+    "rev": 1,
+    "question": "Vad heter Sveriges mest populära vintersport?",
+    "answer": "Skid åkning (eller ishockey)",
+    "category": "sports-and-leisure",
+    "level": "tween"
+  },
+  {
+    "id": 644,
+    "rev": 1,
+    "question": "Hur många poäng får man för en touchdown i amerikansk fotboll?",
+    "answer": "6",
+    "category": "sports-and-leisure",
+    "level": "tween"
+  },
+  {
+    "id": 645,
+    "rev": 1,
+    "question": "Vad heter sporten där man spelar med en tennisboll?",
+    "answer": "Tennis",
+    "category": "sports-and-leisure",
+    "level": "tween"
+  },
+  {
+    "id": 646,
+    "rev": 1,
+    "question": "Vilket år hölls första moderna olympiska spelen?",
+    "answer": "1896",
+    "category": "sports-and-leisure",
+    "level": "young-teen",
+    "start_year": 1896,
+    "end_year": 1896
+  },
+  {
+    "id": 647,
+    "rev": 1,
+    "question": "Vad heter Sveriges mest framgångsrika fotbollsklubb?",
+    "answer": "Malmö FF (eller IFK Göteborg)",
     "category": "sports-and-leisure",
     "level": "young-teen"
   },
   {
-    "id": 77,
+    "id": 648,
     "rev": 1,
-    "question": "Vilket land har vunnit flest fotbolls-VM?",
-    "answer": "Brasilien",
+    "question": "Hur många Grand Slam-turneringar finns i tennis?",
+    "answer": "4",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 649,
+    "rev": 1,
+    "question": "Vilket år vann Sverige fotbolls-VM?",
+    "answer": "Sverige har aldrig vunnit VM",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 650,
+    "rev": 1,
+    "question": "Vad heter sporten där man cyklar på en bana?",
+    "answer": "Baneycykling",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 651,
+    "rev": 1,
+    "question": "Hur många spelare är det i ett volleybollag på planen?",
+    "answer": "6",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 652,
+    "rev": 1,
+    "question": "Vilket år började NHL?",
+    "answer": "1917",
+    "category": "sports-and-leisure",
+    "level": "young-teen",
+    "start_year": 1917,
+    "end_year": 1917
+  },
+  {
+    "id": 653,
+    "rev": 1,
+    "question": "Vad heter världens mest prestigefyllda tennisturnering?",
+    "answer": "Wimbledon",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 654,
+    "rev": 1,
+    "question": "Hur många kilometer är ett maratonlopp?",
+    "answer": "42,195 km",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 655,
+    "rev": 1,
+    "question": "Vilket år vann Sverige ishockey-VM senast?",
+    "answer": "2024 (eller tidigare beroende på när frågan ställs)",
+    "category": "sports-and-leisure",
+    "level": "young-teen",
+    "start_year": 2024,
+    "end_year": 2024
+  },
+  {
+    "id": 656,
+    "rev": 1,
+    "question": "Vad heter sporten där man hoppar med en stav?",
+    "answer": "Stavhopp",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 657,
+    "rev": 1,
+    "question": "Hur många set spelar man i en tennismatch (herr, Grand Slam)?",
+    "answer": "Bäst av 5",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 658,
+    "rev": 1,
+    "question": "Vilket år började Premier League?",
+    "answer": "1992",
+    "category": "sports-and-leisure",
+    "level": "young-teen",
+    "start_year": 1992,
+    "end_year": 1992
+  },
+  {
+    "id": 659,
+    "rev": 1,
+    "question": "Vad heter världens mest kända cykellopp?",
+    "answer": "Tour de France",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 660,
+    "rev": 1,
+    "question": "Hur många spelare är det i ett handbollslag på planen?",
+    "answer": "7",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 661,
+    "rev": 1,
+    "question": "Vilket år vann Sverige olympiskt guld i fotboll?",
+    "answer": "1948",
+    "category": "sports-and-leisure",
+    "level": "young-teen",
+    "start_year": 1948,
+    "end_year": 1948
+  },
+  {
+    "id": 662,
+    "rev": 1,
+    "question": "Vad heter sporten där man kör bil i höga hastigheter?",
+    "answer": "Bilracing (eller Formel 1)",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 663,
+    "rev": 1,
+    "question": "Hur många innings är det i en basebollmatch?",
+    "answer": "9",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 664,
+    "rev": 1,
+    "question": "Vilket år började NBA?",
+    "answer": "1946",
+    "category": "sports-and-leisure",
+    "level": "young-teen",
+    "start_year": 1946,
+    "end_year": 1946
+  },
+  {
+    "id": 665,
+    "rev": 1,
+    "question": "Vad heter världens mest prestigefyllda golfturnering?",
+    "answer": "The Masters",
+    "category": "sports-and-leisure",
+    "level": "young-teen"
+  },
+  {
+    "id": 666,
+    "rev": 1,
+    "question": "Vilket år började Fotbolls-VM?",
+    "answer": "1930",
+    "category": "sports-and-leisure",
+    "level": "old-teen",
+    "start_year": 1930,
+    "end_year": 1930
+  },
+  {
+    "id": 667,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika formel 1-föraren genom tiderna?",
+    "answer": "Lewis Hamilton (eller Michael Schumacher)",
     "category": "sports-and-leisure",
     "level": "old-teen"
   },
   {
-    "id": 78,
+    "id": 668,
     "rev": 1,
-    "question": "Vad heter den svenska friidrottsstjärnan som vann OS-guld i höjdhopp 1912?",
-    "answer": "Georg Åberg",
+    "question": "Hur många titlar har Rafael Nadal vunnit i franska öppna?",
+    "answer": "14 (till 2024)",
+    "category": "sports-and-leisure",
+    "level": "old-teen"
+  },
+  {
+    "id": 669,
+    "rev": 1,
+    "question": "Vilket år började UEFA Champions League?",
+    "answer": "1992 (tidigare European Cup från 1955)",
     "category": "sports-and-leisure",
     "level": "old-teen",
-    "start_year": 1912,
-    "end_year": 1912
+    "start_year": 1992,
+    "end_year": 1992
   },
   {
-    "id": 79,
+    "id": 670,
     "rev": 1,
-    "question": "Vem är den svenska längdskidåkare som vunnit flest OS-guld?",
-    "answer": "Gunde Svan (eller Charlotte Kalla, båda har 3 guld)",
+    "question": "Vad heter den mest framgångsrika tennisspelaren genom tiderna (herr)?",
+    "answer": "Novak Djokovic (eller Roger Federer/Rafael Nadal)",
     "category": "sports-and-leisure",
-    "level": "adult",
-    "start_year": 1984,
-    "end_year": 2018
+    "level": "old-teen"
   },
   {
-    "id": 80,
+    "id": 671,
     "rev": 1,
-    "question": "Vilket år vann Ingemar Stenmark sitt första världscupsguld i alpin skidåkning?",
-    "answer": "1976",
+    "question": "Hur många olympiska guldmedaljer har Michael Phelps?",
+    "answer": "23",
+    "category": "sports-and-leisure",
+    "level": "old-teen"
+  },
+  {
+    "id": 672,
+    "rev": 1,
+    "question": "Vilket år började Stanley Cup?",
+    "answer": "1893",
+    "category": "sports-and-leisure",
+    "level": "old-teen",
+    "start_year": 1893,
+    "end_year": 1893
+  },
+  {
+    "id": 673,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika fotbollsklubben i Champions League?",
+    "answer": "Real Madrid",
+    "category": "sports-and-leisure",
+    "level": "old-teen"
+  },
+  {
+    "id": 674,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Usain Bolt?",
+    "answer": "11 (individuella)",
+    "category": "sports-and-leisure",
+    "level": "old-teen"
+  },
+  {
+    "id": 675,
+    "rev": 1,
+    "question": "Vilket år började Super Bowl?",
+    "answer": "1967",
+    "category": "sports-and-leisure",
+    "level": "old-teen",
+    "start_year": 1967,
+    "end_year": 1967
+  },
+  {
+    "id": 676,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika golfare genom tiderna?",
+    "answer": "Jack Nicklaus (eller Tiger Woods)",
+    "category": "sports-and-leisure",
+    "level": "old-teen"
+  },
+  {
+    "id": 677,
+    "rev": 1,
+    "question": "Hur många Tour de France-titlar har Eddy Merckx?",
+    "answer": "5",
+    "category": "sports-and-leisure",
+    "level": "old-teen"
+  },
+  {
+    "id": 678,
+    "rev": 1,
+    "question": "Vilket år började basketbolls-VM?",
+    "answer": "1950",
+    "category": "sports-and-leisure",
+    "level": "old-teen",
+    "start_year": 1950,
+    "end_year": 1950
+  },
+  {
+    "id": 679,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika boxaren genom tiderna?",
+    "answer": "Muhammad Ali (eller Floyd Mayweather)",
+    "category": "sports-and-leisure",
+    "level": "old-teen"
+  },
+  {
+    "id": 680,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Pelé vunnit?",
+    "answer": "3",
+    "category": "sports-and-leisure",
+    "level": "old-teen"
+  },
+  {
+    "id": 681,
+    "rev": 1,
+    "question": "Vilket år började rugby-VM?",
+    "answer": "1987",
+    "category": "sports-and-leisure",
+    "level": "old-teen",
+    "start_year": 1987,
+    "end_year": 1987
+  },
+  {
+    "id": 682,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika ishockeyspelaren genom tiderna?",
+    "answer": "Wayne Gretzky",
+    "category": "sports-and-leisure",
+    "level": "old-teen"
+  },
+  {
+    "id": 683,
+    "rev": 1,
+    "question": "Hur många Grand Slam-titlar har Serena Williams?",
+    "answer": "23",
+    "category": "sports-and-leisure",
+    "level": "old-teen"
+  },
+  {
+    "id": 684,
+    "rev": 1,
+    "question": "Vilket år började crickettvärldsmeisterskapet?",
+    "answer": "1975",
+    "category": "sports-and-leisure",
+    "level": "old-teen",
+    "start_year": 1975,
+    "end_year": 1975
+  },
+  {
+    "id": 685,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika skidåkaren genom tiderna?",
+    "answer": "Ingemar Stenmark (eller Mikaela Shiffrin)",
+    "category": "sports-and-leisure",
+    "level": "old-teen"
+  },
+  {
+    "id": 686,
+    "rev": 1,
+    "question": "Vilket år började de antika olympiska spelen?",
+    "answer": "776 f.Kr. (±8 år: 784-768 f.Kr.)",
     "category": "sports-and-leisure",
     "level": "adult",
-    "start_year": 1976,
-    "end_year": 1976
+    "start_year": -776,
+    "end_year": -776
+  },
+  {
+    "id": 687,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika seglaren genom tiderna?",
+    "answer": "Ben Ainslie (eller Robert Scheidt)",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 688,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Phil Taylor i dart?",
+    "answer": "16",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 689,
+    "rev": 1,
+    "question": "Vilket år började Tour de France?",
+    "answer": "1903",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1903,
+    "end_year": 1903
+  },
+  {
+    "id": 690,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika simhopparen genom tiderna?",
+    "answer": "Greg Louganis (eller Wu Minxia)",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 691,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Ronnie O'Sullivan i snooker?",
+    "answer": "7",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 692,
+    "rev": 1,
+    "question": "Vilket år började Giro d'Italia?",
+    "answer": "1909",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1909,
+    "end_year": 1909
+  },
+  {
+    "id": 693,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika konståkaren genom tiderna?",
+    "answer": "Irina Rodnina (eller Sonja Henie)",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 694,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Kelly Slater i surfing?",
+    "answer": "11",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 695,
+    "rev": 1,
+    "question": "Vilket år började Vuelta a España?",
+    "answer": "1935",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1935,
+    "end_year": 1935
+  },
+  {
+    "id": 696,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika rodden genom tiderna?",
+    "answer": "Steve Redgrave",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 697,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Sebastian Loeb i rally?",
+    "answer": "9",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 698,
+    "rev": 1,
+    "question": "Vilket år började Formel 1-VM?",
+    "answer": "1950",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1950,
+    "end_year": 1950
+  },
+  {
+    "id": 699,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika längdhopparen genom tiderna?",
+    "answer": "Mike Powell (världsrekord) eller Carl Lewis (mest titlar)",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 700,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Valentino Rossi i MotoGP?",
+    "answer": "9",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 701,
+    "rev": 1,
+    "question": "Vilket år började IndyCar-serien?",
+    "answer": "1996 (som IRL)",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1996,
+    "end_year": 1996
+  },
+  {
+    "id": 702,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika höjdhopparen genom tiderna?",
+    "answer": "Javier Sotomayor (världsrekord) eller flera med många titlar",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 703,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Sébastien Ogier i rally?",
+    "answer": "8",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 704,
+    "rev": 1,
+    "question": "Vilket år började Le Mans 24-timmars?",
+    "answer": "1923",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1923,
+    "end_year": 1923
+  },
+  {
+    "id": 705,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika stavhopparen genom tiderna?",
+    "answer": "Sergey Bubka (eller Armand Duplantis)",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 706,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Marc Marquez i MotoGP?",
+    "answer": "8",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 707,
+    "rev": 1,
+    "question": "Vilket år började Dakar-rallyt?",
+    "answer": "1979",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1979,
+    "end_year": 1979
+  },
+  {
+    "id": 708,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika spjutkastaren genom tiderna?",
+    "answer": "Jan Železný",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 709,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Giacomo Agostini i motorcykelracing?",
+    "answer": "15",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 710,
+    "rev": 1,
+    "question": "Vilket år började WRC (Världsrallymästerskapet)?",
+    "answer": "1973",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1973,
+    "end_year": 1973
+  },
+  {
+    "id": 711,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika diskuskastaren genom tiderna?",
+    "answer": "Jürgen Schult (världsrekord) eller Virgilijus Alekna (titlar)",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 712,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har John Surtees i motorcykelracing?",
+    "answer": "7",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 713,
+    "rev": 1,
+    "question": "Vilket år började Mille Miglia?",
+    "answer": "1927",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1927,
+    "end_year": 1957
+  },
+  {
+    "id": 714,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika kulstötaren genom tiderna?",
+    "answer": "Randy Barnes (världsrekord) eller flera med många titlar",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 715,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Mike Hailwood i motorcykelracing?",
+    "answer": "9",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 716,
+    "rev": 1,
+    "question": "Vilket år började Targa Florio?",
+    "answer": "1906",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1906,
+    "end_year": 1977
+  },
+  {
+    "id": 717,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika slägkastaren genom tiderna?",
+    "answer": "Yuriy Sedykh",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 718,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Phil Read i motorcykelracing?",
+    "answer": "8",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 719,
+    "rev": 1,
+    "question": "Vilket år började Carrera Panamericana?",
+    "answer": "1950",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1950,
+    "end_year": 1954
+  },
+  {
+    "id": 720,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika tiokamparen genom tiderna?",
+    "answer": "Roman Šebrle (världsrekord) eller Ashton Eaton (olympiska guld)",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 721,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Geoff Duke i motorcykelracing?",
+    "answer": "6",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 722,
+    "rev": 1,
+    "question": "Vilket år började Isle of Man TT?",
+    "answer": "1907",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1907,
+    "end_year": 1907
+  },
+  {
+    "id": 723,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika sjukamparen genom tiderna?",
+    "answer": "Jackie Joyner-Kersee",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 724,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Freddie Spencer i motorcykelracing?",
+    "answer": "3",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 725,
+    "rev": 1,
+    "question": "Vilket år började Goodwood Revival?",
+    "answer": "1998",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1998,
+    "end_year": 1998
+  },
+  {
+    "id": 726,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika maraton-löparen genom tiderna?",
+    "answer": "Eliud Kipchoge",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 727,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Kenny Roberts i motorcykelracing?",
+    "answer": "3",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 728,
+    "rev": 1,
+    "question": "Vilket år började Pikes Peak International Hill Climb?",
+    "answer": "1916",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1916,
+    "end_year": 1916
+  },
+  {
+    "id": 729,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika ultramaratonlöparen genom tiderna?",
+    "answer": "Yiannis Kouros",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 730,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Eddie Lawson i motorcykelracing?",
+    "answer": "4",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 731,
+    "rev": 1,
+    "question": "Vilket år började 24 Hours of Daytona?",
+    "answer": "1966 (som 24-timmars)",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1966,
+    "end_year": 1966
+  },
+  {
+    "id": 732,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika racewalker genom tiderna?",
+    "answer": "Robert Korzeniowski",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 733,
+    "rev": 1,
+    "question": "Hur många världsmästartitlar har Wayne Rainey i motorcykelracing?",
+    "answer": "3",
+    "category": "sports-and-leisure",
+    "level": "adult"
+  },
+  {
+    "id": 734,
+    "rev": 1,
+    "question": "Vilket år började 12 Hours of Sebring?",
+    "answer": "1952",
+    "category": "sports-and-leisure",
+    "level": "adult",
+    "start_year": 1952,
+    "end_year": 1952
+  },
+  {
+    "id": 735,
+    "rev": 1,
+    "question": "Vad heter den mest framgångsrika steeplechase-löparen genom tiderna?",
+    "answer": "Saif Saaeed Shaheen (världsrekord) eller flera med många titlar",
+    "category": "sports-and-leisure",
+    "level": "adult"
   }
 ]

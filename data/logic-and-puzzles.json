@@ -1,81 +1,841 @@
 [
   {
-    "id": 31,
+    "id": 946,
     "rev": 1,
-    "question": "Hur mycket är 2 + 2?",
-    "answer": "4",
+    "question": "Hur många sidor har en tärning?",
+    "answer": "6 (sex)",
     "category": "logic-and-puzzles",
     "level": "child"
   },
   {
-    "id": 32,
+    "id": 947,
     "rev": 1,
-    "question": "Om du har 5 kakor och äter 2, hur många har du kvar?",
+    "question": "Vad är 2 + 2?",
+    "answer": "4 (fyra)",
+    "category": "logic-and-puzzles",
+    "level": "child"
+  },
+  {
+    "id": 948,
+    "rev": 1,
+    "question": "Hur många hörn har en triangel?",
+    "answer": "3 (tre)",
+    "category": "logic-and-puzzles",
+    "level": "child"
+  },
+  {
+    "id": 949,
+    "rev": 1,
+    "question": "Vad är 5 - 3?",
+    "answer": "2 (två)",
+    "category": "logic-and-puzzles",
+    "level": "child"
+  },
+  {
+    "id": 950,
+    "rev": 1,
+    "question": "Hur många hjul har en trehjuling?",
+    "answer": "3 (tre)",
+    "category": "logic-and-puzzles",
+    "level": "child"
+  },
+  {
+    "id": 951,
+    "rev": 1,
+    "question": "Vad är 7 × 8?",
+    "answer": "56",
+    "category": "logic-and-puzzles",
+    "level": "tween"
+  },
+  {
+    "id": 952,
+    "rev": 1,
+    "question": "Hur många grader är det i en triangel?",
+    "answer": "180",
+    "category": "logic-and-puzzles",
+    "level": "tween"
+  },
+  {
+    "id": 953,
+    "rev": 1,
+    "question": "Vad är 100 ÷ 4?",
+    "answer": "25",
+    "category": "logic-and-puzzles",
+    "level": "tween"
+  },
+  {
+    "id": 954,
+    "rev": 1,
+    "question": "Hur många sidor har en oktagon?",
+    "answer": "8 (åtta)",
+    "category": "logic-and-puzzles",
+    "level": "tween"
+  },
+  {
+    "id": 955,
+    "rev": 1,
+    "question": "Vad är 12 × 12?",
+    "answer": "144",
+    "category": "logic-and-puzzles",
+    "level": "tween"
+  },
+  {
+    "id": 956,
+    "rev": 1,
+    "question": "Hur många minuter är 3 timmar?",
+    "answer": "180",
+    "category": "logic-and-puzzles",
+    "level": "tween"
+  },
+  {
+    "id": 957,
+    "rev": 1,
+    "question": "Vad är hälften av 50?",
+    "answer": "25",
+    "category": "logic-and-puzzles",
+    "level": "tween"
+  },
+  {
+    "id": 958,
+    "rev": 1,
+    "question": "Hur många dagar är det i februari (normalår)?",
+    "answer": "28",
+    "category": "logic-and-puzzles",
+    "level": "tween"
+  },
+  {
+    "id": 959,
+    "rev": 1,
+    "question": "Vad är 15% av 100?",
+    "answer": "15",
+    "category": "logic-and-puzzles",
+    "level": "tween"
+  },
+  {
+    "id": 960,
+    "rev": 1,
+    "question": "Hur många sekunder är en halv minut?",
+    "answer": "30",
+    "category": "logic-and-puzzles",
+    "level": "tween"
+  },
+  {
+    "id": 961,
+    "rev": 1,
+    "question": "Vad är nästa tal i serien: 2, 4, 8, 16, ...?",
+    "answer": "32",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 962,
+    "rev": 1,
+    "question": "Hur många diagonaler har en pentagon?",
+    "answer": "5",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 963,
+    "rev": 1,
+    "question": "Vad är kvadratroten ur 144?",
+    "answer": "12",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 964,
+    "rev": 1,
+    "question": "Hur många primtal finns det under 20?",
+    "answer": "8",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 965,
+    "rev": 1,
+    "question": "Vad är summan av vinklarna i en fyrhörning?",
+    "answer": "360 grader",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 966,
+    "rev": 1,
+    "question": "Hur många kombinationer finns av 3 siffror från 0-9?",
+    "answer": "1000",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 967,
+    "rev": 1,
+    "question": "Vad är 2^10?",
+    "answer": "1024",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 968,
+    "rev": 1,
+    "question": "Hur många sidor har en icosahedron?",
+    "answer": "20",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 969,
+    "rev": 1,
+    "question": "Vad är fakulteten av 5?",
+    "answer": "120",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 970,
+    "rev": 1,
+    "question": "Hur många Fibonacci-tal under 100?",
+    "answer": "11",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 971,
+    "rev": 1,
+    "question": "Vad är π (pi) avrundat till två decimaler?",
+    "answer": "3,14",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 972,
+    "rev": 1,
+    "question": "Hur många perfekta kvadrater finns under 100?",
+    "answer": "9",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 973,
+    "rev": 1,
+    "question": "Vad är e (Eulers tal) avrundat till två decimaler?",
+    "answer": "2,72",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 974,
+    "rev": 1,
+    "question": "Hur många möjliga kombinationer av en Rubiks kub?",
+    "answer": "43 quintiljoner cirka",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 975,
+    "rev": 1,
+    "question": "Vad är den gyllene snittet?",
+    "answer": "1,618 (phi)",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 976,
+    "rev": 1,
+    "question": "Hur många sätt att ordna 4 objekt?",
+    "answer": "24",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 977,
+    "rev": 1,
+    "question": "Vad är summan av de första 10 positiva heltalen?",
+    "answer": "55",
+    "category": "logic-and-puzzles",
+    "level": "young-teen"
+  },
+  {
+    "id": 978,
+    "rev": 1,
+    "question": "Hur många tefat har en tessellation av hexagoner per vertex?",
     "answer": "3",
     "category": "logic-and-puzzles",
-    "level": "child"
+    "level": "young-teen"
   },
   {
-    "id": 33,
+    "id": 979,
     "rev": 1,
-    "question": "Vad är nästa tal i serien: 2, 4, 8, 16, 32, ...?",
-    "answer": "64",
-    "category": "logic-and-puzzles",
-    "level": "tween"
-  },
-  {
-    "id": 34,
-    "rev": 1,
-    "question": "Hur mycket är 10 gånger 10?",
-    "answer": "100",
-    "category": "logic-and-puzzles",
-    "level": "tween"
-  },
-  {
-    "id": 35,
-    "rev": 1,
-    "question": "Vad är hälften av 2 plus 2?",
-    "answer": "3 (hälften av 2 = 1, plus 2 = 3)",
+    "question": "Vad är det minsta perfekta talet?",
+    "answer": "6",
     "category": "logic-and-puzzles",
     "level": "young-teen"
   },
   {
-    "id": 36,
+    "id": 980,
     "rev": 1,
-    "question": "Ett tåg lämnar Stockholm klockan 10:00 och kör i 120 km/h. När anländer det till en stad 240 km bort?",
-    "answer": "12:00",
+    "question": "Hur många Platon ska kroppar finns?",
+    "answer": "5",
     "category": "logic-and-puzzles",
     "level": "young-teen"
   },
   {
-    "id": 37,
+    "id": 981,
     "rev": 1,
-    "question": "Vad är nästa tal i Fibonacci-serien: 1, 1, 2, 3, 5, 8, ...?",
-    "answer": "13",
+    "question": "Vad är lösningen till x^2 + 5x + 6 = 0?",
+    "answer": "x = -2 eller x = -3",
     "category": "logic-and-puzzles",
     "level": "old-teen"
   },
   {
-    "id": 38,
+    "id": 982,
     "rev": 1,
-    "question": "Om A är större än B, och B är större än C, vem är störst?",
-    "answer": "A",
+    "question": "Hur många sätt att välja 2 objekt från 5?",
+    "answer": "10",
     "category": "logic-and-puzzles",
     "level": "old-teen"
   },
   {
-    "id": 39,
+    "id": 983,
     "rev": 1,
-    "question": "Vad är kvadratroten av 144?",
+    "question": "Vad är integralen av x?",
+    "answer": "x^2/2 + C",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 984,
+    "rev": 1,
+    "question": "Hur många dimensioner har en hyperkub?",
+    "answer": "4",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 985,
+    "rev": 1,
+    "question": "Vad är derivatan av x^2?",
+    "answer": "2x",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 986,
+    "rev": 1,
+    "question": "Hur många nollställen har x^3 - 1?",
+    "answer": "3 (om komplexa tal räknas)",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 987,
+    "rev": 1,
+    "question": "Vad är ln(e)?",
+    "answer": "1",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 988,
+    "rev": 1,
+    "question": "Hur många sätt att ordna bokstäverna i 'MATH'?",
+    "answer": "24",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 989,
+    "rev": 1,
+    "question": "Vad är cos(0)?",
+    "answer": "1",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 990,
+    "rev": 1,
+    "question": "Hur många Catalan-tal under 100?",
+    "answer": "5",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 991,
+    "rev": 1,
+    "question": "Vad är determinanten av en 2×2 enhetsmätris?",
+    "answer": "1",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 992,
+    "rev": 1,
+    "question": "Hur många Bell-tal under 100?",
+    "answer": "5",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 993,
+    "rev": 1,
+    "question": "Vad är summan av en konvergent geometrisk serie med a=1 och r=1/2?",
+    "answer": "2",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 994,
+    "rev": 1,
+    "question": "Hur många partitioner av talet 5?",
+    "answer": "7",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 995,
+    "rev": 1,
+    "question": "Vad är lim(x→0) sin(x)/x?",
+    "answer": "1",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 996,
+    "rev": 1,
+    "question": "Hur många färger krävs för att färga en karta (4-färgssatsen)?",
+    "answer": "4",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 997,
+    "rev": 1,
+    "question": "Vad är i^2 (imaginära enheten)?",
+    "answer": "-1",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 998,
+    "rev": 1,
+    "question": "Hur många Hamiltonianska cykler i en fullständig graf K5?",
     "answer": "12",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 999,
+    "rev": 1,
+    "question": "Vad är Eulers formel för polyeder?",
+    "answer": "V - E + F = 2",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 1000,
+    "rev": 1,
+    "question": "Hur många möjliga schackpositioner (uppskattat)?",
+    "answer": "10^120 (Shannon-talet)",
+    "category": "logic-and-puzzles",
+    "level": "old-teen"
+  },
+  {
+    "id": 1001,
+    "rev": 1,
+    "question": "Vad är lösningen till Riemann-hypotesen?",
+    "answer": "Olöst problem",
     "category": "logic-and-puzzles",
     "level": "adult"
   },
   {
-    "id": 40,
+    "id": 1002,
     "rev": 1,
-    "question": "Hur många diagonaler har en hexagon (sexhörning)?",
-    "answer": "9",
+    "question": "Hur många millennium-problem har lösts?",
+    "answer": "1 (Poincaré-förmodan)",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1003,
+    "rev": 1,
+    "question": "Vad är värdet av Ramsey-talet R(5,5)?",
+    "answer": "43-48 (okänt exakt värde)",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1004,
+    "rev": 1,
+    "question": "Hur många simplest grupper finns?",
+    "answer": "26 sporadiska + oändliga familjer",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1005,
+    "rev": 1,
+    "question": "Vad är lösningen till P vs NP-problemet?",
+    "answer": "Olöst problem",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1006,
+    "rev": 1,
+    "question": "Hur många möjliga go-positioner?",
+    "answer": "Cirka 10^170",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1007,
+    "rev": 1,
+    "question": "Vad är Busy Beaver BB(5)?",
+    "answer": "47 176 870",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1008,
+    "rev": 1,
+    "question": "Hur många kända Mersenne-primtal?",
+    "answer": "51 (till 2024)",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1009,
+    "rev": 1,
+    "question": "Vad är Kolmogorov-komplexiteten av en slumpmässig sträng?",
+    "answer": "Ungefär lika lång som strängen",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1010,
+    "rev": 1,
+    "question": "Hur många kända perfekta tal?",
+    "answer": "51 (till 2024)",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1011,
+    "rev": 1,
+    "question": "Vad är Chaitins konstant Ω?",
+    "answer": "Oberäknelig reell tal",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1012,
+    "rev": 1,
+    "question": "Hur många Graham-tal?",
+    "answer": "Ett specifikt stort tal",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1013,
+    "rev": 1,
+    "question": "Vad är lösningen till Collatz-förmodan?",
+    "answer": "Olöst problem",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1014,
+    "rev": 1,
+    "question": "Hur många twin-primpar under 10^18?",
+    "answer": "Cirka 10^15",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1015,
+    "rev": 1,
+    "question": "Vad är Skewes-talet?",
+    "answer": "Circa 10^10^10^34",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1016,
+    "rev": 1,
+    "question": "Hur många kända Fermat-primtal?",
+    "answer": "5",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1017,
+    "rev": 1,
+    "question": "Vad är lösningen till Birch-Swinnerton-Dyer-förmodan?",
+    "answer": "Olöst problem",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1018,
+    "rev": 1,
+    "question": "Hur många möjliga Sudoku-rutnät?",
+    "answer": "6 670 903 752 021 072 936 960",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1019,
+    "rev": 1,
+    "question": "Vad är värdet av χ (den minsta odefinierbara ordinaltalet)?",
+    "answer": "Beror på formellt system",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1020,
+    "rev": 1,
+    "question": "Hur många kända Sophie Germain-primtal?",
+    "answer": "Oändligt många (förmodat)",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1021,
+    "rev": 1,
+    "question": "Vad är TREE(3)?",
+    "answer": "Enormt stort tal",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1022,
+    "rev": 1,
+    "question": "Hur många möjliga schemaläggningar av n jobb?",
+    "answer": "n!",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1023,
+    "rev": 1,
+    "question": "Vad är lösningen till Goldbach-förmodan?",
+    "answer": "Olöst problem",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1024,
+    "rev": 1,
+    "question": "Hur många kända Carmichael-tal under 10^21?",
+    "answer": "Cirka 20 miljoner",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1025,
+    "rev": 1,
+    "question": "Vad är värdet av Hardy-Ramanujan-talet?",
+    "answer": "1729",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1026,
+    "rev": 1,
+    "question": "Hur många möjliga magiska kvadrater 4×4?",
+    "answer": "880",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1027,
+    "rev": 1,
+    "question": "Vad är lösningen till Hodge-förmodan?",
+    "answer": "Olöst problem",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1028,
+    "rev": 1,
+    "question": "Hur många kända Wieferich-primtal?",
+    "answer": "2",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1029,
+    "rev": 1,
+    "question": "Vad är värdet av Sierpinskis konstant?",
+    "answer": "78557",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1030,
+    "rev": 1,
+    "question": "Hur många möjliga latinska kvadrater n×n?",
+    "answer": "Beror på n, ingen generell formel",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1031,
+    "rev": 1,
+    "question": "Vad är lösningen till Navier-Stokes-problemet?",
+    "answer": "Olöst problem",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1032,
+    "rev": 1,
+    "question": "Hur många kända Wall-Sun-Sun-primtal?",
+    "answer": "0 (inget känt)",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1033,
+    "rev": 1,
+    "question": "Vad är värdet av Mills konstant?",
+    "answer": "1,3063778838630806904...",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1034,
+    "rev": 1,
+    "question": "Hur många möjliga Hamiltonianska vägar i en hyperkub?",
+    "answer": "Beror på dimension",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1035,
+    "rev": 1,
+    "question": "Vad är lösningen till Yang-Mills-problemet?",
+    "answer": "Olöst problem",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1036,
+    "rev": 1,
+    "question": "Hur många kända Wilson-primtal?",
+    "answer": "3",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1037,
+    "rev": 1,
+    "question": "Vad är värdet av Euler-Mascheroni-konstanten?",
+    "answer": "0,5772156649...",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1038,
+    "rev": 1,
+    "question": "Hur många möjliga icke-isomorfa grafer med n noder?",
+    "answer": "Beror på n, exponentiell tillväxt",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1039,
+    "rev": 1,
+    "question": "Vad är lösningen till ABC-förmodan?",
+    "answer": "Olöst (påstådd lösning under granskning)",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1040,
+    "rev": 1,
+    "question": "Hur många kända Cullen-primtal?",
+    "answer": "16 (till 2024)",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1041,
+    "rev": 1,
+    "question": "Vad är värdet av Khinchin's konstant?",
+    "answer": "2,6854520010...",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1042,
+    "rev": 1,
+    "question": "Hur många möjliga knight's tours på ett 8×8-schackbräde?",
+    "answer": "Cirka 122 miljoner",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1043,
+    "rev": 1,
+    "question": "Vad är lösningen till twin-primförmodan?",
+    "answer": "Olöst problem",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1044,
+    "rev": 1,
+    "question": "Hur många kända Woodall-primtal?",
+    "answer": "11 (till 2024)",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1045,
+    "rev": 1,
+    "question": "Vad är värdet av Apérys konstant?",
+    "answer": "1,2020569...",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1046,
+    "rev": 1,
+    "question": "Hur många möjliga självundvikande vandringar på ett rutnät?",
+    "answer": "Exponentiellt många",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1047,
+    "rev": 1,
+    "question": "Vad är lösningen till Legendre-förmodan?",
+    "answer": "Olöst problem",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1048,
+    "rev": 1,
+    "question": "Hur många kända Cuban-primtal?",
+    "answer": "Många, ingen exakt räkning",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1049,
+    "rev": 1,
+    "question": "Vad är värdet av Glaisher-Kinkelin-konstanten?",
+    "answer": "1,2824271291...",
+    "category": "logic-and-puzzles",
+    "level": "adult"
+  },
+  {
+    "id": 1050,
+    "rev": 1,
+    "question": "Hur många möjliga sätt att triangulera en polygon med n sidor?",
+    "answer": "Catalan-tal C(n-2)",
     "category": "logic-and-puzzles",
     "level": "adult"
   }
