@@ -387,7 +387,7 @@
     "id": 574,
     "rev": 1,
     "question": "Vad heter den största ormen i världen?",
-    "answer": "Grön ana conda (eller retikulerad python)",
+    "answer": "Grön anaconda (eller retikulerad python)",
     "category": "trivia",
     "level": "old-teen"
   },
@@ -802,7 +802,7 @@
   {
     "id": 626,
     "rev": 1,
-    "question": "Vad heter den största kända hypernovaN?",
+    "question": "Vad heter den största kända hypernovan?",
     "answer": "SN 2016aps",
     "category": "trivia",
     "level": "adult"
