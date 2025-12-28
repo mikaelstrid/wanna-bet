@@ -1,6 +1,6 @@
 [
   {
-    "id": 21,
+    "id": 106,
     "rev": 1,
     "question": "Vad heter Sveriges kung?",
     "answer": "Carl XVI Gustaf",
@@ -8,35 +8,119 @@
     "level": "child"
   },
   {
-    "id": 22,
+    "id": 107,
     "rev": 1,
-    "question": "Vilket land har vi haft krig med förut?",
-    "answer": "Danmark",
+    "question": "Vilket land hade vikingarna?",
+    "answer": "Sverige (eller Norge eller Danmark)",
     "category": "history-and-society",
     "level": "child"
   },
   {
-    "id": 23,
+    "id": 108,
     "rev": 1,
-    "question": "Vilket år slutade andra världskriget?",
-    "answer": "1945",
+    "question": "Vad heter Sveriges nationaldag?",
+    "answer": "6 juni",
     "category": "history-and-society",
-    "level": "tween",
-    "start_year": 1945,
-    "end_year": 1945
+    "level": "child"
   },
   {
-    "id": 24,
+    "id": 109,
     "rev": 1,
-    "question": "Vem upptäckte Amerika?",
-    "answer": "Christofer Columbus",
+    "question": "Vilken färg har den svenska flaggan?",
+    "answer": "Blå och gul",
     "category": "history-and-society",
-    "level": "tween",
-    "start_year": 1492,
-    "end_year": 1492
+    "level": "child"
   },
   {
-    "id": 25,
+    "id": 110,
+    "rev": 1,
+    "question": "Vad heter Sveriges drottning?",
+    "answer": "Silvia",
+    "category": "history-and-society",
+    "level": "child"
+  },
+  {
+    "id": 111,
+    "rev": 1,
+    "question": "Vilket år blev Sverige ett land?",
+    "answer": "Det finns inget exakt år, men ofta nämns cirka 900-talet",
+    "category": "history-and-society",
+    "level": "tween"
+  },
+  {
+    "id": 112,
+    "rev": 1,
+    "question": "Vem var Gustav Vasa?",
+    "answer": "Sveriges första kung (av modern tid)",
+    "category": "history-and-society",
+    "level": "tween"
+  },
+  {
+    "id": 113,
+    "rev": 1,
+    "question": "Vad heter Sveriges riksdag?",
+    "answer": "Riksdagen",
+    "category": "history-and-society",
+    "level": "tween"
+  },
+  {
+    "id": 114,
+    "rev": 1,
+    "question": "Vilket år fick svenska kvinnor rösträtt?",
+    "answer": "1921",
+    "category": "history-and-society",
+    "level": "tween"
+  },
+  {
+    "id": 115,
+    "rev": 1,
+    "question": "Vem var Alfred Nobel?",
+    "answer": "Uppfinnare av dynamit och grundare av Nobelpriset",
+    "category": "history-and-society",
+    "level": "tween"
+  },
+  {
+    "id": 116,
+    "rev": 1,
+    "question": "Vad heter Sveriges statsminister idag?",
+    "answer": "Ulf Kristersson",
+    "category": "history-and-society",
+    "level": "tween"
+  },
+  {
+    "id": 117,
+    "rev": 1,
+    "question": "Vilket år blev Sverige medlem i EU?",
+    "answer": "1995",
+    "category": "history-and-society",
+    "level": "tween"
+  },
+  {
+    "id": 118,
+    "rev": 1,
+    "question": "Vad heter Sveriges nationaldag?",
+    "answer": "Svenska flaggans dag (6 juni)",
+    "category": "history-and-society",
+    "level": "tween"
+  },
+  {
+    "id": 119,
+    "rev": 1,
+    "question": "Vem var Astrid Lindgren?",
+    "answer": "Författare av barnböcker",
+    "category": "history-and-society",
+    "level": "tween"
+  },
+  {
+    "id": 120,
+    "rev": 1,
+    "question": "Vilket år avskaffades dödsstraffet i Sverige?",
+    "answer": "1921 (i fredstid)",
+    "category": "history-and-society",
+    "level": "tween"
+  },
+  {
+    "id": 121,
     "rev": 1,
     "question": "Vilket år föll Berlinmuren?",
     "answer": "1989",
@@ -46,53 +130,801 @@
     "end_year": 1989
   },
   {
-    "id": 26,
+    "id": 122,
     "rev": 1,
-    "question": "Vem var Sveriges första kvinnliga statsminister?",
-    "answer": "Magdalena Andersson",
+    "question": "Vem var Martin Luther King?",
+    "answer": "Medborgarrättskämpe i USA",
+    "category": "history-and-society",
+    "level": "young-teen"
+  },
+  {
+    "id": 123,
+    "rev": 1,
+    "question": "Vilket år började andra världskriget?",
+    "answer": "1939",
     "category": "history-and-society",
     "level": "young-teen",
-    "start_year": 2021,
-    "end_year": 2022
+    "start_year": 1939,
+    "end_year": 1939
   },
   {
-    "id": 27,
+    "id": 124,
     "rev": 1,
-    "question": "Vilket år infördes allmän rösträtt för kvinnor i Sverige?",
-    "answer": "1921",
+    "question": "Vad hette Rysslands kejsare?",
+    "answer": "Tsar",
     "category": "history-and-society",
-    "level": "old-teen",
-    "start_year": 1921,
-    "end_year": 1921
+    "level": "young-teen"
   },
   {
-    "id": 28,
+    "id": 125,
     "rev": 1,
-    "question": "Vem mördades i Sarajevo vilket startade första världskriget?",
-    "answer": "Frans Ferdinand (Ärkehertig)",
+    "question": "Vilket år landade människan på månen?",
+    "answer": "1969",
     "category": "history-and-society",
-    "level": "old-teen",
+    "level": "young-teen",
+    "start_year": 1969,
+    "end_year": 1969
+  },
+  {
+    "id": 126,
+    "rev": 1,
+    "question": "Vem var Nelson Mandela?",
+    "answer": "Sydafrikas president och anti-apartheid-aktivist",
+    "category": "history-and-society",
+    "level": "young-teen"
+  },
+  {
+    "id": 127,
+    "rev": 1,
+    "question": "Vilket år slutade andra världskriget?",
+    "answer": "1945",
+    "category": "history-and-society",
+    "level": "young-teen",
+    "start_year": 1945,
+    "end_year": 1945
+  },
+  {
+    "id": 128,
+    "rev": 1,
+    "question": "Vad hette det gamla Romarriket på latin?",
+    "answer": "Imperium Romanum",
+    "category": "history-and-society",
+    "level": "young-teen"
+  },
+  {
+    "id": 129,
+    "rev": 1,
+    "question": "Vilket år började första världskriget?",
+    "answer": "1914",
+    "category": "history-and-society",
+    "level": "young-teen",
     "start_year": 1914,
     "end_year": 1914
   },
   {
-    "id": 29,
+    "id": 130,
+    "rev": 1,
+    "question": "Vem var Karl XII?",
+    "answer": "Svensk kung",
+    "category": "history-and-society",
+    "level": "young-teen"
+  },
+  {
+    "id": 131,
+    "rev": 1,
+    "question": "Vilket år grundades FN?",
+    "answer": "1945",
+    "category": "history-and-society",
+    "level": "young-teen",
+    "start_year": 1945,
+    "end_year": 1945
+  },
+  {
+    "id": 132,
+    "rev": 1,
+    "question": "Vad var den franska revolutionen?",
+    "answer": "Revolution i Frankrike 1789",
+    "category": "history-and-society",
+    "level": "young-teen"
+  },
+  {
+    "id": 133,
+    "rev": 1,
+    "question": "Vilket år slutade första världskriget?",
+    "answer": "1918",
+    "category": "history-and-society",
+    "level": "young-teen",
+    "start_year": 1918,
+    "end_year": 1918
+  },
+  {
+    "id": 134,
+    "rev": 1,
+    "question": "Vem var Winston Churchill?",
+    "answer": "Storbritanniens premiärminister under andra världskriget",
+    "category": "history-and-society",
+    "level": "young-teen"
+  },
+  {
+    "id": 135,
+    "rev": 1,
+    "question": "Vilket år blev Sverige neutralt?",
+    "answer": "Sverige har varit neutralt sedan början av 1800-talet",
+    "category": "history-and-society",
+    "level": "young-teen"
+  },
+  {
+    "id": 136,
+    "rev": 1,
+    "question": "Vad var kalla kriget?",
+    "answer": "Politisk och militär spänning mellan USA och Sovjetunionen",
+    "category": "history-and-society",
+    "level": "young-teen"
+  },
+  {
+    "id": 137,
+    "rev": 1,
+    "question": "Vilket år föll Romarriket?",
+    "answer": "476 (±5 år: 471-481)",
+    "category": "history-and-society",
+    "level": "young-teen",
+    "start_year": 476,
+    "end_year": 476
+  },
+  {
+    "id": 138,
+    "rev": 1,
+    "question": "Vem var Olof Palme?",
+    "answer": "Sveriges statsminister som mördades 1986",
+    "category": "history-and-society",
+    "level": "young-teen"
+  },
+  {
+    "id": 139,
+    "rev": 1,
+    "question": "Vilket år upptäcktes Amerika?",
+    "answer": "1492",
+    "category": "history-and-society",
+    "level": "young-teen",
+    "start_year": 1492,
+    "end_year": 1492
+  },
+  {
+    "id": 140,
+    "rev": 1,
+    "question": "Vad var apartheid?",
+    "answer": "Rasåtskillnadspolitik i Sydafrika",
+    "category": "history-and-society",
+    "level": "young-teen"
+  },
+  {
+    "id": 141,
     "rev": 1,
     "question": "Vilket år undertecknades Magna Carta?",
-    "answer": "1215",
+    "answer": "1215 (±8 år: 1207-1223)",
     "category": "history-and-society",
-    "level": "adult",
+    "level": "old-teen",
     "start_year": 1215,
     "end_year": 1215
   },
   {
-    "id": 30,
+    "id": 142,
     "rev": 1,
-    "question": "Vem var Sveriges kung innan Carl XVI Gustaf?",
-    "answer": "Gustaf VI Adolf",
+    "question": "Vem var Mahatma Gandhi?",
+    "answer": "Indisk frihetskämpe och pacifist",
+    "category": "history-and-society",
+    "level": "old-teen"
+  },
+  {
+    "id": 143,
+    "rev": 1,
+    "question": "Vilket år började den ryska revolutionen?",
+    "answer": "1917",
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 1917,
+    "end_year": 1917
+  },
+  {
+    "id": 144,
+    "rev": 1,
+    "question": "Vad var den industriella revolutionen?",
+    "answer": "Period av snabb industriell utveckling",
+    "category": "history-and-society",
+    "level": "old-teen"
+  },
+  {
+    "id": 145,
+    "rev": 1,
+    "question": "Vilket år föll Konstantinopel?",
+    "answer": "1453 (±6 år: 1447-1459)",
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 1453,
+    "end_year": 1453
+  },
+  {
+    "id": 146,
+    "rev": 1,
+    "question": "Vem var Martin Luther?",
+    "answer": "Tysk teolog och reformator",
+    "category": "history-and-society",
+    "level": "old-teen"
+  },
+  {
+    "id": 147,
+    "rev": 1,
+    "question": "Vilket år började reformationen?",
+    "answer": "1517 (±5 år: 1512-1522)",
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 1517,
+    "end_year": 1517
+  },
+  {
+    "id": 148,
+    "rev": 1,
+    "question": "Vad var kolonialtiden?",
+    "answer": "Period då europeiska länder ockuperade andra länder",
+    "category": "history-and-society",
+    "level": "old-teen"
+  },
+  {
+    "id": 149,
+    "rev": 1,
+    "question": "Vilket år grundades Förenta staterna?",
+    "answer": "1776",
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 1776,
+    "end_year": 1776
+  },
+  {
+    "id": 150,
+    "rev": 1,
+    "question": "Vem var Kleopatra?",
+    "answer": "Egyptisk drottning",
+    "category": "history-and-society",
+    "level": "old-teen"
+  },
+  {
+    "id": 151,
+    "rev": 1,
+    "question": "Vilket år började den amerikanska inbördeskriget?",
+    "answer": "1861",
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 1861,
+    "end_year": 1861
+  },
+  {
+    "id": 152,
+    "rev": 1,
+    "question": "Vad var upplysningen?",
+    "answer": "Intellektuell rörelse på 1700-talet",
+    "category": "history-and-society",
+    "level": "old-teen"
+  },
+  {
+    "id": 153,
+    "rev": 1,
+    "question": "Vilket år började den franska revolutionen?",
+    "answer": "1789",
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 1789,
+    "end_year": 1789
+  },
+  {
+    "id": 154,
+    "rev": 1,
+    "question": "Vem var Julius Caesar?",
+    "answer": "Romersk general och politiker",
+    "category": "history-and-society",
+    "level": "old-teen"
+  },
+  {
+    "id": 155,
+    "rev": 1,
+    "question": "Vilket år slutade slaveriet i USA?",
+    "answer": "1865",
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 1865,
+    "end_year": 1865
+  },
+  {
+    "id": 156,
+    "rev": 1,
+    "question": "Vad var renässansen?",
+    "answer": "Kulturell återfödelse i Europa",
+    "category": "history-and-society",
+    "level": "old-teen"
+  },
+  {
+    "id": 157,
+    "rev": 1,
+    "question": "Vilket år föll Sovjetunionen?",
+    "answer": "1991",
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 1991,
+    "end_year": 1991
+  },
+  {
+    "id": 158,
+    "rev": 1,
+    "question": "Vem var Jeanne d'Arc?",
+    "answer": "Fransk hjältinna",
+    "category": "history-and-society",
+    "level": "old-teen"
+  },
+  {
+    "id": 159,
+    "rev": 1,
+    "question": "Vilket år började 30-åriga kriget?",
+    "answer": "1618",
+    "category": "history-and-society",
+    "level": "old-teen",
+    "start_year": 1618,
+    "end_year": 1618
+  },
+  {
+    "id": 160,
+    "rev": 1,
+    "question": "Vad var den stora depressionen?",
+    "answer": "Ekonomisk kris på 1930-talet",
+    "category": "history-and-society",
+    "level": "old-teen"
+  },
+  {
+    "id": 161,
+    "rev": 1,
+    "question": "Vilket år undertecknades Westfaliska freden?",
+    "answer": "1648",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1648,
+    "end_year": 1648
+  },
+  {
+    "id": 162,
+    "rev": 1,
+    "question": "Vem var Otto von Bismarck?",
+    "answer": "Tysk statsman som enade Tyskland",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 163,
+    "rev": 1,
+    "question": "Vilket år började Koreakriget?",
+    "answer": "1950",
     "category": "history-and-society",
     "level": "adult",
     "start_year": 1950,
-    "end_year": 1973
+    "end_year": 1950
+  },
+  {
+    "id": 164,
+    "rev": 1,
+    "question": "Vad var det bysantinska riket?",
+    "answer": "Östrom romerska riket",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 165,
+    "rev": 1,
+    "question": "Vilket år började Vietnamkriget?",
+    "answer": "1955",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1955,
+    "end_year": 1975
+  },
+  {
+    "id": 166,
+    "rev": 1,
+    "question": "Vem var Simón Bolívar?",
+    "answer": "Sydamerikansk befriare",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 167,
+    "rev": 1,
+    "question": "Vilket år ägde Waterloo-slaget rum?",
+    "answer": "1815",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1815,
+    "end_year": 1815
+  },
+  {
+    "id": 168,
+    "rev": 1,
+    "question": "Vad var det heliga romerska riket?",
+    "answer": "Medeltida europeiskt rike",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 169,
+    "rev": 1,
+    "question": "Vilket år började spanska inbördeskriget?",
+    "answer": "1936",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1936,
+    "end_year": 1939
+  },
+  {
+    "id": 170,
+    "rev": 1,
+    "question": "Vem var Mao Zedong?",
+    "answer": "Kinesisk kommunistisk ledare",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 171,
+    "rev": 1,
+    "question": "Vilket år föll Bagdad till mongolerna?",
+    "answer": "1258 (±8 år: 1250-1266)",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1258,
+    "end_year": 1258
+  },
+  {
+    "id": 172,
+    "rev": 1,
+    "question": "Vad var det osmanska riket?",
+    "answer": "Turkiskt imperium",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 173,
+    "rev": 1,
+    "question": "Vilket år började kulturrevolutionen i Kina?",
+    "answer": "1966",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1966,
+    "end_year": 1976
+  },
+  {
+    "id": 174,
+    "rev": 1,
+    "question": "Vem var Catherine den stora?",
+    "answer": "Rysk kejsarinna",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 175,
+    "rev": 1,
+    "question": "Vilket år föll trojanska kriget (enligt traditionen)?",
+    "answer": "Cirka 1200 f.Kr.",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": -1200,
+    "end_year": -1200
+  },
+  {
+    "id": 176,
+    "rev": 1,
+    "question": "Vad var den moguliska perioden?",
+    "answer": "Muslimsk dynasti i Indien",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 177,
+    "rev": 1,
+    "question": "Vilket år började Mexikanska revolutionen?",
+    "answer": "1910",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1910,
+    "end_year": 1920
+  },
+  {
+    "id": 178,
+    "rev": 1,
+    "question": "Vem var Suleiman den store?",
+    "answer": "Osmansk sultan",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 179,
+    "rev": 1,
+    "question": "Vilket år föll Babylonien till perserna?",
+    "answer": "539 f.Kr. (±15 år: 554-524 f.Kr.)",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": -539,
+    "end_year": -539
+  },
+  {
+    "id": 180,
+    "rev": 1,
+    "question": "Vad var det achaemenidiska riket?",
+    "answer": "Första persiska riket",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 181,
+    "rev": 1,
+    "question": "Vilket år började den kubanska revolutionen?",
+    "answer": "1953",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1953,
+    "end_year": 1959
+  },
+  {
+    "id": 182,
+    "rev": 1,
+    "question": "Vem var Genghis Khan?",
+    "answer": "Mongolisk erövrare",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 183,
+    "rev": 1,
+    "question": "Vilket år erövrade Alexander den store Persien?",
+    "answer": "330 f.Kr. (±15 år: 345-315 f.Kr.)",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": -330,
+    "end_year": -330
+  },
+  {
+    "id": 184,
+    "rev": 1,
+    "question": "Vad var det mauryanska riket?",
+    "answer": "Antikt indiskt rike",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 185,
+    "rev": 1,
+    "question": "Vilket år började hundraårskriget?",
+    "answer": "1337",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1337,
+    "end_year": 1453
+  },
+  {
+    "id": 186,
+    "rev": 1,
+    "question": "Vem var Frederick den store?",
+    "answer": "Preussisk kung",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 187,
+    "rev": 1,
+    "question": "Vilket år föll Jerusalem till korsfararna?",
+    "answer": "1099 (±9 år: 1090-1108)",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1099,
+    "end_year": 1099
+  },
+  {
+    "id": 188,
+    "rev": 1,
+    "question": "Vad var khmerriket?",
+    "answer": "Sydostasiatiskt rike",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 189,
+    "rev": 1,
+    "question": "Vilket år började opiumkrigen?",
+    "answer": "1839",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1839,
+    "end_year": 1842
+  },
+  {
+    "id": 190,
+    "rev": 1,
+    "question": "Vem var Atahualpa?",
+    "answer": "Sista Inka-kejsaren",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 191,
+    "rev": 1,
+    "question": "Vilket år föll Granada till spanjorerna?",
+    "answer": "1492",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1492,
+    "end_year": 1492
+  },
+  {
+    "id": 192,
+    "rev": 1,
+    "question": "Vad var det aztekiska riket?",
+    "answer": "Mesoamerikanskt imperium",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 193,
+    "rev": 1,
+    "question": "Vilket år började boerkriget?",
+    "answer": "1899",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1899,
+    "end_year": 1902
+  },
+  {
+    "id": 194,
+    "rev": 1,
+    "question": "Vem var Saladin?",
+    "answer": "Muslimsk ledare under korsfararna",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 195,
+    "rev": 1,
+    "question": "Vilket år grundades det heliga romerska riket?",
+    "answer": "800 (eller 962)",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 800,
+    "end_year": 800
+  },
+  {
+    "id": 196,
+    "rev": 1,
+    "question": "Vad var det sassanidiska riket?",
+    "answer": "Andra persiska riket",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 197,
+    "rev": 1,
+    "question": "Vilket år började Taiping-upproret?",
+    "answer": "1850",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1850,
+    "end_year": 1864
+  },
+  {
+    "id": 198,
+    "rev": 1,
+    "question": "Vem var Timur?",
+    "answer": "Centralasiatisk erövrare",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 199,
+    "rev": 1,
+    "question": "Vilket år föll Kartago till romarna?",
+    "answer": "146 f.Kr. (±15 år: 161-131 f.Kr.)",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": -146,
+    "end_year": -146
+  },
+  {
+    "id": 200,
+    "rev": 1,
+    "question": "Vad var det seleukidiska riket?",
+    "answer": "Hellenistiskt rike",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 201,
+    "rev": 1,
+    "question": "Vilket år började iranska revolutionen?",
+    "answer": "1978",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1978,
+    "end_year": 1979
+  },
+  {
+    "id": 202,
+    "rev": 1,
+    "question": "Vem var Xerxes?",
+    "answer": "Persisk kung",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 203,
+    "rev": 1,
+    "question": "Vilket år föll Tenochtitlan?",
+    "answer": "1521",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1521,
+    "end_year": 1521
+  },
+  {
+    "id": 204,
+    "rev": 1,
+    "question": "Vad var det ptolemeiska riket?",
+    "answer": "Hellenistisk dynasti i Egypten",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 205,
+    "rev": 1,
+    "question": "Vilket år började Boxer-upproret?",
+    "answer": "1899",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1899,
+    "end_year": 1901
+  },
+  {
+    "id": 206,
+    "rev": 1,
+    "question": "Vem var Hammurabi?",
+    "answer": "Babylonisk kung",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 207,
+    "rev": 1,
+    "question": "Vilket år föll Samarkand till Timur?",
+    "answer": "1370 (±6 år: 1364-1376)",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1370,
+    "end_year": 1370
+  },
+  {
+    "id": 208,
+    "rev": 1,
+    "question": "Vad var det umayyad-kalifatet?",
+    "answer": "Första stora muslimska kalifatet",
+    "category": "history-and-society",
+    "level": "adult"
+  },
+  {
+    "id": 209,
+    "rev": 1,
+    "question": "Vilket år började den algeriska frihetsrörelsen?",
+    "answer": "1954",
+    "category": "history-and-society",
+    "level": "adult",
+    "start_year": 1954,
+    "end_year": 1962
+  },
+  {
+    "id": 210,
+    "rev": 1,
+    "question": "Vem var Akbar den store?",
+    "answer": "Mogul-kejsare i Indien",
+    "category": "history-and-society",
+    "level": "adult"
   }
 ]

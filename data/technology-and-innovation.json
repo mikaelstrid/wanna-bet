@@ -1,52 +1,264 @@
 [
   {
-    "id": 81,
+    "id": 421,
     "rev": 1,
-    "question": "Vad använder man för att ringa med utan sladd?",
-    "answer": "Mobiltelefon",
+    "question": "Vad heter appen med en vit fågel som logga?",
+    "answer": "Twitter (numera X)",
     "category": "technology-and-innovation",
     "level": "child"
   },
   {
-    "id": 82,
+    "id": 422,
     "rev": 1,
-    "question": "Vad heter apparaten som man tittar på TV-program på?",
-    "answer": "TV (eller Television)",
+    "question": "Vilken färg har Facebooks logga?",
+    "answer": "Blå",
     "category": "technology-and-innovation",
     "level": "child"
   },
   {
-    "id": 83,
+    "id": 423,
     "rev": 1,
-    "question": "Vad står AI för inom teknikområdet?",
-    "answer": "Artificiell Intelligens (Artificial Intelligence)",
+    "question": "Vad heter enheten för att klicka på en dator?",
+    "answer": "Mus",
+    "category": "technology-and-innovation",
+    "level": "child"
+  },
+  {
+    "id": 424,
+    "rev": 1,
+    "question": "Vilken bokstav kommer före 'TikTok'?",
+    "answer": "Ingen, det börjar med T",
+    "category": "technology-and-innovation",
+    "level": "child"
+  },
+  {
+    "id": 425,
+    "rev": 1,
+    "question": "Vad heter Apples mobiltelefon?",
+    "answer": "iPhone",
+    "category": "technology-and-innovation",
+    "level": "child"
+  },
+  {
+    "id": 426,
+    "rev": 1,
+    "question": "Vilket år lanserades första iPhone?",
+    "answer": "2007",
+    "category": "technology-and-innovation",
+    "level": "tween",
+    "start_year": 2007,
+    "end_year": 2007
+  },
+  {
+    "id": 427,
+    "rev": 1,
+    "question": "Vad står 'AI' för?",
+    "answer": "Artificial Intelligence (artificiell intelligens)",
     "category": "technology-and-innovation",
     "level": "tween"
   },
   {
-    "id": 84,
+    "id": 428,
     "rev": 1,
-    "question": "Vem uppfann glödlampan?",
-    "answer": "Thomas Edison",
+    "question": "Vilket år grundades Google?",
+    "answer": "1998",
     "category": "technology-and-innovation",
     "level": "tween",
-    "start_year": 1879,
-    "end_year": 1879
+    "start_year": 1998,
+    "end_year": 1998
   },
   {
-    "id": 85,
+    "id": 429,
     "rev": 1,
-    "question": "Vem grundade företaget Apple tillsammans med Steve Jobs?",
-    "answer": "Steve Wozniak",
+    "question": "Vad heter grundaren av Microsoft?",
+    "answer": "Bill Gates",
+    "category": "technology-and-innovation",
+    "level": "tween"
+  },
+  {
+    "id": 430,
+    "rev": 1,
+    "question": "Vilket år lanserades första iPad?",
+    "answer": "2010",
+    "category": "technology-and-innovation",
+    "level": "tween",
+    "start_year": 2010,
+    "end_year": 2010
+  },
+  {
+    "id": 431,
+    "rev": 1,
+    "question": "Vad står 'USB' för?",
+    "answer": "Universal Serial Bus",
+    "category": "technology-and-innovation",
+    "level": "tween"
+  },
+  {
+    "id": 432,
+    "rev": 1,
+    "question": "Vilket år grundades Facebook?",
+    "answer": "2004",
+    "category": "technology-and-innovation",
+    "level": "tween",
+    "start_year": 2004,
+    "end_year": 2004
+  },
+  {
+    "id": 433,
+    "rev": 1,
+    "question": "Vad heter grundaren av Tesla?",
+    "answer": "Elon Musk (medgrundare)",
+    "category": "technology-and-innovation",
+    "level": "tween"
+  },
+  {
+    "id": 434,
+    "rev": 1,
+    "question": "Vilket år lanserades YouTube?",
+    "answer": "2005",
+    "category": "technology-and-innovation",
+    "level": "tween",
+    "start_year": 2005,
+    "end_year": 2005
+  },
+  {
+    "id": 435,
+    "rev": 1,
+    "question": "Vad står 'GPS' för?",
+    "answer": "Global Positioning System",
+    "category": "technology-and-innovation",
+    "level": "tween"
+  },
+  {
+    "id": 436,
+    "rev": 1,
+    "question": "Vilket år lanserades första Android-telefonen?",
+    "answer": "2008",
     "category": "technology-and-innovation",
     "level": "young-teen",
-    "start_year": 1976,
-    "end_year": 1976
+    "start_year": 2008,
+    "end_year": 2008
   },
   {
-    "id": 86,
+    "id": 437,
     "rev": 1,
-    "question": "Vilket år lanserades första iPhone?",
+    "question": "Vad heter grundaren av Apple?",
+    "answer": "Steve Jobs (medgrundare)",
+    "category": "technology-and-innovation",
+    "level": "young-teen"
+  },
+  {
+    "id": 438,
+    "rev": 1,
+    "question": "Vilket år uppfanns internet (ARPANET)?",
+    "answer": "1969",
+    "category": "technology-and-innovation",
+    "level": "young-teen",
+    "start_year": 1969,
+    "end_year": 1969
+  },
+  {
+    "id": 439,
+    "rev": 1,
+    "question": "Vad står 'HTML' för?",
+    "answer": "HyperText Markup Language",
+    "category": "technology-and-innovation",
+    "level": "young-teen"
+  },
+  {
+    "id": 440,
+    "rev": 1,
+    "question": "Vilket år lanserades första Macintosh?",
+    "answer": "1984",
+    "category": "technology-and-innovation",
+    "level": "young-teen",
+    "start_year": 1984,
+    "end_year": 1984
+  },
+  {
+    "id": 441,
+    "rev": 1,
+    "question": "Vad heter grundaren av Amazon?",
+    "answer": "Jeff Bezos",
+    "category": "technology-and-innovation",
+    "level": "young-teen"
+  },
+  {
+    "id": 442,
+    "rev": 1,
+    "question": "Vilket år lanserades Windows 95?",
+    "answer": "1995",
+    "category": "technology-and-innovation",
+    "level": "young-teen",
+    "start_year": 1995,
+    "end_year": 1995
+  },
+  {
+    "id": 443,
+    "rev": 1,
+    "question": "Vad står 'RAM' för?",
+    "answer": "Random Access Memory",
+    "category": "technology-and-innovation",
+    "level": "young-teen"
+  },
+  {
+    "id": 444,
+    "rev": 1,
+    "question": "Vilket år lanserades första PlayStation?",
+    "answer": "1994",
+    "category": "technology-and-innovation",
+    "level": "young-teen",
+    "start_year": 1994,
+    "end_year": 1994
+  },
+  {
+    "id": 445,
+    "rev": 1,
+    "question": "Vad heter programmeringsspråket skapat av Guido van Rossum?",
+    "answer": "Python",
+    "category": "technology-and-innovation",
+    "level": "young-teen"
+  },
+  {
+    "id": 446,
+    "rev": 1,
+    "question": "Vilket år lanserades World Wide Web?",
+    "answer": "1991",
+    "category": "technology-and-innovation",
+    "level": "young-teen",
+    "start_year": 1991,
+    "end_year": 1991
+  },
+  {
+    "id": 447,
+    "rev": 1,
+    "question": "Vad står 'CPU' för?",
+    "answer": "Central Processing Unit",
+    "category": "technology-and-innovation",
+    "level": "young-teen"
+  },
+  {
+    "id": 448,
+    "rev": 1,
+    "question": "Vilket år lanserades första Tesla Model S?",
+    "answer": "2012",
+    "category": "technology-and-innovation",
+    "level": "young-teen",
+    "start_year": 2012,
+    "end_year": 2012
+  },
+  {
+    "id": 449,
+    "rev": 1,
+    "question": "Vad heter grundaren av SpaceX?",
+    "answer": "Elon Musk",
+    "category": "technology-and-innovation",
+    "level": "young-teen"
+  },
+  {
+    "id": 450,
+    "rev": 1,
+    "question": "Vilket år lanserades första Kindle?",
     "answer": "2007",
     "category": "technology-and-innovation",
     "level": "young-teen",
@@ -54,41 +266,665 @@
     "end_year": 2007
   },
   {
-    "id": 87,
+    "id": 451,
     "rev": 1,
-    "question": "Vad heter programmeringsspråket som används för att skapa webbsidor?",
-    "answer": "HTML (HyperText Markup Language)",
+    "question": "Vad står 'SSD' för?",
+    "answer": "Solid State Drive",
+    "category": "technology-and-innovation",
+    "level": "young-teen"
+  },
+  {
+    "id": 452,
+    "rev": 1,
+    "question": "Vilket år lanserades Netflix streaming?",
+    "answer": "2007",
+    "category": "technology-and-innovation",
+    "level": "young-teen",
+    "start_year": 2007,
+    "end_year": 2007
+  },
+  {
+    "id": 453,
+    "rev": 1,
+    "question": "Vad heter grundaren av Linux?",
+    "answer": "Linus Torvalds",
+    "category": "technology-and-innovation",
+    "level": "young-teen"
+  },
+  {
+    "id": 454,
+    "rev": 1,
+    "question": "Vilket år lanserades första Xbox?",
+    "answer": "2001",
+    "category": "technology-and-innovation",
+    "level": "young-teen",
+    "start_year": 2001,
+    "end_year": 2001
+  },
+  {
+    "id": 455,
+    "rev": 1,
+    "question": "Vad står 'LED' för?",
+    "answer": "Light Emitting Diode",
+    "category": "technology-and-innovation",
+    "level": "young-teen"
+  },
+  {
+    "id": 456,
+    "rev": 1,
+    "question": "Vilket år lanserades första persondator (Altair 8800)?",
+    "answer": "1975",
+    "category": "technology-and-innovation",
+    "level": "old-teen",
+    "start_year": 1975,
+    "end_year": 1975
+  },
+  {
+    "id": 457,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av World Wide Web?",
+    "answer": "Tim Berners-Lee",
     "category": "technology-and-innovation",
     "level": "old-teen"
   },
   {
-    "id": 88,
+    "id": 458,
     "rev": 1,
-    "question": "Vilket företag utvecklade operativsystemet Android?",
-    "answer": "Google",
+    "question": "Vilket år uppfanns transistorn?",
+    "answer": "1947",
     "category": "technology-and-innovation",
     "level": "old-teen",
-    "start_year": 2005,
-    "end_year": 2008
+    "start_year": 1947,
+    "end_year": 1947
   },
   {
-    "id": 89,
+    "id": 459,
     "rev": 1,
-    "question": "Vad heter den kryptografiska metod som används i Bitcoin?",
-    "answer": "Blockchain",
+    "question": "Vad står 'ENIAC' för?",
+    "answer": "Electronic Numerical Integrator and Computer",
+    "category": "technology-and-innovation",
+    "level": "old-teen"
+  },
+  {
+    "id": 460,
+    "rev": 1,
+    "question": "Vilket år lanserades första kommersiella mikroprocesorn (Intel 4004)?",
+    "answer": "1971",
+    "category": "technology-and-innovation",
+    "level": "old-teen",
+    "start_year": 1971,
+    "end_year": 1971
+  },
+  {
+    "id": 461,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av telefonen?",
+    "answer": "Alexander Graham Bell",
+    "category": "technology-and-innovation",
+    "level": "old-teen"
+  },
+  {
+    "id": 462,
+    "rev": 1,
+    "question": "Vilket år uppfanns relätransistorn?",
+    "answer": "1947 (transistorn)",
+    "category": "technology-and-innovation",
+    "level": "old-teen",
+    "start_year": 1947,
+    "end_year": 1947
+  },
+  {
+    "id": 463,
+    "rev": 1,
+    "question": "Vad står 'CERN' för?",
+    "answer": "Conseil Européen pour la Recherche Nucléaire",
+    "category": "technology-and-innovation",
+    "level": "old-teen"
+  },
+  {
+    "id": 464,
+    "rev": 1,
+    "question": "Vilket år lanserades första CD-skivan?",
+    "answer": "1982",
+    "category": "technology-and-innovation",
+    "level": "old-teen",
+    "start_year": 1982,
+    "end_year": 1982
+  },
+  {
+    "id": 465,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den digitala datorn?",
+    "answer": "Charles Babbage (eller Konrad Zuse)",
+    "category": "technology-and-innovation",
+    "level": "old-teen"
+  },
+  {
+    "id": 466,
+    "rev": 1,
+    "question": "Vilket år uppfanns lasern?",
+    "answer": "1960",
+    "category": "technology-and-innovation",
+    "level": "old-teen",
+    "start_year": 1960,
+    "end_year": 1960
+  },
+  {
+    "id": 467,
+    "rev": 1,
+    "question": "Vad står 'MOSFET' för?",
+    "answer": "Metal-Oxide-Semiconductor Field-Effect Transistor",
+    "category": "technology-and-innovation",
+    "level": "old-teen"
+  },
+  {
+    "id": 468,
+    "rev": 1,
+    "question": "Vilket år lanserades första DVD?",
+    "answer": "1996",
+    "category": "technology-and-innovation",
+    "level": "old-teen",
+    "start_year": 1996,
+    "end_year": 1996
+  },
+  {
+    "id": 469,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av radio?",
+    "answer": "Guglielmo Marconi",
+    "category": "technology-and-innovation",
+    "level": "old-teen"
+  },
+  {
+    "id": 470,
+    "rev": 1,
+    "question": "Vilket år uppfanns integrerad krets?",
+    "answer": "1958",
+    "category": "technology-and-innovation",
+    "level": "old-teen",
+    "start_year": 1958,
+    "end_year": 1958
+  },
+  {
+    "id": 471,
+    "rev": 1,
+    "question": "Vad står 'BIOS' för?",
+    "answer": "Basic Input/Output System",
+    "category": "technology-and-innovation",
+    "level": "old-teen"
+  },
+  {
+    "id": 472,
+    "rev": 1,
+    "question": "Vilket år lanserades första mobildatanätverk (1G)?",
+    "answer": "1979",
+    "category": "technology-and-innovation",
+    "level": "old-teen",
+    "start_year": 1979,
+    "end_year": 1979
+  },
+  {
+    "id": 473,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av televisionen?",
+    "answer": "John Logie Baird (eller Philo Farnsworth)",
+    "category": "technology-and-innovation",
+    "level": "old-teen"
+  },
+  {
+    "id": 474,
+    "rev": 1,
+    "question": "Vilket år uppfanns fotodioden?",
+    "answer": "1941",
+    "category": "technology-and-innovation",
+    "level": "old-teen",
+    "start_year": 1941,
+    "end_year": 1941
+  },
+  {
+    "id": 475,
+    "rev": 1,
+    "question": "Vad står 'RISC' för?",
+    "answer": "Reduced Instruction Set Computer",
+    "category": "technology-and-innovation",
+    "level": "old-teen"
+  },
+  {
+    "id": 476,
+    "rev": 1,
+    "question": "Vilket år uppfanns vakuumröret?",
+    "answer": "1904",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1904,
+    "end_year": 1904
+  },
+  {
+    "id": 477,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den elektroniska datorn (Z3)?",
+    "answer": "Konrad Zuse",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 478,
+    "rev": 1,
+    "question": "Vilket år uppfanns kryotron?",
+    "answer": "1955",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1955,
+    "end_year": 1955
+  },
+  {
+    "id": 479,
+    "rev": 1,
+    "question": "Vad står 'COBOL' för?",
+    "answer": "Common Business-Oriented Language",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 480,
+    "rev": 1,
+    "question": "Vilket år uppfanns memristor?",
+    "answer": "2008 (demonstrerad)",
     "category": "technology-and-innovation",
     "level": "adult",
     "start_year": 2008,
-    "end_year": 2009
+    "end_year": 2008
   },
   {
-    "id": 90,
+    "id": 481,
     "rev": 1,
-    "question": "Vem uppfann World Wide Web?",
-    "answer": "Tim Berners-Lee",
+    "question": "Vad heter uppfinnaren av den första programmerbara datorn?",
+    "answer": "Konrad Zuse",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 482,
+    "rev": 1,
+    "question": "Vilket år uppfanns katodstråleröret?",
+    "answer": "1897",
     "category": "technology-and-innovation",
     "level": "adult",
-    "start_year": 1989,
-    "end_year": 1991
+    "start_year": 1897,
+    "end_year": 1897
+  },
+  {
+    "id": 483,
+    "rev": 1,
+    "question": "Vad står 'FORTRAN' för?",
+    "answer": "Formula Translation",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 484,
+    "rev": 1,
+    "question": "Vilket år uppfanns tunneldioden?",
+    "answer": "1957",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1957,
+    "end_year": 1957
+  },
+  {
+    "id": 485,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den första mekaniska datorn?",
+    "answer": "Charles Babbage",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 486,
+    "rev": 1,
+    "question": "Vilket år uppfanns fälteffekttransistorn?",
+    "answer": "1926 (patenterad)",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1926,
+    "end_year": 1926
+  },
+  {
+    "id": 487,
+    "rev": 1,
+    "question": "Vad står 'LISP' för?",
+    "answer": "List Processing",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 488,
+    "rev": 1,
+    "question": "Vilket år uppfanns kvantdatorn (första demonstrationen)?",
+    "answer": "1998",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1998,
+    "end_year": 1998
+  },
+  {
+    "id": 489,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den första elektroniska digitala datorn?",
+    "answer": "John Atanasoff",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 490,
+    "rev": 1,
+    "question": "Vilket år uppfanns holografin?",
+    "answer": "1947",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1947,
+    "end_year": 1947
+  },
+  {
+    "id": 491,
+    "rev": 1,
+    "question": "Vad står 'ALGOL' för?",
+    "answer": "Algorithmic Language",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 492,
+    "rev": 1,
+    "question": "Vilket år uppfanns josephson-kontakten?",
+    "answer": "1962",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1962,
+    "end_year": 1962
+  },
+  {
+    "id": 493,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den första analoga datorn?",
+    "answer": "Vannevar Bush",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 494,
+    "rev": 1,
+    "question": "Vilket år uppfanns CCDn?",
+    "answer": "1969",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1969,
+    "end_year": 1969
+  },
+  {
+    "id": 495,
+    "rev": 1,
+    "question": "Vad står 'BASIC' för?",
+    "answer": "Beginner's All-purpose Symbolic Instruction Code",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 496,
+    "rev": 1,
+    "question": "Vilket år uppfanns spin-ventilen?",
+    "answer": "1988",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1988,
+    "end_year": 1988
+  },
+  {
+    "id": 497,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den första programmerbara roboten?",
+    "answer": "George Devol",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 498,
+    "rev": 1,
+    "question": "Vilket år uppfanns magnetoresistiva minnet?",
+    "answer": "1988",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1988,
+    "end_year": 1988
+  },
+  {
+    "id": 499,
+    "rev": 1,
+    "question": "Vad står 'APL' för?",
+    "answer": "A Programming Language",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 500,
+    "rev": 1,
+    "question": "Vilket år uppfanns den första kvantpunkten?",
+    "answer": "1980",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1980,
+    "end_year": 1980
+  },
+  {
+    "id": 501,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den första industriroboten?",
+    "answer": "George Devol",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 502,
+    "rev": 1,
+    "question": "Vilket år uppfanns den spinntroniska transistorn?",
+    "answer": "2000-talet",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 503,
+    "rev": 1,
+    "question": "Vad står 'PASCAL' för?",
+    "answer": "Programmeringsspråk uppkallat efter Blaise Pascal",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 504,
+    "rev": 1,
+    "question": "Vilket år uppfanns den första kvantalgoritmen?",
+    "answer": "1994 (Shors algoritm)",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1994,
+    "end_year": 1994
+  },
+  {
+    "id": 505,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den första AI-algoritmen?",
+    "answer": "Alan Turing (eller John McCarthy)",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 506,
+    "rev": 1,
+    "question": "Vilket år uppfanns DNA-datorn?",
+    "answer": "1994 (demonstrerad)",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1994,
+    "end_year": 1994
+  },
+  {
+    "id": 507,
+    "rev": 1,
+    "question": "Vad står 'SIMULA' för?",
+    "answer": "Simulation Language",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 508,
+    "rev": 1,
+    "question": "Vilket år uppfanns den optiska datorn?",
+    "answer": "1990-talet",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 509,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den första neuronala nätverket?",
+    "answer": "Warren McCulloch och Walter Pitts",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 510,
+    "rev": 1,
+    "question": "Vilket år uppfanns kvantfel-korrigering?",
+    "answer": "1995",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1995,
+    "end_year": 1995
+  },
+  {
+    "id": 511,
+    "rev": 1,
+    "question": "Vad står 'SMALLTALK' för?",
+    "answer": "Objektorienterat programmeringsspråk",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 512,
+    "rev": 1,
+    "question": "Vilket år uppfanns den molekylära datorn?",
+    "answer": "1990-talet",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 513,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den första expert-systemet?",
+    "answer": "Edward Feigenbaum",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 514,
+    "rev": 1,
+    "question": "Vilket år uppfanns kvantkryptografin?",
+    "answer": "1984 (protokoll)",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1984,
+    "end_year": 1984
+  },
+  {
+    "id": 515,
+    "rev": 1,
+    "question": "Vad står 'PROLOG' för?",
+    "answer": "Programming in Logic",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 516,
+    "rev": 1,
+    "question": "Vilket år uppfanns den biologiska datorn?",
+    "answer": "2000-talet",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 517,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den första maskinlärningsalgoritmen?",
+    "answer": "Arthur Samuel",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 518,
+    "rev": 1,
+    "question": "Vilket år uppfanns kvantteloportering?",
+    "answer": "1993 (teoretiskt), 1997 (experimentellt)",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1993,
+    "end_year": 1997
+  },
+  {
+    "id": 519,
+    "rev": 1,
+    "question": "Vad står 'ML' för (programmeringsspråk)?",
+    "answer": "Meta Language",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 520,
+    "rev": 1,
+    "question": "Vilket år uppfanns den första neuromorfa chipet?",
+    "answer": "2000-talet",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 521,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av backpropagation?",
+    "answer": "Geoffrey Hinton (och andra)",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 522,
+    "rev": 1,
+    "question": "Vilket år uppfanns kvantannealing?",
+    "answer": "1998",
+    "category": "technology-and-innovation",
+    "level": "adult",
+    "start_year": 1998,
+    "end_year": 1998
+  },
+  {
+    "id": 523,
+    "rev": 1,
+    "question": "Vad står 'ADA' för?",
+    "answer": "Programmeringsspråk uppkallat efter Ada Lovelace",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 524,
+    "rev": 1,
+    "question": "Vilket år uppfanns den första topologiska kvantdatorn?",
+    "answer": "2000-talet",
+    "category": "technology-and-innovation",
+    "level": "adult"
+  },
+  {
+    "id": 525,
+    "rev": 1,
+    "question": "Vad heter uppfinnaren av den första djupinlärningsarkitekturen?",
+    "answer": "Yann LeCun (eller Geoffrey Hinton)",
+    "category": "technology-and-innovation",
+    "level": "adult"
   }
 ]

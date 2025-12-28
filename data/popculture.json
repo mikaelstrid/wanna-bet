@@ -1,102 +1,942 @@
 [
   {
-    "id": 61,
+    "id": 211,
     "rev": 1,
-    "question": "Vad heter den lille björnen som älskar honung?",
-    "answer": "Nalle Puh",
+    "question": "Vad heter Mickey Mouse kompis med långa öron?",
+    "answer": "Musse Pigg (eller Kalle Anka)",
     "category": "popculture",
-    "level": "child",
-    "start_year": 1926,
-    "end_year": 2024
+    "level": "child"
   },
   {
-    "id": 62,
+    "id": 212,
     "rev": 1,
-    "question": "Vilken färg har Musse Pigg?",
-    "answer": "Svart (och röd)",
+    "question": "Vilken färg har Smurfarna?",
+    "answer": "Blå",
     "category": "popculture",
-    "level": "child",
-    "start_year": 1928,
-    "end_year": 2024
+    "level": "child"
   },
   {
-    "id": 63,
+    "id": 213,
     "rev": 1,
-    "question": "Vilken svensk artist hade en stor hit med låten 'Dancing Queen'?",
-    "answer": "ABBA",
+    "question": "Vad heter lejonet i Lejonkungen?",
+    "answer": "Simba",
     "category": "popculture",
-    "level": "tween",
-    "start_year": 1976,
-    "end_year": 1976
+    "level": "child"
   },
   {
-    "id": 64,
+    "id": 214,
     "rev": 1,
-    "question": "Vad heter pojken som går på Hogwarts?",
-    "answer": "Harry Potter",
+    "question": "Vilken prinsessa har långt gyllene hår?",
+    "answer": "Rapunzel",
+    "category": "popculture",
+    "level": "child"
+  },
+  {
+    "id": 215,
+    "rev": 1,
+    "question": "Vad heter isbjörnen i Nalle Puh?",
+    "answer": "Det finns ingen isbjörn, men Nalle Puh är en nalle",
+    "category": "popculture",
+    "level": "child"
+  },
+  {
+    "id": 216,
+    "rev": 1,
+    "question": "Vad heter den rödhåriga häxan i filmerna?",
+    "answer": "Det finns flera, men Hermione från Harry Potter är populär",
+    "category": "popculture",
+    "level": "tween"
+  },
+  {
+    "id": 217,
+    "rev": 1,
+    "question": "Vilket år kom första Harry Potter-boken?",
+    "answer": "1997",
     "category": "popculture",
     "level": "tween",
     "start_year": 1997,
-    "end_year": 2011
+    "end_year": 1997
   },
   {
-    "id": 65,
+    "id": 218,
     "rev": 1,
-    "question": "Vem spelade huvudrollen som Jack i filmen Titanic?",
-    "answer": "Leonardo DiCaprio",
+    "question": "Vad heter huvudpersonen i Hunger Games?",
+    "answer": "Katniss Everdeen",
+    "category": "popculture",
+    "level": "tween"
+  },
+  {
+    "id": 219,
+    "rev": 1,
+    "question": "Vilket år hade Avatar premiär?",
+    "answer": "2009",
+    "category": "popculture",
+    "level": "tween",
+    "start_year": 2009,
+    "end_year": 2009
+  },
+  {
+    "id": 220,
+    "rev": 1,
+    "question": "Vad heter bandet med medlemmarna John, Paul, George och Ringo?",
+    "answer": "The Beatles",
+    "category": "popculture",
+    "level": "tween"
+  },
+  {
+    "id": 221,
+    "rev": 1,
+    "question": "Vilket år kom första Toy Story-filmen?",
+    "answer": "1995",
+    "category": "popculture",
+    "level": "tween",
+    "start_year": 1995,
+    "end_year": 1995
+  },
+  {
+    "id": 222,
+    "rev": 1,
+    "question": "Vad heter huvudpersonen i Minecraftspelet?",
+    "answer": "Steve",
+    "category": "popculture",
+    "level": "tween"
+  },
+  {
+    "id": 223,
+    "rev": 1,
+    "question": "Vilket år lanserades Pokémon i Japan?",
+    "answer": "1996",
+    "category": "popculture",
+    "level": "tween",
+    "start_year": 1996,
+    "end_year": 1996
+  },
+  {
+    "id": 224,
+    "rev": 1,
+    "question": "Vad heter sångerskan med hitlåten 'Shake It Off'?",
+    "answer": "Taylor Swift",
+    "category": "popculture",
+    "level": "tween"
+  },
+  {
+    "id": 225,
+    "rev": 1,
+    "question": "Vilket år kom första Iron Man-filmen?",
+    "answer": "2008",
+    "category": "popculture",
+    "level": "tween",
+    "start_year": 2008,
+    "end_year": 2008
+  },
+  {
+    "id": 226,
+    "rev": 1,
+    "question": "Vilket år kom första Star Wars-filmen?",
+    "answer": "1977",
+    "category": "popculture",
+    "level": "young-teen",
+    "start_year": 1977,
+    "end_year": 1977
+  },
+  {
+    "id": 227,
+    "rev": 1,
+    "question": "Vad heter bandet som sjunger Bohemian Rhapsody?",
+    "answer": "Queen",
+    "category": "popculture",
+    "level": "young-teen"
+  },
+  {
+    "id": 228,
+    "rev": 1,
+    "question": "Vilket år hade Titanic premiär?",
+    "answer": "1997",
     "category": "popculture",
     "level": "young-teen",
     "start_year": 1997,
     "end_year": 1997
   },
   {
-    "id": 66,
+    "id": 229,
     "rev": 1,
-    "question": "Vem vann Eurovision Song Contest för Sverige 2015?",
-    "answer": "Måns Zelmerlöw",
+    "question": "Vad heter artisten som sjunger Thriller?",
+    "answer": "Michael Jackson",
+    "category": "popculture",
+    "level": "young-teen"
+  },
+  {
+    "id": 230,
+    "rev": 1,
+    "question": "Vilket år började Game of Thrones sändas?",
+    "answer": "2011",
     "category": "popculture",
     "level": "young-teen",
-    "start_year": 2015,
-    "end_year": 2015
+    "start_year": 2011,
+    "end_year": 2019
   },
   {
-    "id": 67,
+    "id": 231,
     "rev": 1,
-    "question": "Vad heter den mest spelade låten på Spotify genom tiderna?",
-    "answer": "Blinding Lights (av The Weeknd)",
+    "question": "Vad heter skådespelaren som spelade Iron Man?",
+    "answer": "Robert Downey Jr.",
     "category": "popculture",
-    "level": "old-teen",
-    "start_year": 2019,
-    "end_year": 2020
+    "level": "young-teen"
   },
   {
-    "id": 68,
+    "id": 232,
     "rev": 1,
-    "question": "Vilken brittisk band släppte albumet 'The Dark Side of the Moon'?",
-    "answer": "Pink Floyd",
+    "question": "Vilket år kom första Lord of the Rings-filmen?",
+    "answer": "2001",
     "category": "popculture",
-    "level": "old-teen",
-    "start_year": 1973,
-    "end_year": 1973
+    "level": "young-teen",
+    "start_year": 2001,
+    "end_year": 2001
   },
   {
-    "id": 69,
+    "id": 233,
     "rev": 1,
-    "question": "Vad heter den svenska tv-serien om en polis i Ystad?",
-    "answer": "Wallander",
+    "question": "Vad heter bandet med Freddie Mercury?",
+    "answer": "Queen",
     "category": "popculture",
-    "level": "adult",
+    "level": "young-teen"
+  },
+  {
+    "id": 234,
+    "rev": 1,
+    "question": "Vilket år lanserades YouTube?",
+    "answer": "2005",
+    "category": "popculture",
+    "level": "young-teen",
     "start_year": 2005,
+    "end_year": 2005
+  },
+  {
+    "id": 235,
+    "rev": 1,
+    "question": "Vad heter regissören bakom Inception?",
+    "answer": "Christopher Nolan",
+    "category": "popculture",
+    "level": "young-teen"
+  },
+  {
+    "id": 236,
+    "rev": 1,
+    "question": "Vilket år hade The Matrix premiär?",
+    "answer": "1999",
+    "category": "popculture",
+    "level": "young-teen",
+    "start_year": 1999,
+    "end_year": 1999
+  },
+  {
+    "id": 237,
+    "rev": 1,
+    "question": "Vad heter artisten som sjunger Like a Prayer?",
+    "answer": "Madonna",
+    "category": "popculture",
+    "level": "young-teen"
+  },
+  {
+    "id": 238,
+    "rev": 1,
+    "question": "Vilket år började Breaking Bad sändas?",
+    "answer": "2008",
+    "category": "popculture",
+    "level": "young-teen",
+    "start_year": 2008,
     "end_year": 2013
   },
   {
-    "id": 70,
+    "id": 239,
     "rev": 1,
-    "question": "Vem regisserade filmen '2001: A Space Odyssey'?",
+    "question": "Vad heter skådespelerskan som spelade Hermione Granger?",
+    "answer": "Emma Watson",
+    "category": "popculture",
+    "level": "young-teen"
+  },
+  {
+    "id": 240,
+    "rev": 1,
+    "question": "Vilket år kom första Spider-Man-filmen?",
+    "answer": "2002",
+    "category": "popculture",
+    "level": "young-teen",
+    "start_year": 2002,
+    "end_year": 2002
+  },
+  {
+    "id": 241,
+    "rev": 1,
+    "question": "Vad heter bandet med Bono som sångare?",
+    "answer": "U2",
+    "category": "popculture",
+    "level": "young-teen"
+  },
+  {
+    "id": 242,
+    "rev": 1,
+    "question": "Vilket år lanserades Netflix?",
+    "answer": "1997",
+    "category": "popculture",
+    "level": "young-teen",
+    "start_year": 1997,
+    "end_year": 1997
+  },
+  {
+    "id": 243,
+    "rev": 1,
+    "question": "Vad heter artisten bakom Blinding Lights?",
+    "answer": "The Weeknd",
+    "category": "popculture",
+    "level": "young-teen"
+  },
+  {
+    "id": 244,
+    "rev": 1,
+    "question": "Vilket år hade Jurassic Park premiär?",
+    "answer": "1993",
+    "category": "popculture",
+    "level": "young-teen",
+    "start_year": 1993,
+    "end_year": 1993
+  },
+  {
+    "id": 245,
+    "rev": 1,
+    "question": "Vad heter regissören bakom Pulp Fiction?",
+    "answer": "Quentin Tarantino",
+    "category": "popculture",
+    "level": "young-teen"
+  },
+  {
+    "id": 246,
+    "rev": 1,
+    "question": "Vilket år kom första Indiana Jones-filmen?",
+    "answer": "1981",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 1981,
+    "end_year": 1981
+  },
+  {
+    "id": 247,
+    "rev": 1,
+    "question": "Vad heter regissören bakom Blade Runner?",
+    "answer": "Ridley Scott",
+    "category": "popculture",
+    "level": "old-teen"
+  },
+  {
+    "id": 248,
+    "rev": 1,
+    "question": "Vilket år hade E.T. premiär?",
+    "answer": "1982",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 1982,
+    "end_year": 1982
+  },
+  {
+    "id": 249,
+    "rev": 1,
+    "question": "Vad heter bandet med Axl Rose?",
+    "answer": "Guns N' Roses",
+    "category": "popculture",
+    "level": "old-teen"
+  },
+  {
+    "id": 250,
+    "rev": 1,
+    "question": "Vilket år började Friends sändas?",
+    "answer": "1994",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 1994,
+    "end_year": 2004
+  },
+  {
+    "id": 251,
+    "rev": 1,
+    "question": "Vad heter artisten bakom Purple Rain?",
+    "answer": "Prince",
+    "category": "popculture",
+    "level": "old-teen"
+  },
+  {
+    "id": 252,
+    "rev": 1,
+    "question": "Vilket år hade The Godfather premiär?",
+    "answer": "1972",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 1972,
+    "end_year": 1972
+  },
+  {
+    "id": 253,
+    "rev": 1,
+    "question": "Vad heter regissören bakom 2001: A Space Odyssey?",
     "answer": "Stanley Kubrick",
     "category": "popculture",
+    "level": "old-teen"
+  },
+  {
+    "id": 254,
+    "rev": 1,
+    "question": "Vilket år hade Casablanca premiär?",
+    "answer": "1942",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 1942,
+    "end_year": 1942
+  },
+  {
+    "id": 255,
+    "rev": 1,
+    "question": "Vad heter bandet med Jim Morrison?",
+    "answer": "The Doors",
+    "category": "popculture",
+    "level": "old-teen"
+  },
+  {
+    "id": 256,
+    "rev": 1,
+    "question": "Vilket år började The Sopranos sändas?",
+    "answer": "1999",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 1999,
+    "end_year": 2007
+  },
+  {
+    "id": 257,
+    "rev": 1,
+    "question": "Vad heter artisten bakom Born to Run?",
+    "answer": "Bruce Springsteen",
+    "category": "popculture",
+    "level": "old-teen"
+  },
+  {
+    "id": 258,
+    "rev": 1,
+    "question": "Vilket år hade Citizen Kane premiär?",
+    "answer": "1941",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 1941,
+    "end_year": 1941
+  },
+  {
+    "id": 259,
+    "rev": 1,
+    "question": "Vad heter regissören bakom Schindler's List?",
+    "answer": "Steven Spielberg",
+    "category": "popculture",
+    "level": "old-teen"
+  },
+  {
+    "id": 260,
+    "rev": 1,
+    "question": "Vilket år började Saturday Night Live sändas?",
+    "answer": "1975",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 1975,
+    "end_year": 2025
+  },
+  {
+    "id": 261,
+    "rev": 1,
+    "question": "Vad heter bandet med Kurt Cobain?",
+    "answer": "Nirvana",
+    "category": "popculture",
+    "level": "old-teen"
+  },
+  {
+    "id": 262,
+    "rev": 1,
+    "question": "Vilket år hade Apocalypse Now premiär?",
+    "answer": "1979",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 1979,
+    "end_year": 1979
+  },
+  {
+    "id": 263,
+    "rev": 1,
+    "question": "Vad heter artisten bakom What's Going On?",
+    "answer": "Marvin Gaye",
+    "category": "popculture",
+    "level": "old-teen"
+  },
+  {
+    "id": 264,
+    "rev": 1,
+    "question": "Vilket år började MTV sända?",
+    "answer": "1981",
+    "category": "popculture",
+    "level": "old-teen",
+    "start_year": 1981,
+    "end_year": 1981
+  },
+  {
+    "id": 265,
+    "rev": 1,
+    "question": "Vad heter regissören bakom Vertigo?",
+    "answer": "Alfred Hitchcock",
+    "category": "popculture",
+    "level": "old-teen"
+  },
+  {
+    "id": 266,
+    "rev": 1,
+    "question": "Vilket år hade Metropolis premiär?",
+    "answer": "1927 (±1 år: 1926-1928)",
+    "category": "popculture",
     "level": "adult",
-    "start_year": 1968,
+    "start_year": 1927,
+    "end_year": 1927
+  },
+  {
+    "id": 267,
+    "rev": 1,
+    "question": "Vad heter regissören bakom The Seventh Seal?",
+    "answer": "Ingmar Bergman",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 268,
+    "rev": 1,
+    "question": "Vilket år hade The Cabinet of Dr. Caligari premiär?",
+    "answer": "1920 (±1 år: 1919-1921)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1920,
+    "end_year": 1920
+  },
+  {
+    "id": 269,
+    "rev": 1,
+    "question": "Vad heter artisten bakom Pet Sounds?",
+    "answer": "The Beach Boys",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 270,
+    "rev": 1,
+    "question": "Vilket år började The Twilight Zone sändas?",
+    "answer": "1959",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1959,
+    "end_year": 1964
+  },
+  {
+    "id": 271,
+    "rev": 1,
+    "question": "Vad heter regissören bakom 8½?",
+    "answer": "Federico Fellini",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 272,
+    "rev": 1,
+    "question": "Vilket år hade The Birth of a Nation premiär?",
+    "answer": "1915 (±1 år: 1914-1916)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1915,
+    "end_year": 1915
+  },
+  {
+    "id": 273,
+    "rev": 1,
+    "question": "Vad heter bandet bakom Sgt. Pepper's Lonely Hearts Club Band?",
+    "answer": "The Beatles",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 274,
+    "rev": 1,
+    "question": "Vilket år började I Love Lucy sändas?",
+    "answer": "1951",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1951,
+    "end_year": 1957
+  },
+  {
+    "id": 275,
+    "rev": 1,
+    "question": "Vad heter regissören bakom Rashomon?",
+    "answer": "Akira Kurosawa",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 276,
+    "rev": 1,
+    "question": "Vilket år hade Battleship Potemkin premiär?",
+    "answer": "1925 (±1 år: 1924-1926)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1925,
+    "end_year": 1925
+  },
+  {
+    "id": 277,
+    "rev": 1,
+    "question": "Vad heter artisten bakom Blue Lines?",
+    "answer": "Massive Attack",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 278,
+    "rev": 1,
+    "question": "Vilket år började Doctor Who sändas?",
+    "answer": "1963",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1963,
+    "end_year": 2025
+  },
+  {
+    "id": 279,
+    "rev": 1,
+    "question": "Vad heter regissören bakom The Rules of the Game?",
+    "answer": "Jean Renoir",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 280,
+    "rev": 1,
+    "question": "Vilket år hade Nosferatu premiär?",
+    "answer": "1922 (±1 år: 1921-1923)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1922,
+    "end_year": 1922
+  },
+  {
+    "id": 281,
+    "rev": 1,
+    "question": "Vad heter bandet bakom The Velvet Underground & Nico?",
+    "answer": "The Velvet Underground",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 282,
+    "rev": 1,
+    "question": "Vilket år började Gunsmoke sändas?",
+    "answer": "1955",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1955,
+    "end_year": 1975
+  },
+  {
+    "id": 283,
+    "rev": 1,
+    "question": "Vad heter regissören bakom Bicycle Thieves?",
+    "answer": "Vittorio De Sica",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 284,
+    "rev": 1,
+    "question": "Vilket år hade The Jazz Singer premiär?",
+    "answer": "1927 (±1 år: 1926-1928)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1927,
+    "end_year": 1927
+  },
+  {
+    "id": 285,
+    "rev": 1,
+    "question": "Vad heter artisten bakom In the Wee Small Hours?",
+    "answer": "Frank Sinatra",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 286,
+    "rev": 1,
+    "question": "Vilket år började The Ed Sullivan Show sändas?",
+    "answer": "1948",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1948,
+    "end_year": 1971
+  },
+  {
+    "id": 287,
+    "rev": 1,
+    "question": "Vad heter regissören bakom Tokyo Story?",
+    "answer": "Yasujirō Ozu",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 288,
+    "rev": 1,
+    "question": "Vilket år hade M premiär?",
+    "answer": "1931 (±1 år: 1930-1932)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1931,
+    "end_year": 1931
+  },
+  {
+    "id": 289,
+    "rev": 1,
+    "question": "Vad heter bandet bakom Unknown Pleasures?",
+    "answer": "Joy Division",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 290,
+    "rev": 1,
+    "question": "Vilket år började Bonanza sändas?",
+    "answer": "1959",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1959,
+    "end_year": 1973
+  },
+  {
+    "id": 291,
+    "rev": 1,
+    "question": "Vad heter regissören bakom La Dolce Vita?",
+    "answer": "Federico Fellini",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 292,
+    "rev": 1,
+    "question": "Vilket år hade The General premiär?",
+    "answer": "1926 (±1 år: 1925-1927)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1926,
+    "end_year": 1926
+  },
+  {
+    "id": 293,
+    "rev": 1,
+    "question": "Vad heter artisten bakom Kind of Blue?",
+    "answer": "Miles Davis",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 294,
+    "rev": 1,
+    "question": "Vilket år började The Honeymooners sändas?",
+    "answer": "1955",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1955,
+    "end_year": 1956
+  },
+  {
+    "id": 295,
+    "rev": 1,
+    "question": "Vad heter regissören bakom L'Atalante?",
+    "answer": "Jean Vigo",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 296,
+    "rev": 1,
+    "question": "Vilket år hade City Lights premiär?",
+    "answer": "1931 (±1 år: 1930-1932)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1931,
+    "end_year": 1931
+  },
+  {
+    "id": 297,
+    "rev": 1,
+    "question": "Vad heter bandet bakom London Calling?",
+    "answer": "The Clash",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 298,
+    "rev": 1,
+    "question": "Vilket år började Dragnet sändas?",
+    "answer": "1951",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1951,
+    "end_year": 1959
+  },
+  {
+    "id": 299,
+    "rev": 1,
+    "question": "Vad heter regissören bakom The Passion of Joan of Arc?",
+    "answer": "Carl Theodor Dreyer",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 300,
+    "rev": 1,
+    "question": "Vilket år hade Sunrise premiär?",
+    "answer": "1927 (±1 år: 1926-1928)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1927,
+    "end_year": 1927
+  },
+  {
+    "id": 301,
+    "rev": 1,
+    "question": "Vad heter artisten bakom Astral Weeks?",
+    "answer": "Van Morrison",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 302,
+    "rev": 1,
+    "question": "Vilket år började The Tonight Show sändas?",
+    "answer": "1954",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1954,
+    "end_year": 2025
+  },
+  {
+    "id": 303,
+    "rev": 1,
+    "question": "Vad heter regissören bakom Late Spring?",
+    "answer": "Yasujirō Ozu",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 304,
+    "rev": 1,
+    "question": "Vilket år hade The Crowd premiär?",
+    "answer": "1928 (±1 år: 1927-1929)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1928,
+    "end_year": 1928
+  },
+  {
+    "id": 305,
+    "rev": 1,
+    "question": "Vad heter bandet bakom Remain in Light?",
+    "answer": "Talking Heads",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 306,
+    "rev": 1,
+    "question": "Vilket år började Your Show of Shows sändas?",
+    "answer": "1950",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1950,
+    "end_year": 1954
+  },
+  {
+    "id": 307,
+    "rev": 1,
+    "question": "Vad heter regissören bakom Sunrise?",
+    "answer": "F.W. Murnau",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 308,
+    "rev": 1,
+    "question": "Vilket år hade The Kid premiär?",
+    "answer": "1921 (±1 år: 1920-1922)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1921,
+    "end_year": 1921
+  },
+  {
+    "id": 309,
+    "rev": 1,
+    "question": "Vad heter artisten bakom Songs in the Key of Life?",
+    "answer": "Stevie Wonder",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 310,
+    "rev": 1,
+    "question": "Vilket år började The Jack Benny Program sändas?",
+    "answer": "1950",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1950,
+    "end_year": 1965
+  },
+  {
+    "id": 311,
+    "rev": 1,
+    "question": "Vad heter regissören bakom The Searchers?",
+    "answer": "John Ford",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 312,
+    "rev": 1,
+    "question": "Vilket år hade Safety Last! premiär?",
+    "answer": "1923 (±1 år: 1922-1924)",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1923,
+    "end_year": 1923
+  },
+  {
+    "id": 313,
+    "rev": 1,
+    "question": "Vad heter bandet bakom Dark Side of the Moon?",
+    "answer": "Pink Floyd",
+    "category": "popculture",
+    "level": "adult"
+  },
+  {
+    "id": 314,
+    "rev": 1,
+    "question": "Vilket år började The Andy Griffith Show sändas?",
+    "answer": "1960",
+    "category": "popculture",
+    "level": "adult",
+    "start_year": 1960,
     "end_year": 1968
+  },
+  {
+    "id": 315,
+    "rev": 1,
+    "question": "Vad heter regissören bakom Grand Illusion?",
+    "answer": "Jean Renoir",
+    "category": "popculture",
+    "level": "adult"
   }
 ]
