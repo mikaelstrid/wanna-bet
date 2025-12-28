@@ -1,84 +1,886 @@
 [
   {
-    "id": 1,
+    "id": 736,
     "rev": 1,
-    "question": "Vad heter den svenska traditionella maträtten som äts på fettisdagen?",
-    "answer": "Semla",
+    "question": "Vad heter den röda frukten som ofta används i paj?",
+    "answer": "Äpple (eller jordgubbar)",
     "category": "food-drinks-culture",
     "level": "child"
   },
   {
-    "id": 2,
+    "id": 737,
     "rev": 1,
-    "question": "Vilket land är pizza från?",
-    "answer": "Italien",
+    "question": "Vilken färg har banan?",
+    "answer": "Gul",
     "category": "food-drinks-culture",
     "level": "child"
   },
   {
-    "id": 3,
+    "id": 738,
     "rev": 1,
-    "question": "Vilket krydda kommer från saffranskrokus?",
-    "answer": "Saffran",
+    "question": "Vad heter drycken som kommer från kor?",
+    "answer": "Mjölk",
+    "category": "food-drinks-culture",
+    "level": "child"
+  },
+  {
+    "id": 739,
+    "rev": 1,
+    "question": "Vilken färg har morötter?",
+    "answer": "Orange",
+    "category": "food-drinks-culture",
+    "level": "child"
+  },
+  {
+    "id": 740,
+    "rev": 1,
+    "question": "Vad heter det söta som bin gör?",
+    "answer": "Honung",
+    "category": "food-drinks-culture",
+    "level": "child"
+  },
+  {
+    "id": 741,
+    "rev": 1,
+    "question": "Vad heter den italienska maträtten med deg, tomatsås och ost?",
+    "answer": "Pizza",
     "category": "food-drinks-culture",
     "level": "tween"
   },
   {
-    "id": 4,
+    "id": 742,
     "rev": 1,
-    "question": "Vad heter den mexikanska maträtten med majstortilla fylld med kött?",
+    "question": "Vilket land kommer sushi från?",
+    "answer": "Japan",
+    "category": "food-drinks-culture",
+    "level": "tween"
+  },
+  {
+    "id": 743,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med sniglar?",
+    "answer": "Escargot",
+    "category": "food-drinks-culture",
+    "level": "tween"
+  },
+  {
+    "id": 744,
+    "rev": 1,
+    "question": "Vilket land kommer pasta från?",
+    "answer": "Italien",
+    "category": "food-drinks-culture",
+    "level": "tween"
+  },
+  {
+    "id": 745,
+    "rev": 1,
+    "question": "Vad heter den mexikanska maträtten med majstortilla?",
     "answer": "Taco",
     "category": "food-drinks-culture",
     "level": "tween"
   },
   {
-    "id": 5,
+    "id": 746,
     "rev": 1,
-    "question": "Vilket land är sushi från?",
-    "answer": "Japan",
+    "question": "Vilket land kommer curry från?",
+    "answer": "Indien",
+    "category": "food-drinks-culture",
+    "level": "tween"
+  },
+  {
+    "id": 747,
+    "rev": 1,
+    "question": "Vad heter den kinesiska maträtten med nudlar?",
+    "answer": "Chow mein (eller olika varianter)",
+    "category": "food-drinks-culture",
+    "level": "tween"
+  },
+  {
+    "id": 748,
+    "rev": 1,
+    "question": "Vilket land kommer paella från?",
+    "answer": "Spanien",
+    "category": "food-drinks-culture",
+    "level": "tween"
+  },
+  {
+    "id": 749,
+    "rev": 1,
+    "question": "Vad heter den turkiska maträtten med döner-kött?",
+    "answer": "Döner kebab",
+    "category": "food-drinks-culture",
+    "level": "tween"
+  },
+  {
+    "id": 750,
+    "rev": 1,
+    "question": "Vilket land kommer falafel från?",
+    "answer": "Mellanöstern (olika länder)",
+    "category": "food-drinks-culture",
+    "level": "tween"
+  },
+  {
+    "id": 751,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med anklever?",
+    "answer": "Foie gras",
     "category": "food-drinks-culture",
     "level": "young-teen"
   },
   {
-    "id": 6,
+    "id": 752,
     "rev": 1,
-    "question": "Vad heter den italienska osten som används på pizza?",
-    "answer": "Mozzarella",
+    "question": "Vilket år uppfanns Coca-Cola?",
+    "answer": "1886",
     "category": "food-drinks-culture",
-    "level": "young-teen"
+    "level": "young-teen",
+    "start_year": 1886,
+    "end_year": 1886
   },
   {
-    "id": 7,
+    "id": 753,
     "rev": 1,
-    "question": "Vad kallas den japanska drycken gjord på ris?",
+    "question": "Vad heter den japanska drycken av ris?",
     "answer": "Sake",
     "category": "food-drinks-culture",
-    "level": "old-teen"
+    "level": "young-teen"
   },
   {
-    "id": 8,
+    "id": 754,
     "rev": 1,
-    "question": "Vilket land är croissanten från?",
-    "answer": "Frankrike",
+    "question": "Vilket land kommer kimchi från?",
+    "answer": "Korea",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 755,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med risotto och saffran?",
+    "answer": "Risotto alla milanese",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 756,
+    "rev": 1,
+    "question": "Vilket år uppfanns hamburgaren (modern form)?",
+    "answer": "Cirka 1900-talet",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 757,
+    "rev": 1,
+    "question": "Vad heter den spanska drycken med rött vin och frukt?",
+    "answer": "Sangria",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 758,
+    "rev": 1,
+    "question": "Vilket land kommer pad thai från?",
+    "answer": "Thailand",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 759,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med gratinerad lök-soppa?",
+    "answer": "French onion soup",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 760,
+    "rev": 1,
+    "question": "Vilket år uppfanns McDonald's?",
+    "answer": "1940 (första restaurangen) eller 1955 (franchise)",
+    "category": "food-drinks-culture",
+    "level": "young-teen",
+    "start_year": 1955,
+    "end_year": 1955
+  },
+  {
+    "id": 761,
+    "rev": 1,
+    "question": "Vad heter den italienska efterrätten med mascarpone?",
+    "answer": "Tiramisu",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 762,
+    "rev": 1,
+    "question": "Vilket land kommer ceviche från?",
+    "answer": "Peru (eller Latinamerika)",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 763,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med Gruyère-ost?",
+    "answer": "Fondue (eller många andra)",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 764,
+    "rev": 1,
+    "question": "Vilket år uppfanns Pepsi-Cola?",
+    "answer": "1893",
+    "category": "food-drinks-culture",
+    "level": "young-teen",
+    "start_year": 1893,
+    "end_year": 1893
+  },
+  {
+    "id": 765,
+    "rev": 1,
+    "question": "Vad heter den grekiska rätten med aubergine?",
+    "answer": "Moussaka",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 766,
+    "rev": 1,
+    "question": "Vilket land kommer biryani från?",
+    "answer": "Indien",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 767,
+    "rev": 1,
+    "question": "Vad heter den tyska rätten med surkål?",
+    "answer": "Sauerkraut (eller flera rätter)",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 768,
+    "rev": 1,
+    "question": "Vilket år uppfanns KFC?",
+    "answer": "1930 (första restaurangen) eller 1952 (franchise)",
+    "category": "food-drinks-culture",
+    "level": "young-teen",
+    "start_year": 1952,
+    "end_year": 1952
+  },
+  {
+    "id": 769,
+    "rev": 1,
+    "question": "Vad heter den portugisiska efterrätten med äggula?",
+    "answer": "Pastel de nata",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 770,
+    "rev": 1,
+    "question": "Vilket land kommer pho från?",
+    "answer": "Vietnam",
+    "category": "food-drinks-culture",
+    "level": "young-teen"
+  },
+  {
+    "id": 771,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med kalvbräss?",
+    "answer": "Ris de veau",
     "category": "food-drinks-culture",
     "level": "old-teen"
   },
   {
-    "id": 9,
+    "id": 772,
     "rev": 1,
-    "question": "Vad heter den franska rätten med snäckor?",
-    "answer": "Escargot",
+    "question": "Vilket år började nouvelle cuisine-rörelsen?",
+    "answer": "1960-talet",
+    "category": "food-drinks-culture",
+    "level": "old-teen",
+    "start_year": 1960,
+    "end_year": 1970
+  },
+  {
+    "id": 773,
+    "rev": 1,
+    "question": "Vad heter den japanska rätten med fugu-fisk?",
+    "answer": "Fugu",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 774,
+    "rev": 1,
+    "question": "Vilket land kommer mole från?",
+    "answer": "Mexiko",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 775,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med tryffel och foie gras?",
+    "answer": "Tournedos Rossini",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 776,
+    "rev": 1,
+    "question": "Vilket år började molekylär gastronomi?",
+    "answer": "1980-talet",
+    "category": "food-drinks-culture",
+    "level": "old-teen",
+    "start_year": 1980,
+    "end_year": 1990
+  },
+  {
+    "id": 777,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med osso buco?",
+    "answer": "Osso buco",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 778,
+    "rev": 1,
+    "question": "Vilket land kommer tagine från?",
+    "answer": "Marocko",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 779,
+    "rev": 1,
+    "question": "Vad heter den spanska rätten med svart ris?",
+    "answer": "Arroz negro",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 780,
+    "rev": 1,
+    "question": "Vilket år började farm-to-table-rörelsen?",
+    "answer": "1970-talet",
+    "category": "food-drinks-culture",
+    "level": "old-teen",
+    "start_year": 1970,
+    "end_year": 1980
+  },
+  {
+    "id": 781,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med gäslever och tryffel?",
+    "answer": "Terrine de foie gras",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 782,
+    "rev": 1,
+    "question": "Vilket land kommer bobotie från?",
+    "answer": "Sydafrika",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 783,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med bottarga?",
+    "answer": "Pasta con bottarga",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 784,
+    "rev": 1,
+    "question": "Vilket år började slow food-rörelsen?",
+    "answer": "1986",
+    "category": "food-drinks-culture",
+    "level": "old-teen",
+    "start_year": 1986,
+    "end_year": 1986
+  },
+  {
+    "id": 785,
+    "rev": 1,
+    "question": "Vad heter den japanska rätten med nattō?",
+    "answer": "Nattō",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 786,
+    "rev": 1,
+    "question": "Vilket land kommer rendang från?",
+    "answer": "Indonesien",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 787,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med bouillabaisse?",
+    "answer": "Bouillabaisse",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 788,
+    "rev": 1,
+    "question": "Vilket år började fusion-kök-trenden?",
+    "answer": "1970-talet",
+    "category": "food-drinks-culture",
+    "level": "old-teen",
+    "start_year": 1970,
+    "end_year": 1980
+  },
+  {
+    "id": 789,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med lamprey?",
+    "answer": "Lampreda alla brace",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 790,
+    "rev": 1,
+    "question": "Vilket land kommer asado från?",
+    "answer": "Argentina",
+    "category": "food-drinks-culture",
+    "level": "old-teen"
+  },
+  {
+    "id": 791,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med ortolan?",
+    "answer": "Ortolan",
     "category": "food-drinks-culture",
     "level": "adult"
   },
   {
-    "id": 10,
+    "id": 792,
     "rev": 1,
-    "question": "Vilket år fick Noma i Köpenhamn sin första Michelin-stjärna?",
-    "answer": "2005",
+    "question": "Vilket år började haute cuisine-traditionen?",
+    "answer": "1600-talet",
     "category": "food-drinks-culture",
     "level": "adult",
-    "start_year": 2005,
-    "end_year": 2005
+    "start_year": 1600,
+    "end_year": 1700
+  },
+  {
+    "id": 793,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med colatura di alici?",
+    "answer": "Pasta con colatura",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 794,
+    "rev": 1,
+    "question": "Vilket land kommer shiokara från?",
+    "answer": "Japan",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 795,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med pied de cochon?",
+    "answer": "Pied de cochon",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 796,
+    "rev": 1,
+    "question": "Vilket år publicerades Le Guide Culinaire av Escoffier?",
+    "answer": "1903",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 1903,
+    "end_year": 1903
+  },
+  {
+    "id": 797,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med finanziera?",
+    "answer": "Finanziera",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 798,
+    "rev": 1,
+    "question": "Vilket land kommer hákarl från?",
+    "answer": "Island",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 799,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med ris de veau?",
+    "answer": "Ris de veau",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 800,
+    "rev": 1,
+    "question": "Vilket år grundades Le Cordon Bleu?",
+    "answer": "1895",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 1895,
+    "end_year": 1895
+  },
+  {
+    "id": 801,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med nervetti?",
+    "answer": "Nervetti",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 802,
+    "rev": 1,
+    "question": "Vilket land kommer surströmming från?",
+    "answer": "Sverige",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 803,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med tête de veau?",
+    "answer": "Tête de veau",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 804,
+    "rev": 1,
+    "question": "Vilket år började Michelin Guide?",
+    "answer": "1900",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 1900,
+    "end_year": 1900
+  },
+  {
+    "id": 805,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med pajata?",
+    "answer": "Pajata",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 806,
+    "rev": 1,
+    "question": "Vilket land kommer casu marzu från?",
+    "answer": "Italien (Sardinien)",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 807,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med andouillette?",
+    "answer": "Andouillette",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 808,
+    "rev": 1,
+    "question": "Vilket år publicerades Larousse Gastronomique?",
+    "answer": "1938",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 1938,
+    "end_year": 1938
+  },
+  {
+    "id": 809,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med lampredotto?",
+    "answer": "Lampredotto",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 810,
+    "rev": 1,
+    "question": "Vilket land kommer lutefisk från?",
+    "answer": "Norge (eller Skandinavien)",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 811,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med boudin noir?",
+    "answer": "Boudin noir",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 812,
+    "rev": 1,
+    "question": "Vilket år började El Bulli experimentera med molekylär gastronomi?",
+    "answer": "1980-talet",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 1980,
+    "end_year": 1990
+  },
+  {
+    "id": 813,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med sanguinaccio?",
+    "answer": "Sanguinaccio",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 814,
+    "rev": 1,
+    "question": "Vilket land kommer balut från?",
+    "answer": "Filippinerna",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 815,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med cervelle de canut?",
+    "answer": "Cervelle de canut",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 816,
+    "rev": 1,
+    "question": "Vilket år grundades Noma?",
+    "answer": "2003",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 2003,
+    "end_year": 2003
+  },
+  {
+    "id": 817,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med burrata?",
+    "answer": "Burrata",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 818,
+    "rev": 1,
+    "question": "Vilket land kommer kiviak från?",
+    "answer": "Grönland",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 819,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med gésiers confits?",
+    "answer": "Gésiers confits",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 820,
+    "rev": 1,
+    "question": "Vilket år började New Nordic Cuisine-rörelsen?",
+    "answer": "2004",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 2004,
+    "end_year": 2004
+  },
+  {
+    "id": 821,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med 'nduja?",
+    "answer": "'Nduja",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 822,
+    "rev": 1,
+    "question": "Vilket land kommer durian från?",
+    "answer": "Sydostasien",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 823,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med ris d'agneau?",
+    "answer": "Ris d'agneau",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 824,
+    "rev": 1,
+    "question": "Vilket år fick Ferran Adrià sin tredje Michelin-stjärna?",
+    "answer": "1997",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 1997,
+    "end_year": 1997
+  },
+  {
+    "id": 825,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med culatello?",
+    "answer": "Culatello",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 826,
+    "rev": 1,
+    "question": "Vilket land kommer century egg från?",
+    "answer": "Kina",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 827,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med pieds et paquets?",
+    "answer": "Pieds et paquets",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 828,
+    "rev": 1,
+    "question": "Vilket år började René Redzepi på Noma?",
+    "answer": "2003",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 2003,
+    "end_year": 2003
+  },
+  {
+    "id": 829,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med lardo di Colonnata?",
+    "answer": "Lardo di Colonnata",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 830,
+    "rev": 1,
+    "question": "Vilket land kommer stinkbugs som mat från?",
+    "answer": "Mexiko (eller flera afrikanska länder)",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 831,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med tripes à la mode de Caen?",
+    "answer": "Tripes à la mode de Caen",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 832,
+    "rev": 1,
+    "question": "Vilket år fick Alain Ducasse sin första trestjärniga restaurang?",
+    "answer": "1990",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 1990,
+    "end_year": 1990
+  },
+  {
+    "id": 833,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med guanciale?",
+    "answer": "Pasta all'amatriciana (eller carbonara)",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 834,
+    "rev": 1,
+    "question": "Vilket land kommer witchetty grubs från?",
+    "answer": "Australien",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 835,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med jambonnette?",
+    "answer": "Jambonnette",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 836,
+    "rev": 1,
+    "question": "Vilket år fick Thomas Keller sin första trestjärniga restaurang?",
+    "answer": "2006",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 2006,
+    "end_year": 2006
+  },
+  {
+    "id": 837,
+    "rev": 1,
+    "question": "Vad heter den italienska rätten med coppa?",
+    "answer": "Coppa",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 838,
+    "rev": 1,
+    "question": "Vilket land kommer escamoles från?",
+    "answer": "Mexiko",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 839,
+    "rev": 1,
+    "question": "Vad heter den franska rätten med langue de boeuf?",
+    "answer": "Langue de boeuf",
+    "category": "food-drinks-culture",
+    "level": "adult"
+  },
+  {
+    "id": 840,
+    "rev": 1,
+    "question": "Vilket år fick Heston Blumenthal sin tredje Michelin-stjärna?",
+    "answer": "2004",
+    "category": "food-drinks-culture",
+    "level": "adult",
+    "start_year": 2004,
+    "end_year": 2004
   }
 ]

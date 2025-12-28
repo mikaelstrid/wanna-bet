@@ -1,81 +1,841 @@
 [
   {
-    "id": 41,
+    "id": 316,
     "rev": 1,
-    "question": "Vilken planet är närmast solen?",
-    "answer": "Merkurius",
+    "question": "Hur många ben har en spindel?",
+    "answer": "8 (åtta)",
     "category": "nature-science",
     "level": "child"
   },
   {
-    "id": 42,
+    "id": 317,
     "rev": 1,
-    "question": "Vad heter det som hjälper oss att andas?",
-    "answer": "Lungorna",
+    "question": "Vad heter jordens satellit?",
+    "answer": "Månen",
     "category": "nature-science",
     "level": "child"
   },
   {
-    "id": 43,
+    "id": 318,
     "rev": 1,
-    "question": "Vilket är det kemiska tecknet för guld?",
-    "answer": "Au",
+    "question": "Vilken färg får man om man blandar gult och blått?",
+    "answer": "Grönt",
+    "category": "nature-science",
+    "level": "child"
+  },
+  {
+    "id": 319,
+    "rev": 1,
+    "question": "Hur många planeter finns det i vårt solsystem?",
+    "answer": "8 (åtta)",
+    "category": "nature-science",
+    "level": "child"
+  },
+  {
+    "id": 320,
+    "rev": 1,
+    "question": "Vad heter det stora gula i himlen på dagen?",
+    "answer": "Solen",
+    "category": "nature-science",
+    "level": "child"
+  },
+  {
+    "id": 321,
+    "rev": 1,
+    "question": "Vad heter jordens största kontinent?",
+    "answer": "Asien",
     "category": "nature-science",
     "level": "tween"
   },
   {
-    "id": 44,
+    "id": 322,
     "rev": 1,
-    "question": "Hur många ben har en vuxen människa?",
-    "answer": "206",
+    "question": "Hur lång tid tar det för jorden att snurra runt solen?",
+    "answer": "1 år (365 dagar)",
     "category": "nature-science",
     "level": "tween"
   },
   {
-    "id": 45,
+    "id": 323,
     "rev": 1,
-    "question": "Vad kallas det när vatten övergår från flytande till gasform?",
-    "answer": "Avdunstning (eller förångning)",
-    "category": "nature-science",
-    "level": "young-teen"
-  },
-  {
-    "id": 46,
-    "rev": 1,
-    "question": "Vilket är det största organet i människokroppen?",
-    "answer": "Huden",
-    "category": "nature-science",
-    "level": "young-teen"
-  },
-  {
-    "id": 47,
-    "rev": 1,
-    "question": "Vad heter det fenomen när ljus böjs när det passerar genom ett medium?",
-    "answer": "Refraktion (eller ljusbrytning)",
-    "category": "nature-science",
-    "level": "old-teen"
-  },
-  {
-    "id": 48,
-    "rev": 1,
-    "question": "Vilken gas utgör cirka 78% av jordens atmosfär?",
-    "answer": "Kväve",
-    "category": "nature-science",
-    "level": "old-teen"
-  },
-  {
-    "id": 49,
-    "rev": 1,
-    "question": "Vad kallas den minsta enheten av ett kemiskt grundämne?",
+    "question": "Vad heter det minsta partikeln av ett grundämne?",
     "answer": "Atom",
+    "category": "nature-science",
+    "level": "tween"
+  },
+  {
+    "id": 324,
+    "rev": 1,
+    "question": "Hur många hjärtkammare har ett människohjärta?",
+    "answer": "4 (fyra)",
+    "category": "nature-science",
+    "level": "tween"
+  },
+  {
+    "id": 325,
+    "rev": 1,
+    "question": "Vad heter den kraft som drar saker mot jorden?",
+    "answer": "Gravitation",
+    "category": "nature-science",
+    "level": "tween"
+  },
+  {
+    "id": 326,
+    "rev": 1,
+    "question": "Hur många tänder har en vuxen människa normalt?",
+    "answer": "32",
+    "category": "nature-science",
+    "level": "tween"
+  },
+  {
+    "id": 327,
+    "rev": 1,
+    "question": "Vad heter den del av cellen som innehåller DNA?",
+    "answer": "Kärnan (nucleus)",
+    "category": "nature-science",
+    "level": "tween"
+  },
+  {
+    "id": 328,
+    "rev": 1,
+    "question": "Hur många sekunder är en minut?",
+    "answer": "60",
+    "category": "nature-science",
+    "level": "tween"
+  },
+  {
+    "id": 329,
+    "rev": 1,
+    "question": "Vad heter den gas vi andas in?",
+    "answer": "Syre (oxygen)",
+    "category": "nature-science",
+    "level": "tween"
+  },
+  {
+    "id": 330,
+    "rev": 1,
+    "question": "Hur många grader är det i en rät vinkel?",
+    "answer": "90",
+    "category": "nature-science",
+    "level": "tween"
+  },
+  {
+    "id": 331,
+    "rev": 1,
+    "question": "Vad heter processen där växter gör mat från solljus?",
+    "answer": "Fotosyntes",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 332,
+    "rev": 1,
+    "question": "Hur snabbt färdas ljuset i vakuum?",
+    "answer": "300 000 km/s (cirka)",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 333,
+    "rev": 1,
+    "question": "Vad heter den grundläggande enheten för arv?",
+    "answer": "Gen",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 334,
+    "rev": 1,
+    "question": "Hur många kromosomer har en människa?",
+    "answer": "46 (23 par)",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 335,
+    "rev": 1,
+    "question": "Vad heter den del av atomen som har positiv laddning?",
+    "answer": "Proton",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 336,
+    "rev": 1,
+    "question": "Hur lång är jordens ekvatorialdiameter?",
+    "answer": "12 742 km (cirka)",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 337,
+    "rev": 1,
+    "question": "Vad heter den minsta enheten av liv?",
+    "answer": "Cell",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 338,
+    "rev": 1,
+    "question": "Hur många element finns i det periodiska systemet?",
+    "answer": "118",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 339,
+    "rev": 1,
+    "question": "Vad heter den kraft som håller atomkärnan samman?",
+    "answer": "Stark kärnkraft",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 340,
+    "rev": 1,
+    "question": "Hur lång är DNA-spiralen i en mänsklig cell?",
+    "answer": "Cirka 2 meter",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 341,
+    "rev": 1,
+    "question": "Vad heter den del av ögat som ändrar sin form för att fokusera?",
+    "answer": "Linsen",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 342,
+    "rev": 1,
+    "question": "Hur många baser finns i DNA?",
+    "answer": "4 (fyra)",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 343,
+    "rev": 1,
+    "question": "Vad heter den gas som plantor släpper ut vid fotosyntes?",
+    "answer": "Syre",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 344,
+    "rev": 1,
+    "question": "Hur många nervceller har en människa?",
+    "answer": "Cirka 100 miljarder",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 345,
+    "rev": 1,
+    "question": "Vad heter den del av hjärnan som styr balans?",
+    "answer": "Lillhjärnan",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 346,
+    "rev": 1,
+    "question": "Hur många atomer finns det ungefär i en människokropp?",
+    "answer": "Cirka 7 oktiljoner",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 347,
+    "rev": 1,
+    "question": "Vad heter processen där celler delar sig?",
+    "answer": "Mitos",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 348,
+    "rev": 1,
+    "question": "Hur många lungor har en människa?",
+    "answer": "2 (två)",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 349,
+    "rev": 1,
+    "question": "Vad heter den gas som vi andas ut?",
+    "answer": "Koldioxid",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 350,
+    "rev": 1,
+    "question": "Hur många leder har människan?",
+    "answer": "Cirka 360",
+    "category": "nature-science",
+    "level": "young-teen"
+  },
+  {
+    "id": 351,
+    "rev": 1,
+    "question": "Vad heter den partikel som förmedlar elektromagnetisk kraft?",
+    "answer": "Foton",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 352,
+    "rev": 1,
+    "question": "Hur stor är Plancks konstant?",
+    "answer": "6,626 × 10^-34 J·s",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 353,
+    "rev": 1,
+    "question": "Vad heter processen där en cell delar sitt DNA i två?",
+    "answer": "Meios",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 354,
+    "rev": 1,
+    "question": "Hur många aminosyror är essentiella för människan?",
+    "answer": "9",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 355,
+    "rev": 1,
+    "question": "Vad heter den del av DNA som inte kodar för protein?",
+    "answer": "Intron",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 356,
+    "rev": 1,
+    "question": "Hur lång är en ljussekund?",
+    "answer": "299 792 km",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 357,
+    "rev": 1,
+    "question": "Vad heter den princip som säger att man inte kan mäta position och rörelsemängd samtidigt?",
+    "answer": "Heisenbergs osäkerhetsprincip",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 358,
+    "rev": 1,
+    "question": "Hur många kvarkar finns det?",
+    "answer": "6",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 359,
+    "rev": 1,
+    "question": "Vad heter den process där RNA kopieras från DNA?",
+    "answer": "Transkription",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 360,
+    "rev": 1,
+    "question": "Hur stor del av universum är mörk materia?",
+    "answer": "Cirka 27%",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 361,
+    "rev": 1,
+    "question": "Vad heter den partikel som ger massa åt andra partiklar?",
+    "answer": "Higgs boson",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 362,
+    "rev": 1,
+    "question": "Hur många gener har en människa?",
+    "answer": "Cirka 20 000-25 000",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 363,
+    "rev": 1,
+    "question": "Vad heter den kraft som gör att nukleoner håller ihop?",
+    "answer": "Stark kärnkraft",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 364,
+    "rev": 1,
+    "question": "Hur stor är universums ålder?",
+    "answer": "13,8 miljarder år",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 365,
+    "rev": 1,
+    "question": "Vad heter processen där protein tillverkas från RNA?",
+    "answer": "Translation",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 366,
+    "rev": 1,
+    "question": "Hur många elektroner kan finnas i det första elektronskalet?",
+    "answer": "2",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 367,
+    "rev": 1,
+    "question": "Vad heter den teori som beskriver gravitationen som krökning av rumtiden?",
+    "answer": "Allmänna relativitetsteorin",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 368,
+    "rev": 1,
+    "question": "Hur många baspar har människans DNA?",
+    "answer": "Cirka 3 miljarder",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 369,
+    "rev": 1,
+    "question": "Vad heter den partikel som är antipartikeln till elektronen?",
+    "answer": "Positron",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 370,
+    "rev": 1,
+    "question": "Hur stor är massan av en elektron jämfört med en proton?",
+    "answer": "Cirka 1/1836",
+    "category": "nature-science",
+    "level": "old-teen"
+  },
+  {
+    "id": 371,
+    "rev": 1,
+    "question": "Vad heter den teori som förenar kvantmekanik och allmän relativitetsteori?",
+    "answer": "Strängteori (eller kvantgravitation)",
     "category": "nature-science",
     "level": "adult"
   },
   {
-    "id": 50,
+    "id": 372,
     "rev": 1,
-    "question": "Vad heter den process där celler delar sig för att skapa könsceller?",
-    "answer": "Meios",
+    "question": "Hur många dimensioner finns det enligt M-teorin?",
+    "answer": "11",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 373,
+    "rev": 1,
+    "question": "Vad heter processen där RNA modifieras efter transkription?",
+    "answer": "RNA-splicing",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 374,
+    "rev": 1,
+    "question": "Hur stor är den kosmologiska konstanten?",
+    "answer": "Cirka 10^-52 m^-2",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 375,
+    "rev": 1,
+    "question": "Vad heter fenomenet där partiklar kan vara på två ställen samtidigt?",
+    "answer": "Kvantöverlappning",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 376,
+    "rev": 1,
+    "question": "Hur många leptoner finns det?",
+    "answer": "6",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 377,
+    "rev": 1,
+    "question": "Vad heter processen där DNA repareras?",
+    "answer": "DNA-reparation (flera mekanismer)",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 378,
+    "rev": 1,
+    "question": "Hur stor är universums observerbara diameter?",
+    "answer": "Cirka 93 miljarder ljusår",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 379,
+    "rev": 1,
+    "question": "Vad heter den kraft som gör att kvarkar håller ihop?",
+    "answer": "Stark växelverkan",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 380,
+    "rev": 1,
+    "question": "Hur många neutroner har det vanligaste kol-isotopen?",
+    "answer": "6",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 381,
+    "rev": 1,
+    "question": "Vad heter teorin om universums uppkomst?",
+    "answer": "Big Bang-teorin",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 382,
+    "rev": 1,
+    "question": "Hur stor är Avogadros tal?",
+    "answer": "6,022 × 10^23",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 383,
+    "rev": 1,
+    "question": "Vad heter processen där celler programmerat dör?",
+    "answer": "Apoptos",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 384,
+    "rev": 1,
+    "question": "Hur många supernovor har observerats i vår galax de senaste 1000 åren?",
+    "answer": "Cirka 5-10",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 385,
+    "rev": 1,
+    "question": "Vad heter fenomenet där tid går långsammare nära tunga objekt?",
+    "answer": "Gravitationell tidsdilatation",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 386,
+    "rev": 1,
+    "question": "Hur många mitokondrier finns det i en typisk mänsklig cell?",
+    "answer": "Cirka 1000-2000",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 387,
+    "rev": 1,
+    "question": "Vad heter den kraft som gör att protoner inte stöter bort varandra i kärnan?",
+    "answer": "Stark kärnkraft",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 388,
+    "rev": 1,
+    "question": "Hur stor är Hubble-konstanten?",
+    "answer": "Cirka 70 km/s/Mpc",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 389,
+    "rev": 1,
+    "question": "Vad heter processen där celler omvandlar glukos till energi?",
+    "answer": "Cellrespiration",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 390,
+    "rev": 1,
+    "question": "Hur många partiklar i standardmodellen?",
+    "answer": "17 (eller 18 med Higgs)",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 391,
+    "rev": 1,
+    "question": "Vad heter den hypotes som säger att universum är flerdimensionellt?",
+    "answer": "Multiversum-hypotesen",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 392,
+    "rev": 1,
+    "question": "Hur stor är den svaga kärnkraftens räckvidd?",
+    "answer": "Cirka 10^-18 meter",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 393,
+    "rev": 1,
+    "question": "Vad heter processen där celler omvandlar fett till energi?",
+    "answer": "Beta-oxidation",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 394,
+    "rev": 1,
+    "question": "Hur många galaxer finns det i det observerbara universum?",
+    "answer": "Cirka 2 biljoner",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 395,
+    "rev": 1,
+    "question": "Vad heter fenomenet där partiklar påverkar varandra instantant?",
+    "answer": "Kvantsammanflätning",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 396,
+    "rev": 1,
+    "question": "Hur stor är elektronens magnetiska moment?",
+    "answer": "9,284 × 10^-24 J/T",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 397,
+    "rev": 1,
+    "question": "Vad heter processen där celler omvandlar proteiner?",
+    "answer": "Proteolys",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 398,
+    "rev": 1,
+    "question": "Hur många atomer finns i en mol?",
+    "answer": "6,022 × 10^23",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 399,
+    "rev": 1,
+    "question": "Vad heter den teori som beskriver hur universum expanderar?",
+    "answer": "Kosmologisk inflation",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 400,
+    "rev": 1,
+    "question": "Hur stor är den elektromagnetiska kraftens räckvidd?",
+    "answer": "Oändlig",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 401,
+    "rev": 1,
+    "question": "Vad heter processen där celler delar sina organeller?",
+    "answer": "Cytokinesis",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 402,
+    "rev": 1,
+    "question": "Hur många superklasar finns i universum?",
+    "answer": "Miljontals",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 403,
+    "rev": 1,
+    "question": "Vad heter fenomenet där tid stannar vid händelsehorisonten?",
+    "answer": "Extremal tidsdilatation",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 404,
+    "rev": 1,
+    "question": "Hur stor är protonens radie?",
+    "answer": "Cirka 0,84 femtometer",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 405,
+    "rev": 1,
+    "question": "Vad heter processen där DNA packas i kromosomer?",
+    "answer": "Kromatinkondensation",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 406,
+    "rev": 1,
+    "question": "Hur många neutronstjärnor finns i vår galax?",
+    "answer": "Cirka 100 miljoner",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 407,
+    "rev": 1,
+    "question": "Vad heter den teori som säger att allt är strängar?",
+    "answer": "Strängteori",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 408,
+    "rev": 1,
+    "question": "Hur stor är neutronens massa?",
+    "answer": "1,675 × 10^-27 kg",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 409,
+    "rev": 1,
+    "question": "Vad heter processen där celler skapar nya mitokondrier?",
+    "answer": "Mitokondriell biogenes",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 410,
+    "rev": 1,
+    "question": "Hur många svarta hål finns i vår galax?",
+    "answer": "Cirka 100 miljoner",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 411,
+    "rev": 1,
+    "question": "Vad heter fenomenet där materia och antimateria förintas?",
+    "answer": "Annihilation",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 412,
+    "rev": 1,
+    "question": "Hur stor är kvarks storlek?",
+    "answer": "Mindre än 10^-19 meter",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 413,
+    "rev": 1,
+    "question": "Vad heter processen där celler reparerar skadade proteiner?",
+    "answer": "Protein-kvalitetskontroll",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 414,
+    "rev": 1,
+    "question": "Hur många planeter finns utanför vårt solsystem?",
+    "answer": "Tusentals bekräftade",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 415,
+    "rev": 1,
+    "question": "Vad heter den kraft som driver universums expansion?",
+    "answer": "Mörk energi",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 416,
+    "rev": 1,
+    "question": "Hur stor är ljusets våglängd för rött ljus?",
+    "answer": "Cirka 700 nm",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 417,
+    "rev": 1,
+    "question": "Vad heter processen där RNA modifieras innan translation?",
+    "answer": "Post-transkriptionell modifiering",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 418,
+    "rev": 1,
+    "question": "Hur många neutriner passerar genom din kropp per sekund?",
+    "answer": "Cirka 100 biljoner",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 419,
+    "rev": 1,
+    "question": "Vad heter den teori som beskriver partiklarnas beteende?",
+    "answer": "Kvantfältteori",
+    "category": "nature-science",
+    "level": "adult"
+  },
+  {
+    "id": 420,
+    "rev": 1,
+    "question": "Hur stor är universums totala energi?",
+    "answer": "Möjligen noll",
     "category": "nature-science",
     "level": "adult"
   }

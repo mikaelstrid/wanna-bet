@@ -1,22 +1,70 @@
 [
   {
-    "id": 11,
+    "id": 1,
     "rev": 1,
-    "question": "Vilken färg har himlen?",
-    "answer": "Blå",
+    "question": "Vad heter huvudstaden i Sverige?",
+    "answer": "Stockholm",
     "category": "geography",
     "level": "child"
   },
   {
-    "id": 12,
+    "id": 2,
     "rev": 1,
-    "question": "Vad heter den stora vattenmassa som omger land?",
-    "answer": "Havet",
+    "question": "Vilket är Sveriges största stad?",
+    "answer": "Stockholm",
     "category": "geography",
     "level": "child"
   },
   {
-    "id": 13,
+    "id": 3,
+    "rev": 1,
+    "question": "Vad heter havet som ligger väster om Sverige?",
+    "answer": "Kattegatt (eller Skagerrak)",
+    "category": "geography",
+    "level": "child"
+  },
+  {
+    "id": 4,
+    "rev": 1,
+    "question": "Vilket land ligger öster om Sverige?",
+    "answer": "Finland",
+    "category": "geography",
+    "level": "child"
+  },
+  {
+    "id": 5,
+    "rev": 1,
+    "question": "Vad heter Sveriges längsta flod?",
+    "answer": "Klarälven (eller Göta älv)",
+    "category": "geography",
+    "level": "child"
+  },
+  {
+    "id": 6,
+    "rev": 1,
+    "question": "Vad heter huvudstaden i Danmark?",
+    "answer": "Köpenhamn",
+    "category": "geography",
+    "level": "tween"
+  },
+  {
+    "id": 7,
+    "rev": 1,
+    "question": "Vilket är världens största land till ytan?",
+    "answer": "Ryssland",
+    "category": "geography",
+    "level": "tween"
+  },
+  {
+    "id": 8,
+    "rev": 1,
+    "question": "Vad heter det högsta berget i Sverige?",
+    "answer": "Kebnekaise",
+    "category": "geography",
+    "level": "tween"
+  },
+  {
+    "id": 9,
     "rev": 1,
     "question": "Vilket land har Eiffeltornet?",
     "answer": "Frankrike",
@@ -24,7 +72,7 @@
     "level": "tween"
   },
   {
-    "id": 14,
+    "id": 10,
     "rev": 1,
     "question": "Vad heter huvudstaden i Norge?",
     "answer": "Oslo",
@@ -32,17 +80,49 @@
     "level": "tween"
   },
   {
-    "id": 15,
+    "id": 11,
     "rev": 1,
     "question": "Vilket hav ligger mellan Sverige och Finland?",
     "answer": "Östersjön",
     "category": "geography",
-    "level": "young-teen"
+    "level": "tween"
+  },
+  {
+    "id": 12,
+    "rev": 1,
+    "question": "Vad heter Sveriges näst största stad?",
+    "answer": "Göteborg",
+    "category": "geography",
+    "level": "tween"
+  },
+  {
+    "id": 13,
+    "rev": 1,
+    "question": "Vilket land har pyramiderna i Giza?",
+    "answer": "Egypten",
+    "category": "geography",
+    "level": "tween"
+  },
+  {
+    "id": 14,
+    "rev": 1,
+    "question": "Vad heter Europas längsta flod?",
+    "answer": "Volga",
+    "category": "geography",
+    "level": "tween"
+  },
+  {
+    "id": 15,
+    "rev": 1,
+    "question": "Vilket land har den kinesiska muren?",
+    "answer": "Kina",
+    "category": "geography",
+    "level": "tween"
   },
   {
     "id": 16,
     "rev": 1,
-    "question": "Vad heter den längsta floden i Afrika?",
+    "question": "Vad heter den längsta floden i världen?",
     "answer": "Nilen",
     "category": "geography",
     "level": "young-teen"
@@ -53,10 +133,154 @@
     "question": "Vilket är världens minsta land?",
     "answer": "Vatikanstaten",
     "category": "geography",
-    "level": "old-teen"
+    "level": "young-teen"
   },
   {
     "id": 18,
+    "rev": 1,
+    "question": "Vad heter huvudstaden i Australien?",
+    "answer": "Canberra",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 19,
+    "rev": 1,
+    "question": "Vilket berg är världens högsta?",
+    "answer": "Mount Everest",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 20,
+    "rev": 1,
+    "question": "Vad heter öknen i södra Afrika?",
+    "answer": "Kalahari",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 21,
+    "rev": 1,
+    "question": "Vilket land har flest invånare i världen?",
+    "answer": "Indien",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 22,
+    "rev": 1,
+    "question": "Vad heter huvudstaden i Kanada?",
+    "answer": "Ottawa",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 23,
+    "rev": 1,
+    "question": "Vilket land har Machu Picchu?",
+    "answer": "Peru",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 24,
+    "rev": 1,
+    "question": "Vad heter den största öknen i världen?",
+    "answer": "Sahara",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 25,
+    "rev": 1,
+    "question": "Vilket land har flest landgränser?",
+    "answer": "Kina (eller Ryssland)",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 26,
+    "rev": 1,
+    "question": "Vad heter världens djupaste hav?",
+    "answer": "Stilla havet",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 27,
+    "rev": 1,
+    "question": "Vilket land har Angkor Wat?",
+    "answer": "Kambodja",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 28,
+    "rev": 1,
+    "question": "Vad heter huvudstaden i Brasilien?",
+    "answer": "Brasília",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 29,
+    "rev": 1,
+    "question": "Vilket hav ligger mellan Europa och Afrika?",
+    "answer": "Medelhavet",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 30,
+    "rev": 1,
+    "question": "Vad heter den största sjön i världen?",
+    "answer": "Kaspiska havet",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 31,
+    "rev": 1,
+    "question": "Vilket land består av över 7000 öar?",
+    "answer": "Filippinerna",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 32,
+    "rev": 1,
+    "question": "Vad heter bergskedjan mellan Frankrike och Spanien?",
+    "answer": "Pyrenéerna",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 33,
+    "rev": 1,
+    "question": "Vilket land har Taj Mahal?",
+    "answer": "Indien",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 34,
+    "rev": 1,
+    "question": "Vad heter världens längsta bergskedja?",
+    "answer": "Anderna",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 35,
+    "rev": 1,
+    "question": "Vilket är världens största oceandjup?",
+    "answer": "Marianergraven",
+    "category": "geography",
+    "level": "young-teen"
+  },
+  {
+    "id": 36,
     "rev": 1,
     "question": "I vilket land ligger den antika staden Petra?",
     "answer": "Jordanien",
@@ -64,18 +288,554 @@
     "level": "old-teen"
   },
   {
-    "id": 19,
+    "id": 37,
     "rev": 1,
     "question": "Vilken huvudstad ligger högst över havet?",
-    "answer": "La Paz (Bolivia)",
+    "answer": "La Paz",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 38,
+    "rev": 1,
+    "question": "Vad heter den största korallreven i världen?",
+    "answer": "Stora barriärrevet",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 39,
+    "rev": 1,
+    "question": "Vilket land har flest öar i världen?",
+    "answer": "Sverige",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 40,
+    "rev": 1,
+    "question": "Vad heter den största vulkanen i Europa?",
+    "answer": "Etna",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 41,
+    "rev": 1,
+    "question": "Vilket land har tre huvudstäder?",
+    "answer": "Sydafrika",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 42,
+    "rev": 1,
+    "question": "Vad heter det hav som ligger mellan Australien och Nya Zeeland?",
+    "answer": "Tasmanhavet",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 43,
+    "rev": 1,
+    "question": "Vilket land har världens längsta kust?",
+    "answer": "Kanada",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 44,
+    "rev": 1,
+    "question": "Vad heter den största ön i Medelhavet?",
+    "answer": "Sicilien",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 45,
+    "rev": 1,
+    "question": "Vilket land har världens längsta tunnelsystem för tunnelbana?",
+    "answer": "Kina (Shanghai)",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 46,
+    "rev": 1,
+    "question": "Vad heter bergskedjan som delar Europa från Asien?",
+    "answer": "Uralbergen",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 47,
+    "rev": 1,
+    "question": "Vilket land har flest tidszoner?",
+    "answer": "Frankrike",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 48,
+    "rev": 1,
+    "question": "Vad heter den största saltöknen i världen?",
+    "answer": "Salar de Uyuni",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 49,
+    "rev": 1,
+    "question": "Vilket land har den största skärgården i världen?",
+    "answer": "Indonesien",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 50,
+    "rev": 1,
+    "question": "Vad heter världens minsta ö-nation?",
+    "answer": "Nauru",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 51,
+    "rev": 1,
+    "question": "Vilket land har den största deltabildningen?",
+    "answer": "Bangladesh (Ganges-Brahmaputra)",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 52,
+    "rev": 1,
+    "question": "Vad heter den lägsta punkten på land?",
+    "answer": "Döda havet",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 53,
+    "rev": 1,
+    "question": "Vilket land har den största befolkningstätheten i världen (bland länder med över 1 miljon invånare)?",
+    "answer": "Bangladesh",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 54,
+    "rev": 1,
+    "question": "Vad heter den enda platsen där tre oceaner möts?",
+    "answer": "Kap Agulhas",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 55,
+    "rev": 1,
+    "question": "Vilket land har världens högsta vattenfall?",
+    "answer": "Venezuela (Salto Ángel)",
+    "category": "geography",
+    "level": "old-teen"
+  },
+  {
+    "id": 56,
+    "rev": 1,
+    "question": "Vad heter det land som ligger i fyra hemisfärer samtidigt?",
+    "answer": "Kiribati",
     "category": "geography",
     "level": "adult"
   },
   {
-    "id": 20,
+    "id": 57,
     "rev": 1,
-    "question": "Vilket land har flest öar i världen?",
-    "answer": "Sverige",
+    "question": "Vilket land har världens mest isolerade befolkning?",
+    "answer": "Nordsentinelerna (Andamanerna, Indien)",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 58,
+    "rev": 1,
+    "question": "Vad heter den största sötvattensön i Europa?",
+    "answer": "Ladoga",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 59,
+    "rev": 1,
+    "question": "Vilket land har världens längsta inlandsgräns?",
+    "answer": "Kina-Mongoliet",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 60,
+    "rev": 1,
+    "question": "Vad heter den nordligaste permanenta bosättningen i världen?",
+    "answer": "Alert",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 61,
+    "rev": 1,
+    "question": "Vilket hav har världens högsta salthalt?",
+    "answer": "Döda havet",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 62,
+    "rev": 1,
+    "question": "Vad heter den största halvön i världen?",
+    "answer": "Arabiska halvön",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 63,
+    "rev": 1,
+    "question": "Vilket land har världens största kontinentala hylla?",
+    "answer": "Ryssland",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 64,
+    "rev": 1,
+    "question": "Vad heter den största tropiska regnskogen efter Amazonas?",
+    "answer": "Kongobäckenet",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 65,
+    "rev": 1,
+    "question": "Vilket land har den största ekonomiska zonen till havs?",
+    "answer": "USA",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 66,
+    "rev": 1,
+    "question": "Vad heter den längsta kanalen i världen?",
+    "answer": "Stora kanalen (Kina)",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 67,
+    "rev": 1,
+    "question": "Vilket land har världens torraste öken?",
+    "answer": "Chile (Atacamaöknen)",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 68,
+    "rev": 1,
+    "question": "Vad heter den största arkipelagen i Atlanten?",
+    "answer": "Karibien",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 69,
+    "rev": 1,
+    "question": "Vilket land har världens högsta huvudstad?",
+    "answer": "Bolivia (La Paz)",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 70,
+    "rev": 1,
+    "question": "Vad heter den största vulkaniska calderan i världen?",
+    "answer": "Yellowstone",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 71,
+    "rev": 1,
+    "question": "Vilket land har världens längsta järnväg?",
+    "answer": "Kina",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 72,
+    "rev": 1,
+    "question": "Vad heter den största mangrovesskogen i världen?",
+    "answer": "Sundarbans",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 73,
+    "rev": 1,
+    "question": "Vilket land har världens längsta bro?",
+    "answer": "Kina (Danyang-Kunshan)",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 74,
+    "rev": 1,
+    "question": "Vad heter den djupaste sjön i världen?",
+    "answer": "Bajkalsjön",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 75,
+    "rev": 1,
+    "question": "Vilket land har världens längsta tunnelsystem under mark?",
+    "answer": "Sydkorea (Seoullo-systemet)",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 76,
+    "rev": 1,
+    "question": "Vad heter den största gletscher utanför polarregionerna?",
+    "answer": "Fedtjenkovsglacären",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 77,
+    "rev": 1,
+    "question": "Vilket land har världens högsta täthet av vulkaner?",
+    "answer": "Indonesien",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 78,
+    "rev": 1,
+    "question": "Vad heter den största högslätten i världen?",
+    "answer": "Tibetanska högslätten",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 79,
+    "rev": 1,
+    "question": "Vilket land har världens minsta befolkningstäthet?",
+    "answer": "Mongoliet",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 80,
+    "rev": 1,
+    "question": "Vad heter den största floddelta som inte mynnar i havet?",
+    "answer": "Okavango",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 81,
+    "rev": 1,
+    "question": "Vilket land har världens längsta kustlinje i förhållande till landytan?",
+    "answer": "Norge",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 82,
+    "rev": 1,
+    "question": "Vad heter den största karststräckan i världen?",
+    "answer": "Guilin-karsterna",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 83,
+    "rev": 1,
+    "question": "Vilket land har världens högsta täthet av naturliga källor?",
+    "answer": "Island",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 84,
+    "rev": 1,
+    "question": "Vad heter den största kontinentala ismassan utanför Antarktis och Grönland?",
+    "answer": "Patagoniska isfältet",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 85,
+    "rev": 1,
+    "question": "Vilket land har världens högsta antal aktiva vulkaner?",
+    "answer": "Japan",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 86,
+    "rev": 1,
+    "question": "Vad heter den största flodön i världen?",
+    "answer": "Bananal",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 87,
+    "rev": 1,
+    "question": "Vilket land har världens längsta fjordsystem?",
+    "answer": "Chile",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 88,
+    "rev": 1,
+    "question": "Vad heter den största atollen i världen?",
+    "answer": "Kwajalein",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 89,
+    "rev": 1,
+    "question": "Vilket land har världens högsta täthet av sjöar?",
+    "answer": "Finland",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 90,
+    "rev": 1,
+    "question": "Vad heter den största kalkstensgrotta-systemet i världen?",
+    "answer": "Mammoth Cave",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 91,
+    "rev": 1,
+    "question": "Vilket land har världens längsta sammanhängande bergskedja?",
+    "answer": "Chile-Argentina (Anderna)",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 92,
+    "rev": 1,
+    "question": "Vad heter den största undervattensberg i världen?",
+    "answer": "Tamu Massif",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 93,
+    "rev": 1,
+    "question": "Vilket land har världens högsta genomsnittliga höjd över havet?",
+    "answer": "Bhutan",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 94,
+    "rev": 1,
+    "question": "Vad heter den största sandbank i världen?",
+    "answer": "Great Bahama Bank",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 95,
+    "rev": 1,
+    "question": "Vilket land har världens längsta kustlinje utan större vikar?",
+    "answer": "Chile",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 96,
+    "rev": 1,
+    "question": "Vad heter den största floddeltade i Asien?",
+    "answer": "Ganges-Brahmaputra-deltat",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 97,
+    "rev": 1,
+    "question": "Vilket land har världens högsta antal naturliga brunnar?",
+    "answer": "USA",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 98,
+    "rev": 1,
+    "question": "Vad heter den största undervattenskanjonen i världen?",
+    "answer": "Zhemchug Canyon",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 99,
+    "rev": 1,
+    "question": "Vilket land har världens längsta sammanhängande strandlinje?",
+    "answer": "Brasilien (Praia do Cassino)",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 100,
+    "rev": 1,
+    "question": "Vad heter den största geotermala zonen i världen?",
+    "answer": "Yellowstone",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 101,
+    "rev": 1,
+    "question": "Vilket land har världens högsta berg utanför Himalaya?",
+    "answer": "Argentina (Aconcagua)",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 102,
+    "rev": 1,
+    "question": "Vad heter den största tundraregionen i världen?",
+    "answer": "Sibiriska tundran",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 103,
+    "rev": 1,
+    "question": "Vilket land har världens längsta sammanhängande ekvatorgräns?",
+    "answer": "Indonesien",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 104,
+    "rev": 1,
+    "question": "Vad heter den största salta lagunen i världen?",
+    "answer": "Mar Chiquita",
+    "category": "geography",
+    "level": "adult"
+  },
+  {
+    "id": 105,
+    "rev": 1,
+    "question": "Vilket land har världens högsta antal endemiska växtarter?",
+    "answer": "Madagaskar",
     "category": "geography",
     "level": "adult"
   }

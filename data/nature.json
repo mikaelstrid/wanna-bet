@@ -1,22 +1,46 @@
 [
   {
-    "id": 51,
+    "id": 841,
     "rev": 1,
-    "question": "Vilket djur är världens största landlevande däggdjur?",
-    "answer": "Elefanten",
+    "question": "Hur många ben har en katt?",
+    "answer": "4 (fyra)",
     "category": "nature",
     "level": "child"
   },
   {
-    "id": 52,
+    "id": 842,
     "rev": 1,
-    "question": "Vilket är världens snabbaste landdjur?",
-    "answer": "Geparden",
+    "question": "Vilken färg har en solros?",
+    "answer": "Gul",
     "category": "nature",
     "level": "child"
   },
   {
-    "id": 53,
+    "id": 843,
+    "rev": 1,
+    "question": "Vad heter det djur som säger 'voff-voff'?",
+    "answer": "Hund",
+    "category": "nature",
+    "level": "child"
+  },
+  {
+    "id": 844,
+    "rev": 1,
+    "question": "Hur många vingar har en fågel?",
+    "answer": "2 (två)",
+    "category": "nature",
+    "level": "child"
+  },
+  {
+    "id": 845,
+    "rev": 1,
+    "question": "Vilken färg har gräset?",
+    "answer": "Grönt",
+    "category": "nature",
+    "level": "child"
+  },
+  {
+    "id": 846,
     "rev": 1,
     "question": "Hur många hjärtan har en bläckfisk?",
     "answer": "3 (tre)",
@@ -24,58 +48,794 @@
     "level": "tween"
   },
   {
-    "id": 54,
+    "id": 847,
     "rev": 1,
-    "question": "Vad kallas Sveriges nationalfågel?",
-    "answer": "Koltrasten",
+    "question": "Vilket är världens största landlevande däggdjur?",
+    "answer": "Elefanten",
     "category": "nature",
     "level": "tween"
   },
   {
-    "id": 55,
+    "id": 848,
     "rev": 1,
-    "question": "Hur länge kan en snigel sova?",
-    "answer": "Upp till 3 år",
+    "question": "Hur många ögon har en spindel?",
+    "answer": "8 (åtta)",
+    "category": "nature",
+    "level": "tween"
+  },
+  {
+    "id": 849,
+    "rev": 1,
+    "question": "Vilket är världens snabbaste landlevande djur?",
+    "answer": "Geparden",
+    "category": "nature",
+    "level": "tween"
+  },
+  {
+    "id": 850,
+    "rev": 1,
+    "question": "Hur många tentakler har en bläckfisk?",
+    "answer": "8 (åtta)",
+    "category": "nature",
+    "level": "tween"
+  },
+  {
+    "id": 851,
+    "rev": 1,
+    "question": "Vilket är världens största fågel?",
+    "answer": "Strutsen",
+    "category": "nature",
+    "level": "tween"
+  },
+  {
+    "id": 852,
+    "rev": 1,
+    "question": "Hur många halsar har en giraff?",
+    "answer": "1 (en)",
+    "category": "nature",
+    "level": "tween"
+  },
+  {
+    "id": 853,
+    "rev": 1,
+    "question": "Vilket är världens minsta fågel?",
+    "answer": "Bikolibri",
+    "category": "nature",
+    "level": "tween"
+  },
+  {
+    "id": 854,
+    "rev": 1,
+    "question": "Hur många kamrar har ett människohjärta?",
+    "answer": "4 (fyra)",
+    "category": "nature",
+    "level": "tween"
+  },
+  {
+    "id": 855,
+    "rev": 1,
+    "question": "Vilket är världens största kattdjur?",
+    "answer": "Tigern",
+    "category": "nature",
+    "level": "tween"
+  },
+  {
+    "id": 856,
+    "rev": 1,
+    "question": "Hur många arter av insekter finns det cirka?",
+    "answer": "Över 1 miljon beskrivna",
     "category": "nature",
     "level": "young-teen"
   },
   {
-    "id": 56,
+    "id": 857,
     "rev": 1,
-    "question": "Vilket djur har den längsta livslängden?",
-    "answer": "Grönlandsvalen",
+    "question": "Vilket är världens giftiga djur?",
+    "answer": "Det finns många, men boxjellyfish är mycket giftig",
     "category": "nature",
     "level": "young-teen"
   },
   {
-    "id": 57,
+    "id": 858,
     "rev": 1,
-    "question": "Vad heter det fenomen när vissa djur sover under vintern?",
-    "answer": "Vinterdvala (eller hibernation)",
+    "question": "Hur många år kan en sköldpadda leva?",
+    "answer": "Över 100 år",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 859,
+    "rev": 1,
+    "question": "Vilket är världens största rovfågel?",
+    "answer": "Andeskondor",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 860,
+    "rev": 1,
+    "question": "Hur många arter av däggdjur finns det cirka?",
+    "answer": "Cirka 6400",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 861,
+    "rev": 1,
+    "question": "Vilket är världens största orm?",
+    "answer": "Grön anaconda",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 862,
+    "rev": 1,
+    "question": "Hur många njurar har en människa?",
+    "answer": "2 (två)",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 863,
+    "rev": 1,
+    "question": "Vilket är världens största ödla?",
+    "answer": "Komodovaran",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 864,
+    "rev": 1,
+    "question": "Hur många lungor har en människa?",
+    "answer": "2 (två)",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 865,
+    "rev": 1,
+    "question": "Vilket är världens största groddjur?",
+    "answer": "Kinesisk jättesalamander",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 866,
+    "rev": 1,
+    "question": "Hur många kammrar har ett fiskhjärta?",
+    "answer": "2 (två)",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 867,
+    "rev": 1,
+    "question": "Vilket är världens största spindel?",
+    "answer": "Goliath fågel-ätande spindel",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 868,
+    "rev": 1,
+    "question": "Hur många tänder har en vit haj?",
+    "answer": "Cirka 300",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 869,
+    "rev": 1,
+    "question": "Vilket är världens största myra?",
+    "answer": "Dinoponera gigantea",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 870,
+    "rev": 1,
+    "question": "Hur många lungor har en fågel?",
+    "answer": "2 (två)",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 871,
+    "rev": 1,
+    "question": "Vilket är världens största fjäril?",
+    "answer": "Atlas fjäril",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 872,
+    "rev": 1,
+    "question": "Hur många hjärtan har en daggmask?",
+    "answer": "5 (fem)",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 873,
+    "rev": 1,
+    "question": "Vilket är världens största skalbagge?",
+    "answer": "Titanbaggen",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 874,
+    "rev": 1,
+    "question": "Hur många ben har en myra?",
+    "answer": "6 (sex)",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 875,
+    "rev": 1,
+    "question": "Vilket är världens största bi?",
+    "answer": "Wallace's giant bee",
+    "category": "nature",
+    "level": "young-teen"
+  },
+  {
+    "id": 876,
+    "rev": 1,
+    "question": "Hur många kromosomer har en chimpans?",
+    "answer": "48",
     "category": "nature",
     "level": "old-teen"
   },
   {
-    "id": 58,
+    "id": 877,
     "rev": 1,
-    "question": "Vilket däggdjur lägger ägg?",
-    "answer": "Näbbdjuret (eller myrkott)",
+    "question": "Vilket är världens minsta däggdjur?",
+    "answer": "Etruskerattråspitsmöss",
     "category": "nature",
     "level": "old-teen"
   },
   {
-    "id": 59,
+    "id": 878,
     "rev": 1,
-    "question": "Hur många arter av pingviner finns det ungefär?",
-    "answer": "18",
+    "question": "Hur många arter av växter finns det cirka?",
+    "answer": "Cirka 400 000",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 879,
+    "rev": 1,
+    "question": "Vilket är världens giftiga orm?",
+    "answer": "Taipan",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 880,
+    "rev": 1,
+    "question": "Hur många gener har människan?",
+    "answer": "Cirka 20 000-25 000",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 881,
+    "rev": 1,
+    "question": "Vilket är världens långsammaste djur?",
+    "answer": "Sengångare",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 882,
+    "rev": 1,
+    "question": "Hur många hjärneller har en människa?",
+    "answer": "Cirka 86 miljarder",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 883,
+    "rev": 1,
+    "question": "Vilket är världens djupast levande fisk?",
+    "answer": "Mariana snailfish",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 884,
+    "rev": 1,
+    "question": "Hur många sinnen har människan (traditionellt)?",
+    "answer": "5",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 885,
+    "rev": 1,
+    "question": "Vilket är världens äldsta levande träd?",
+    "answer": "Old Tjikko (eller Methuselah)",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 886,
+    "rev": 1,
+    "question": "Hur många ben har människan?",
+    "answer": "206",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 887,
+    "rev": 1,
+    "question": "Vilket är världens största träd?",
+    "answer": "General Sherman",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 888,
+    "rev": 1,
+    "question": "Hur många neuroner har en bläckfisk?",
+    "answer": "Cirka 500 miljoner",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 889,
+    "rev": 1,
+    "question": "Vilket är världens djupast levande växt?",
+    "answer": "Rödalger",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 890,
+    "rev": 1,
+    "question": "Hur många muskler har människan?",
+    "answer": "Cirka 640",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 891,
+    "rev": 1,
+    "question": "Vilket är världens högsta träd?",
+    "answer": "Hyperion",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 892,
+    "rev": 1,
+    "question": "Hur många leder har människan?",
+    "answer": "Cirka 360",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 893,
+    "rev": 1,
+    "question": "Vilket är världens minsta blomma?",
+    "answer": "Wolffia globosa",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 894,
+    "rev": 1,
+    "question": "Hur många hjärtslag har en kolibri per minut?",
+    "answer": "Cirka 1200",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 895,
+    "rev": 1,
+    "question": "Vilket är världens största blomma?",
+    "answer": "Rafflesia arnoldii",
+    "category": "nature",
+    "level": "old-teen"
+  },
+  {
+    "id": 896,
+    "rev": 1,
+    "question": "Hur många nukleotider har människans mitokondriella DNA?",
+    "answer": "16 569",
     "category": "nature",
     "level": "adult"
   },
   {
-    "id": 60,
+    "id": 897,
     "rev": 1,
-    "question": "Vad kallas djur som äter både växter och kött?",
-    "answer": "Allätare (eller omnivorer)",
+    "question": "Vilket är världens minsta levande organism?",
+    "answer": "Mycoplasma genitalium",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 898,
+    "rev": 1,
+    "question": "Hur många aminosyror kodar människans genom för?",
+    "answer": "20 standardaminosyror",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 899,
+    "rev": 1,
+    "question": "Vilket är världens största levande organism?",
+    "answer": "Pando (aspklonkoloni)",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 900,
+    "rev": 1,
+    "question": "Hur många baspar har E. coli:s genom?",
+    "answer": "Cirka 4,6 miljoner",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 901,
+    "rev": 1,
+    "question": "Vilket är världens äldsta levande organism?",
+    "answer": "Posidonia oceanica (eller Pando)",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 902,
+    "rev": 1,
+    "question": "Hur många gener har en fruktfluga?",
+    "answer": "Cirka 14 000",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 903,
+    "rev": 1,
+    "question": "Vilket är världens mest komplexa levande organism?",
+    "answer": "Människan (eller andra komplexa djur)",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 904,
+    "rev": 1,
+    "question": "Hur många kromosomer har en hund?",
+    "answer": "78",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 905,
+    "rev": 1,
+    "question": "Vilket är världens minsta genom?",
+    "answer": "Nasuia deltocephalinicola",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 906,
+    "rev": 1,
+    "question": "Hur många gener har en rund mask (C. elegans)?",
+    "answer": "Cirka 20 000",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 907,
+    "rev": 1,
+    "question": "Vilket är världens största genom?",
+    "answer": "Paris japonica",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 908,
+    "rev": 1,
+    "question": "Hur många kromosomer har en katt?",
+    "answer": "38",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 909,
+    "rev": 1,
+    "question": "Vilket är världens mest extremofila organism?",
+    "answer": "Tardigrader",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 910,
+    "rev": 1,
+    "question": "Hur många gener har jäst?",
+    "answer": "Cirka 6000",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 911,
+    "rev": 1,
+    "question": "Vilket är världens djupast levande organism?",
+    "answer": "Bakterier i djuphavssediment",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 912,
+    "rev": 1,
+    "question": "Hur många kromosomer har en mus?",
+    "answer": "40",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 913,
+    "rev": 1,
+    "question": "Vilket är världens högst levande organism?",
+    "answer": "Växter på höga berg",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 914,
+    "rev": 1,
+    "question": "Hur många gener har Arabidopsis?",
+    "answer": "Cirka 27 000",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 915,
+    "rev": 1,
+    "question": "Vilket är världens varmaste levande organism?",
+    "answer": "Termofila bakterier",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 916,
+    "rev": 1,
+    "question": "Hur många kromosomer har en häst?",
+    "answer": "64",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 917,
+    "rev": 1,
+    "question": "Vilket är världens kallaste levande organism?",
+    "answer": "Kryofila bakterier",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 918,
+    "rev": 1,
+    "question": "Hur många gener har ris?",
+    "answer": "Cirka 40 000",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 919,
+    "rev": 1,
+    "question": "Vilket är världens salttolerantaste organism?",
+    "answer": "Halobakterier",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 920,
+    "rev": 1,
+    "question": "Hur många kromosomer har en ko?",
+    "answer": "60",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 921,
+    "rev": 1,
+    "question": "Vilket är världens sur-tolerantaste organism?",
+    "answer": "Acidofila bakterier",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 922,
+    "rev": 1,
+    "question": "Hur många gener har majs?",
+    "answer": "Cirka 32 000",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 923,
+    "rev": 1,
+    "question": "Vilket är världens basisk-tolerantaste organism?",
+    "answer": "Alkalofila bakterier",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 924,
+    "rev": 1,
+    "question": "Hur många kromosomer har en gris?",
+    "answer": "38",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 925,
+    "rev": 1,
+    "question": "Vilket är världens strålning-tolerantaste organism?",
+    "answer": "Deinococcus radiodurans",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 926,
+    "rev": 1,
+    "question": "Hur många gener har vete?",
+    "answer": "Cirka 100 000",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 927,
+    "rev": 1,
+    "question": "Vilket är världens tryck-tolerantaste organism?",
+    "answer": "Barofila bakterier",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 928,
+    "rev": 1,
+    "question": "Hur många kromosomer har en kanin?",
+    "answer": "44",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 929,
+    "rev": 1,
+    "question": "Vilket är världens torka-tolerantaste organism?",
+    "answer": "Tardigrader",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 930,
+    "rev": 1,
+    "question": "Hur många gener har lax?",
+    "answer": "Cirka 46 000",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 931,
+    "rev": 1,
+    "question": "Vilket är världens gift-tolerantaste organism?",
+    "answer": "Toxin-resistenta bakterier",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 932,
+    "rev": 1,
+    "question": "Hur många kromosomer har en get?",
+    "answer": "60",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 933,
+    "rev": 1,
+    "question": "Vilket är världens metall-tolerantaste organism?",
+    "answer": "Metallotrofa bakterier",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 934,
+    "rev": 1,
+    "question": "Hur många gener har tomat?",
+    "answer": "Cirka 35 000",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 935,
+    "rev": 1,
+    "question": "Vilket är världens syrefattigaste levande organism?",
+    "answer": "Anaeroba bakterier",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 936,
+    "rev": 1,
+    "question": "Hur många kromosomer har ett får?",
+    "answer": "54",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 937,
+    "rev": 1,
+    "question": "Vilket är världens snabbaste växande organism?",
+    "answer": "Bambu",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 938,
+    "rev": 1,
+    "question": "Hur många gener har potatis?",
+    "answer": "Cirka 39 000",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 939,
+    "rev": 1,
+    "question": "Vilket är världens långsammaste växande organism?",
+    "answer": "Vissa lavar",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 940,
+    "rev": 1,
+    "question": "Hur många kromosomer har en åsna?",
+    "answer": "62",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 941,
+    "rev": 1,
+    "question": "Vilket är världens mest anpassningsbara organism?",
+    "answer": "Bakterier (eller tardigrader)",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 942,
+    "rev": 1,
+    "question": "Hur många gener har soja?",
+    "answer": "Cirka 46 000",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 943,
+    "rev": 1,
+    "question": "Vilket är världens mest spridda organism?",
+    "answer": "E. coli (eller andra bakterier)",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 944,
+    "rev": 1,
+    "question": "Hur många kromosomer har en zebra?",
+    "answer": "32 (Grevys zebra) eller 44 (Berg zebra)",
+    "category": "nature",
+    "level": "adult"
+  },
+  {
+    "id": 945,
+    "rev": 1,
+    "question": "Vilket är världens mest isolerade organism?",
+    "answer": "Endemiska arter på avlägsna öar",
     "category": "nature",
     "level": "adult"
   }

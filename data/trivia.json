@@ -1,48 +1,166 @@
 [
   {
-    "id": 91,
+    "id": 526,
     "rev": 1,
-    "question": "Hur många timmar är ett dygn?",
-    "answer": "24",
+    "question": "Hur många hjul har en bil normalt?",
+    "answer": "4 (fyra)",
     "category": "trivia",
     "level": "child"
   },
   {
-    "id": 92,
+    "id": 527,
     "rev": 1,
-    "question": "Vad kallas frukten som växer på ekträd?",
-    "answer": "Ekollon",
+    "question": "Vilken färg är banan?",
+    "answer": "Gul",
     "category": "trivia",
     "level": "child"
   },
   {
-    "id": 93,
+    "id": 528,
     "rev": 1,
-    "question": "Hur många bokstäver finns det i det svenska alfabetet?",
+    "question": "Hur många fingrar har du på en hand?",
+    "answer": "5 (fem)",
+    "category": "trivia",
+    "level": "child"
+  },
+  {
+    "id": 529,
+    "rev": 1,
+    "question": "Vad säger katten?",
+    "answer": "Mjau",
+    "category": "trivia",
+    "level": "child"
+  },
+  {
+    "id": 530,
+    "rev": 1,
+    "question": "Vilken form har en boll?",
+    "answer": "Rund",
+    "category": "trivia",
+    "level": "child"
+  },
+  {
+    "id": 531,
+    "rev": 1,
+    "question": "Hur många dagar är det i en vecka?",
+    "answer": "7 (sju)",
+    "category": "trivia",
+    "level": "tween"
+  },
+  {
+    "id": 532,
+    "rev": 1,
+    "question": "Vad heter den största planeten i solsystemet?",
+    "answer": "Jupiter",
+    "category": "trivia",
+    "level": "tween"
+  },
+  {
+    "id": 533,
+    "rev": 1,
+    "question": "Hur många månader är det på ett år?",
+    "answer": "12 (tolv)",
+    "category": "trivia",
+    "level": "tween"
+  },
+  {
+    "id": 534,
+    "rev": 1,
+    "question": "Vad heter jordens närmaste grannplanet?",
+    "answer": "Venus (eller Mars)",
+    "category": "trivia",
+    "level": "tween"
+  },
+  {
+    "id": 535,
+    "rev": 1,
+    "question": "Hur många bokstäver är det i det svenska alfabetet?",
     "answer": "29",
     "category": "trivia",
     "level": "tween"
   },
   {
-    "id": 94,
+    "id": 536,
     "rev": 1,
-    "question": "Hur många dagar har ett normalår?",
-    "answer": "365",
+    "question": "Vad heter den största stjärnan i vårt solsystem?",
+    "answer": "Solen",
     "category": "trivia",
     "level": "tween"
   },
   {
-    "id": 95,
+    "id": 537,
     "rev": 1,
-    "question": "Vilket år grundades Google?",
-    "answer": "1998",
+    "question": "Hur många timmar är det i ett dygn?",
+    "answer": "24",
     "category": "trivia",
-    "level": "young-teen",
-    "start_year": 1998,
-    "end_year": 1998
+    "level": "tween"
   },
   {
-    "id": 96,
+    "id": 538,
+    "rev": 1,
+    "question": "Vad heter den enda satellit som kretsar kring jorden?",
+    "answer": "Månen",
+    "category": "trivia",
+    "level": "tween"
+  },
+  {
+    "id": 539,
+    "rev": 1,
+    "question": "Hur många grader är det i en cirkel?",
+    "answer": "360",
+    "category": "trivia",
+    "level": "tween"
+  },
+  {
+    "id": 540,
+    "rev": 1,
+    "question": "Vad heter den största sjön i Sverige?",
+    "answer": "Vänern",
+    "category": "trivia",
+    "level": "tween"
+  },
+  {
+    "id": 541,
+    "rev": 1,
+    "question": "Hur många element finns i det periodiska systemet?",
+    "answer": "118",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 542,
+    "rev": 1,
+    "question": "Vad heter den största ön i världen?",
+    "answer": "Grönland",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 543,
+    "rev": 1,
+    "question": "Hur många timmar är det i en vecka?",
+    "answer": "168",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 544,
+    "rev": 1,
+    "question": "Vad heter den minsta fågeln i världen?",
+    "answer": "Bikolibri",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 545,
+    "rev": 1,
+    "question": "Hur många ben har en människa?",
+    "answer": "206",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 546,
     "rev": 1,
     "question": "Vad heter den största öknen i världen?",
     "answer": "Sahara",
@@ -50,37 +168,675 @@
     "level": "young-teen"
   },
   {
-    "id": 97,
+    "id": 547,
     "rev": 1,
-    "question": "Hur många element finns det i det periodiska systemet (ungefär)?",
-    "answer": "118",
+    "question": "Hur många hjärtslag har en vuxen människa i minuten?",
+    "answer": "60-100",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 548,
+    "rev": 1,
+    "question": "Vad heter den längsta floden i Afrika?",
+    "answer": "Nilen",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 549,
+    "rev": 1,
+    "question": "Hur många sidor har en hexagon?",
+    "answer": "6",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 550,
+    "rev": 1,
+    "question": "Vad heter den största däggdjuret i världen?",
+    "answer": "Blåvalen",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 551,
+    "rev": 1,
+    "question": "Hur många pjäser startar ett schackspel med?",
+    "answer": "32",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 552,
+    "rev": 1,
+    "question": "Vad heter den högsta vattenfall i världen?",
+    "answer": "Salto Ángel",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 553,
+    "rev": 1,
+    "question": "Hur många nollor är det i en miljon?",
+    "answer": "6",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 554,
+    "rev": 1,
+    "question": "Vad heter den största blomman i världen?",
+    "answer": "Rafflesia arnoldii",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 555,
+    "rev": 1,
+    "question": "Hur många färger är det i regnbågen?",
+    "answer": "7",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 556,
+    "rev": 1,
+    "question": "Vad heter den största pyramiden i Egypten?",
+    "answer": "Keopspyramiden",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 557,
+    "rev": 1,
+    "question": "Hur många spelare är det i ett fotbollslag?",
+    "answer": "11",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 558,
+    "rev": 1,
+    "question": "Vad heter den största skogen i världen?",
+    "answer": "Amazonas regnskogen",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 559,
+    "rev": 1,
+    "question": "Hur många strömmar har jordens ekvatorialcirkulation?",
+    "answer": "Flera, men Golfströmmen är en av de största",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 560,
+    "rev": 1,
+    "question": "Vad heter den största kon i världen?",
+    "answer": "Det finns olika svar beroende på definition",
+    "category": "trivia",
+    "level": "young-teen"
+  },
+  {
+    "id": 561,
+    "rev": 1,
+    "question": "Hur många atomer finns i en vattenmolekyl?",
+    "answer": "3",
     "category": "trivia",
     "level": "old-teen"
   },
   {
-    "id": 98,
+    "id": 562,
     "rev": 1,
-    "question": "Vad heter den kända klockan i London?",
-    "answer": "Big Ben",
+    "question": "Vad heter den största vulkanen i solsystemet?",
+    "answer": "Olympus Mons",
     "category": "trivia",
     "level": "old-teen"
   },
   {
-    "id": 99,
+    "id": 563,
     "rev": 1,
-    "question": "Vad heter världens längsta ord i svenska språket?",
-    "answer": "Nordöstersjökustartilleriflygspaningssimulatoranläggningsmaterielunderhållsuppföljningssystemdiskussionsinläggsförberedelsearbeten",
+    "question": "Hur många språk talas i världen?",
+    "answer": "Cirka 7000",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 564,
+    "rev": 1,
+    "question": "Vad heter den minsta partikeln av materia?",
+    "answer": "Kvark",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 565,
+    "rev": 1,
+    "question": "Hur många nollor är det i en miljard?",
+    "answer": "9",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 566,
+    "rev": 1,
+    "question": "Vad heter den största skölden i världen?",
+    "answer": "Det finns olika svar beroende på definition",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 567,
+    "rev": 1,
+    "question": "Hur många länder finns i världen?",
+    "answer": "195 (erkända av FN)",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 568,
+    "rev": 1,
+    "question": "Vad heter den längsta bron i världen?",
+    "answer": "Danyang-Kunshan Grand Bridge",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 569,
+    "rev": 1,
+    "question": "Hur många stjärnor finns i Vintergatan?",
+    "answer": "100-400 miljarder",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 570,
+    "rev": 1,
+    "question": "Vad heter den största klippan i världen?",
+    "answer": "Mount Augustus",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 571,
+    "rev": 1,
+    "question": "Hur många planeter har ringar i solsystemet?",
+    "answer": "4 (Jupiter, Saturnus, Uranus, Neptunus)",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 572,
+    "rev": 1,
+    "question": "Vad heter den största hajen i världen?",
+    "answer": "Valhaj",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 573,
+    "rev": 1,
+    "question": "Hur många timmar tar det för jorden att rotera ett varv?",
+    "answer": "23 timmar och 56 minuter",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 574,
+    "rev": 1,
+    "question": "Vad heter den största ormen i världen?",
+    "answer": "Grön anaconda (eller retikulerad python)",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 575,
+    "rev": 1,
+    "question": "Hur många ljusår är det till närmaste stjärna?",
+    "answer": "4,24 ljusår (Proxima Centauri)",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 576,
+    "rev": 1,
+    "question": "Vad heter den största spindeln i världen?",
+    "answer": "Goliath fågel-ätande spindel",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 577,
+    "rev": 1,
+    "question": "Hur många galaxer finns i det observerbara universum?",
+    "answer": "Cirka 2 biljoner",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 578,
+    "rev": 1,
+    "question": "Vad heter den största grodan i världen?",
+    "answer": "Goliath-grodan",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 579,
+    "rev": 1,
+    "question": "Hur många månar har Jupiter?",
+    "answer": "95 (bekräftade 2024)",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 580,
+    "rev": 1,
+    "question": "Vad heter den största fjärilen i världen?",
+    "answer": "Atlas fjäril",
+    "category": "trivia",
+    "level": "old-teen"
+  },
+  {
+    "id": 581,
+    "rev": 1,
+    "question": "Hur många baspar har E. coli bakteriens genom?",
+    "answer": "Cirka 4,6 miljoner",
     "category": "trivia",
     "level": "adult"
   },
   {
-    "id": 100,
+    "id": 582,
     "rev": 1,
-    "question": "Vilket år myntades termen 'Big Bang' för universums uppkomst?",
-    "answer": "1949",
+    "question": "Vad heter den största kända primtalet?",
+    "answer": "Varierar över tid, men 2^82 589 933 − 1 (2018)",
     "category": "trivia",
-    "level": "adult",
-    "start_year": 1949,
-    "end_year": 1949
+    "level": "adult"
+  },
+  {
+    "id": 583,
+    "rev": 1,
+    "question": "Hur många neutroner har uran-235?",
+    "answer": "143",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 584,
+    "rev": 1,
+    "question": "Vad heter den största kända stjärnan?",
+    "answer": "Stephenson 2-18 (eller UY Scuti)",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 585,
+    "rev": 1,
+    "question": "Hur många aminosyror finns det i människans proteom?",
+    "answer": "20 standardaminosyror",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 586,
+    "rev": 1,
+    "question": "Vad heter den största kända galaxen?",
+    "answer": "IC 1101",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 587,
+    "rev": 1,
+    "question": "Hur många atomer finns i människokroppen?",
+    "answer": "Cirka 7 oktiljoner",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 588,
+    "rev": 1,
+    "question": "Vad heter den största kända planeten?",
+    "answer": "HD 100546 b (eller ROXs 42Bb)",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 589,
+    "rev": 1,
+    "question": "Hur många nukleotider har människans mitokondriella genom?",
+    "answer": "16 569",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 590,
+    "rev": 1,
+    "question": "Vad heter den största kända asteroiden?",
+    "answer": "Ceres",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 591,
+    "rev": 1,
+    "question": "Hur många protoner har uran?",
+    "answer": "92",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 592,
+    "rev": 1,
+    "question": "Vad heter den största kända kometen?",
+    "answer": "Bernardinelli-Bernstein",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 593,
+    "rev": 1,
+    "question": "Hur många gener har en bakteriofag?",
+    "answer": "Varierar, men T4-fagen har cirka 300",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 594,
+    "rev": 1,
+    "question": "Vad heter den största kända superkluster?",
+    "answer": "Laniakea",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 595,
+    "rev": 1,
+    "question": "Hur många atomer finns i en molekyl av hemoglobin?",
+    "answer": "Cirka 10 000",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 596,
+    "rev": 1,
+    "question": "Vad heter den största kända mån i solsystemet?",
+    "answer": "Ganymedes",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 597,
+    "rev": 1,
+    "question": "Hur många kvarkar finns i en proton?",
+    "answer": "3",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 598,
+    "rev": 1,
+    "question": "Vad heter den största kända nebulosan?",
+    "answer": "Tarantula nebulosan",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 599,
+    "rev": 1,
+    "question": "Hur många elektroner kan maximalt finnas i det femte skalet?",
+    "answer": "50",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 600,
+    "rev": 1,
+    "question": "Vad heter den största kända svarta hålet?",
+    "answer": "TON 618",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 601,
+    "rev": 1,
+    "question": "Hur många nukleotider har HIV-viruset?",
+    "answer": "Cirka 10 000",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 602,
+    "rev": 1,
+    "question": "Vad heter den största kända stjärnhopen?",
+    "answer": "NGC 2070",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 603,
+    "rev": 1,
+    "question": "Hur många aminosyror har insulin?",
+    "answer": "51",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 604,
+    "rev": 1,
+    "question": "Vad heter den största kända planetsystemet?",
+    "answer": "HR 8799",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 605,
+    "rev": 1,
+    "question": "Hur många baspar har människans kromosom 1?",
+    "answer": "Cirka 249 miljoner",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 606,
+    "rev": 1,
+    "question": "Vad heter den största kända exoplaneten?",
+    "answer": "HD 100546 b",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 607,
+    "rev": 1,
+    "question": "Hur många molekyler finns i en mol?",
+    "answer": "6,022 × 10^23",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 608,
+    "rev": 1,
+    "question": "Vad heter den största kända kvazaren?",
+    "answer": "TON 618",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 609,
+    "rev": 1,
+    "question": "Hur många aminosyror har myoglobin?",
+    "answer": "153",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 610,
+    "rev": 1,
+    "question": "Vad heter den största kända planetariska nebulosan?",
+    "answer": "Helix nebulosan",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 611,
+    "rev": 1,
+    "question": "Hur många baspar har E. coli:s största plasmid?",
+    "answer": "Varierar, men kan vara över 100 000",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 612,
+    "rev": 1,
+    "question": "Vad heter den största kända stjärnvinden?",
+    "answer": "Från Wolf-Rayet stjärnor",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 613,
+    "rev": 1,
+    "question": "Hur många aminosyror har albumin?",
+    "answer": "585",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 614,
+    "rev": 1,
+    "question": "Vad heter den största kända molekylära molnet?",
+    "answer": "Saggitarius B2",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 615,
+    "rev": 1,
+    "question": "Hur många nukleotider har adenoviruset?",
+    "answer": "Cirka 36 000",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 616,
+    "rev": 1,
+    "question": "Vad heter den största kända supernovan?",
+    "answer": "SN 2006gy",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 617,
+    "rev": 1,
+    "question": "Hur många aminosyror har kollagen?",
+    "answer": "Cirka 1000 (per kedja)",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 618,
+    "rev": 1,
+    "question": "Vad heter den största kända gammastråle-utbrottet?",
+    "answer": "GRB 080916C",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 619,
+    "rev": 1,
+    "question": "Hur många baspar har bakteriofag T4?",
+    "answer": "Cirka 169 000",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 620,
+    "rev": 1,
+    "question": "Vad heter den största kända pulsaren?",
+    "answer": "PSR J0952-0607",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 621,
+    "rev": 1,
+    "question": "Hur många aminosyror har titin?",
+    "answer": "Cirka 34 000",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 622,
+    "rev": 1,
+    "question": "Vad heter den största kända magnetaren?",
+    "answer": "SGR 1806-20",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 623,
+    "rev": 1,
+    "question": "Hur många nukleotider har vacciniavirus?",
+    "answer": "Cirka 190 000",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 624,
+    "rev": 1,
+    "question": "Vad heter den största kända röda jätten?",
+    "answer": "Stephenson 2-18",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 625,
+    "rev": 1,
+    "question": "Hur många aminosyror har dystrofin?",
+    "answer": "3685",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 626,
+    "rev": 1,
+    "question": "Vad heter den största kända hypernovan?",
+    "answer": "SN 2016aps",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 627,
+    "rev": 1,
+    "question": "Hur många baspar har människans mitokondriella DNA?",
+    "answer": "16 569",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 628,
+    "rev": 1,
+    "question": "Vad heter den största kända neutron stjärnan?",
+    "answer": "PSR J0952-0607",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 629,
+    "rev": 1,
+    "question": "Hur många aminosyror har apolipoprotein B?",
+    "answer": "4536",
+    "category": "trivia",
+    "level": "adult"
+  },
+  {
+    "id": 630,
+    "rev": 1,
+    "question": "Vad heter den största kända vita dvärgstjärnan?",
+    "answer": "Sirius B (mest kända, inte nödvändigtvis största)",
+    "category": "trivia",
+    "level": "adult"
   }
 ]
